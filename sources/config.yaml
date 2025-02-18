@@ -7,11 +7,10 @@
 # sources/ directory, so all paths should be relative to that
 # directory.
 sources:
-  - RadioCanadaDisplay.glyphs
-  - RadioCanadaDisplay-Italic.glyphs
+  - Akt.glyphs
 # You don't have to supply the family name, but builds are slightly
 # faster if you do.
-familyName: "Radio Canada Display"
+familyName: "Akt"
 
 # Next you can supply alternative paths for where you want the
 # binaries to live. But we'd recommend you stick to the defaults
