@@ -1,2 +1,0 @@
-[Credentials]
-key = AIzaSyAS8fo4lnPrPTCjY2CWkVPXLOUql6m9Nsw
