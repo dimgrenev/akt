@@ -1,4 +1,4 @@
-# Akt — a powerful typeface for modern user needs.
+# Akt — a powerful typeface for modern user needs
 
 **Unified glyphs width** across all weights (thin → black), ensuring predictable line and UI-element width behavior during text weight adjustments. This attribute also aids in optimizing text density for dark themes – simply shift one weight step lighter for balanced contrast.  
 **Capitals** are vertically **centered within the line height**, creating harmonious alignment with icons.  
