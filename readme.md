@@ -1,4 +1,4 @@
-# Akt — a powerful typeface for modern user needs
+# Akt
 
 Akt — a powerful typeface for modern user needs.
 
