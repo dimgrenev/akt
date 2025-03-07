@@ -1,6 +1,6 @@
 # Akt — a powerful typeface for modern user needs
 
-![Sample Image](documentation/image1.png)
+![Sample Image](documentation/1.png)
 
 ## Manual installation
 
