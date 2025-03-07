@@ -1,11 +1,12 @@
-# Akt. A powerful typeface for modern user needs.
-![Sample Image](documentation/1.png)
-## Features
+# Akt — a powerful typeface for modern user needs.
+
 Akt features unified glyphs width across all weights (thin → black), ensuring predictable line and UI-element width behavior during text weight adjustments. This attribute also aids in optimizing text density for dark themes—simply shift one weight step lighter for balanced contrast.
 Capitals are vertically centered within the line height, creating harmonious alignment with icons.
 Terminals (endpoints of rounded strokes) are horizontally calibrated for visual consistency.
 The font includes 1,200+ glyphs and supports 417 languages using Extended Latin & Cyrillic scripts. 
 Designed by Dima Grenev.
+
+![Sample Image](documentation/1.png)
 
 
 
