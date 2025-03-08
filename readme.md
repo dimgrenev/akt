@@ -8,13 +8,13 @@
 
 ![Sample Image](documentation/1.png)
 
-
-
-## Manual installation
-
 ## Font Styles
 
-## Font Features
+There are 9 font styles available, from Thin to Black.
+
+![Sample Image](documentation/2.png)
+
+## Features
 
 ## Ligatures
 
