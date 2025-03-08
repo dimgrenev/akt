@@ -6,6 +6,8 @@
 **1,200+ glyphs** and supports **400+ languages** using **Extended Latin & Cyrillic** scripts.  
 Designed by Dima Grenev.
 
+[Download](https://github.com/dimgrenev/Akt/releases/latest) latest release.
+
 ![Sample Image](documentation/1.png)
 
 
