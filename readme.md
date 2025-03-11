@@ -2,7 +2,7 @@
 
 **Unified glyphs width** across all weights (Thin → Black), ensuring predictable line and UI-element width behavior during text weight adjustments. This attribute also aids in optimizing text density for dark themes – simply shift one weight step lighter for balanced contrast.  
 **Capitals** are vertically **centered within the line height**, creating harmonious alignment with icons. **Terminals** (endpoints of rounded strokes) are horizontally **calibrated** for visual consistency.  
-**1,200+ glyphs** and supports **400+ languages** using **Extended Latin & Cyrillic** scripts. 
+**1,200+ glyphs** and supports **400+ languages** using **Extended Latin & Cyrillic** scripts.  
 There are **7 font weights available** (Thin → Bold is ready, ExtraBold and Black still wip). Designed by Dima Grenev.
 
 [Download](https://github.com/dimgrenev/Akt/releases/latest) latest release.
