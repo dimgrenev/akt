@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Tuple
 import unicodedata
 
-BASELINE_UNDERLINE_THICKNESS = None  # будет определён в main из Regular
+BASELINE_UNDERLINE_THICKNESS = None  # не нормализуем поперёк веса
 DESIRED_WIN_ASCENT = 1600
 DESIRED_WIN_DESCENT = 400
 
@@ -205,13 +205,10 @@ def fix_font_issues(font_path):
     except Exception as e:
         print(f"  ⚠️ Не удалось добавить prep: {e}")
 
-    # Версионность: поднимаем head.fontRevision минимум до 1.000 и синхронизируем NameID5
+    # Версионность: НЕ трогаем head.fontRevision, используем как есть и синхронизируем NameID5
     try:
-        if 'head' in font:
-            head = font['head']
-            if head.fontRevision < 1.0:
-                print(f"  ✅ Повышаем head.fontRevision: {head.fontRevision:.3f} → 1.000")
-                head.fontRevision = 1.0
+        # Оставляем версию без изменений
+        pass
     except Exception:
         pass
 
@@ -226,12 +223,15 @@ def fix_font_issues(font_path):
         name.setName(ofl_snippet, 13, 3, 1, 0x409)
         name.setName(ofl_snippet, 13, 1, 0, 0)
 
-        # NameID 5 должен соответствовать head.fontRevision
+        # NameID 5 должен соответствовать head.fontRevision (без форс‑минимума)
         if 'head' in font:
             head = font['head']
-            version_string = f"Version {max(head.fontRevision, 1.0):.3f}"
+            try:
+                version_string = f"Version {float(head.fontRevision):.3f}"
+            except Exception:
+                version_string = "Version 0.300"
         else:
-            version_string = "Version 1.000"
+            version_string = "Version 0.300"
         # Перепишем ВСЕ записи NameID 5 на всех платформах/языках
         # Удалим существующие записи NameID 5 и NameID 16 (Typographic Family) для статиков
         name.names = [nr for nr in name.names if nr.nameID not in (5, 16)]
@@ -254,7 +254,7 @@ def fix_font_issues(font_path):
     except Exception as e:
         print(f"  ⚠️ Не удалось гарантировать U+002E: {e}")
     
-    # Установка head флагов/macStyle и унификация underlineThickness
+    # Установка head флагов/macStyle (underlineThickness не унифицируем)
     try:
         if 'head' in font:
             head = font['head']
@@ -276,14 +276,7 @@ def fix_font_issues(font_path):
     except Exception:
         pass
 
-    try:
-        if 'post' in font and BASELINE_UNDERLINE_THICKNESS is not None:
-            post = font['post']
-            if getattr(post, 'underlineThickness', None) != BASELINE_UNDERLINE_THICKNESS:
-                print(f"  ✅ Устанавливаем underlineThickness: {getattr(post, 'underlineThickness', None)} → {BASELINE_UNDERLINE_THICKNESS}")
-                post.underlineThickness = BASELINE_UNDERLINE_THICKNESS
-    except Exception:
-        pass
+    # underlineThickness оставляем как в мастер‑источнике для каждого веса
 
     # Разлагам проблемные компоненты (nested / transformed) в контуры
     try:
