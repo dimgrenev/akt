@@ -109,11 +109,27 @@ tag = wght;
 customParameters = (
 {
 name = versionString;
-value = "0.3";
+value = "Version 0.300";
 },
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = license;
+value = OFL;
+},
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
+name = fsType;
+value = 0;
+},
+{
+name = vendorID;
+value = DMGR;
 }
 );
 date = "2024-11-01 12:20:20 +0000";
@@ -87675,12 +87691,20 @@ nodes = (
 width = 400;
 },
 {
-anchors = (
-{
-name = _center;
-pos = (200,240);
-}
-);
+ anchors = (
+ {
+ name = _bottom;
+ pos = (200,0);
+ },
+ {
+ name = _center;
+ pos = (200,240);
+ },
+ {
+ name = _top;
+ pos = (200,520);
+ }
+ );
 layerId = m003;
 shapes = (
 {
