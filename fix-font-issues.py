@@ -219,15 +219,12 @@ def fix_font_issues(font_path):
     # Добавляем NameID 5/13/14 (Version / License Description / License URL)
     try:
         name = font['name']
-        # Канонический текст для распознавания FB
-        ofl_snippet = (
-            "This Font Software is licensed under the SIL Open Font License, Version 1.1. "
-            "This license is available with a FAQ at: http://scripts.sil.org/OFL"
-        )
+        # Канонический текст NameID 13: ровно одно предложение без URL
+        ofl_snippet = "This Font Software is licensed under the SIL Open Font License, Version 1.1."
         # setName(text, nameID, platformID, platEncID, langID)
         name.setName(ofl_snippet, 13, 3, 1, 0x409)
         name.setName(ofl_snippet, 13, 1, 0, 0)
-        license_url = "http://scripts.sil.org/OFL"
+        license_url = "https://scripts.sil.org/OFL"
         name.setName(license_url, 14, 3, 1, 0x409)
         name.setName(license_url, 14, 1, 0, 0)
 
@@ -250,6 +247,34 @@ def fix_font_issues(font_path):
         name.setName(version_string, 5, 3, 1, 0x409)
         name.setName(version_string, 5, 3, 10, 0x409)  # UCS-4 fallback
         name.setName(version_string, 5, 1, 0, 0)
+
+        # Обновим NameID 3 (Unique font identifier) к ожидаемому GF формату:
+        # "Version X.XXX;VEND;PostScriptName"
+        try:
+            os2 = font['OS/2']
+            vend = getattr(os2, 'achVendID', 'DMGR') or 'DMGR'
+        except Exception:
+            vend = 'DMGR'
+        # постскрипт имя возьмём из NameID 6, если есть
+        ps = None
+        for rec in name.names:
+            if rec.nameID == 6 and rec.platformID == 3 and rec.platEncID == 1:
+                try:
+                    ps = str(rec.string, 'utf-16-be')
+                except Exception:
+                    ps = rec.toUnicode()
+                break
+        if not ps:
+            # запасной путь: сконструируем из имени файла
+            from pathlib import Path
+            stem = Path(font_path).stem
+            ps = stem.replace(' ', '')
+        unique_str = f"{version_string};{vend};{ps}"
+        # зачистим прежние nameID 3
+        name.names = [nr for nr in name.names if nr.nameID != 3]
+        # platform 3,1 и 1,0
+        name.setName(unique_str, 3, 3, 1, 0x409)
+        name.setName(unique_str, 3, 1, 0, 0)
     except Exception as e:
         print(f"  ⚠️ Не удалось установить NameID 13: {e}")
 

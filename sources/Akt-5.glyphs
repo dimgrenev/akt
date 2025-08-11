@@ -98,7 +98,9 @@ article // images — вставить <img> в ARTICLE и проверить im
 ✦ soft hyphen — сделать U+00AD пустым и нулевой ширины.
 
 ✦ soft dotted — включить ccmp для i // j с диакритиками ( ı // ȷ + якоря).",
-"аеиоуыэюяєіюії"
+"аеиоуыэюяёєїіїАЕИОУЫЭЮЯЁЄІЇJİĮĖĘĄŪŲaąęėįūųų
+
+аеий/ii-cy.loclBGR/iishort-cy.loclBGR ѝоуыэюяєіюАЕИОУЫЭЮЯЄІЮ"
 );
 axes = (
 {
@@ -45811,7 +45813,7 @@ unicode = 1308;
 glyphname = "a-cy";
 kernLeft = "a-cy";
 kernRight = "a-cy";
-lastChange = "2025-08-11 13:52:32 +0000";
+lastChange = "2025-08-11 09:23:52 +0000";
 layers = (
 {
 anchors = (
@@ -53710,12 +53712,6 @@ kernRight = "yi-cy";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m01;
 shapes = (
 {
@@ -53729,12 +53725,6 @@ ref = dieresiscomb.narrow;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -53748,12 +53738,6 @@ ref = dieresiscomb.narrow;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m003;
 shapes = (
 {
@@ -53774,12 +53758,6 @@ glyphname = "je-cy";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m01;
 shapes = (
 {
@@ -53789,12 +53767,6 @@ ref = j;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -53804,12 +53776,6 @@ ref = j;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m003;
 shapes = (
 {
@@ -53826,12 +53792,6 @@ glyphname = "je-cy.cv01";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m01;
 shapes = (
 {
@@ -53841,12 +53801,6 @@ ref = j.ss02;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -53856,12 +53810,6 @@ ref = j.ss02;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m003;
 shapes = (
 {

@@ -53710,12 +53710,6 @@ kernRight = "yi-cy";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m01;
 shapes = (
 {
@@ -53729,12 +53723,6 @@ ref = dieresiscomb.narrow;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -53748,12 +53736,6 @@ ref = dieresiscomb.narrow;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m003;
 shapes = (
 {
@@ -53774,12 +53756,6 @@ glyphname = "je-cy";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m01;
 shapes = (
 {
@@ -53789,12 +53765,6 @@ ref = j;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -53804,12 +53774,6 @@ ref = j;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m003;
 shapes = (
 {
@@ -53826,12 +53790,6 @@ glyphname = "je-cy.cv01";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m01;
 shapes = (
 {
@@ -53841,12 +53799,6 @@ ref = j.ss02;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -53856,12 +53808,6 @@ ref = j.ss02;
 width = 256;
 },
 {
- anchors = (
- {
- name = top;
- pos = (128,500);
- }
- );
 layerId = m003;
 shapes = (
 {
