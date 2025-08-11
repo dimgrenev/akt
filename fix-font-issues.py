@@ -9,8 +9,12 @@ from fontTools.ttLib.tables import ttProgram
 from pathlib import Path
 from typing import Tuple
 import unicodedata
+from fontTools.pens.basePen import DecomposingPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 BASELINE_UNDERLINE_THICKNESS = None  # не нормализуем поперёк веса
+# Канонические ширины математических знаков по семейству (считываем из Regular)
+CANONICAL_MATH_WIDTHS = {}
 DESIRED_WIN_ASCENT = 1600
 DESIRED_WIN_DESCENT = 400
 
@@ -212,9 +216,10 @@ def fix_font_issues(font_path):
     except Exception:
         pass
 
-    # Добавляем NameID 5/13 (Version / License Description)
+    # Добавляем NameID 5/13/14 (Version / License Description / License URL)
     try:
         name = font['name']
+        # Канонический текст для распознавания FB
         ofl_snippet = (
             "This Font Software is licensed under the SIL Open Font License, Version 1.1. "
             "This license is available with a FAQ at: http://scripts.sil.org/OFL"
@@ -222,16 +227,23 @@ def fix_font_issues(font_path):
         # setName(text, nameID, platformID, platEncID, langID)
         name.setName(ofl_snippet, 13, 3, 1, 0x409)
         name.setName(ofl_snippet, 13, 1, 0, 0)
+        license_url = "http://scripts.sil.org/OFL"
+        name.setName(license_url, 14, 3, 1, 0x409)
+        name.setName(license_url, 14, 1, 0, 0)
 
         # NameID 5 должен соответствовать head.fontRevision (без форс‑минимума)
         if 'head' in font:
             head = font['head']
             try:
+                # Минимум 1.000 для GF релиза
+                if float(head.fontRevision) < 1.0:
+                    print(f"  ✅ Повышаем head.fontRevision: {head.fontRevision} → 1.000 (требование GF)")
+                    head.fontRevision = 1.0
                 version_string = f"Version {float(head.fontRevision):.3f}"
             except Exception:
-                version_string = "Version 0.300"
+                version_string = "Version 1.000"
         else:
-            version_string = "Version 0.300"
+            version_string = "Version 1.000"
         # Перепишем ВСЕ записи NameID 5 на всех платформах/языках
         # Удалим существующие записи NameID 5 и NameID 16 (Typographic Family) для статиков
         name.names = [nr for nr in name.names if nr.nameID not in (5, 16)]
@@ -240,6 +252,66 @@ def fix_font_issues(font_path):
         name.setName(version_string, 5, 1, 0, 0)
     except Exception as e:
         print(f"  ⚠️ Не удалось установить NameID 13: {e}")
+
+    # Выравниваем ширины математических знаков внутри стиля и к канону семьи
+    try:
+        hmtx = font['hmtx']
+        cmap = font['cmap']
+        # cp → предпочтительный набор знаков
+        math_cps = [
+            0x002B,  # plus
+            0x2212,  # minus
+            0x00D7,  # multiply
+            0x00F7,  # divide
+            0x003D,  # equal
+            0x2260,  # not equal
+            0x2248,  # almost equal
+            0x00B1,  # plusminus
+            0x007E,  # tilde
+        ]
+        # Соберём мэппинг cp→glyphName
+        cp_to_glyph = {}
+        for st in cmap.tables:
+            if st.isUnicode():
+                for cp, gname in st.cmap.items():
+                    if cp in math_cps and cp not in cp_to_glyph:
+                        cp_to_glyph[cp] = gname
+        present = [cp for cp in math_cps if cp in cp_to_glyph]
+        if present:
+            # целевой шириной считаем ширину плюса, если он есть, иначе моду наиболее частой ширины
+            def get_aw(gname: str) -> int:
+                try:
+                    return hmtx.metrics[gname][0]
+                except Exception:
+                    return None
+            target_aw = None
+            if 0x002B in cp_to_glyph:
+                target_aw = get_aw(cp_to_glyph[0x002B])
+            if not target_aw:
+                widths = {}
+                for cp in present:
+                    aw = get_aw(cp_to_glyph[cp])
+                    if aw is not None:
+                        widths[aw] = widths.get(aw, 0) + 1
+                if widths:
+                    target_aw = sorted(widths.items(), key=lambda kv: (-kv[1], kv[0]))[0][0]
+            if target_aw:
+                changed = 0
+                for cp in present:
+                    gname = cp_to_glyph[cp]
+                    aw, lsb = hmtx.metrics.get(gname, (None, None))
+                    if aw is None:
+                        continue
+                    # Если есть канон по семейству, используем его
+                    fam_aw = CANONICAL_MATH_WIDTHS.get(cp)
+                    final_aw = fam_aw if fam_aw else target_aw
+                    if aw != final_aw:
+                        hmtx.metrics[gname] = (final_aw, lsb)
+                        changed += 1
+                if changed:
+                    print(f"  ✅ Выровнены ширины матзнаков: {changed} шт. (цель: {fam_aw if fam_aw else target_aw})")
+    except Exception as e:
+        print(f"  ⚠️ Не удалось выровнять матзнаки: {e}")
 
     # Гарантируем наличие U+002E FULL STOP в cmap (→ 'period')
     try:
@@ -278,7 +350,7 @@ def fix_font_issues(font_path):
 
     # underlineThickness оставляем как в мастер‑источнике для каждого веса
 
-    # Разлагам проблемные компоненты (nested / transformed) в контуры
+    # Полная декомпозиция всех композитов в контуры (закрывает nested/transformed)
     try:
         if glyf_table is not None:
             glyph_set = font.getGlyphSet()
@@ -294,39 +366,38 @@ def fix_font_issues(font_path):
                     g = glyf_table[gname]
                 except Exception:
                     continue
-                if not hasattr(g, 'isComposite') or not g.isComposite():
-                    continue
-                nested = False
-                transformed = False
-                for comp in getattr(g, 'components', []) or []:
-                    # Трансформированные компоненты
-                    if hasattr(comp, 'transform') and has_transform(comp.transform):
-                        transformed = True
-                    # Вложенные компоненты
-                    try:
-                        cg = glyf_table[comp.glyphName]
-                        if hasattr(cg, 'isComposite') and cg.isComposite():
-                            nested = True
-                    except Exception:
-                        pass
-                if nested or transformed:
+                if hasattr(g, 'isComposite') and g.isComposite():
+                    # Опционально обнаружим признаки nested/transformed для отчёта
+                    nested = False
+                    transformed = False
+                    for comp in getattr(g, 'components', []) or []:
+                        if hasattr(comp, 'transform') and has_transform(comp.transform):
+                            transformed = True
+                        try:
+                            cg = glyf_table[comp.glyphName]
+                            if hasattr(cg, 'isComposite') and cg.isComposite():
+                                nested = True
+                        except Exception:
+                            pass
                     to_decompose.append((gname, nested, transformed))
 
             if to_decompose:
-                from fontTools.pens.ttGlyphPen import TTGlyphPen
+                decomposed_count = 0
                 for gname, nested, transformed in to_decompose:
                     try:
-                        pen = TTGlyphPen(glyph_set)
-                        glyf_table[gname].draw(glyph_set, pen)
-                        glyf_table[gname] = pen.glyph()
-                        what = []
-                        if nested:
-                            what.append('nested')
-                        if transformed:
-                            what.append('transformed')
-                        print(f"  ✅ Декомпозируем {gname} ({'/'.join(what)})")
+                        tt_pen = TTGlyphPen(glyph_set)
+                        decomp_pen = DecomposingPen(glyph_set, tt_pen)
+                        glyf_table[gname].draw(glyph_set, decomp_pen)
+                        simple = tt_pen.glyph()
+                        # Если после декомпозиции глиф всё ещё composite (должно быть False), пропустим
+                        if hasattr(simple, 'isComposite') and simple.isComposite():
+                            continue
+                        glyf_table[gname] = simple
+                        decomposed_count += 1
                     except Exception:
-                        pass
+                        continue
+                if decomposed_count:
+                    print(f"  ✅ Декомпозировано глифов: {decomposed_count}")
     except Exception:
         pass
 
@@ -473,12 +544,32 @@ def main():
         print("❌ Не найдено TTF файлов для исправления")
         return 1
     
-    # Определим baseline underlineThickness из Regular, если доступен
+    # Определим baseline underlineThickness и канонические мат-ширины из Regular, если доступен
     try:
         regular_path = Path('fonts/ttf/Akt-Regular.ttf')
         if regular_path.exists():
             reg = TTFont(regular_path)
             BASELINE_UNDERLINE_THICKNESS = getattr(reg['post'], 'underlineThickness', None)
+            # Считаем канонические ширины матзнаков
+            try:
+                hmtx = reg['hmtx']
+                cmap = reg['cmap']
+                math_cps = [0x002B, 0x2212, 0x00D7, 0x00F7, 0x003D, 0x2260, 0x2248, 0x00B1, 0x007E]
+                cp_to_glyph = {}
+                for st in cmap.tables:
+                    if st.isUnicode():
+                        for cp, gname in st.cmap.items():
+                            if cp in math_cps and cp not in cp_to_glyph:
+                                cp_to_glyph[cp] = gname
+                for cp, gname in cp_to_glyph.items():
+                    try:
+                        CANONICAL_MATH_WIDTHS[cp] = hmtx.metrics[gname][0]
+                    except Exception:
+                        pass
+                if CANONICAL_MATH_WIDTHS:
+                    print(f"  ℹ️ Канонические мат-ширины взяты из Regular: {len(CANONICAL_MATH_WIDTHS)}")
+            except Exception:
+                pass
             reg.close()
     except Exception:
         BASELINE_UNDERLINE_THICKNESS = None

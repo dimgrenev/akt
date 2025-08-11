@@ -1,4 +1,4 @@
-#!/Users/grenev/Documents/GitHub/Akt/venv/bin/python
+#!/Users/grenev/Documents/akt/venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys

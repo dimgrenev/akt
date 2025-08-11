@@ -1,0 +1,52 @@
+{
+    "result": {
+        "(not finished)": 0,
+        "WARN": 1
+    },
+    "sections": [
+        {
+            "checks": [
+                {
+                    "description": "Check if each glyph has the recommended amount of contours.",
+                    "documentation": "This check is useful to assure glyphs aren't incorrectly constructed.\n\nThe desired_glyph_data module contains the 'recommended' countour count\nfor encoded glyphs. The contour counts are derived from fonts which were\nchosen for their quality and unique design decisions for particular glyphs.\n\nIn the future, additional glyph data can be included. A good addition would\nbe the 'recommended' anchor counts for each glyph.",
+                    "experimental": false,
+                    "filename": "AktGrotesk-Light.ttf",
+                    "key": [
+                        "<Section: Universal Profile Checks>",
+                        "<FontBakeryCheck:contour_count>",
+                        [
+                            [
+                                "font",
+                                0
+                            ]
+                        ]
+                    ],
+                    "logs": [
+                        {
+                            "message": {
+                                "code": "contour-count",
+                                "message": "This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.\n\nThe following glyphs do not have the recommended number of contours:\n\n\t- Glyph name: plus\tContours detected: 2\tExpected: 1\n\n\t- Glyph name: comma\tContours detected: 2\tExpected: 1\n\n\t- Glyph name: semicolon\tContours detected: 3\tExpected: 2\n\n\t- Glyph name: F\tContours detected: 2\tExpected: 1\n\n\t- Glyph name: Q\tContours detected: 3\tExpected: 2\n\n\t- Glyph name: a\tContours detected: 1\tExpected: 2\n\n\t- Glyph name: e\tContours detected: 1\tExpected: 2\n\n\t- Glyph name: f\tContours detected: 2\tExpected: 1\n\n\t- Glyph name: cent\tContours detected: 3\tExpected: 1 or 2\n\n\t- Glyph name: currency\tContours detected: 6\tExpected: 2\n\n\t- 270 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n"
+                            },
+                            "status": "WARN"
+                        }
+                    ],
+                    "module": "contour_count",
+                    "proposal": [
+                        "https://github.com/fonttools/fontbakery/issues/4829"
+                    ],
+                    "rationale": "\n        Visually QAing thousands of glyphs by hand is tiring. Most glyphs can only\n        be constructured in a handful of ways. This means a glyph's contour count\n        will only differ slightly amongst different fonts, e.g a 'g' could either\n        be 2 or 3 contours, depending on whether its double story or single story.\n\n        However, a quotedbl should have 2 contours, unless the font belongs\n        to a display family.\n\n        This check currently does not cover variable fonts because there's plenty\n        of alternative ways of constructing glyphs with multiple outlines for each\n        feature in a VarFont. The expected contour count data for this check is\n        currently optimized for the typical construction of glyphs in static fonts.\n    ",
+                    "result": "WARN",
+                    "severity": null
+                }
+            ],
+            "key": [
+                "Universal Profile Checks",
+                null,
+                null
+            ],
+            "result": {
+                "WARN": 1
+            }
+        }
+    ]
+}
