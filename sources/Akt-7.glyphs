@@ -109,7 +109,7 @@ tag = wght;
 customParameters = (
 {
 name = versionString;
-value = "Version 0.300";
+value = "Version 0.300; DMGR";
 },
 {
 name = "Use Typo Metrics";
@@ -125,15 +125,11 @@ value = "https://scripts.sil.org/OFL";
 },
 {
 name = openTypeNameLicense;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1.";
 },
 {
 name = openTypeNameLicenseURL;
 value = "https://scripts.sil.org/OFL";
-},
-{
-name = openTypeOS2WeightClass;
-value = 400;
 },
 {
 name = fsType;
@@ -143,22 +139,8 @@ value = (
 {
 name = openTypeOS2VendorID;
 value = DMGR;
- },
- {
-  name = "Variable Font Origin";
-  value = Regular;
- },
-  {
-   name = styleMapFamilyName;
-   value = Akt;
-  },
-  {
-   name = styleMapStyleName;
-   value = Regular;
-  },
- 
+}
 );
-
 date = "2024-11-01 12:20:20 +0000";
 familyName = Akt;
 featurePrefixes = (
@@ -238,9 +220,7 @@ lookup ccmp_DFLT_1;
 lookup ccmp_latn_1;
 
 script cyrl;
- lookup ccmp_DFLT_1;
- # ensure soft-dotted decomposition also for Cyrillic i-forms
- lookup ccmp_latn_1;
+lookup ccmp_DFLT_1;
 ";
 tag = ccmp;
 },
@@ -799,7 +779,7 @@ tag = cv02;
 fontMaster = (
 {
 axesValues = (
-100
+0
 );
 customParameters = (
 {
@@ -1067,7 +1047,7 @@ visible = 1;
 },
 {
 axesValues = (
-900
+1000
 );
 customParameters = (
 {
@@ -89475,24 +89455,6 @@ value = Akt;
 {
 key = postscriptFullName;
 value = "Akt Variable";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Regular;
-}
-);
 }
 );
 type = variable;
@@ -89520,24 +89482,6 @@ value = "Akt-Thin";
 {
 key = postscriptFullName;
 value = "Akt-Thin";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Thin;
-}
-);
 }
 );
 weightClass = 100;
@@ -89565,24 +89509,6 @@ value = "Akt-ExtraLight";
 {
 key = postscriptFullName;
 value = "Akt-ExtraLight";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = ExtraLight;
-}
-);
 }
 );
 weightClass = 200;
@@ -89610,24 +89536,6 @@ value = "Akt-Light";
 {
 key = postscriptFullName;
 value = "Akt-Light";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Light;
-}
-);
 }
 );
 weightClass = 300;
@@ -89655,24 +89563,6 @@ value = "Akt-Regular";
 {
 key = postscriptFullName;
 value = "Akt-Regular";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Regular;
-}
-);
 }
 );
 },
@@ -89699,24 +89589,6 @@ value = "Akt-Medium";
 {
 key = postscriptFullName;
 value = "Akt-Medium";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Medium;
-}
-);
 }
 );
 weightClass = 500;
@@ -89744,24 +89616,6 @@ value = "Akt-SemiBold";
 {
 key = postscriptFullName;
 value = "Akt-SemiBold";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = SemiBold;
-}
-);
 }
 );
 weightClass = 600;
@@ -89789,24 +89643,6 @@ value = "Akt-Bold";
 {
 key = postscriptFullName;
 value = "Akt-Bold";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Bold;
-}
-);
 }
 );
 weightClass = 700;
@@ -89834,24 +89670,6 @@ value = "Akt-ExtraBold";
 {
 key = postscriptFullName;
 value = "Akt-ExtraBold";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = ExtraBold;
-}
-);
 }
 );
 weightClass = 800;
@@ -89879,24 +89697,6 @@ value = "Akt-Black";
 {
 key = postscriptFullName;
 value = "Akt-Black";
-},
-{
-key = preferredFamilyName;
-values = (
-{
-language = dflt;
-value = Akt;
-}
-);
-},
-{
-key = preferredSubfamilyName;
-values = (
-{
-language = dflt;
-value = Black;
-}
-);
 }
 );
 weightClass = 900;
@@ -96206,7 +96006,7 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "SIL Open Font License, 1.1";
+value = openfontlicense.org;
 }
 );
 },

@@ -26,8 +26,8 @@ familyName: "Akt"
 # determine which targets to build. We turn off OTFs for this demo.
 
 buildVariable: true
-buildStatic: true
-buildTTF: true
+buildStatic: false
+buildTTF: false
 buildOTF: false
 buildSmallCap: false
 
