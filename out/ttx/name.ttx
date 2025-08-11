@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.59">
+
+  <name>
+    <namerecord nameID="1" platformID="0" platEncID="4" langID="0x0">
+      Akt
+    </namerecord>
+    <namerecord nameID="2" platformID="0" platEncID="4" langID="0x0">
+      Regular
+    </namerecord>
+    <namerecord nameID="3" platformID="0" platEncID="4" langID="0x0">
+      Version 1.000;Akt;Akt-Regular
+    </namerecord>
+    <namerecord nameID="4" platformID="0" platEncID="4" langID="0x0">
+      Akt Regular
+    </namerecord>
+    <namerecord nameID="5" platformID="0" platEncID="4" langID="0x0">
+      Version 1.000
+    </namerecord>
+    <namerecord nameID="6" platformID="0" platEncID="4" langID="0x0">
+      Akt-Regular
+    </namerecord>
+    <namerecord nameID="13" platformID="0" platEncID="4" langID="0x0">
+      This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    </namerecord>
+    <namerecord nameID="14" platformID="0" platEncID="4" langID="0x0">
+      https://scripts.sil.org/OFL
+    </namerecord>
+    <namerecord nameID="16" platformID="0" platEncID="4" langID="0x0">
+      Akt
+    </namerecord>
+    <namerecord nameID="17" platformID="0" platEncID="4" langID="0x0">
+      Regular
+    </namerecord>
+    <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Akt
+    </namerecord>
+    <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Regular
+    </namerecord>
+    <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Version 1.000;Akt;Akt-Regular
+    </namerecord>
+    <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Akt Regular
+    </namerecord>
+    <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Version 1.000
+    </namerecord>
+    <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Akt-Regular
+    </namerecord>
+    <namerecord nameID="13" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    </namerecord>
+    <namerecord nameID="14" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      https://scripts.sil.org/OFL
+    </namerecord>
+    <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Akt
+    </namerecord>
+    <namerecord nameID="17" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Regular
+    </namerecord>
+    <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+      Akt
+    </namerecord>
+    <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
+      Regular
+    </namerecord>
+    <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+      Version 1.000;Akt;Akt-Regular
+    </namerecord>
+    <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+      Akt Regular
+    </namerecord>
+    <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
+      Version 1.000
+    </namerecord>
+    <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+      Akt-Regular
+    </namerecord>
+    <namerecord nameID="9" platformID="3" platEncID="1" langID="0x409">
+      Dima Grenev
+    </namerecord>
+    <namerecord nameID="13" platformID="3" platEncID="1" langID="0x409">
+      This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    </namerecord>
+    <namerecord nameID="14" platformID="3" platEncID="1" langID="0x409">
+      https://scripts.sil.org/OFL
+    </namerecord>
+    <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+      Akt
+    </namerecord>
+    <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
+      Regular
+    </namerecord>
+    <namerecord nameID="18" platformID="3" platEncID="1" langID="0x409">
+      Akt
+    </namerecord>
+    <namerecord nameID="25" platformID="3" platEncID="1" langID="0x409">
+      Akt
+    </namerecord>
+    <namerecord nameID="256" platformID="3" platEncID="1" langID="0x409">
+      Weight
+    </namerecord>
+    <namerecord nameID="275" platformID="3" platEncID="1" langID="0x409">
+      Oldfashion
+    </namerecord>
+    <namerecord nameID="276" platformID="3" platEncID="1" langID="0x409">
+      Futuristic
+    </namerecord>
+    <namerecord nameID="277" platformID="3" platEncID="1" langID="0x409">
+      Thin
+    </namerecord>
+    <namerecord nameID="278" platformID="3" platEncID="1" langID="0x409">
+      Akt-Thin
+    </namerecord>
+    <namerecord nameID="279" platformID="3" platEncID="1" langID="0x409">
+      ExtraLight
+    </namerecord>
+    <namerecord nameID="280" platformID="3" platEncID="1" langID="0x409">
+      Akt-ExtraLight
+    </namerecord>
+    <namerecord nameID="281" platformID="3" platEncID="1" langID="0x409">
+      Light
+    </namerecord>
+    <namerecord nameID="282" platformID="3" platEncID="1" langID="0x409">
+      Akt-Light
+    </namerecord>
+    <namerecord nameID="283" platformID="3" platEncID="1" langID="0x409">
+      Regular
+    </namerecord>
+    <namerecord nameID="284" platformID="3" platEncID="1" langID="0x409">
+      Akt-Regular
+    </namerecord>
+    <namerecord nameID="285" platformID="3" platEncID="1" langID="0x409">
+      Medium
+    </namerecord>
+    <namerecord nameID="286" platformID="3" platEncID="1" langID="0x409">
+      Akt-Medium
+    </namerecord>
+    <namerecord nameID="287" platformID="3" platEncID="1" langID="0x409">
+      SemiBold
+    </namerecord>
+    <namerecord nameID="288" platformID="3" platEncID="1" langID="0x409">
+      Akt-SemiBold
+    </namerecord>
+    <namerecord nameID="289" platformID="3" platEncID="1" langID="0x409">
+      Bold
+    </namerecord>
+    <namerecord nameID="290" platformID="3" platEncID="1" langID="0x409">
+      Akt-Bold
+    </namerecord>
+    <namerecord nameID="291" platformID="3" platEncID="1" langID="0x409">
+      ExtraBold
+    </namerecord>
+    <namerecord nameID="292" platformID="3" platEncID="1" langID="0x409">
+      Akt-ExtraBold
+    </namerecord>
+    <namerecord nameID="293" platformID="3" platEncID="1" langID="0x409">
+      Black
+    </namerecord>
+    <namerecord nameID="294" platformID="3" platEncID="1" langID="0x409">
+      Akt-Black
+    </namerecord>
+  </name>
+
+</ttFont>

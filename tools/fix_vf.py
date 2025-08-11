@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
 from fontTools.ttLib import TTFont, newTable
 import sys
-
-OFL_TEXT = (
-    "This Font Software is licensed under the SIL Open Font License, Version 1.1. "
-    "This license is available with a FAQ at: https://scripts.sil.org/OFL"
-)
+from pathlib import Path
 
 def set_name_string(font: TTFont, nameID: int, string: str, langID=0x409):
     name = font["name"]
-    # Update or add Windows Unicode record
+    # Windows Unicode
     name.setName(string, nameID, 3, 1, langID)
+    # Mac Roman (fallback)
+    try:
+        name.setName(string, nameID, 1, 0, 0)
+    except Exception:
+        pass
+    # Unicode platform record (platform 0) to keep all in sync
+    try:
+        name.setName(string, nameID, 0, 4, 0)
+    except Exception:
+        # Some writer versions use encID 3; try that as well
+        try:
+            name.setName(string, nameID, 0, 3, 0)
+        except Exception:
+            pass
 
 def ensure_regular_naming(font: TTFont, family: str, style: str):
     # Family/Style
@@ -19,18 +29,31 @@ def ensure_regular_naming(font: TTFont, family: str, style: str):
     set_name_string(font, 4, f"{family} {style}")
     ps = f"{family}-{style}".replace(" ", "")
     set_name_string(font, 6, ps)
-    # Preferred Family/Subfamily
-    set_name_string(font, 16, family)
-    set_name_string(font, 17, style)
     # Version strings
-    # NameID 3: Unique font identifier — keep vendor/family neutral per FB
-    set_name_string(font, 3, "Version 0.300")
-    set_name_string(font, 5, "Version 0.300")
+    # NameID 3: Unique font identifier must start with "Version X.XXX;"
+    set_name_string(font, 3, "Version 1.000;Akt;Akt-Regular")
+    set_name_string(font, 5, "Version 1.000")
 
 def ensure_ofl_license(font: TTFont):
-    set_name_string(font, 13, OFL_TEXT)
-    # Use modern canonical URL accepted by FB
+    # Google Fonts requires NameID 13 to be a single-line statement, no line breaks
+    set_name_string(font, 13, "This Font Software is licensed under the SIL Open Font License, Version 1.1.")
+    # Canonical URL
     set_name_string(font, 14, "https://openfontlicense.org")
+
+def ensure_head_revision(font: TTFont, version_str: str = "1.000"):
+    try:
+        rev = float(version_str)
+    except Exception:
+        rev = 1.0
+    head = font["head"]
+    if abs(getattr(head, "fontRevision", 0.0) - rev) > 1e-6:
+        head.fontRevision = rev
+
+def remove_typographic_family_names(font: TTFont):
+    # Remove NameID 16 and 17 completely (GF expects N/A for variable fonts)
+    name = font["name"]
+    records = [nr for nr in name.names if nr.nameID not in (16, 17)]
+    name.names = records
 
 def ensure_fsselection_regular(font: TTFont):
     os2 = font["OS/2"]
@@ -122,11 +145,13 @@ def main(path: str):
     font = TTFont(path)
     ensure_regular_naming(font, family="Akt", style="Regular")
     ensure_ofl_license(font)
+    ensure_head_revision(font, "1.000")
     ensure_fsselection_regular(font)
     ensure_macstyle_regular(font)
     ensure_fvar_defaults(font)
     ensure_avar(font)
     ensure_meta(font)
+    remove_typographic_family_names(font)
     font.save(path)
 
 if __name__ == "__main__":
