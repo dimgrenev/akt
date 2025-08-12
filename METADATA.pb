@@ -6,6 +6,12 @@ date_added: "2024-08-11"
 subsets: "latin"
 subsets: "latin-ext"
 subsets: "cyrillic"
+subsets: "cyrillic-ext"
+subsets: "greek"
+subsets: "greek-ext"
+subsets: "vietnamese"
+subsets: "math"
+subsets: "symbols"
 
 fonts: {
   name: "Akt"

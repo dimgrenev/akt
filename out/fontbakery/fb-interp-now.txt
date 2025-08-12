@@ -1,0 +1,57 @@
+Start ... running 1 individual check executions.
+ >> interpolation_issues
+    Detect any interpolation issues in the font.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    When creating a variable font, the designer must make sure that corresponding paths have the same       
+    start points across masters, as well as that corresponding component shapes are placed in the same      
+    order within a glyph across masters. If this is not done, the glyph will not interpolate correctly.     
+                                                                                                            
+    Here we check for the presence of potential interpolation errors using the                              
+    fontTools.varLib.interpolatable module.                                                                 
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/3930
+
+    WARN Interpolation issues were found in the font:                                                       
+                                                                                                            
+                                                                                                            
+          - Contour 1 start point differs in glyph 'cent' between location wght=100 and location wght=400   
+                                                                                                            
+          - Contour 1 in glyph 'cent': becomes underweight between wght=100 and wght=400. [code:            
+          interpolation-issues]                                                                             
+                                                                                                            
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 0
+    WARN: 1
+    INFO: 0
+    SKIP: 0
+    PASS: 0
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+DONE!
+  [] 0%
