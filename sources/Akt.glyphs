@@ -240,7 +240,7 @@ tag = aalt;
 },
 {
 code = "lookup ccmp_DFLT_1 {
-  	@CombiningTopAccents = [acutecomb gravecomb circumflexcomb tildecomb tildecomb.narrow macroncomb brevecomb brevecomb.narrow caroncomb caroncomb.narrow dotaccentcomb dieresiscomb ringcomb hungarumlautcomb ogonekcomb dotbelowcomb strokeshortcomb];
+@CombiningTopAccents = [acutecomb gravecomb circumflexcomb tildecomb tildecomb.narrow macroncomb brevecomb brevecomb.narrow caroncomb caroncomb.narrow dotaccentcomb dieresiscomb ringcomb hungarumlautcomb ogonekcomb dotbelowcomb strokeshortcomb commaturnedabovecomb];
   	lookupflag UseMarkFilteringSet @CombiningTopAccents;
   	# soft-dotted bases (latin + cyrillic + derived i-forms)
   	sub i' @CombiningTopAccents by idotless;
@@ -252,14 +252,15 @@ code = "lookup ccmp_DFLT_1 {
  } ccmp_DFLT_1;
  
  lookup ccmp_latn_1 {
-	lookupflag 0;
-	# Decompose soft-dotted precomposed bases to dotless + mark
-	sub iogonek by idotless ogonekcomb;
-	sub idotbelow by idotless dotbelowcomb;
-	sub fi by f i;
-	sub fl by f l;
-	sub napostrophe by apostrophemod n;
-} ccmp_latn_1;
+ 	lookupflag 0;
+ 	# Decompose soft-dotted precomposed bases to dotless + mark
+ 	sub iogonek by idotless ogonekcomb;
+ 	sub idotbelow by idotless dotbelowcomb;
+ 	# NOTE: if we need Lithuanian l+tilde behavior, implement via locl not via ccmp synthetic glyphs
+ 	sub fi by f i;
+ 	sub fl by f l;
+ 	sub napostrophe by apostrophemod n;
+ } ccmp_latn_1;
 
 script DFLT;
 language dflt;
@@ -25834,6 +25835,10 @@ name = center;
 pos = (128,360);
 },
 {
+name = top;
+pos = (128,720);
+},
+{
 name = topright;
 pos = (178,720);
 }
@@ -25863,6 +25868,10 @@ name = center;
 pos = (127,360);
 },
 {
+name = top;
+pos = (127,720);
+},
+{
 name = topright;
 pos = (210,720);
 }
@@ -25890,6 +25899,10 @@ pos = (128,0);
 {
 name = center;
 pos = (127,360);
+},
+{
+name = top;
+pos = (127,720);
 },
 {
 name = topright;
@@ -52584,7 +52597,11 @@ kernRight = "hardsign-cy";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
-layerId = m01;
+ anchors = (
+  { name = bottom; pos = (270,0); },
+  { name = top; pos = (270,500); }
+ );
+ layerId = m01;
 shapes = (
 {
 closed = 1;
@@ -52624,7 +52641,11 @@ nodes = (
 width = 510;
 },
 {
-layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+ anchors = (
+  { name = bottom; pos = (270,0); },
+  { name = top; pos = (270,500); }
+ );
+ layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
 closed = 1;
@@ -52664,7 +52685,11 @@ nodes = (
 width = 510;
 },
 {
-layerId = m003;
+ anchors = (
+  { name = bottom; pos = (270,0); },
+  { name = top; pos = (270,500); }
+ );
+ layerId = m003;
 shapes = (
 {
 closed = 1;
