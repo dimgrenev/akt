@@ -12,10 +12,10 @@ fontbakery version: 1.0.1
 
 
 
-<details><summary>[16] Akt[wght].ttf</summary>
+<details><summary>[19] Akt[wght].ttf</summary>
 <div>
 <details>
-    <summary>🔥 <b>FAIL</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-glyphsets-shape-languages">googlefonts/glyphsets/shape_languages</a></summary>
+    <summary>🔥 <b>FAIL</b> Checking font version fields (head and name table). <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-font-version">opentype/font_version</a></summary>
     <div>
 
 
@@ -24,481 +24,8 @@ fontbakery version: 1.0.1
 
 
 
-* 🔥 **FAIL** <p>GF_Phonetics_SinoExt glyphset:</p>
-<table>
-<thead>
-<tr>
-<th align="left">FAIL messages</th>
-<th align="left">Languages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Mandatory orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to J when shaping the text 'ÍJ́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0237 when shaping the text 'íj́'</td>
-<td align="left">nl_Latn (Dutch)</td>
-</tr>
-</tbody>
-</table>
- [code: failed-language-shaping]
-
-
-
-* ⚠️ **WARN** <p>GF_Phonetics_SinoExt glyphset:</p>
-<table>
-<thead>
-<tr>
-<th align="left">WARN messages</th>
-<th align="left">Languages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0430 when shaping the text 'а́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0435 when shaping the text 'е́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0438 when shaping the text 'и́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni043E when shaping the text 'о́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0443 when shaping the text 'у́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044B when shaping the text 'ы́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044D when shaping the text 'э́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044E when shaping the text 'ю́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044F when shaping the text 'я́'</td>
-<td align="left">ru_Cyrl (Russian), ru_Cyrl (Russian) and ru_Cyrl (Russian)</td>
-</tr>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0430 when shaping the text 'а́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0435 when shaping the text 'е́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0454 when shaping the text 'є́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0438 when shaping the text 'и́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to dotlessi when shaping the text 'і́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to dotlessi when shaping the text 'ї́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni043E when shaping the text 'о́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0443 when shaping the text 'у́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044E when shaping the text 'ю́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044F when shaping the text 'я́'</td>
-<td align="left">uk_Cyrl (Ukrainian), uk_Cyrl (Ukrainian) and uk_Cyrl (Ukrainian)</td>
-</tr>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0430 when shaping the text 'а́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0435 when shaping the text 'е́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0451 when shaping the text 'ё́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to dotlessi when shaping the text 'і́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni043E when shaping the text 'о́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0443 when shaping the text 'у́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044B when shaping the text 'ы́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044D when shaping the text 'э́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044E when shaping the text 'ю́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni044F when shaping the text 'я́'</td>
-<td align="left">be_Cyrl (Belarusian), be_Cyrl (Belarusian) and be_Cyrl (Belarusian)</td>
-</tr>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">The following auxiliary characters are missing from the font: ѫ</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni0430 when shaping the text 'а̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni043E when shaping the text 'о̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni0443 when shaping the text 'у̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni044A when shaping the text 'ъ̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni044E when shaping the text 'ю̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni044F when shaping the text 'я̀'</td>
-<td align="left">bg_Cyrl (Bulgarian), bg_Cyrl (Bulgarian) and bg_Cyrl (Bulgarian)</td>
-</tr>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0302 to uni0430 when shaping the text 'а̂'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0302 to uni0435 when shaping the text 'е̂'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0302 to uni0438 when shaping the text 'и̂'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0302 to uni043E when shaping the text 'о̂'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0302 to uni0443 when shaping the text 'у̂'</td>
-<td align="left">sr_Cyrl (Serbian), sr_Cyrl (Serbian) and sr_Cyrl (Serbian)</td>
-</tr>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">The following auxiliary characters are missing from the font: ӊ</td>
-<td align="left">mn_Cyrl (Mongolian) and mn_Cyrl (Mongolian)</td>
-</tr>
-<tr>
-<td align="left">Auxiliary orthography codepoints:</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Aogonek when shaping the text 'Ą́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Aogonek when shaping the text 'Ą̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Eogonek when shaping the text 'Ę́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Eogonek when shaping the text 'Ę̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Edotaccent when shaping the text 'Ė́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Edotaccent when shaping the text 'Ė̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Idotaccent when shaping the text 'İ́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Idotaccent when shaping the text 'İ́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to Idotaccent when shaping the text 'İ̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to Idotaccent when shaping the text 'İ̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Idotaccent when shaping the text 'İ̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Idotaccent when shaping the text 'İ̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Iogonek when shaping the text 'Į́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to Iogonek when shaping the text 'Į̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0307 when shaping the text 'Į̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Iogonek when shaping the text 'Į̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to Iogonek when shaping the text 'Į̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0307 when shaping the text 'Į̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to J when shaping the text 'J̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to J when shaping the text 'J̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0307 when shaping the text 'J̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to L when shaping the text 'L̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to M when shaping the text 'M̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to R when shaping the text 'R̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Uogonek when shaping the text 'Ų́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Uogonek when shaping the text 'Ų̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to Umacron when shaping the text 'Ū́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to Umacron when shaping the text 'Ū̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to aogonek when shaping the text 'ą́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to aogonek when shaping the text 'ą̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to eogonek when shaping the text 'ę́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to eogonek when shaping the text 'ę̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to edotaccent when shaping the text 'ė́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to edotaccent when shaping the text 'ė̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to dotlessi when shaping the text 'i̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0307 when shaping the text 'i̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to dotlessi when shaping the text 'i̇̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach gravecomb to uni0307 when shaping the text 'i̇̀'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to dotlessi when shaping the text 'i̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0307 when shaping the text 'i̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0328 to dotlessi when shaping the text 'į́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0328 when shaping the text 'į́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0328 to dotlessi when shaping the text 'į̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to uni0328 when shaping the text 'į̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uni0307 when shaping the text 'į̇́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0328 to dotlessi when shaping the text 'į̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0328 when shaping the text 'į̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0328 to dotlessi when shaping the text 'į̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to uni0328 when shaping the text 'į̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0307 when shaping the text 'į̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0237 when shaping the text 'j̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach uni0307 to uni0237 when shaping the text 'j̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uni0307 when shaping the text 'j̇̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to l when shaping the text 'l̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to m when shaping the text 'm̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to r when shaping the text 'r̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to uogonek when shaping the text 'ų́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to uogonek when shaping the text 'ų̃'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach acutecomb to umacron when shaping the text 'ū́'</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">Shaper didn't attach tildecomb to umacron when shaping the text 'ū̃'</td>
-<td align="left">lt_Latn (Lithuanian)</td>
-</tr>
-</tbody>
-</table>
- [code: warning-language-shaping]
+* 🔥 **FAIL** <p>head version is &quot;0.30000&quot; while name version string (for platform 3, encoding 1) is &quot;Version 1.000&quot;.</p>
+ [code: mismatch]
 
 
 
@@ -506,7 +33,7 @@ fontbakery version: 1.0.1
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Name table entries should not contain line-breaks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-name-line-breaks">googlefonts/name/line_breaks</a></summary>
+    <summary>🔥 <b>FAIL</b> Checking OS/2 fsSelection value. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-fsselection">opentype/fsselection</a></summary>
     <div>
 
 
@@ -515,18 +42,8 @@ fontbakery version: 1.0.1
 
 
 
-* 🔥 **FAIL** <p>Name entry LICENSE_DESCRIPTION on platform UNICODE contains a line-break.</p>
- [code: line-break]
-
-
-
-* 🔥 **FAIL** <p>Name entry LICENSE_DESCRIPTION on platform MACINTOSH contains a line-break.</p>
- [code: line-break]
-
-
-
-* 🔥 **FAIL** <p>Name entry LICENSE_DESCRIPTION on platform WINDOWS contains a line-break.</p>
- [code: line-break]
+* 🔥 **FAIL** <p>fsSelection Regular flag False does not match font style Regular</p>
+ [code: bad-REGULAR]
 
 
 
@@ -534,7 +51,7 @@ fontbakery version: 1.0.1
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Check copyright namerecords match license file. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-name-license">googlefonts/name/license</a></summary>
+    <summary>🔥 <b>FAIL</b> Validates subfamilyNameID and postScriptNameID for the default instance record <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.html#opentype-varfont-valid-default-instance-nameids">opentype/varfont/valid_default_instance_nameids</a></summary>
     <div>
 
 
@@ -543,267 +60,34 @@ fontbakery version: 1.0.1
 
 
 
-* 🔥 **FAIL** <p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 0 (UNICODE) is not specified for that. Value was: &quot;Copyright 2024 The Akt Project Authors (<a href="https://github.com/grenev/akt">https://github.com/grenev/akt</a>)</p>
-<h2>This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a></h2>
-<h2>SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007</h2>
-<p>PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.</p>
-<p>The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.</p>
-<p>DEFINITIONS
-&quot;Font Software&quot; refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.</p>
-<p>&quot;Reserved Font Name&quot; refers to any names specified as such after the
-copyright statement(s).</p>
-<p>&quot;Original Version&quot; refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).</p>
-<p>&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
-or substituting -- in part or in whole -- any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.</p>
-<p>&quot;Author&quot; refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.</p>
-<p>PERMISSION AND CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:</p>
-<ol>
-<li>
-<p>Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.</p>
-</li>
-<li>
-<p>Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.</p>
-</li>
-<li>
-<p>No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name
-as presented to the users.</p>
-</li>
-<li>
-<p>The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.</p>
-</li>
-<li>
-<p>The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.</p>
-</li>
-</ol>
-<p>TERMINATION
-This license becomes null and void if any of the above conditions are
-not met.</p>
-<p>DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a>&quot;</p>
- [code: wrong]
+* 🔥 **FAIL** <p>'Thin' instance has the same coordinates as the default instance; its subfamily name should be '0'.</p>
+<p>Note: It is alternatively possible that Name ID 17 is incorrect, and should be set to the default instance subfamily name, 'Thin', rather than ''0''. If the default instance is 'Thin', NameID 17 is probably the problem.</p>
+ [code: invalid-default-instance-subfamily-name]
 
 
 
-* 🔥 **FAIL** <p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 1 (MACINTOSH) is not specified for that. Value was: &quot;Copyright 2024 The Akt Project Authors (<a href="https://github.com/grenev/akt">https://github.com/grenev/akt</a>)</p>
-<h2>This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a></h2>
-<h2>SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007</h2>
-<p>PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.</p>
-<p>The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.</p>
-<p>DEFINITIONS
-&quot;Font Software&quot; refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.</p>
-<p>&quot;Reserved Font Name&quot; refers to any names specified as such after the
-copyright statement(s).</p>
-<p>&quot;Original Version&quot; refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).</p>
-<p>&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
-or substituting -- in part or in whole -- any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.</p>
-<p>&quot;Author&quot; refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.</p>
-<p>PERMISSION AND CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:</p>
-<ol>
-<li>
-<p>Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.</p>
-</li>
-<li>
-<p>Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.</p>
-</li>
-<li>
-<p>No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name
-as presented to the users.</p>
-</li>
-<li>
-<p>The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.</p>
-</li>
-<li>
-<p>The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.</p>
-</li>
-</ol>
-<p>TERMINATION
-This license becomes null and void if any of the above conditions are
-not met.</p>
-<p>DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a>&quot;</p>
- [code: wrong]
+* 🔥 **FAIL** <p>'Thin' instance has the same coordinates as the default instance; its postscript name should be 'Akt', instead of 'Akt-Thin'.</p>
+ [code: invalid-default-instance-postscript-name]
 
 
 
-* 🔥 **FAIL** <p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: &quot;Copyright 2024 The Akt Project Authors (<a href="https://github.com/grenev/akt">https://github.com/grenev/akt</a>)</p>
-<h2>This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a></h2>
-<h2>SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007</h2>
-<p>PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.</p>
-<p>The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.</p>
-<p>DEFINITIONS
-&quot;Font Software&quot; refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.</p>
-<p>&quot;Reserved Font Name&quot; refers to any names specified as such after the
-copyright statement(s).</p>
-<p>&quot;Original Version&quot; refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).</p>
-<p>&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
-or substituting -- in part or in whole -- any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.</p>
-<p>&quot;Author&quot; refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.</p>
-<p>PERMISSION AND CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:</p>
-<ol>
-<li>
-<p>Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.</p>
-</li>
-<li>
-<p>Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.</p>
-</li>
-<li>
-<p>No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name
-as presented to the users.</p>
-</li>
-<li>
-<p>The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.</p>
-</li>
-<li>
-<p>The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.</p>
-</li>
-</ol>
-<p>TERMINATION
-This license becomes null and void if any of the above conditions are
-not met.</p>
-<p>DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a>&quot;</p>
- [code: wrong]
+</div>
+</details>
+
+<details>
+    <summary>🔥 <b>FAIL</b> Ensure dotted circle glyph is present and can attach marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#dotted-circle">dotted_circle</a></summary>
+    <div>
+
+
+
+
+
+
+
+* 🔥 **FAIL** <p>The following glyphs could not be attached to the dotted circle glyph:</p>
+<pre><code>- uni0328
+</code></pre>
+ [code: unattached-dotted-circle-marks]
 
 
 
@@ -832,8 +116,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font So
 <tbody>
 <tr>
 <td align="left">Family Name</td>
-<td align="left">Akt</td>
-<td align="left">Akt</td>
+<td align="left"><strong>Akt</strong></td>
+<td align="left"><strong>Akt Thin</strong></td>
 </tr>
 <tr>
 <td align="left">Subfamily Name</td>
@@ -842,55 +126,27 @@ OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font So
 </tr>
 <tr>
 <td align="left">Full Name</td>
-<td align="left">Akt Regular</td>
-<td align="left">Akt Regular</td>
+<td align="left"><strong>Akt 0</strong></td>
+<td align="left"><strong>Akt Thin</strong></td>
 </tr>
 <tr>
 <td align="left">Postscript Name</td>
-<td align="left">Akt-Regular</td>
-<td align="left">Akt-Regular</td>
+<td align="left"><strong>Akt</strong></td>
+<td align="left"><strong>Akt-Thin</strong></td>
 </tr>
 <tr>
 <td align="left">Typographic Family Name</td>
-<td align="left"><strong>Akt</strong></td>
-<td align="left"><strong>N/A</strong></td>
+<td align="left">Akt</td>
+<td align="left">Akt</td>
 </tr>
 <tr>
 <td align="left">Typographic Subfamily Name</td>
-<td align="left"><strong>Regular</strong></td>
-<td align="left"><strong>N/A</strong></td>
+<td align="left"><strong>0</strong></td>
+<td align="left"><strong>Thin</strong></td>
 </tr>
 </tbody>
 </table>
  [code: bad-names]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Version format is correct in 'name' table? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-name-version-format">googlefonts/name/version_format</a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. The &quot;Version &quot; prefix is a recommendation given by the OpenType spec. Current version string is: &quot;Version 0.300&quot;</p>
- [code: bad-version-strings]
-
-
-
-* 🔥 **FAIL** <p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. The &quot;Version &quot; prefix is a recommendation given by the OpenType spec. Current version string is: &quot;Version 0.300&quot;</p>
- [code: bad-version-strings]
-
-
-
-* 🔥 **FAIL** <p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. The &quot;Version &quot; prefix is a recommendation given by the OpenType spec. Current version string is: &quot;Version 0.300&quot;</p>
- [code: bad-version-strings]
 
 
 
@@ -908,11 +164,29 @@ OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font So
 
 
 * ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 1 start point differs in glyph 'cent' between location wght=400 and location wght=587
+<pre><code>- Contour 1 start point differs in glyph 'cent' between location wght=100 and location wght=400
 
-- Contour 1 in glyph 'cent': becomes underweight between wght=400 and wght=587.
+- Contour 1 in glyph 'cent': becomes underweight between wght=100 and wght=400.
 </code></pre>
  [code: interpolation-issues]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure variable fonts include an avar table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#mandatory-avar-table">mandatory_avar_table</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This variable font does not have an avar table. Most variable fonts should include an avar table to correctly define axes progression rates.</p>
+ [code: missing-avar]
 
 
 
@@ -932,7 +206,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.&quot; Must be changed to &quot;This Font So
 * ⚠️ **WARN** <p>The most common width is 600 among a set of 16 math glyphs.
 The following math glyphs have a different width, though:</p>
 <p>Width = 820:
-propersubset, uni2ABE, propersuperset, uni2ABD</p>
+uni2ABD, propersuperset, uni2ABE, propersubset</p>
  [code: width-outliers]
 
 
@@ -1204,29 +478,29 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, todhri, canadian-aboriginal, hebrew, old-permic, tai-le, coptic, tifinagh, malayalam, syriac, duployan</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, todhri, malayalam, duployan, tifinagh, syriac, hebrew, math, tai-le</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
-<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: elbasan, greek, math</li>
-<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: elbasan, greek, math</li>
-<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: elbasan, greek, math</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, greek, math</li>
-<li>U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: greek, math</li>
-<li>U+03B4 GREEK SMALL LETTER DELTA: try adding one of: greek, math</li>
-<li>U+03BC GREEK SMALL LETTER MU: try adding one of: greek, math</li>
-<li>U+03BE GREEK SMALL LETTER XI: try adding one of: greek, math</li>
-<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: greek, math, yi</li>
+<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: math, elbasan, greek</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, elbasan, greek</li>
+<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: math, elbasan, greek</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, elbasan, greek</li>
+<li>U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: math, greek</li>
+<li>U+03B4 GREEK SMALL LETTER DELTA: try adding one of: math, greek</li>
+<li>U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek</li>
+<li>U+03BE GREEK SMALL LETTER XI: try adding one of: math, greek</li>
+<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: yi, math, greek</li>
 <li>U+1EA0 LATIN CAPITAL LETTER A WITH DOT BELOW: try adding vietnamese</li>
 <li>U+1EA1 LATIN SMALL LETTER A WITH DOT BELOW: try adding vietnamese</li>
 <li>U+1EB8 LATIN CAPITAL LETTER E WITH DOT BELOW: try adding vietnamese</li>
@@ -1241,8 +515,8 @@ definitions.</p>
 <li>U+1EE5 LATIN SMALL LETTER U WITH DOT BELOW: try adding vietnamese</li>
 <li>U+2007 FIGURE SPACE: try adding symbols2</li>
 <li>U+2008 PUNCTUATION SPACE: try adding symbols2</li>
-<li>U+2010 HYPHEN: try adding one of: yi, cham, syloti-nagri, lisu, kaithi, hebrew, kharoshthi, sora-sompeng, coptic, arabic, armenian, kayah-li, sundanese</li>
-<li>U+2011 NON-BREAKING HYPHEN: try adding one of: syloti-nagri, yi, arabic</li>
+<li>U+2010 HYPHEN: try adding one of: arabic, cham, coptic, lisu, kaithi, kharoshthi, armenian, yi, kayah-li, hebrew, syloti-nagri, sora-sompeng, sundanese</li>
+<li>U+2011 NON-BREAKING HYPHEN: try adding one of: yi, arabic, syloti-nagri</li>
 <li>U+2012 FIGURE DASH: not included in any glyphset definition</li>
 <li>U+2015 HORIZONTAL BAR: try adding adlam</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
@@ -1300,7 +574,7 @@ definitions.</p>
 <li>U+209A LATIN SUBSCRIPT SMALL LETTER P: try adding math</li>
 <li>U+209B LATIN SUBSCRIPT SMALL LETTER S: try adding math</li>
 <li>U+209C LATIN SUBSCRIPT SMALL LETTER T: try adding math</li>
-<li>U+20F0 COMBINING ASTERISK ABOVE: try adding one of: grantha, devanagari</li>
+<li>U+20F0 COMBINING ASTERISK ABOVE: try adding one of: devanagari, grantha</li>
 <li>U+2100 ACCOUNT OF: try adding math</li>
 <li>U+2101 ADDRESSED TO THE SUBJECT: try adding math</li>
 <li>U+2105 CARE OF: try adding math</li>
@@ -1326,19 +600,19 @@ definitions.</p>
 <li>U+215E VULGAR FRACTION SEVEN EIGHTHS: try adding symbols</li>
 <li>U+215F FRACTION NUMERATOR ONE: try adding symbols</li>
 <li>U+2189 VULGAR FRACTION ZERO THIRDS: try adding symbols</li>
-<li>U+2190 LEFTWARDS ARROW: try adding one of: math, symbols</li>
-<li>U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols</li>
-<li>U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols</li>
-<li>U+2195 UP DOWN ARROW: try adding one of: math, symbols</li>
-<li>U+2196 NORTH WEST ARROW: try adding one of: math, symbols</li>
-<li>U+2197 NORTH EAST ARROW: try adding one of: math, symbols</li>
-<li>U+2198 SOUTH EAST ARROW: try adding one of: math, symbols</li>
-<li>U+2199 SOUTH WEST ARROW: try adding one of: math, symbols</li>
+<li>U+2190 LEFTWARDS ARROW: try adding one of: symbols, math</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
 <li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
 <li>U+2206 INCREMENT: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: tai-tham, yi, math, symbols</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: yi, symbols, tai-tham, math</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+2229 INTERSECTION: try adding math</li>
@@ -1355,7 +629,7 @@ definitions.</p>
 <li>U+228D MULTISET MULTIPLICATION: try adding math</li>
 <li>U+228E MULTISET UNION: try adding math</li>
 <li>U+22A1 SQUARED DOT OPERATOR: try adding math</li>
-<li>U+22C5 DOT OPERATOR: try adding one of: math, symbols</li>
+<li>U+22C5 DOT OPERATOR: try adding one of: symbols, math</li>
 <li>U+22EE VERTICAL ELLIPSIS: try adding math</li>
 <li>U+22EF MIDLINE HORIZONTAL ELLIPSIS: try adding math</li>
 <li>U+22F0 UP RIGHT DIAGONAL ELLIPSIS: try adding math</li>
@@ -1363,15 +637,15 @@ definitions.</p>
 <li>U+2300 DIAMETER SIGN: try adding symbols</li>
 <li>U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols</li>
 <li>U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols</li>
-<li>U+2460 CIRCLED DIGIT ONE: try adding one of: symbols, mongolian, yi</li>
-<li>U+2461 CIRCLED DIGIT TWO: try adding one of: symbols, mongolian, yi</li>
-<li>U+2462 CIRCLED DIGIT THREE: try adding one of: symbols, mongolian, yi</li>
-<li>U+2463 CIRCLED DIGIT FOUR: try adding one of: symbols, mongolian, yi</li>
-<li>U+2464 CIRCLED DIGIT FIVE: try adding one of: symbols, mongolian, yi</li>
-<li>U+2465 CIRCLED DIGIT SIX: try adding one of: symbols, mongolian, yi</li>
-<li>U+2466 CIRCLED DIGIT SEVEN: try adding one of: symbols, mongolian, yi</li>
-<li>U+2467 CIRCLED DIGIT EIGHT: try adding one of: symbols, mongolian, yi</li>
-<li>U+2468 CIRCLED DIGIT NINE: try adding one of: symbols, mongolian, yi</li>
+<li>U+2460 CIRCLED DIGIT ONE: try adding one of: yi, symbols, mongolian</li>
+<li>U+2461 CIRCLED DIGIT TWO: try adding one of: yi, symbols, mongolian</li>
+<li>U+2462 CIRCLED DIGIT THREE: try adding one of: yi, symbols, mongolian</li>
+<li>U+2463 CIRCLED DIGIT FOUR: try adding one of: yi, symbols, mongolian</li>
+<li>U+2464 CIRCLED DIGIT FIVE: try adding one of: yi, symbols, mongolian</li>
+<li>U+2465 CIRCLED DIGIT SIX: try adding one of: yi, symbols, mongolian</li>
+<li>U+2466 CIRCLED DIGIT SEVEN: try adding one of: yi, symbols, mongolian</li>
+<li>U+2467 CIRCLED DIGIT EIGHT: try adding one of: yi, symbols, mongolian</li>
+<li>U+2468 CIRCLED DIGIT NINE: try adding one of: yi, symbols, mongolian</li>
 <li>U+24EA CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+24FF NEGATIVE CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+25A0 BLACK SQUARE: try adding symbols</li>
@@ -1384,9 +658,9 @@ definitions.</p>
 <li>U+25C4 BLACK LEFT-POINTING POINTER: try adding symbols</li>
 <li>U+25C6 BLACK DIAMOND: try adding symbols</li>
 <li>U+25C7 WHITE DIAMOND: try adding symbols</li>
-<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
+<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: new-tai-lue, warang-citi, mandaic, myanmar, buhid, canadian-aboriginal, symbols, gunjala-gondi, meetei-mayek, mahajani, kayah-li, psalter-pahlavi, newa, rejang, ahom, miao, hebrew, kharoshthi, coptic, osage, bengali, thaana, siddham, adlam, bhaiksuki, tifinagh, chakma, tai-viet, kaithi, phags-pa, bassa-vah, balinese, gurmukhi, elbasan, buginese, grantha, hanunoo, syriac, devanagari, wancho, tai-tham, saurashtra, tai-le, tagbanwa, malayalam, tibetan, telugu, duployan, math, tirhuta, khmer, batak, sharada, pahawh-hmong, sogdian, syloti-nagri, marchen, manichaean, armenian, brahmi, soyombo, dogra, thai, limbu, tamil, caucasian-albanian, tagalog, old-permic, khudawadi, takri, khojki, cham, nko, javanese, mongolian, music, lao, masaram-gondi, modi, zanabazar-square, oriya, lepcha, hanifi-rohingya, sundanese, yi, gujarati, sinhala, mende-kikakui, kannada</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: saurashtra, malayalam, miao, masaram-gondi, thai, syriac, elbasan, kaithi, tagalog, batak, warang-citi, ahom, dogra, tai-viet, gunjala-gondi, math, canadian-aboriginal, manichaean, chakma, osage, new-tai-lue, rejang, sogdian, takri, kannada, kharoshthi, newa, marchen, siddham, bassa-vah, lepcha, mongolian, music, gujarati, symbols, tai-le, armenian, psalter-pahlavi, bengali, balinese, tagbanwa, telugu, yi, bhaiksuki, hanifi-rohingya, javanese, coptic, adlam, tamil, sinhala, zanabazar-square, meetei-mayek, hanunoo, old-permic, buhid, pahawh-hmong, khmer, brahmi, syloti-nagri, myanmar, oriya, cham, hebrew, devanagari, mandaic, soyombo, sharada, tirhuta, caucasian-albanian, mende-kikakui, nko, gurmukhi, lao, tibetan, limbu, thaana, buginese, wancho, grantha, khudawadi, tai-tham, tifinagh, phags-pa, sundanese, mahajani, modi, khojki, kayah-li, duployan</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+25D0 CIRCLE WITH LEFT HALF BLACK: try adding symbols</li>
 <li>U+25D1 CIRCLE WITH RIGHT HALF BLACK: try adding symbols</li>
@@ -1418,6 +692,62 @@ definitions.</p>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>cyrillic</code>, <code>cyrillic-ext</code>, <code>latin</code>, <code>latin-ext</code></p>
  [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Shapes languages in all GF glyphsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-glyphsets-shape-languages">googlefonts/glyphsets/shape_languages</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>GF_Phonetics_SinoExt glyphset:</p>
+<table>
+<thead>
+<tr>
+<th align="left">WARN messages</th>
+<th align="left">Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Auxiliary orthography codepoints:</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">The following auxiliary characters are missing from the font: ѫ</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach gravecomb to uni044A when shaping the text 'ъ̀'</td>
+<td align="left">bg_Cyrl (Bulgarian), bg_Cyrl (Bulgarian) and bg_Cyrl (Bulgarian)</td>
+</tr>
+<tr>
+<td align="left">Auxiliary orthography codepoints:</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">The following auxiliary characters are missing from the font: ӊ</td>
+<td align="left">mn_Cyrl (Mongolian) and mn_Cyrl (Mongolian)</td>
+</tr>
+<tr>
+<td align="left">Auxiliary orthography codepoints:</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Shaper didn't attach tildecomb to l when shaping the text 'l̃'</td>
+<td align="left">lt_Latn (Lithuanian)</td>
+</tr>
+</tbody>
+</table>
+ [code: warning-language-shaping]
 
 
 
@@ -1635,6 +965,24 @@ definitions.</p>
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-meta-script-lang-tags">googlefonts/meta/script_lang_tags</a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
+ [code: lacks-meta-table]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Checking OS/2 achVendID. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-vendor-id">googlefonts/vendor_id</a></summary>
     <div>
 
@@ -1661,8 +1009,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 5 | 11 | 90 | 8 | 122 | 0 | 
-| 0% | 0% | 2% | 5% | 38% | 3% | 52% | 0% | 
+| 0 | 0 | 5 | 14 | 89 | 7 | 121 | 0 | 
+| 0% | 0% | 2% | 6% | 38% | 3% | 51% | 0% | 
 
 
 

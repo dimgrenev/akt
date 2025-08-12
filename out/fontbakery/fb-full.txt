@@ -1,0 +1,22 @@
+Start ... running 236 individual check executions.
+Akt[wght].ttf: opentype/font_version: FAIL [mismatch]
+Akt[wght].ttf: opentype/fsselection: FAIL [bad-REGULAR]
+Akt[wght].ttf: opentype/varfont/valid_default_instance_nameids: FAIL [invalid-default-instance-postscript-name, invalid-default-instance-subfamily-name]
+Akt[wght].ttf: interpolation_issues: WARN [interpolation-issues]
+Akt[wght].ttf: mandatory_avar_table: WARN [missing-avar]
+Akt[wght].ttf: math_signs_width: WARN [width-outliers]
+Akt[wght].ttf: overlapping_path_segments: WARN [overlapping-path-segments]
+Akt[wght].ttf: soft_hyphen: WARN [softhyphen]
+Akt[wght].ttf: unreachable_glyphs: WARN [unreachable-glyphs]
+Akt[wght].ttf: googlefonts/article/images: WARN [lacks-article]
+Akt[wght].ttf: googlefonts/metadata/unreachable_subsetting: WARN [unreachable-subsetting]
+Akt[wght].ttf: googlefonts/glyphsets/shape_languages: WARN [warning-language-shaping]
+Akt[wght].ttf: googlefonts/license/OFL_body_text: WARN [incorrect-ofl-body-text]
+Akt[wght].ttf: dotted_circle: FAIL [unattached-dotted-circle-marks]
+Akt[wght].ttf: soft_dotted: WARN [soft-dotted]
+Akt[wght].ttf: outline_alignment_miss: WARN [found-misalignments]
+Akt[wght].ttf: googlefonts/font_names: FAIL [bad-names]
+Akt[wght].ttf: googlefonts/meta/script_lang_tags: WARN [lacks-meta-table]
+Akt[wght].ttf: googlefonts/vendor_id: WARN [unknown]
+
+ ERROR: 0 FATAL: 0 FAIL: 5 WARN: 14 INFO: 7 SKIP: 89 PASS: 121

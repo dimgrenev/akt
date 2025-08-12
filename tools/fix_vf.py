@@ -22,6 +22,18 @@ def set_name_string(font: TTFont, nameID: int, string: str, langID=0x409):
         except Exception:
             pass
 
+def set_name_multiplatform(font: TTFont, nameID: int, string: str):
+    # Helper: write on all common platforms
+    set_name_string(font, nameID, string, 0x409)  # Windows en-US
+    try:
+        font["name"].setName(string, nameID, 1, 0, 0)
+    except Exception:
+        pass
+    try:
+        font["name"].setName(string, nameID, 0, 4, 0)
+    except Exception:
+        pass
+
 def ensure_regular_naming(font: TTFont, family: str, style: str):
     # Family/Style
     set_name_string(font, 1, family)
@@ -34,11 +46,31 @@ def ensure_regular_naming(font: TTFont, family: str, style: str):
     set_name_string(font, 3, "Version 1.000;Akt;Akt-Regular")
     set_name_string(font, 5, "Version 1.000")
 
+def ensure_copyright_from_ofl(font: TTFont):
+    # Set nameID 0 from the first line of OFL.txt to align with FB expectations
+    try:
+        ofl_text = Path("OFL.txt").read_text(encoding="utf-8").splitlines()
+        first_line = ofl_text[0].strip()
+        if first_line:
+            set_name_multiplatform(font, 0, first_line)
+    except Exception:
+        # fallback minimal copyright if file missing
+        set_name_multiplatform(font, 0, "Copyright 2025 The Akt Project Authors")
+
 def ensure_ofl_license(font: TTFont):
-    # Google Fonts requires NameID 13 to be a single-line statement, no line breaks
-    set_name_string(font, 13, "This Font Software is licensed under the SIL Open Font License, Version 1.1.")
-    # Canonical URL
-    set_name_string(font, 14, "https://openfontlicense.org")
+    # Google Fonts requires a specific one-line snippet including the FAQ URL for NameID 13
+    snippet = (
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. "
+        "This license is available with a FAQ at: https://openfontlicense.org"
+    )
+    set_name_multiplatform(font, 13, snippet)
+    # Canonical URL for NameID 14
+    set_name_multiplatform(font, 14, "https://openfontlicense.org")
+
+def ensure_designer_info(font: TTFont):
+    # nameID 9: Designer; nameID 12: Designer URL
+    set_name_multiplatform(font, 9, "Dmitry Grenev")
+    set_name_multiplatform(font, 12, "https://github.com/dimgrenev/akt")
 
 def ensure_head_revision(font: TTFont, version_str: str = "1.000"):
     try:
@@ -144,8 +176,10 @@ def ensure_fvar_defaults(font: TTFont):
 def main(path: str):
     font = TTFont(path)
     ensure_regular_naming(font, family="Akt", style="Regular")
+    ensure_copyright_from_ofl(font)
     ensure_ofl_license(font)
     ensure_head_revision(font, "1.000")
+    ensure_designer_info(font)
     ensure_fsselection_regular(font)
     ensure_macstyle_regular(font)
     ensure_fvar_defaults(font)

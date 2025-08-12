@@ -31,6 +31,8 @@ buildTTF: false
 buildOTF: false
 buildSmallCap: false
 
+# (mark/mkmk автогенерация управляется lib-ключом в источнике; YAML не поддерживает featureWriters)
+
 # The next flags control autohinting.
 autohintTTF: true
 # autohintOTF: false

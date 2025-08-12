@@ -2,6 +2,9 @@
 <ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.59">
 
   <name>
+    <namerecord nameID="0" platformID="0" platEncID="4" langID="0x0">
+      Copyright 2024 The Akt Project Authors (https://github.com/grenev/akt)
+    </namerecord>
     <namerecord nameID="1" platformID="0" platEncID="4" langID="0x0">
       Akt
     </namerecord>
@@ -20,17 +23,20 @@
     <namerecord nameID="6" platformID="0" platEncID="4" langID="0x0">
       Akt-Regular
     </namerecord>
+    <namerecord nameID="9" platformID="0" platEncID="4" langID="0x0">
+      Dmitry Grenev
+    </namerecord>
+    <namerecord nameID="12" platformID="0" platEncID="4" langID="0x0">
+      https://github.com/dimgrenev/akt
+    </namerecord>
     <namerecord nameID="13" platformID="0" platEncID="4" langID="0x0">
       This Font Software is licensed under the SIL Open Font License, Version 1.1.
     </namerecord>
     <namerecord nameID="14" platformID="0" platEncID="4" langID="0x0">
-      https://scripts.sil.org/OFL
+      https://openfontlicense.org
     </namerecord>
-    <namerecord nameID="16" platformID="0" platEncID="4" langID="0x0">
-      Akt
-    </namerecord>
-    <namerecord nameID="17" platformID="0" platEncID="4" langID="0x0">
-      Regular
+    <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Copyright 2024 The Akt Project Authors (https://github.com/grenev/akt)
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Akt
@@ -50,17 +56,20 @@
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Akt-Regular
     </namerecord>
+    <namerecord nameID="9" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      Dmitry Grenev
+    </namerecord>
+    <namerecord nameID="12" platformID="1" platEncID="0" langID="0x0" unicode="True">
+      https://github.com/dimgrenev/akt
+    </namerecord>
     <namerecord nameID="13" platformID="1" platEncID="0" langID="0x0" unicode="True">
       This Font Software is licensed under the SIL Open Font License, Version 1.1.
     </namerecord>
     <namerecord nameID="14" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      https://scripts.sil.org/OFL
+      https://openfontlicense.org
     </namerecord>
-    <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Akt
-    </namerecord>
-    <namerecord nameID="17" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Regular
+    <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
+      Copyright 2024 The Akt Project Authors (https://github.com/grenev/akt)
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
       Akt
@@ -81,19 +90,16 @@
       Akt-Regular
     </namerecord>
     <namerecord nameID="9" platformID="3" platEncID="1" langID="0x409">
-      Dima Grenev
+      Dmitry Grenev
+    </namerecord>
+    <namerecord nameID="12" platformID="3" platEncID="1" langID="0x409">
+      https://github.com/dimgrenev/akt
     </namerecord>
     <namerecord nameID="13" platformID="3" platEncID="1" langID="0x409">
       This Font Software is licensed under the SIL Open Font License, Version 1.1.
     </namerecord>
     <namerecord nameID="14" platformID="3" platEncID="1" langID="0x409">
-      https://scripts.sil.org/OFL
-    </namerecord>
-    <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
-      Akt
-    </namerecord>
-    <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
-      Regular
+      https://openfontlicense.org
     </namerecord>
     <namerecord nameID="18" platformID="3" platEncID="1" langID="0x409">
       Akt

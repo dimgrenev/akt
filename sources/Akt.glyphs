@@ -109,7 +109,7 @@ tag = wght;
 customParameters = (
 {
 name = versionString;
-value = "Version 0.300";
+   value = "Version 1.000";
 },
 {
 name = "Use Typo Metrics";
@@ -120,18 +120,50 @@ name = license;
 value = OFL;
 },
 {
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
+ name = licenseURL;
+ value = "https://openfontlicense.org";
 },
 {
-name = openTypeNameLicense;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+ name = openTypeNameLicense;
+ value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 },
 {
 name = openTypeNameLicenseURL;
 value = "https://scripts.sil.org/OFL";
 },
 {
+   name = openTypeNameLicense;
+   value = "This Font Software is licensed under the SIL Open Font License, Version 1.1.";
+  },
+  {
+   name = openTypeNameLicenseURL;
+   value = "https://openfontlicense.org";
+  },
+{
+  name = "com.github.googlei18n.ufo2ft.featureWriters";
+  value = (
+    {
+      module = "ufo2ft.featureWriters.kernFeatureWriter";
+      class = KernFeatureWriter;
+      options = {
+        mode = pair;
+      };
+    },
+    {
+      module = "ufo2ft.featureWriters.markFeatureWriter";
+      class = MarkFeatureWriter;
+      options = {
+      };
+    },
+    {
+      module = "ufo2ft.featureWriters.mkmkFeatureWriter";
+      class = MkmkFeatureWriter;
+      options = {
+      };
+    }
+  );
+ },
+  {
 name = openTypeOS2WeightClass;
 value = 400;
 },
@@ -244,16 +276,7 @@ script cyrl;
 ";
 tag = ccmp;
 },
-{
-automatic = 1;
-code = "";
-tag = mark;
-},
-{
-automatic = 1;
-code = "";
-tag = mkmk;
-},
+ 
 {
 automatic = 1;
 code = "script latn;
@@ -1327,13 +1350,13 @@ kernLeft = A;
 kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (330,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (330,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1346,13 +1369,13 @@ ref = brevecomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (330,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (330,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1365,13 +1388,13 @@ ref = brevecomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (330,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (330,0);
+    }
+    );
 layerId = m003;
 shapes = (
 {
@@ -1391,13 +1414,13 @@ unicode = 258;
 glyphname = Acaron;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (680,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (680,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1410,13 +1433,13 @@ ref = caroncomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (680,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (680,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1432,7 +1455,7 @@ width = 660;
 {
 anchors = (
 {
-name = caret;
+name = top;
 pos = (680,0);
 }
 );
@@ -1457,13 +1480,13 @@ kernLeft = A;
 kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (370,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (370,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1476,13 +1499,13 @@ ref = circumflexcomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (370,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (370,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1498,7 +1521,7 @@ width = 660;
 {
 anchors = (
 {
-name = caret;
+name = top;
 pos = (370,0);
 }
 );
@@ -1523,13 +1546,13 @@ kernLeft = A;
 kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (360,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (360,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1542,13 +1565,13 @@ ref = dieresiscomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (360,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (360,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1561,13 +1584,13 @@ ref = dieresiscomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (360,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (360,0);
+    }
+    );
 layerId = m003;
 shapes = (
 {
@@ -1589,13 +1612,13 @@ kernLeft = A;
 kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (360,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (360,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1608,13 +1631,13 @@ ref = dotaccentcomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (360,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (360,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1627,13 +1650,13 @@ ref = dotaccentcomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (360,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (360,0);
+    }
+    );
 layerId = m003;
 shapes = (
 {
@@ -1655,13 +1678,13 @@ kernLeft = A;
 kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (420,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (420,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1674,13 +1697,13 @@ ref = dotbelowcomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (420,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (420,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1693,13 +1716,13 @@ ref = dotbelowcomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (420,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (420,0);
+    }
+    );
 layerId = m003;
 shapes = (
 {
@@ -1721,13 +1744,13 @@ kernLeft = A;
 kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
-{
-anchors = (
-{
-name = caret;
-pos = (820,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (820,0);
+    }
+    );
 layerId = m01;
 shapes = (
 {
@@ -1740,13 +1763,13 @@ ref = gravecomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (820,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (820,0);
+    }
+    );
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
@@ -1759,13 +1782,13 @@ ref = gravecomb;
 );
 width = 660;
 },
-{
-anchors = (
-{
-name = caret;
-pos = (820,0);
-}
-);
+    {
+    anchors = (
+    {
+    name = top;
+    pos = (820,0);
+    }
+    );
 layerId = m003;
 shapes = (
 {
@@ -1856,8 +1879,8 @@ layers = (
 {
 anchors = (
 {
-name = caret;
-pos = (150,0);
+ name = top;
+ pos = (150,0);
 }
 );
 layerId = m01;
@@ -1875,7 +1898,7 @@ width = 660;
 {
 anchors = (
 {
-name = caret;
+name = top;
 pos = (180,0);
 }
 );
@@ -1894,7 +1917,7 @@ width = 660;
 {
 anchors = (
 {
-name = caret;
+name = top;
 pos = (180,0);
 }
 );
@@ -53018,45 +53041,42 @@ glyphname = "yeru-cy.loclBGR";
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
-layerId = m01;
-shapes = (
-{
-ref = "softsign-cy.loclBGR";
-},
-{
-pos = (500,0);
-ref = idotless;
-}
-);
-width = 756;
-},
-{
-layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
-shapes = (
-{
-ref = "softsign-cy.loclBGR";
-},
-{
-pos = (500,0);
-ref = idotless;
-}
-);
-width = 756;
-},
-{
-layerId = m003;
-shapes = (
-{
-ref = "softsign-cy.loclBGR";
-},
-{
-pos = (500,0);
-ref = idotless;
-}
-);
-width = 756;
-}
-);
+ anchors = (
+ { name = bottom; pos = (297,0); },
+ { name = top; pos = (350,500); }
+ );
+ layerId = m01;
+ shapes = (
+ { ref = "softsign-cy.loclBGR"; },
+ { pos = (500,0); ref = idotless; }
+ );
+ width = 756;
+ },
+ {
+ anchors = (
+ { name = bottom; pos = (297,0); },
+ { name = top; pos = (350,500); }
+ );
+ layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+ shapes = (
+ { ref = "softsign-cy.loclBGR"; },
+ { pos = (500,0); ref = idotless; }
+ );
+ width = 756;
+ },
+ {
+ anchors = (
+ { name = bottom; pos = (297,0); },
+ { name = top; pos = (350,500); }
+ );
+ layerId = m003;
+ shapes = (
+ { ref = "softsign-cy.loclBGR"; },
+ { pos = (500,0); ref = idotless; }
+ );
+ width = 756;
+ }
+ );
 },
 {
 glyphname = "hardsign-cy";
@@ -54177,7 +54197,11 @@ kernRight = "o-cy";
 lastChange = "2025-08-10 06:44:50 +0000";
 layers = (
 {
-layerId = m01;
+ anchors = (
+  { name = bottom; pos = (380,0); },
+  { name = top; pos = (380,500); }
+ );
+ layerId = m01;
 shapes = (
 {
 closed = 1;
@@ -54195,7 +54219,11 @@ ref = "yu-cy";
 width = 780;
 },
 {
-layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+ anchors = (
+  { name = bottom; pos = (380,0); },
+  { name = top; pos = (380,500); }
+ );
+ layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
 closed = 1;
@@ -54213,7 +54241,11 @@ ref = "yu-cy";
 width = 780;
 },
 {
-layerId = m003;
+ anchors = (
+  { name = bottom; pos = (380,0); },
+  { name = top; pos = (380,500); }
+ );
+ layerId = m003;
 shapes = (
 {
 closed = 1;
@@ -83627,6 +83659,10 @@ name = bottom;
 pos = (410,0);
 },
 {
+name = ogonek;
+pos = (410,0);
+},
+{
 name = center;
 pos = (410,360);
 },
@@ -83851,6 +83887,10 @@ name = bottom;
 pos = (410,0);
 },
 {
+name = ogonek;
+pos = (410,0);
+},
+{
 name = center;
 pos = (410,360);
 },
@@ -84072,6 +84112,10 @@ width = 820;
 anchors = (
 {
 name = bottom;
+pos = (410,0);
+},
+{
+name = ogonek;
 pos = (410,0);
 },
 {

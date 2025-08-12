@@ -2,7 +2,7 @@
 <ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.59">
 
   <GDEF>
-    <Version value="0x00010002"/>
+    <Version value="0x00010003"/>
     <GlyphClassDef>
       <ClassDef glyph="A" class="1"/>
       <ClassDef glyph="AE" class="1"/>
@@ -868,7 +868,7 @@
     </LigCaretList>
     <MarkGlyphSetsDef>
       <MarkSetTableFormat value="1"/>
-      <!-- MarkSetCount=1 -->
+      <!-- MarkSetCount=3 -->
       <Coverage index="0">
         <Glyph value="uni0308"/>
         <Glyph value="uni0307"/>
@@ -888,7 +888,178 @@
         <Glyph value="uni0328"/>
         <Glyph value="uni0335"/>
       </Coverage>
+      <Coverage index="1">
+        <Glyph value="dotbelowcomb"/>
+        <Glyph value="uni0326"/>
+        <Glyph value="uni0326.loclMAH"/>
+        <Glyph value="uni0327"/>
+        <Glyph value="uni0335"/>
+      </Coverage>
+      <Coverage index="2">
+        <Glyph value="uni0306.cy"/>
+        <Glyph value="uni0308"/>
+        <Glyph value="uni0308.narrow"/>
+        <Glyph value="uni0307"/>
+        <Glyph value="gravecomb"/>
+        <Glyph value="acutecomb"/>
+        <Glyph value="uni030B"/>
+        <Glyph value="uni0302"/>
+        <Glyph value="uni0302.narrow"/>
+        <Glyph value="uni030C"/>
+        <Glyph value="uni030C.narrow"/>
+        <Glyph value="uni0306"/>
+        <Glyph value="uni0306.narrow"/>
+        <Glyph value="uni030A"/>
+        <Glyph value="tildecomb"/>
+        <Glyph value="tildecomb.narrow"/>
+        <Glyph value="uni0304"/>
+        <Glyph value="uni0304.narrow"/>
+        <Glyph value="uni0312"/>
+        <Glyph value="uni0335"/>
+      </Coverage>
     </MarkGlyphSetsDef>
+    <VarStore Format="1">
+      <Format value="1"/>
+      <VarRegionList>
+        <!-- RegionAxisCount=1 -->
+        <!-- RegionCount=4 -->
+        <Region index="0">
+          <VarRegionAxis index="0">
+            <StartCoord value="0.0"/>
+            <PeakCoord value="0.75"/>
+            <EndCoord value="1.0"/>
+          </VarRegionAxis>
+        </Region>
+        <Region index="1">
+          <VarRegionAxis index="0">
+            <StartCoord value="0.75"/>
+            <PeakCoord value="1.0"/>
+            <EndCoord value="1.0"/>
+          </VarRegionAxis>
+        </Region>
+        <Region index="2">
+          <VarRegionAxis index="0">
+            <StartCoord value="0.0"/>
+            <PeakCoord value="0.375"/>
+            <EndCoord value="1.0"/>
+          </VarRegionAxis>
+        </Region>
+        <Region index="3">
+          <VarRegionAxis index="0">
+            <StartCoord value="0.375"/>
+            <PeakCoord value="0.75"/>
+            <EndCoord value="1.0"/>
+          </VarRegionAxis>
+        </Region>
+      </VarRegionList>
+      <!-- VarDataCount=3 -->
+      <VarData index="0">
+        <!-- ItemCount=78 -->
+        <NumShorts value="0"/>
+        <!-- VarRegionCount=2 -->
+        <VarRegionIndex index="0" value="0"/>
+        <VarRegionIndex index="1" value="1"/>
+        <Item index="0" value="[-92, -92]"/>
+        <Item index="1" value="[-40, -40]"/>
+        <Item index="2" value="[-38, -38]"/>
+        <Item index="3" value="[-36, -36]"/>
+        <Item index="4" value="[-30, -30]"/>
+        <Item index="5" value="[-28, -28]"/>
+        <Item index="6" value="[-28, -18]"/>
+        <Item index="7" value="[-26, -26]"/>
+        <Item index="8" value="[-25, -25]"/>
+        <Item index="9" value="[-24, -24]"/>
+        <Item index="10" value="[-23, -23]"/>
+        <Item index="11" value="[-22, -22]"/>
+        <Item index="12" value="[-21, -21]"/>
+        <Item index="13" value="[-20, -20]"/>
+        <Item index="14" value="[-19, -19]"/>
+        <Item index="15" value="[-17, -17]"/>
+        <Item index="16" value="[-16, -16]"/>
+        <Item index="17" value="[-15, -15]"/>
+        <Item index="18" value="[-14, -14]"/>
+        <Item index="19" value="[-13, -13]"/>
+        <Item index="20" value="[-12, -12]"/>
+        <Item index="21" value="[-11, -11]"/>
+        <Item index="22" value="[-10, -10]"/>
+        <Item index="23" value="[-9, -9]"/>
+        <Item index="24" value="[-8, -8]"/>
+        <Item index="25" value="[-7, -7]"/>
+        <Item index="26" value="[-6, -6]"/>
+        <Item index="27" value="[-5, -5]"/>
+        <Item index="28" value="[-4, -4]"/>
+        <Item index="29" value="[-3, -3]"/>
+        <Item index="30" value="[-2, -2]"/>
+        <Item index="31" value="[-1, -1]"/>
+        <Item index="32" value="[1, 1]"/>
+        <Item index="33" value="[2, 2]"/>
+        <Item index="34" value="[3, 3]"/>
+        <Item index="35" value="[4, 4]"/>
+        <Item index="36" value="[5, 5]"/>
+        <Item index="37" value="[6, 6]"/>
+        <Item index="38" value="[7, 7]"/>
+        <Item index="39" value="[8, 8]"/>
+        <Item index="40" value="[9, 9]"/>
+        <Item index="41" value="[10, 10]"/>
+        <Item index="42" value="[11, 11]"/>
+        <Item index="43" value="[12, 12]"/>
+        <Item index="44" value="[13, 13]"/>
+        <Item index="45" value="[14, 14]"/>
+        <Item index="46" value="[15, 15]"/>
+        <Item index="47" value="[16, 16]"/>
+        <Item index="48" value="[17, 17]"/>
+        <Item index="49" value="[18, 18]"/>
+        <Item index="50" value="[19, 19]"/>
+        <Item index="51" value="[20, 20]"/>
+        <Item index="52" value="[21, 21]"/>
+        <Item index="53" value="[22, 22]"/>
+        <Item index="54" value="[23, 23]"/>
+        <Item index="55" value="[24, 24]"/>
+        <Item index="56" value="[25, 25]"/>
+        <Item index="57" value="[26, 26]"/>
+        <Item index="58" value="[28, 28]"/>
+        <Item index="59" value="[29, 29]"/>
+        <Item index="60" value="[30, 30]"/>
+        <Item index="61" value="[31, 31]"/>
+        <Item index="62" value="[32, 32]"/>
+        <Item index="63" value="[33, 33]"/>
+        <Item index="64" value="[38, 38]"/>
+        <Item index="65" value="[40, 40]"/>
+        <Item index="66" value="[41, 41]"/>
+        <Item index="67" value="[52, 52]"/>
+        <Item index="68" value="[55, 55]"/>
+        <Item index="69" value="[59, 59]"/>
+        <Item index="70" value="[67, 67]"/>
+        <Item index="71" value="[70, 70]"/>
+        <Item index="72" value="[73, 73]"/>
+        <Item index="73" value="[86, 86]"/>
+        <Item index="74" value="[89, 89]"/>
+        <Item index="75" value="[91, 91]"/>
+        <Item index="76" value="[110, 110]"/>
+        <Item index="77" value="[120, 120]"/>
+      </VarData>
+      <VarData index="1">
+        <!-- ItemCount=4 -->
+        <NumShorts value="0"/>
+        <!-- VarRegionCount=3 -->
+        <VarRegionIndex index="0" value="1"/>
+        <VarRegionIndex index="1" value="2"/>
+        <VarRegionIndex index="2" value="3"/>
+        <Item index="0" value="[-5, -3, -4]"/>
+        <Item index="1" value="[-1, -1, -1]"/>
+        <Item index="2" value="[19, 11, 15]"/>
+        <Item index="3" value="[32, 12, 27]"/>
+      </VarData>
+      <VarData index="2">
+        <!-- ItemCount=2 -->
+        <NumShorts value="2"/>
+        <!-- VarRegionCount=2 -->
+        <VarRegionIndex index="0" value="0"/>
+        <VarRegionIndex index="1" value="1"/>
+        <Item index="0" value="[-200, -200]"/>
+        <Item index="1" value="[-140, -140]"/>
+      </VarData>
+    </VarStore>
   </GDEF>
 
 </ttFont>
