@@ -244,7 +244,8 @@ code = "lookup ccmp_DFLT_1 {
   	lookupflag UseMarkFilteringSet @CombiningTopAccents;
   	# soft-dotted bases (latin + cyrillic + derived i-forms)
   	sub i' @CombiningTopAccents by idotless;
-  	sub j' @CombiningTopAccents by jdotless;
+   sub j' @CombiningTopAccents by jdotless;
+   sub je-cy' @CombiningTopAccents by jdotless;
     	sub i-cy' @CombiningTopAccents by idotless;
     	sub yi-cy' @CombiningTopAccents by idotless;
     	# derived precomposed forms already dotless in outlines
@@ -1304,7 +1305,11 @@ kernRight = A;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
-layerId = m01;
+ anchors = (
+  { name = bottom; pos = (290,0); },
+  { name = top; pos = (320,500); }
+ );
+ layerId = m01;
 shapes = (
 {
 ref = A;
@@ -1317,7 +1322,11 @@ ref = acutecomb;
 width = 660;
 },
 {
-layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+ anchors = (
+  { name = bottom; pos = (290,0); },
+  { name = top; pos = (320,500); }
+ );
+ layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
 ref = A;
@@ -1330,7 +1339,11 @@ ref = acutecomb;
 width = 660;
 },
 {
-layerId = m003;
+ anchors = (
+  { name = bottom; pos = (290,0); },
+  { name = top; pos = (320,500); }
+ );
+ layerId = m003;
 shapes = (
 {
 ref = A;
@@ -2008,7 +2021,11 @@ glyphname = Aringacute;
 lastChange = "2025-05-22 16:47:10 +0000";
 layers = (
 {
-layerId = m01;
+ anchors = (
+  { name = bottom; pos = (280,0); },
+  { name = top; pos = (300,500); }
+ );
+ layerId = m01;
 shapes = (
 {
 ref = A;
@@ -2025,7 +2042,11 @@ ref = acutecomb;
 width = 660;
 },
 {
-layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+ anchors = (
+  { name = bottom; pos = (280,0); },
+  { name = top; pos = (300,500); }
+ );
+ layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
 ref = A;
@@ -2042,7 +2063,11 @@ ref = acutecomb;
 width = 660;
 },
 {
-layerId = m003;
+ anchors = (
+  { name = bottom; pos = (280,0); },
+  { name = top; pos = (300,500); }
+ );
+ layerId = m003;
 shapes = (
 {
 ref = A;
@@ -82206,7 +82231,7 @@ ref = union;
 scale = (1,-1);
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
@@ -82218,7 +82243,7 @@ ref = union;
 scale = (1,-1);
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = m003;
@@ -82230,7 +82255,7 @@ ref = union;
 scale = (1,-1);
 }
 );
-width = 820;
+ width = 600;
 }
 );
 unicode = 8834;
@@ -82248,7 +82273,7 @@ pos = (50,770);
 ref = multisetmultiplication;
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
@@ -82259,7 +82284,7 @@ pos = (56,770);
 ref = multisetmultiplication;
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = m003;
@@ -82270,7 +82295,7 @@ pos = (56,770);
 ref = multisetmultiplication;
 }
 );
-width = 820;
+ width = 600;
 }
 );
 metricLeft = subset;
@@ -82290,7 +82315,7 @@ ref = subset;
 scale = (-1,1);
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
@@ -82301,7 +82326,7 @@ ref = subset;
 scale = (-1,1);
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = m003;
@@ -82312,7 +82337,7 @@ ref = subset;
 scale = (-1,1);
 }
 );
-width = 820;
+ width = 600;
 }
 );
 unicode = 8835;
@@ -82330,7 +82355,7 @@ ref = subsetWithDot;
 scale = (-1,1);
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
@@ -82341,7 +82366,7 @@ ref = subsetWithDot;
 scale = (-1,1);
 }
 );
-width = 820;
+ width = 600;
 },
 {
 layerId = m003;
@@ -82352,7 +82377,7 @@ ref = subsetWithDot;
 scale = (-1,1);
 }
 );
-width = 820;
+ width = 600;
 }
 );
 unicode = 10942;

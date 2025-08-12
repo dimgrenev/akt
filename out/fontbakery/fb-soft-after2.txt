@@ -1,0 +1,53 @@
+Start ... running 1 individual check executions.
+ >> soft_dotted
+    Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    An accent placed on characters with a "soft dot", like i or j, causes the dot to disappear. An          
+    explicit dot above can be added where required. See "Diacritics on i and j" in Section 7.1, "Latin" in  
+    The Unicode Standard.                                                                                   
+                                                                                                            
+    Characters with the Soft_Dotted property are listed in                                                  
+    https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt                                              
+                                                                                                            
+    See also: https://googlefonts.github.io/gf-guide/diacritics.html#soft-dotted-glyphs                     
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/4059
+
+    WARN The dot of soft dotted characters should disappear in other cases, for example: i⃰ i̦⃰ i̧⃰ j⃰ j̦⃰ j̧⃰ і⃰ і̦⃰ і̧⃰  
+         ј⃰ ј̦⃰ ј̧⃰ ⁱ̀ ⁱ́ ⁱ̂ ⁱ̃ ⁱ̄ ⁱ̆ ⁱ̇ ⁱ̈ [code: soft-dotted]                                                          
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 0
+    WARN: 1
+    INFO: 0
+    SKIP: 0
+    PASS: 0
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+DONE!
+  [] 0%
