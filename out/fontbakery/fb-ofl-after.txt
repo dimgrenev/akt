@@ -1,0 +1,59 @@
+Start ... running 1 individual check executions.
+ >> googlefonts/license/OFL_body_text
+    Check OFL body text is correct.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    Check OFL body text is correct. Often users will accidently delete parts of the body text.              
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/3352
+
+    WARN The OFL.txt body text is incorrect. Please use                                                     
+         https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You        
+         should only modify the first line.                                                                 
+                                                                                                            
+         Lines changed:                                                                                     
+                                                                                                            
+         - \n                                                                                               
+                                                                                                            
+         - \n                                                                                               
+                                                                                                            
+         - OTHER DEALINGS IN THE FONT SOFTWARE.                                                             
+                                                                                                            
+         + OTHER DEALINGS IN THE FONT SOFTWARE.\n                                                           
+                                                                                                            
+         [code: incorrect-ofl-body-text]                                                                    
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 0
+    WARN: 1
+    INFO: 0
+    SKIP: 0
+    PASS: 0
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+DONE!
+  [] 0%
