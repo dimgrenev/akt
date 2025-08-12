@@ -1,0 +1,55 @@
+Start ... running 1 individual check executions.
+ >> case_mapping
+    Ensure the font supports case swapping for all its glyphs.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    Ensure that no glyph lacks its corresponding upper or lower counterpart (but only when unicode          
+    supports case-mapping).                                                                                 
+                                                                                                            
+    More info: https://github.com/googlefonts/fontbakery/issues/3230
+
+    FAIL The following glyphs lack their case-swapping counterparts:                                        
+                                                                                                            
+                                                                                                            
+           Glyph present in the font                    Missing case-swapping counterpart                   
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━       
+           U+046B: CYRILLIC SMALL LETTER BIG YUS        U+046A: CYRILLIC CAPITAL LETTER BIG YUS             
+           U+04CA: CYRILLIC SMALL LETTER EN WITH TAIL   U+04C9: CYRILLIC CAPITAL LETTER EN WITH TAIL        
+                                                                                                            
+                                                                                                            
+         [code: missing-case-counterparts]                                                                  
+
+    Result: FAIL
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 1
+    WARN: 0
+    INFO: 0
+    SKIP: 0
+    PASS: 0
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+DONE!
+  [] 0%

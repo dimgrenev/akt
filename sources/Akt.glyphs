@@ -54647,6 +54647,172 @@ metricLeft = "te-cy";
 metricRight = "softsign-cy";
 unicode = 1123;
 },
+  {
+  glyphname = "yusbig-cy";
+  lastChange = "2025-08-12 14:12:00 +0000";
+  layers = (
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,500); }
+      );
+      layerId = m01;
+      shapes = (
+        { ref = "a-cy"; }
+      );
+      width = 600;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,500); }
+      );
+      layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+      shapes = (
+        { ref = "a-cy"; }
+      );
+      width = 600;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,500); }
+      );
+      layerId = m003;
+      shapes = (
+        { ref = "a-cy"; }
+      );
+      width = 600;
+    }
+  );
+  unicode = 1131;
+  },
+  {
+  glyphname = "Yusbig-cy";
+  lastChange = "2025-08-12 14:20:00 +0000";
+  layers = (
+    {
+      anchors = (
+        { name = bottom; pos = (330,0); },
+        { name = top; pos = (330,720); }
+      );
+      layerId = m01;
+      shapes = (
+        { ref = "A-cy"; }
+      );
+      width = 660;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (330,0); },
+        { name = top; pos = (330,720); }
+      );
+      layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+      shapes = (
+        { ref = "A-cy"; }
+      );
+      width = 660;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (330,0); },
+        { name = top; pos = (330,720); }
+      );
+      layerId = m003;
+      shapes = (
+        { ref = "A-cy"; }
+      );
+      width = 660;
+    }
+  );
+  unicode = 1130;
+  },
+  {
+  glyphname = "enwithtail-cy";
+  lastChange = "2025-08-12 14:12:00 +0000";
+  layers = (
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,500); }
+      );
+      layerId = m01;
+      shapes = (
+        { ref = "en-cy"; },
+        { alignment = -1; pos = (520,0); ref = "hook-2"; }
+      );
+      width = 600;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,500); }
+      );
+      layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+      shapes = (
+        { ref = "en-cy"; },
+        { alignment = -1; pos = (576,0); ref = "hook-2"; }
+      );
+      width = 600;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,500); }
+      );
+      layerId = m003;
+      shapes = (
+        { ref = "en-cy"; },
+        { alignment = -1; pos = (576,0); ref = "hook-2"; }
+      );
+      width = 600;
+    }
+  );
+  unicode = 1226;
+  },
+  {
+  glyphname = "Enwithtail-cy";
+  lastChange = "2025-08-12 14:20:00 +0000";
+  layers = (
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,720); }
+      );
+      layerId = m01;
+      shapes = (
+        { ref = "En-cy"; },
+        { alignment = -1; pos = (520,0); ref = "hook-2"; }
+      );
+      width = 700;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,720); }
+      );
+      layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
+      shapes = (
+        { ref = "En-cy"; },
+        { alignment = -1; pos = (576,0); ref = "hook-2"; }
+      );
+      width = 700;
+    },
+    {
+      anchors = (
+        { name = bottom; pos = (300,0); },
+        { name = top; pos = (300,720); }
+      );
+      layerId = m003;
+      shapes = (
+        { ref = "En-cy"; },
+        { alignment = -1; pos = (576,0); ref = "hook-2"; }
+      );
+      width = 700;
+    }
+  );
+  unicode = 1225;
+  },
 {
 glyphname = "fita-cy";
 kernLeft = "ie-cy";
