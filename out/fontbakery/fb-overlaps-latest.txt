@@ -1,0 +1,55 @@
+Start ... running 1 individual check executions.
+ >> overlapping_path_segments
+    Check there are no overlapping path segments
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    Some rasterizers encounter difficulties when rendering glyphs with overlapping path segments.           
+                                                                                                            
+    A path segment is a section of a path defined by two on-curve points. When two segments share the same  
+    coordinates, they are considered overlapping.                                                           
+                                                                                                            
+    More info: https://github.com/google/fonts/issues/7594#issuecomment-2401909084
+
+    WARN The following glyphs have overlapping path segments:                                               
+                                                                                                            
+                                                                                                            
+          * uni049F (U+049F): L<<172.0,0.0>--<152.0,0.0>> has the same coordinates as a previous segment.   
+                                                                                                            
+          * uni049F.ss01: L<<172.0,0.0>--<152.0,0.0>> has the same coordinates as a previous segment.       
+          [code: overlapping-path-segments]                                                                 
+                                                                                                            
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 0
+    WARN: 1
+    INFO: 0
+    SKIP: 0
+    PASS: 0
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+DONE!
+  [] 0%

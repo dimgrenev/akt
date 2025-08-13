@@ -50,8 +50,8 @@ autohintTTF: true
 # checkCompatibility: true
 # overlaps: booleanOperations
 # expandFeaturesToInstances: false
-# reverseOutlineDirection: true
-# removeOutlineOverlaps: true
+reverseOutlineDirection: true
+removeOutlineOverlaps: true
 # extraFontmakeArgs: ""
 # extraVariableFontmakeArgs: ""
 # extraStaticFontmakeArgs: ""

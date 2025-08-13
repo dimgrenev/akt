@@ -100,6 +100,14 @@ def ensure_fsselection_regular(font: TTFont):
     fs |= (1 << 6)
     os2.fsSelection = fs
 
+def ensure_vendor_id(font: TTFont, vendor: str = "NONE"):
+    os2 = font["OS/2"]
+    try:
+        # achVendID is a 4-byte string
+        os2.achVendID = vendor[:4].ljust(4)  # pad to 4 chars
+    except Exception:
+        pass
+
 def ensure_macstyle_regular(font: TTFont):
     head = font["head"]
     # clear Bold (bit 0) and Italic (bit 1)
@@ -185,6 +193,7 @@ def main(path: str):
     ensure_fvar_defaults(font)
     ensure_avar(font)
     ensure_meta(font)
+    ensure_vendor_id(font, "NONE")
     remove_typographic_family_names(font)
     font.save(path)
 

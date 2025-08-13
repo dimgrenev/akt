@@ -25,7 +25,21 @@ customize: venv
 
 build.stamp: venv sources/config.yaml $(SOURCES)
 	rm -rf fonts
-	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)  && touch build.stamp
+	# Build variable font(s)
+	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)
+	# Post-fix variable font(s) to normalize name/OS2/head/avar/meta and default instance naming
+	. venv/bin/activate; if [ -f "fonts/variable/Akt[wght].ttf" ]; then python3 tools/fix_vf.py "fonts/variable/Akt[wght].ttf"; fi
+	# Ensure article assets are colocated with variable fonts for FB check
+	mkdir -p fonts/variable/images; \
+	  if [ -f description/article/ARTICLE.en_us.html ]; then cp -f description/article/ARTICLE.en_us.html fonts/variable/ARTICLE.en_us.html; fi; \
+	  if [ -f description/image1.png ]; then cp -f description/image1.png fonts/variable/images/image1.png; fi; \
+	  if [ -f description/image2.png ]; then cp -f description/image2.png fonts/variable/images/image2.png; fi; \
+	  if [ -f documentation/images-license.txt ]; then cp -f documentation/images-license.txt fonts/variable/images-license.txt; fi; \
+	  if [ -f fonts/variable/ARTICLE.en_us.html ]; then sed -i '' -e 's|src=\"image1.png\"|src=\"images/image1.png\"|g' -e 's|src=\"image2.png\"|src=\"images/image2.png\"|g' -e 's|src=\"../1.png\"|src=\"images/1.png\"|g' fonts/variable/ARTICLE.en_us.html; fi
+	# Snap near-miss outline points in source (baseline/cap) and rebuild
+	. venv/bin/activate; python3 tools/snap_outline_points.py sources/Akt.glyphs || true
+	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)
+	touch build.stamp
 
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv

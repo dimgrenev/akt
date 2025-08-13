@@ -1,1 +1,6 @@
-The images in this repository are licensed under the CC https://creativecommons.org/licenses/by-sa/4.0/
+Images used in ARTICLE.en_us.html:
+- image1.png
+- image2.png
+- 1.png
+
+License: CC BY-SA 4.0
