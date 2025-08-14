@@ -71764,6 +71764,7 @@ R = hyphen;
 {
 glyphname = softhyphen;
 lastChange = "2025-08-10 14:48:15 +0000";
+export = 0;
 layers = (
 {
 layerId = m01;
