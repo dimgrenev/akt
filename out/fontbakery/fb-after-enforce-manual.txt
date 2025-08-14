@@ -1,0 +1,15 @@
+Start ... running 236 individual check executions.
+Akt[wght].ttf: opentype/fvar/regular_coords_correct: FAIL [no-regular-instance]
+Akt[wght].ttf: soft_hyphen: WARN [softhyphen]
+Akt[wght].ttf: unreachable_glyphs: WARN [unreachable-glyphs]
+Akt[wght].ttf: googlefonts/article/images: WARN [lacks-article]
+Akt[wght].ttf: googlefonts/metadata/unreachable_subsetting: WARN [unreachable-subsetting]
+Akt[wght].ttf: googlefonts/license/OFL_body_text: WARN [incorrect-ofl-body-text]
+Akt[wght].ttf: soft_dotted: WARN [soft-dotted]
+Akt[wght].ttf: outline_alignment_miss: WARN [found-misalignments]
+Akt[wght].ttf: googlefonts/font_names: FAIL [bad-names]
+Akt[wght].ttf: googlefonts/fvar_instances: FAIL [bad-fvar-instances]
+Akt[wght].ttf: googlefonts/STAT/axisregistry: FAIL [invalid-name]
+Akt[wght].ttf: googlefonts/vendor_id: WARN [unknown]
+
+ ERROR: 0 FATAL: 0 FAIL: 4 WARN: 8 INFO: 8 SKIP: 89 PASS: 127

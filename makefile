@@ -39,6 +39,10 @@ build.stamp: venv sources/config.yaml $(SOURCES)
 	# Snap near-miss outline points in source (baseline/cap) and rebuild
 	. venv/bin/activate; python3 tools/snap_outline_points.py sources/Akt.glyphs || true
 	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)
+	# FINAL post-fix after last rebuild to ensure name/OS2/head/avar/meta are kept
+	. venv/bin/activate; if [ -f "fonts/variable/Akt[wght].ttf" ]; then python3 tools/fix_vf.py "fonts/variable/Akt[wght].ttf"; fi
+	# Rename .sub/.superior to canonical inferior/superior names so subs/sups features reach them
+	. venv/bin/activate; if [ -f "fonts/variable/Akt[wght].ttf" ]; then python3 tools/rename_sub_sup.py "fonts/variable/Akt[wght].ttf"; fi
 	touch build.stamp
 
 venv/touchfile: requirements.txt

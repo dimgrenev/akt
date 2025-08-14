@@ -35,12 +35,21 @@ def set_name_multiplatform(font: TTFont, nameID: int, string: str):
         pass
 
 def ensure_regular_naming(font: TTFont, family: str, style: str):
-    # Family/Style
+    # Стандарт GF для VF: Subfamily = Regular, Full = "Family Regular", PS = "Family-Regular"
+    subfamily = "Regular"
     set_name_string(font, 1, family)
-    set_name_string(font, 2, style)
-    set_name_string(font, 4, f"{family} {style}")
-    ps = f"{family}-{style}".replace(" ", "")
+    set_name_string(font, 2, subfamily)
+    set_name_string(font, 4, f"{family} {subfamily}")
+    ps = f"{family}-{subfamily}".replace(" ", "")
     set_name_string(font, 6, ps)
+
+    # Обновим NameID3 (Unique) в формате "Version X.XXX;Family;PS"
+    try:
+        rev = float(font["head"].fontRevision)
+    except Exception:
+        rev = 1.0
+    unique = f"Version {rev:.3f};{family};{ps}"
+    set_name_string(font, 3, unique)
     # Version strings
     # NameID 3: Unique font identifier must start with "Version X.XXX;"
     set_name_string(font, 3, "Version 1.000;Akt;Akt-Regular")
@@ -70,7 +79,7 @@ def ensure_ofl_license(font: TTFont):
 def ensure_designer_info(font: TTFont):
     # nameID 9: Designer; nameID 12: Designer URL
     set_name_multiplatform(font, 9, "Dmitry Grenev")
-    set_name_multiplatform(font, 12, "https://github.com/dimgrenev/akt")
+    set_name_multiplatform(font, 12, "https://grenev.com")
 
 def ensure_head_revision(font: TTFont, version_str: str = "1.000"):
     try:
@@ -151,7 +160,7 @@ def ensure_fvar_defaults(font: TTFont):
     # Point default named instance (if present) to Regular names
     # Find or create nameIDs
     name = font["name"]
-    # Ensure Regular strings exist
+    # Ensure default subfamily/PS strings exist per GF standard (Regular)
     set_name_string(font, 2, "Regular")
     set_name_string(font, 6, "Akt-Regular")
     regular_name_id = 2
@@ -181,6 +190,28 @@ def ensure_fvar_defaults(font: TTFont):
             except Exception:
                 pass
 
+def enforce_regular_naming(font: TTFont, family: str = "Akt") -> None:
+    """Force NameIDs 2/4/6/3 to GF standard Regular scheme across all platforms."""
+    name = font["name"]
+    # remove existing conflicting records
+    name.names = [nr for nr in name.names if nr.nameID not in (2, 3, 4, 6)]
+    subfamily = "Regular"
+    full = f"{family} {subfamily}"
+    ps = f"{family}-{subfamily}".replace(" ", "")
+    # set across common platforms
+    for (pid, eid, lid) in [(3,1,0x409), (1,0,0), (0,4,0)]:
+        name.setName(subfamily, 2, pid, eid, lid)
+        name.setName(full, 4, pid, eid, lid)
+        name.setName(ps, 6, pid, eid, lid)
+    # Unique ID
+    try:
+        rev = float(font["head"].fontRevision)
+    except Exception:
+        rev = 1.0
+    unique = f"Version {rev:.3f};{family};{ps}"
+    for (pid, eid, lid) in [(3,1,0x409), (1,0,0), (0,4,0)]:
+        name.setName(unique, 3, pid, eid, lid)
+
 def main(path: str):
     font = TTFont(path)
     ensure_regular_naming(font, family="Akt", style="Regular")
@@ -195,6 +226,7 @@ def main(path: str):
     ensure_meta(font)
     ensure_vendor_id(font, "NONE")
     remove_typographic_family_names(font)
+    enforce_regular_naming(font, family="Akt")
     font.save(path)
 
 if __name__ == "__main__":
