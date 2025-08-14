@@ -224,7 +224,7 @@ def main(path: str):
     ensure_fvar_defaults(font)
     ensure_avar(font)
     ensure_meta(font)
-    ensure_vendor_id(font, "NONE")
+    ensure_vendor_id(font, "DMGR")
     remove_typographic_family_names(font)
     enforce_regular_naming(font, family="Akt")
     font.save(path)

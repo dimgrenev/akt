@@ -44,31 +44,7 @@ Start ... running 236 individual check executions.
     WARN The following glyphs could not be reached by codepoint or substitution rules:                      
                                                                                                             
                                                                                                             
-          - IJacute                                                                                         
-                                                                                                            
-          - NULL                                                                                            
-                                                                                                            
-          - finferior                                                                                       
-                                                                                                            
-          - ginferior                                                                                       
-                                                                                                            
-          - iinferior                                                                                       
-                                                                                                            
-          - ijacute                                                                                         
-                                                                                                            
-          - jinferior                                                                                       
-                                                                                                            
-          - rinferior                                                                                       
-                                                                                                            
-          - uni0306.cy                                                                                      
-                                                                                                            
           - uni04A1.ss01                                                                                    
-                                                                                                            
-          - vertical.1                                                                                      
-                                                                                                            
-          - vertical.2                                                                                      
-                                                                                                            
-          - vertical.3                                                                                      
                                                                                                             
                                                                                                             
          [code: unreachable-glyphs]                                                                         
@@ -115,30 +91,30 @@ visual assets.
          font's metadata file, and will never be served. You can solve this by either manually adding       
          additional subset declarations to METADATA.pb, or by editing the glyphset definitions.             
                                                                                                             
-          • U+02D8 BREVE: try adding one of: yi, canadian-aboriginal                                        
-          • U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal                                    
-          • U+02DB OGONEK: try adding one of: yi, canadian-aboriginal                                       
-          • U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, tifinagh, math         
+          • U+02D8 BREVE: try adding one of: canadian-aboriginal, yi                                        
+          • U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi                                    
+          • U+02DB OGONEK: try adding one of: canadian-aboriginal, yi                                       
+          • U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, math, coptic, cherokee         
           • U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh                                 
-          • U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, math, malayalam, canadian-aboriginal,    
-            old-permic, syriac, tifinagh, coptic, duployan, todhri, hebrew                                  
-          • U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac                                
+          • U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, tai-le, todhri,     
+            coptic, math, old-permic, hebrew, duployan, tifinagh, malayalam                                 
+          • U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan                                
           • U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee                        
-          • U+030C COMBINING CARON: try adding one of: cherokee, tai-le                                     
+          • U+030C COMBINING CARON: try adding one of: tai-le, cherokee                                     
           • U+0312 COMBINING TURNED COMMA ABOVE: try adding math                                            
           • U+0326 COMBINING COMMA BELOW: try adding math                                                   
           • U+0327 COMBINING CEDILLA: try adding math                                                       
           • U+0328 COMBINING OGONEK: not included in any glyphset definition                                
           • U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition                  
-          • U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: math, greek, elbasan                      
-          • U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, greek, elbasan                      
-          • U+039E GREEK CAPITAL LETTER XI: try adding one of: math, greek, elbasan                         
-          • U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, greek, elbasan                      
-          • U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: math, greek                                 
-          • U+03B4 GREEK SMALL LETTER DELTA: try adding one of: math, greek                                 
-          • U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek                                    
-          • U+03BE GREEK SMALL LETTER XI: try adding one of: math, greek                                    
-          • U+03C0 GREEK SMALL LETTER PI: try adding one of: yi, math, greek                                
+          • U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: greek, elbasan, math                      
+          • U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: greek, elbasan, math                      
+          • U+039E GREEK CAPITAL LETTER XI: try adding one of: greek, elbasan, math                         
+          • U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: greek, elbasan, math                      
+          • U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: greek, math                                 
+          • U+03B4 GREEK SMALL LETTER DELTA: try adding one of: greek, math                                 
+          • U+03BC GREEK SMALL LETTER MU: try adding one of: greek, math                                    
+          • U+03BE GREEK SMALL LETTER XI: try adding one of: greek, math                                    
+          • U+03C0 GREEK SMALL LETTER PI: try adding one of: greek, yi, math                                
           • U+1EA0 LATIN CAPITAL LETTER A WITH DOT BELOW: try adding vietnamese                             
           • U+1EA1 LATIN SMALL LETTER A WITH DOT BELOW: try adding vietnamese                               
           • U+1EB8 LATIN CAPITAL LETTER E WITH DOT BELOW: try adding vietnamese                             
@@ -153,9 +129,9 @@ visual assets.
           • U+1EE5 LATIN SMALL LETTER U WITH DOT BELOW: try adding vietnamese                               
           • U+2007 FIGURE SPACE: try adding symbols2                                                        
           • U+2008 PUNCTUATION SPACE: try adding symbols2                                                   
-          • U+2010 HYPHEN: try adding one of: yi, cham, kharoshthi, armenian, kayah-li, kaithi, coptic,     
-            lisu, sora-sompeng, syloti-nagri, hebrew, arabic, sundanese                                     
-          • U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri, arabic                         
+          • U+2010 HYPHEN: try adding one of: kaithi, cham, lisu, sundanese, kayah-li, yi, coptic,          
+            armenian, syloti-nagri, hebrew, sora-sompeng, arabic, kharoshthi                                
+          • U+2011 NON-BREAKING HYPHEN: try adding one of: syloti-nagri, yi, arabic                         
           • U+2012 FIGURE DASH: not included in any glyphset definition                                     
           • U+2015 HORIZONTAL BAR: try adding adlam                                                         
           • U+2021 DOUBLE DAGGER: try adding adlam                                                          
@@ -251,7 +227,7 @@ visual assets.
           • U+2206 INCREMENT: try adding math                                                               
           • U+220F N-ARY PRODUCT: try adding math                                                           
           • U+2211 N-ARY SUMMATION: try adding math                                                         
-          • U+2219 BULLET OPERATOR: try adding one of: symbols, math, yi, tai-tham                          
+          • U+2219 BULLET OPERATOR: try adding one of: symbols, tai-tham, yi, math                          
           • U+221A SQUARE ROOT: try adding math                                                             
           • U+221E INFINITY: try adding math                                                                
           • U+2229 INTERSECTION: try adding math                                                            
@@ -276,15 +252,15 @@ visual assets.
           • U+2300 DIAMETER SIGN: try adding symbols                                                        
           • U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols                                          
           • U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols                                         
-          • U+2460 CIRCLED DIGIT ONE: try adding one of: symbols, mongolian, yi                             
-          • U+2461 CIRCLED DIGIT TWO: try adding one of: symbols, mongolian, yi                             
-          • U+2462 CIRCLED DIGIT THREE: try adding one of: symbols, mongolian, yi                           
-          • U+2463 CIRCLED DIGIT FOUR: try adding one of: symbols, mongolian, yi                            
-          • U+2464 CIRCLED DIGIT FIVE: try adding one of: symbols, mongolian, yi                            
-          • U+2465 CIRCLED DIGIT SIX: try adding one of: symbols, mongolian, yi                             
-          • U+2466 CIRCLED DIGIT SEVEN: try adding one of: symbols, mongolian, yi                           
-          • U+2467 CIRCLED DIGIT EIGHT: try adding one of: symbols, mongolian, yi                           
-          • U+2468 CIRCLED DIGIT NINE: try adding one of: symbols, mongolian, yi                            
+          • U+2460 CIRCLED DIGIT ONE: try adding one of: mongolian, yi, symbols                             
+          • U+2461 CIRCLED DIGIT TWO: try adding one of: mongolian, yi, symbols                             
+          • U+2462 CIRCLED DIGIT THREE: try adding one of: mongolian, yi, symbols                           
+          • U+2463 CIRCLED DIGIT FOUR: try adding one of: mongolian, yi, symbols                            
+          • U+2464 CIRCLED DIGIT FIVE: try adding one of: mongolian, yi, symbols                            
+          • U+2465 CIRCLED DIGIT SIX: try adding one of: mongolian, yi, symbols                             
+          • U+2466 CIRCLED DIGIT SEVEN: try adding one of: mongolian, yi, symbols                           
+          • U+2467 CIRCLED DIGIT EIGHT: try adding one of: mongolian, yi, symbols                           
+          • U+2468 CIRCLED DIGIT NINE: try adding one of: mongolian, yi, symbols                            
           • U+24EA CIRCLED DIGIT ZERO: try adding symbols                                                   
           • U+24FF NEGATIVE CIRCLED DIGIT ZERO: try adding symbols                                          
           • U+25A0 BLACK SQUARE: try adding symbols                                                         
@@ -299,16 +275,17 @@ visual assets.
           • U+25C7 WHITE DIAMOND: try adding symbols                                                        
           • U+25CA LOZENGE: try adding one of: symbols, math                                                
           • U+25CB WHITE CIRCLE: try adding symbols                                                         
-          • U+25CC DOTTED CIRCLE: try adding one of: cham, math, newa, modi, takri, oriya, tai-le,          
-            meetei-mayek, hanifi-rohingya, rejang, mongolian, tai-viet, siddham, khudawadi, lao, nko,       
-            dogra, myanmar, kannada, tai-tham, gujarati, javanese, phags-pa, caucasian-albanian,            
-            warang-citi, kayah-li, bassa-vah, sinhala, marchen, bhaiksuki, khmer, gurmukhi, sundanese,      
-            limbu, zanabazar-square, syloti-nagri, wancho, tagalog, tifinagh, soyombo, coptic, osage,       
-            saurashtra, batak, ahom, psalter-pahlavi, thaana, gunjala-gondi, grantha, music, miao, khojki,  
-            pahawh-hmong, hanunoo, devanagari, old-permic, kaithi, thai, tirhuta, telugu, sogdian,          
-            tibetan, syriac, sharada, adlam, buhid, duployan, mahajani, symbols, brahmi, armenian, chakma,  
-            elbasan, balinese, buginese, manichaean, bengali, malayalam, tamil, kharoshthi, masaram-gondi,  
-            mandaic, lepcha, hebrew, new-tai-lue, yi, tagbanwa, canadian-aboriginal, mende-kikakui          
+          • U+25CC DOTTED CIRCLE: try adding one of: canadian-aboriginal, warang-citi, buhid, nko,          
+            marchen, masaram-gondi, meetei-mayek, dogra, rejang, osage, syloti-nagri, hanunoo, siddham,     
+            gurmukhi, gujarati, new-tai-lue, hanifi-rohingya, oriya, symbols, kaithi, thai, myanmar,        
+            mongolian, telugu, tai-tham, sharada, sogdian, buginese, takri, psalter-pahlavi, kayah-li,      
+            limbu, tibetan, bassa-vah, tirhuta, saurashtra, old-permic, khojki, adlam, tai-viet, miao,      
+            soyombo, ahom, syriac, wancho, bengali, phags-pa, zanabazar-square, lepcha, modi, cham,         
+            thaana, gunjala-gondi, pahawh-hmong, chakma, tamil, coptic, balinese, duployan, sinhala,        
+            manichaean, mahajani, elbasan, sundanese, hebrew, tifinagh, bhaiksuki, khudawadi, math,         
+            mandaic, kannada, tai-le, caucasian-albanian, devanagari, brahmi, lao, mende-kikakui,           
+            kharoshthi, grantha, batak, yi, newa, tagalog, tagbanwa, javanese, armenian, khmer, music,      
+            malayalam                                                                                       
           • U+25CF BLACK CIRCLE: try adding symbols                                                         
           • U+25D0 CIRCLE WITH LEFT HALF BLACK: try adding symbols                                          
           • U+25D1 CIRCLE WITH RIGHT HALF BLACK: try adding symbols                                         
@@ -514,7 +491,7 @@ visual assets.
     More info: https://github.com/fonttools/fontbakery/issues/3943
                https://github.com/fonttools/fontbakery/issues/4829
 
-    WARN OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe    
+    WARN OS/2 VendorID value 'DMGR' is not yet recognized. If you registered it recently, then it's safe    
          to ignore this warning message. Otherwise, you should set it to your own unique 4 character code,  
          and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx       
          [code: unknown]                                                                                    
