@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Dje-cy" format="2">
+  <advance width="820"/>
+  <unicode hex="0402"/>
+  <outline>
+    <contour>
+      <point x="248" y="0" type="line"/>
+      <point x="398" y="0" type="line"/>
+      <point x="398" y="590" type="line"/>
+      <point x="681" y="590" type="line"/>
+      <point x="681" y="720" type="line"/>
+      <point x="20" y="720" type="line"/>
+      <point x="20" y="590" type="line"/>
+      <point x="248" y="590" type="line"/>
+    </contour>
+    <component base="paunch-1" xOffset="378"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>paunch-1</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

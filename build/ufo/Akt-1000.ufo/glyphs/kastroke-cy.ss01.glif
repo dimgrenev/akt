@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kastroke-cy.ss01" format="2">
+  <advance width="570"/>
+  <anchor x="264" y="500" name="top"/>
+  <outline>
+    <component base="ka-cy.loclBGR.ss01"/>
+    <component base="strokeshortcomb" xOffset="-70" yOffset="340"/>
+  </outline>
+</glyph>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eth" format="2">
+  <advance width="560"/>
+  <unicode hex="00F0"/>
+  <outline>
+    <contour>
+      <point x="152" y="541" type="line"/>
+      <point x="265" y="541" type="line"/>
+      <point x="464" y="746" type="line"/>
+      <point x="351" y="746" type="line"/>
+    </contour>
+    <component base="partialdiff"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

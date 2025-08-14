@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="caroncomb.narrow" format="2">
+  <anchor x="200" y="500" name="_top"/>
+  <anchor x="200" y="720" name="top"/>
+  <outline>
+    <component base="circumflexcomb.narrow" yScale="-1" yOffset="1280"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>400</integer>
+    </dict>
+  </lib>
+</glyph>

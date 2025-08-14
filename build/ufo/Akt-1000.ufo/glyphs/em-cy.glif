@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="em-cy" format="2">
+  <advance width="700"/>
+  <unicode hex="043C"/>
+  <outline>
+    <contour>
+      <point x="56" y="0" type="line"/>
+      <point x="188" y="0" type="line"/>
+      <point x="188" y="380" type="line"/>
+      <point x="302" y="0" type="line"/>
+      <point x="386" y="0" type="line"/>
+      <point x="500" y="380" type="line"/>
+      <point x="500" y="0" type="line"/>
+      <point x="644" y="0" type="line"/>
+      <point x="644" y="500" type="line"/>
+      <point x="436" y="500" type="line"/>
+      <point x="354" y="190" type="line"/>
+      <point x="268" y="500" type="line"/>
+      <point x="56" y="500" type="line"/>
+    </contour>
+  </outline>
+</glyph>

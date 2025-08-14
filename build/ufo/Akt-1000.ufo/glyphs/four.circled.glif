@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four.circled" format="2">
+  <advance width="860"/>
+  <unicode hex="2463"/>
+  <anchor x="430" y="360" name="center"/>
+  <outline>
+    <component base="numCircle"/>
+    <component base="four.numr" xOffset="244" yOffset="-160"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>numCircle</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

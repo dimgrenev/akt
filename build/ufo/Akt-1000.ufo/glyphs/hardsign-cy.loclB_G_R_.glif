@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hardsign-cy.loclBGR" format="2">
+  <advance width="560"/>
+  <outline>
+    <contour>
+      <point x="10" y="380" type="line"/>
+      <point x="256" y="380" type="line"/>
+      <point x="256" y="500" type="line"/>
+      <point x="10" y="500" type="line"/>
+    </contour>
+    <component base="softsign-cy.loclBGR" xOffset="60"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

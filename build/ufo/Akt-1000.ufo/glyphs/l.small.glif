@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.small" format="2">
+  <advance width="157"/>
+  <anchor x="78.336" y="0.0" name="bottom"/>
+  <anchor x="77.724" y="440.64" name="top"/>
+  <anchor x="128.52" y="440.64" name="topright"/>
+  <outline>
+    <component base="l" xScale="0.612" yScale="0.612"/>
+  </outline>
+</glyph>

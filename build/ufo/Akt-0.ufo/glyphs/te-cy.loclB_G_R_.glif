@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="te-cy.loclBGR" format="2">
+  <advance width="840"/>
+  <anchor x="395" y="0" name="bottom"/>
+  <anchor x="425" y="500" name="top"/>
+  <outline>
+    <component base="m"/>
+  </outline>
+</glyph>

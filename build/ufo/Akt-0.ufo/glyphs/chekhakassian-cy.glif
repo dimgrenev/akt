@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="chekhakassian-cy" format="2">
+  <advance width="520"/>
+  <unicode hex="04CC"/>
+  <anchor x="250" y="500" name="top"/>
+  <outline>
+    <contour>
+      <point x="320" y="-160" type="line"/>
+      <point x="340" y="-160" type="line"/>
+      <point x="340" y="0" type="line"/>
+      <point x="420" y="0" type="line"/>
+      <point x="420" y="20" type="line"/>
+      <point x="320" y="20" type="line"/>
+    </contour>
+    <component base="che-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

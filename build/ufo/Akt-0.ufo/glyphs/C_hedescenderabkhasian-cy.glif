@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Chedescenderabkhasian-cy" format="2">
+  <advance width="890"/>
+  <unicode hex="04BE"/>
+  <anchor x="530.0" y="720.0" name="top"/>
+  <anchor x="525.0" y="0.0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="519" y="-160" type="line"/>
+      <point x="539" y="-160" type="line"/>
+      <point x="539" y="0" type="line"/>
+      <point x="519" y="0" type="line"/>
+    </contour>
+    <component base="Cheabkhasian-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

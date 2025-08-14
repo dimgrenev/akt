@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="whiteDiamondWithCentredDot" format="2">
+  <advance width="920"/>
+  <unicode hex="27D0"/>
+  <outline>
+    <component base="whiteDiamond"/>
+    <component base="period" xOffset="300" yOffset="336"/>
+  </outline>
+</glyph>

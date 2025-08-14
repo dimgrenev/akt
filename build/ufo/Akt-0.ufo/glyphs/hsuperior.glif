@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hsuperior" format="2">
+  <advance width="343"/>
+  <anchor x="176.256" y="414.0" name="bottom"/>
+  <anchor x="232.56" y="560.88" name="center"/>
+  <anchor x="67.32" y="854.64" name="top"/>
+  <outline>
+    <component base="h.small" yOffset="414"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>h.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

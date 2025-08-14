@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="EnGe-cy" format="2">
+  <advance width="940"/>
+  <unicode hex="04A4"/>
+  <anchor x="700" y="720" name="top"/>
+  <anchor x="766" y="360" name="dot"/>
+  <anchor x="560" y="0" name="bottom"/>
+  <anchor x="810" y="0" name="bottomright"/>
+  <anchor x="600" y="360" name="center"/>
+  <outline>
+    <contour>
+      <point x="104" y="0" type="line"/>
+      <point x="124" y="0" type="line"/>
+      <point x="124" y="360" type="line"/>
+      <point x="534" y="360" type="line"/>
+      <point x="534" y="380" type="line"/>
+      <point x="124" y="380" type="line"/>
+      <point x="124" y="720" type="line"/>
+      <point x="104" y="720" type="line"/>
+    </contour>
+    <component base="Ge-cy" xOffset="420"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>Ge-cy</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

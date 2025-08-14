@@ -742,16 +742,6 @@ value = Futuristic;
 );
 tag = ss02;
 },
-  {
-  automatic = 1;
-  code = "";
-  tag = mark;
-  },
-  {
-  automatic = 1;
-  code = "";
-  tag = mkmk;
-  },
 {
 automatic = 1;
 code = "sub a by a.cv01;

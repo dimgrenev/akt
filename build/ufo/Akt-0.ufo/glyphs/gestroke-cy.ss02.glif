@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gestroke-cy.ss02" format="2">
+  <advance width="420"/>
+  <anchor x="170" y="240" name="center"/>
+  <anchor x="230" y="500" name="top"/>
+  <outline>
+    <component base="ge-cy.ss02"/>
+    <component base="strokeshortcomb" xOffset="-30" yOffset="-20"/>
+  </outline>
+</glyph>

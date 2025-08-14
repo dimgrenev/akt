@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upDownArrow" format="2">
+  <advance width="700"/>
+  <unicode hex="2195"/>
+  <outline>
+    <component base="rightArrow" xScale="0" xyScale="-1" yxScale="-1" yScale="0" xOffset="720" yOffset="689"/>
+    <component base="rightArrow" xScale="0" xyScale="1" yxScale="1" yScale="0" xOffset="-20" yOffset="31"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>rightArrow</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>rightArrow</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="accountof" format="2">
+  <advance width="824"/>
+  <unicode hex="2100"/>
+  <anchor x="686.912" y="0.0" name="bottom"/>
+  <anchor x="264.384" y="414.0" name="ogonek"/>
+  <anchor x="686.912" y="306.0" name="top"/>
+  <outline>
+    <component base="ordfeminine"/>
+    <component base="fraction" xOffset="318"/>
+    <component base="c.small" xOffset="518"/>
+  </outline>
+</glyph>

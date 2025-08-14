@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.numr" format="2">
+  <advance width="244"/>
+  <anchor x="120" y="520" name="_center"/>
+  <outline>
+    <component base="one.small" xScale="0.908" yScale="0.908" yOffset="320"/>
+  </outline>
+</glyph>

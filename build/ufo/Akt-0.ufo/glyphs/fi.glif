@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fi" format="2">
+  <advance width="616"/>
+  <unicode hex="FB01"/>
+  <anchor x="300" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="158" y="0" type="line"/>
+      <point x="178" y="0" type="line"/>
+      <point x="178" y="480" type="line"/>
+      <point x="498" y="480" type="line"/>
+      <point x="498" y="0" type="line"/>
+      <point x="518" y="0" type="line"/>
+      <point x="518" y="500" type="line"/>
+      <point x="178" y="500" type="line"/>
+      <point x="178" y="594" type="line" smooth="yes"/>
+      <point x="178" y="653"/>
+      <point x="229" y="700"/>
+      <point x="292" y="700" type="qcurve" smooth="yes"/>
+      <point x="414" y="700" type="line"/>
+      <point x="414" y="720" type="line"/>
+      <point x="292" y="720" type="line" smooth="yes"/>
+      <point x="221" y="720"/>
+      <point x="158" y="665"/>
+      <point x="158" y="600" type="qcurve" smooth="yes"/>
+      <point x="158" y="500" type="line"/>
+      <point x="40" y="500" type="line"/>
+      <point x="40" y="480" type="line"/>
+      <point x="158" y="480" type="line"/>
+    </contour>
+  </outline>
+</glyph>

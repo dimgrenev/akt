@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="AE" format="2">
+  <advance width="960"/>
+  <unicode hex="00C6"/>
+  <anchor x="682" y="0" name="bottom"/>
+  <anchor x="904" y="0" name="ogonek"/>
+  <anchor x="480" y="720" name="top"/>
+  <outline>
+    <contour>
+      <point x="20" y="0" type="line"/>
+      <point x="172" y="0" type="line"/>
+      <point x="444" y="602" type="line"/>
+      <point x="480" y="602" type="line"/>
+      <point x="480" y="720" type="line"/>
+      <point x="346" y="720" type="line"/>
+    </contour>
+    <contour>
+      <point x="193" y="160" type="line"/>
+      <point x="486" y="160" type="line"/>
+      <point x="486" y="280" type="line"/>
+      <point x="193" y="280" type="line"/>
+    </contour>
+    <component base="E" xOffset="392"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>E</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Rsmallinverted" format="2">
+  <advance width="540"/>
+  <unicode hex="0281"/>
+  <anchor x="276" y="0" name="bottom"/>
+  <outline>
+    <component base="ya-cy" yScale="-1" yOffset="500"/>
+  </outline>
+</glyph>

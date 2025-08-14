@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="endescender-cy" format="2">
+  <advance width="600"/>
+  <unicode hex="04A3"/>
+  <outline>
+    <contour>
+      <point x="520" y="-160" type="line"/>
+      <point x="540" y="-160" type="line"/>
+      <point x="540" y="20" type="line"/>
+      <point x="440" y="20" type="line"/>
+      <point x="440" y="0" type="line"/>
+      <point x="520" y="0" type="line"/>
+    </contour>
+    <component base="en-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tetse-cy" format="2">
+  <advance width="680"/>
+  <unicode hex="04B5"/>
+  <outline>
+    <contour>
+      <point x="40" y="480" type="line"/>
+      <point x="344" y="480" type="line"/>
+      <point x="344" y="500" type="line"/>
+      <point x="40" y="500" type="line"/>
+    </contour>
+    <component base="tse-cy" xOffset="80"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

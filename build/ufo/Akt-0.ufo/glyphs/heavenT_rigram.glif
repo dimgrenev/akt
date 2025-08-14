@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="heavenTrigram" format="2">
+  <advance width="850"/>
+  <unicode hex="2630"/>
+  <outline>
+    <contour>
+      <point x="75" y="700" type="line"/>
+      <point x="775" y="700" type="line"/>
+      <point x="775" y="720" type="line"/>
+      <point x="75" y="720" type="line"/>
+    </contour>
+    <contour>
+      <point x="75" y="0" type="line"/>
+      <point x="775" y="0" type="line"/>
+      <point x="775" y="20" type="line"/>
+      <point x="75" y="20" type="line"/>
+    </contour>
+    <contour>
+      <point x="75" y="350" type="line"/>
+      <point x="775" y="350" type="line"/>
+      <point x="775" y="370" type="line"/>
+      <point x="75" y="370" type="line"/>
+    </contour>
+  </outline>
+</glyph>

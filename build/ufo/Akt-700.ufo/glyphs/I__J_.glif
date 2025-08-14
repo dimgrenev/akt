@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="I_J" format="2">
+  <advance width="590"/>
+  <anchor x="307" y="0" name="bottom_1"/>
+  <anchor x="461" y="720" name="top_1"/>
+  <outline>
+    <contour>
+      <point x="66" y="280" type="line"/>
+      <point x="216" y="280" type="line"/>
+      <point x="216" y="720" type="line"/>
+      <point x="66" y="720" type="line"/>
+    </contour>
+    <component base="J" xOffset="44"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

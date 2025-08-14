@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="onesuperior" format="2">
+  <advance width="269"/>
+  <unicode hex="00B9"/>
+  <anchor x="130" y="580" name="_center"/>
+  <outline>
+    <component base="one.small" yOffset="360"/>
+  </outline>
+</glyph>

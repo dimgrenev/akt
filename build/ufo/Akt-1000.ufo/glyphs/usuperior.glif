@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="usuperior" format="2">
+  <advance width="343"/>
+  <anchor x="171.36" y="720.0" name="top"/>
+  <anchor x="171.36" y="414.0" name="bottom"/>
+  <anchor x="287.64" y="414.0" name="ogonek"/>
+  <outline>
+    <component base="u.small" yOffset="414"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>u.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

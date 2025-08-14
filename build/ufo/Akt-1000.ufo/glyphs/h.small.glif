@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="h.small" format="2">
+  <advance width="343"/>
+  <anchor x="186.66" y="0.0" name="bottom"/>
+  <anchor x="257.04" y="146.88" name="center"/>
+  <anchor x="78.336" y="440.64" name="top"/>
+  <outline>
+    <component base="h" xScale="0.612" yScale="0.612"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>name</key>
+          <string></string>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>52</integer>
+            <integer>142</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

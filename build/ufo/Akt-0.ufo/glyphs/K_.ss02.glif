@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="K.ss02" format="2">
+  <advance width="680"/>
+  <anchor x="160" y="580" name="center"/>
+  <anchor x="302" y="720" name="top"/>
+  <anchor x="302" y="0" name="bottom"/>
+  <outline>
+    <component base="Ka-cy"/>
+  </outline>
+</glyph>

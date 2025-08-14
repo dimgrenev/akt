@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zhedescender-cy.ss01" format="2">
+  <advance width="910"/>
+  <anchor x="430" y="500" name="top"/>
+  <outline>
+    <contour>
+      <point x="740" y="-160" type="line"/>
+      <point x="870" y="-160" type="line"/>
+      <point x="870" y="112" type="line"/>
+      <point x="768" y="112" type="line"/>
+      <point x="768" y="0" type="line"/>
+      <point x="740" y="0" type="line"/>
+    </contour>
+    <component base="zhe-cy.ss01"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

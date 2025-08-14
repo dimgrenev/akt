@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="chedescender-cy" format="2">
+  <advance width="560"/>
+  <unicode hex="04B7"/>
+  <anchor x="250" y="500" name="top"/>
+  <outline>
+    <contour>
+      <point x="480" y="-160" type="line"/>
+      <point x="500" y="-160" type="line"/>
+      <point x="500" y="20" type="line"/>
+      <point x="407" y="20" type="line"/>
+      <point x="407" y="0" type="line"/>
+      <point x="480" y="0" type="line"/>
+    </contour>
+    <component base="che-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

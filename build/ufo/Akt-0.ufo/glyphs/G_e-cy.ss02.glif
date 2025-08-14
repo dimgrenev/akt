@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ge-cy.ss02" format="2">
+  <advance width="520"/>
+  <anchor x="300" y="720" name="top"/>
+  <anchor x="346" y="360" name="dot"/>
+  <anchor x="140" y="0" name="bottom"/>
+  <anchor x="390" y="0" name="bottomright"/>
+  <anchor x="180" y="360" name="center"/>
+  <outline>
+    <component base="L.ss02" yScale="-1" yOffset="720"/>
+  </outline>
+</glyph>

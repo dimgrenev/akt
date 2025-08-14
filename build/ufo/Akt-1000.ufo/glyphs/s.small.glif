@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="s.small" format="2">
+  <advance width="306"/>
+  <anchor x="149.94" y="0.0" name="bottom"/>
+  <anchor x="149.94" y="306.0" name="top"/>
+  <outline>
+    <component base="s" xScale="0.612" yScale="0.612"/>
+  </outline>
+</glyph>

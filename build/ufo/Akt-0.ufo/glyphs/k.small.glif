@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="k.small" format="2">
+  <advance width="330"/>
+  <anchor x="149.328" y="0.0" name="bottom"/>
+  <anchor x="137.088" y="440.64" name="top"/>
+  <outline>
+    <component base="k" xScale="0.612" yScale="0.612"/>
+  </outline>
+</glyph>

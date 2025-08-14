@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="copyright" format="2">
+  <advance width="860"/>
+  <unicode hex="00A9"/>
+  <anchor x="430" y="360" name="center"/>
+  <outline>
+    <contour>
+      <point x="438" y="160" type="qcurve" smooth="yes"/>
+      <point x="498" y="160"/>
+      <point x="573" y="222"/>
+      <point x="581" y="268" type="qcurve"/>
+      <point x="561" y="268" type="line"/>
+      <point x="551" y="226"/>
+      <point x="488" y="180"/>
+      <point x="438" y="180" type="qcurve" smooth="yes"/>
+      <point x="365" y="180"/>
+      <point x="289" y="273"/>
+      <point x="289" y="360" type="qcurve" smooth="yes"/>
+      <point x="289" y="447"/>
+      <point x="365" y="540"/>
+      <point x="438" y="540" type="qcurve" smooth="yes"/>
+      <point x="488" y="540"/>
+      <point x="551" y="494"/>
+      <point x="561" y="452" type="qcurve"/>
+      <point x="581" y="452" type="line"/>
+      <point x="573" y="498"/>
+      <point x="498" y="560"/>
+      <point x="438" y="560" type="qcurve" smooth="yes"/>
+      <point x="359" y="560"/>
+      <point x="269" y="453"/>
+      <point x="269" y="360" type="qcurve" smooth="yes"/>
+      <point x="269" y="267"/>
+      <point x="359" y="160"/>
+    </contour>
+    <component base="numCircle"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

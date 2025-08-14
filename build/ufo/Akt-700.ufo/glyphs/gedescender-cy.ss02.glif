@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gedescender-cy.ss02" format="2">
+  <advance width="420"/>
+  <anchor x="170" y="240" name="center"/>
+  <anchor x="240" y="500" name="top"/>
+  <outline>
+    <contour>
+      <point x="140" y="-160" type="line"/>
+      <point x="270" y="-160" type="line"/>
+      <point x="270" y="110" type="line"/>
+      <point x="56" y="110" type="line"/>
+      <point x="56" y="0" type="line"/>
+      <point x="140" y="0" type="line"/>
+    </contour>
+    <component base="ge-cy.ss02"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

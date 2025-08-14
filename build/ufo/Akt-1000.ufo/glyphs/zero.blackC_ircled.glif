@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zero.blackCircled" format="2">
+  <advance width="860"/>
+  <unicode hex="24FF"/>
+  <anchor x="430" y="360" name="center"/>
+  <outline>
+    <component base="blackCircle"/>
+    <component base="zero.numr" xOffset="260" yOffset="-160"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>blackCircle</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

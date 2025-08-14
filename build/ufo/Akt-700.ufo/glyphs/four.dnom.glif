@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four.dnom" format="2">
+  <advance width="364"/>
+  <outline>
+    <component base="four.small" xScale="0.908" yScale="0.908"/>
+  </outline>
+</glyph>

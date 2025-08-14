@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="longs" format="2">
+  <advance width="256"/>
+  <unicode hex="017F"/>
+  <anchor x="129.0" y="700.0" name="top"/>
+  <anchor x="128.0" y="0.0" name="bottom"/>
+  <outline>
+    <component base="jdotless" xScale="-1.0" yScale="-1.0" xOffset="256" yOffset="500"/>
+  </outline>
+</glyph>

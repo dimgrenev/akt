@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hadescender-cy" format="2">
+  <advance width="710"/>
+  <unicode hex="04B2"/>
+  <anchor x="326" y="0" name="bottom"/>
+  <anchor x="326" y="720" name="top"/>
+  <outline>
+    <contour>
+      <point x="552" y="-160" type="line"/>
+      <point x="686" y="-160" type="line"/>
+      <point x="686" y="120" type="line"/>
+      <point x="514" y="120" type="line"/>
+      <point x="514" y="0" type="line"/>
+      <point x="552" y="0" type="line"/>
+    </contour>
+    <component base="X"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

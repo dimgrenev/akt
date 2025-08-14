@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Nje-cy" format="2">
+  <advance width="1060"/>
+  <unicode hex="040A"/>
+  <anchor x="340" y="0" name="bottom"/>
+  <anchor x="340" y="720" name="top"/>
+  <outline>
+    <contour>
+      <point x="542" y="435" type="line"/>
+      <point x="542" y="305" type="line"/>
+      <point x="752" y="305" type="line" smooth="yes"/>
+      <point x="800" y="305"/>
+      <point x="848" y="287"/>
+      <point x="878" y="243"/>
+      <point x="878" y="215" type="qcurve" smooth="yes"/>
+      <point x="878" y="187"/>
+      <point x="848" y="146"/>
+      <point x="800" y="126"/>
+      <point x="752" y="126" type="qcurve" smooth="yes"/>
+      <point x="542" y="126" type="line"/>
+      <point x="542" y="0" type="line"/>
+      <point x="770" y="0" type="line" smooth="yes"/>
+      <point x="850" y="0"/>
+      <point x="966" y="51"/>
+      <point x="1030" y="151"/>
+      <point x="1030" y="215" type="qcurve" smooth="yes"/>
+      <point x="1030" y="279"/>
+      <point x="966" y="383"/>
+      <point x="850" y="435"/>
+      <point x="770" y="435" type="qcurve" smooth="yes"/>
+    </contour>
+    <component base="H"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
+</glyph>

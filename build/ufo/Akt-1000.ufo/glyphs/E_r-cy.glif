@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Er-cy" format="2">
+  <advance width="660"/>
+  <unicode hex="0420"/>
+  <anchor x="320" y="0" name="bottom"/>
+  <anchor x="320" y="720" name="top"/>
+  <outline>
+    <component base="P"/>
+  </outline>
+</glyph>

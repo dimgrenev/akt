@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zinferior" format="2">
+  <advance width="294"/>
+  <anchor x="143.208" y="-80.0" name="bottom"/>
+  <anchor x="143.208" y="226.0" name="top"/>
+  <outline>
+    <component base="z.small" yOffset="-80"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>z.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

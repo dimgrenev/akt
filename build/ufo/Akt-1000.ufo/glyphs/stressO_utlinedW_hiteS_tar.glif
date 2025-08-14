@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="stressOutlinedWhiteStar" format="2">
+  <advance width="800"/>
+  <unicode hex="2729"/>
+  <outline>
+    <contour>
+      <point x="157" y="-12" type="line"/>
+      <point x="400" y="163" type="line"/>
+      <point x="642" y="-12" type="line"/>
+      <point x="549" y="272" type="line"/>
+      <point x="790" y="448" type="line"/>
+      <point x="493" y="448" type="line"/>
+      <point x="400" y="732" type="line"/>
+      <point x="306" y="448" type="line"/>
+      <point x="10" y="448" type="line"/>
+      <point x="251" y="272" type="line"/>
+    </contour>
+    <contour>
+      <point x="314" y="205" type="line"/>
+      <point x="347" y="306" type="line"/>
+      <point x="260" y="369" type="line"/>
+      <point x="367" y="369" type="line"/>
+      <point x="400" y="470" type="line"/>
+      <point x="432" y="369" type="line"/>
+      <point x="540" y="369" type="line"/>
+      <point x="453" y="306" type="line"/>
+      <point x="486" y="205" type="line"/>
+      <point x="400" y="268" type="line"/>
+    </contour>
+  </outline>
+</glyph>

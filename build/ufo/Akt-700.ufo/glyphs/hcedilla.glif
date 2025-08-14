@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hcedilla" format="2">
+  <advance width="560"/>
+  <unicode hex="1E29"/>
+  <anchor x="144" y="-200" name="bottom"/>
+  <anchor x="420" y="240" name="center"/>
+  <anchor x="128" y="720" name="top"/>
+  <outline>
+    <component base="h"/>
+    <component base="cedillacomb" xOffset="-20"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>cedillacomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

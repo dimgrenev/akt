@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="registered" format="2">
+  <advance width="860"/>
+  <unicode hex="00AE"/>
+  <anchor x="430" y="360" name="center"/>
+  <outline>
+    <contour>
+      <point x="279" y="170" type="line"/>
+      <point x="395" y="170" type="line"/>
+      <point x="395" y="301" type="line"/>
+      <point x="417" y="301" type="line"/>
+      <point x="485" y="170" type="line"/>
+      <point x="609" y="170" type="line"/>
+      <point x="534" y="311" type="line"/>
+      <point x="564" y="326"/>
+      <point x="598" y="384"/>
+      <point x="598" y="423" type="qcurve" smooth="yes"/>
+      <point x="598" y="482"/>
+      <point x="523" y="550"/>
+      <point x="448" y="550" type="qcurve" smooth="yes"/>
+      <point x="279" y="550" type="line"/>
+    </contour>
+    <contour>
+      <point x="395" y="386" type="line"/>
+      <point x="395" y="464" type="line"/>
+      <point x="436" y="464" type="line" smooth="yes"/>
+      <point x="456" y="464"/>
+      <point x="478" y="445"/>
+      <point x="478" y="425" type="qcurve" smooth="yes"/>
+      <point x="478" y="405"/>
+      <point x="456" y="386"/>
+      <point x="436" y="386" type="qcurve" smooth="yes"/>
+    </contour>
+    <component base="numCircle"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+    </dict>
+  </lib>
+</glyph>

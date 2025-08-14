@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Geupturn-cy" format="2">
+  <advance width="540"/>
+  <unicode hex="0490"/>
+  <outline>
+    <contour>
+      <point x="104" y="0" type="line"/>
+      <point x="124" y="0" type="line"/>
+      <point x="124" y="700" type="line"/>
+      <point x="397" y="700" type="line" smooth="yes"/>
+      <point x="433" y="700"/>
+      <point x="478" y="716"/>
+      <point x="500" y="756"/>
+      <point x="500" y="790" type="qcurve" smooth="yes"/>
+      <point x="500" y="800" type="line"/>
+      <point x="480" y="800" type="line"/>
+      <point x="480" y="790" type="line" smooth="yes"/>
+      <point x="480" y="762"/>
+      <point x="462" y="730"/>
+      <point x="427" y="720"/>
+      <point x="397" y="720" type="qcurve" smooth="yes"/>
+      <point x="104" y="720" type="line"/>
+    </contour>
+  </outline>
+</glyph>

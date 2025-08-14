@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="yeru-cy" format="2">
+  <advance width="720"/>
+  <unicode hex="044B"/>
+  <anchor x="297" y="0" name="bottom"/>
+  <anchor x="350" y="500" name="top"/>
+  <outline>
+    <contour>
+      <point x="100" y="0" type="line"/>
+      <point x="270" y="0" type="line" smooth="yes"/>
+      <point x="330" y="0"/>
+      <point x="410" y="30"/>
+      <point x="454" y="98"/>
+      <point x="454" y="148" type="qcurve" smooth="yes"/>
+      <point x="454" y="198"/>
+      <point x="410" y="266"/>
+      <point x="330" y="296"/>
+      <point x="270" y="296" type="qcurve" smooth="yes"/>
+      <point x="120" y="296" type="line"/>
+      <point x="120" y="500" type="line"/>
+      <point x="100" y="500" type="line"/>
+    </contour>
+    <contour>
+      <point x="120" y="20" type="line"/>
+      <point x="120" y="276" type="line"/>
+      <point x="270" y="276" type="line" smooth="yes"/>
+      <point x="322" y="276"/>
+      <point x="396" y="250"/>
+      <point x="434" y="190"/>
+      <point x="434" y="148" type="qcurve" smooth="yes"/>
+      <point x="434" y="106"/>
+      <point x="396" y="46"/>
+      <point x="322" y="20"/>
+      <point x="270" y="20" type="qcurve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="600" y="0" type="line"/>
+      <point x="620" y="0" type="line"/>
+      <point x="620" y="500" type="line"/>
+      <point x="600" y="500" type="line"/>
+    </contour>
+  </outline>
+</glyph>

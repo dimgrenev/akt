@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="jsuperior" format="2">
+  <advance width="157"/>
+  <anchor x="68.544" y="291.6" name="bottom"/>
+  <anchor x="78.336" y="720.0" name="top"/>
+  <outline>
+    <component base="j.small" yOffset="414"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>j.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

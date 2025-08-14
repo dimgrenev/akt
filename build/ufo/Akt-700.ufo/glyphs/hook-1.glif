@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hook-1" format="2">
+  <advance width="280"/>
+  <outline>
+    <contour>
+      <point x="13" y="-200" type="line"/>
+      <point x="110" y="-200" type="line" smooth="yes"/>
+      <point x="196" y="-200"/>
+      <point x="273" y="-124"/>
+      <point x="273" y="-48" type="qcurve" smooth="yes"/>
+      <point x="273" y="40" type="line"/>
+      <point x="123" y="0" type="line"/>
+      <point x="123" y="-28" type="line" smooth="yes"/>
+      <point x="123" y="-54"/>
+      <point x="99" y="-76"/>
+      <point x="75" y="-76" type="qcurve" smooth="yes"/>
+      <point x="13" y="-76" type="line"/>
+    </contour>
+  </outline>
+</glyph>

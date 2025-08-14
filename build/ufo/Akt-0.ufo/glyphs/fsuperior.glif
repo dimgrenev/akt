@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fsuperior" format="2">
+  <advance width="233"/>
+  <anchor x="86.292" y="414.0" name="bottom"/>
+  <anchor x="93.636" y="854.64" name="top"/>
+  <outline>
+    <component base="f.small" yOffset="414"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>f.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

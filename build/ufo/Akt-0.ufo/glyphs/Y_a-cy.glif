@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ya-cy" format="2">
+  <advance width="680"/>
+  <unicode hex="042F"/>
+  <anchor x="374" y="0" name="bottom"/>
+  <anchor x="340" y="720" name="top"/>
+  <outline>
+    <component base="R" xScale="-1" xOffset="680"/>
+  </outline>
+</glyph>

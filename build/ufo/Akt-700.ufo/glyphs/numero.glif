@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="numero" format="2">
+  <advance width="1100"/>
+  <unicode hex="2116"/>
+  <anchor x="870" y="520" name="_center"/>
+  <outline>
+    <contour>
+      <point x="60" y="0" type="line"/>
+      <point x="210" y="0" type="line"/>
+      <point x="210" y="462" type="line"/>
+      <point x="471" y="0" type="line"/>
+      <point x="622" y="0" type="line"/>
+      <point x="622" y="720" type="line"/>
+      <point x="472" y="720" type="line"/>
+      <point x="472" y="258" type="line"/>
+      <point x="211" y="720" type="line"/>
+      <point x="60" y="720" type="line"/>
+    </contour>
+    <contour>
+      <point x="716" y="150" type="line"/>
+      <point x="1025" y="150" type="line"/>
+      <point x="1025" y="250" type="line"/>
+      <point x="716" y="250" type="line"/>
+    </contour>
+    <component base="zero.numr" xOffset="700"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+    </dict>
+  </lib>
+</glyph>

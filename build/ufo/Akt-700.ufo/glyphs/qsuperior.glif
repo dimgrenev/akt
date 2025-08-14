@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="qsuperior" format="2">
+  <advance width="357"/>
+  <anchor x="153.0" y="720.0" name="top"/>
+  <anchor x="154.224" y="414.0" name="bottom"/>
+  <outline>
+    <component base="q.small" yOffset="414"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>q.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

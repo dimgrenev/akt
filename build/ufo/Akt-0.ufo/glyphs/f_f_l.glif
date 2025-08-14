@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_f_l" format="2">
+  <advance width="977"/>
+  <anchor x="330" y="0" name="caret"/>
+  <anchor x="700" y="0" name="caret_2"/>
+  <outline>
+    <contour>
+      <point x="158" y="0" type="line"/>
+      <point x="178" y="0" type="line"/>
+      <point x="178" y="480" type="line"/>
+      <point x="498" y="480" type="line"/>
+      <point x="498" y="0" type="line"/>
+      <point x="518" y="0" type="line"/>
+      <point x="518" y="480" type="line"/>
+      <point x="754" y="480" type="line"/>
+      <point x="754" y="500" type="line"/>
+      <point x="518" y="500" type="line"/>
+      <point x="518" y="594" type="line" smooth="yes"/>
+      <point x="518" y="653"/>
+      <point x="569" y="700"/>
+      <point x="632" y="700" type="qcurve" smooth="yes"/>
+      <point x="839" y="700" type="line"/>
+      <point x="839" y="0" type="line"/>
+      <point x="859" y="0" type="line"/>
+      <point x="859" y="720" type="line"/>
+      <point x="632" y="720" type="line" smooth="yes"/>
+      <point x="561" y="720"/>
+      <point x="498" y="665"/>
+      <point x="498" y="600" type="qcurve" smooth="yes"/>
+      <point x="498" y="500" type="line"/>
+      <point x="178" y="500" type="line"/>
+      <point x="178" y="594" type="line" smooth="yes"/>
+      <point x="178" y="653"/>
+      <point x="229" y="700"/>
+      <point x="292" y="700" type="qcurve" smooth="yes"/>
+      <point x="314" y="700" type="line"/>
+      <point x="314" y="720" type="line"/>
+      <point x="292" y="720" type="line" smooth="yes"/>
+      <point x="221" y="720"/>
+      <point x="158" y="665"/>
+      <point x="158" y="600" type="qcurve" smooth="yes"/>
+      <point x="158" y="500" type="line"/>
+      <point x="40" y="500" type="line"/>
+      <point x="40" y="480" type="line"/>
+      <point x="158" y="480" type="line"/>
+    </contour>
+  </outline>
+</glyph>

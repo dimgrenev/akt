@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="multisetmultiplication" format="2">
+  <advance width="820"/>
+  <unicode hex="228D"/>
+  <outline>
+    <component base="union" yOffset="6"/>
+    <component base="period" xOffset="250" yOffset="342"/>
+  </outline>
+</glyph>

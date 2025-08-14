@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commasuperior" format="2">
+  <advance width="140"/>
+  <outline>
+    <component base="comma.small" yOffset="414"/>
+  </outline>
+</glyph>

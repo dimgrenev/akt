@@ -1,0 +1,714 @@
+Start ... running 236 individual check executions.
+ >> googlefonts/article/images
+    Validate size, and resolution of article images, and ensure article page has minimum length and includes
+visual assets.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    The purpose of this check is to ensure images (either raster or vector files) are not excessively       
+    large in filesize and resolution.                                                                       
+                                                                                                            
+    These constraints are loosely based on infrastructure limitations under default configurations.         
+                                                                                                            
+    It also ensures that the article page has a minimum length and includes at least one visual asset.      
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/4594
+
+    WARN Family metadata at fonts/variable does not have an article. [code: lacks-article]                  
+
+    Result: WARN
+
+ >> googlefonts/metadata/unreachable_subsetting
+    Check for codepoints not covered by METADATA subsets.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    This check ensures that all encoded glyphs in the font are covered by a subset declared in the          
+    METADATA.pb. Google Fonts splits the font into a set of subset fonts based on the contents of the       
+    `subsets` field and the subset definitions in the `glyphsets` repository.                               
+                                                                                                            
+    Any encoded glyphs which are not by any of these subset definitions will not be served in the           
+    subsetted fonts, and so will be unreachable to the end user.                                            
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/4097
+               https://github.com/fonttools/fontbakery/pull/4273
+
+    WARN The following codepoints supported by the font are not covered by any subsets defined in the       
+         font's metadata file, and will never be served. You can solve this by either manually adding       
+         additional subset declarations to METADATA.pb, or by editing the glyphset definitions.             
+                                                                                                            
+          • U+02D8 BREVE: try adding one of: yi, canadian-aboriginal                                        
+          • U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal                                    
+          • U+02DB OGONEK: try adding one of: yi, canadian-aboriginal                                       
+          • U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh         
+          • U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic                                 
+          • U+0307 COMBINING DOT ABOVE: try adding one of: syriac, todhri, malayalam, math, duployan,       
+            tifinagh, hebrew, tai-le, canadian-aboriginal, old-permic, coptic                               
+          • U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan                                
+          • U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee                        
+          • U+030C COMBINING CARON: try adding one of: tai-le, cherokee                                     
+          • U+0312 COMBINING TURNED COMMA ABOVE: try adding math                                            
+          • U+0326 COMBINING COMMA BELOW: try adding math                                                   
+          • U+0327 COMBINING CEDILLA: try adding math                                                       
+          • U+0328 COMBINING OGONEK: not included in any glyphset definition                                
+          • U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition                  
+          • U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: greek, elbasan, math                      
+          • U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: greek, elbasan, math                      
+          • U+039E GREEK CAPITAL LETTER XI: try adding one of: greek, elbasan, math                         
+          • U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: greek, elbasan, math                      
+          • U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: greek, math                                 
+          • U+03B4 GREEK SMALL LETTER DELTA: try adding one of: greek, math                                 
+          • U+03BC GREEK SMALL LETTER MU: try adding one of: greek, math                                    
+          • U+03BE GREEK SMALL LETTER XI: try adding one of: greek, math                                    
+          • U+03C0 GREEK SMALL LETTER PI: try adding one of: greek, math, yi                                
+          • U+1EA0 LATIN CAPITAL LETTER A WITH DOT BELOW: try adding vietnamese                             
+          • U+1EA1 LATIN SMALL LETTER A WITH DOT BELOW: try adding vietnamese                               
+          • U+1EB8 LATIN CAPITAL LETTER E WITH DOT BELOW: try adding vietnamese                             
+          • U+1EB9 LATIN SMALL LETTER E WITH DOT BELOW: try adding vietnamese                               
+          • U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese                                 
+          • U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese                                   
+          • U+1ECA LATIN CAPITAL LETTER I WITH DOT BELOW: try adding vietnamese                             
+          • U+1ECB LATIN SMALL LETTER I WITH DOT BELOW: try adding vietnamese                               
+          • U+1ECC LATIN CAPITAL LETTER O WITH DOT BELOW: try adding vietnamese                             
+          • U+1ECD LATIN SMALL LETTER O WITH DOT BELOW: try adding vietnamese                               
+          • U+1EE4 LATIN CAPITAL LETTER U WITH DOT BELOW: try adding vietnamese                             
+          • U+1EE5 LATIN SMALL LETTER U WITH DOT BELOW: try adding vietnamese                               
+          • U+2007 FIGURE SPACE: try adding symbols2                                                        
+          • U+2008 PUNCTUATION SPACE: try adding symbols2                                                   
+          • U+2010 HYPHEN: try adding one of: lisu, syloti-nagri, sundanese, kaithi, sora-sompeng, yi,      
+            hebrew, cham, coptic, arabic, kharoshthi, armenian, kayah-li                                    
+          • U+2011 NON-BREAKING HYPHEN: try adding one of: yi, arabic, syloti-nagri                         
+          • U+2012 FIGURE DASH: not included in any glyphset definition                                     
+          • U+2015 HORIZONTAL BAR: try adding adlam                                                         
+          • U+2021 DOUBLE DAGGER: try adding adlam                                                          
+          • U+2023 TRIANGULAR BULLET: not included in any glyphset definition                               
+          • U+2024 ONE DOT LEADER: try adding armenian                                                      
+          • U+2025 TWO DOT LEADER: try adding phags-pa                                                      
+          • U+2027 HYPHENATION POINT: not included in any glyphset definition                               
+          • U+2030 PER MILLE SIGN: try adding adlam                                                         
+          • U+203C DOUBLE EXCLAMATION MARK: try adding math                                                 
+          • U+203D INTERROBANG: not included in any glyphset definition                                     
+          • U+2043 HYPHEN BULLET: try adding math                                                           
+          • U+2047 DOUBLE QUESTION MARK: try adding math                                                    
+          • U+2048 QUESTION EXCLAMATION MARK: try adding mongolian                                          
+          • U+2049 EXCLAMATION QUESTION MARK: try adding mongolian                                          
+          • U+2060 WORD JOINER: not included in any glyphset definition                                     
+          • U+2070 SUPERSCRIPT ZERO: try adding math                                                        
+          • U+2071 SUPERSCRIPT LATIN SMALL LETTER I: try adding math                                        
+          • U+2074 SUPERSCRIPT FOUR: try adding math                                                        
+          • U+2075 SUPERSCRIPT FIVE: try adding math                                                        
+          • U+2076 SUPERSCRIPT SIX: try adding math                                                         
+          • U+2077 SUPERSCRIPT SEVEN: try adding math                                                       
+          • U+2078 SUPERSCRIPT EIGHT: try adding math                                                       
+          • U+2079 SUPERSCRIPT NINE: try adding math                                                        
+          • U+207A SUPERSCRIPT PLUS SIGN: try adding math                                                   
+          • U+207B SUPERSCRIPT MINUS: try adding math                                                       
+          • U+207C SUPERSCRIPT EQUALS SIGN: try adding math                                                 
+          • U+207D SUPERSCRIPT LEFT PARENTHESIS: try adding math                                            
+          • U+207E SUPERSCRIPT RIGHT PARENTHESIS: try adding math                                           
+          • U+207F SUPERSCRIPT LATIN SMALL LETTER N: try adding math                                        
+          • U+2080 SUBSCRIPT ZERO: try adding math                                                          
+          • U+2081 SUBSCRIPT ONE: try adding math                                                           
+          • U+2082 SUBSCRIPT TWO: try adding math                                                           
+          • U+2083 SUBSCRIPT THREE: try adding math                                                         
+          • U+2084 SUBSCRIPT FOUR: try adding math                                                          
+          • U+2085 SUBSCRIPT FIVE: try adding math                                                          
+          • U+2086 SUBSCRIPT SIX: try adding math                                                           
+          • U+2087 SUBSCRIPT SEVEN: try adding math                                                         
+          • U+2088 SUBSCRIPT EIGHT: try adding math                                                         
+          • U+2089 SUBSCRIPT NINE: try adding math                                                          
+          • U+208A SUBSCRIPT PLUS SIGN: try adding math                                                     
+          • U+208B SUBSCRIPT MINUS: try adding math                                                         
+          • U+208C SUBSCRIPT EQUALS SIGN: try adding math                                                   
+          • U+208D SUBSCRIPT LEFT PARENTHESIS: try adding math                                              
+          • U+208E SUBSCRIPT RIGHT PARENTHESIS: try adding math                                             
+          • U+2090 LATIN SUBSCRIPT SMALL LETTER A: try adding math                                          
+          • U+2091 LATIN SUBSCRIPT SMALL LETTER E: try adding math                                          
+          • U+2092 LATIN SUBSCRIPT SMALL LETTER O: try adding math                                          
+          • U+2093 LATIN SUBSCRIPT SMALL LETTER X: try adding math                                          
+          • U+2094 LATIN SUBSCRIPT SMALL LETTER SCHWA: try adding math                                      
+          • U+2095 LATIN SUBSCRIPT SMALL LETTER H: try adding math                                          
+          • U+2096 LATIN SUBSCRIPT SMALL LETTER K: try adding math                                          
+          • U+2097 LATIN SUBSCRIPT SMALL LETTER L: try adding math                                          
+          • U+2098 LATIN SUBSCRIPT SMALL LETTER M: try adding math                                          
+          • U+2099 LATIN SUBSCRIPT SMALL LETTER N: try adding math                                          
+          • U+209A LATIN SUBSCRIPT SMALL LETTER P: try adding math                                          
+          • U+209B LATIN SUBSCRIPT SMALL LETTER S: try adding math                                          
+          • U+209C LATIN SUBSCRIPT SMALL LETTER T: try adding math                                          
+          • U+20F0 COMBINING ASTERISK ABOVE: try adding one of: grantha, devanagari                         
+          • U+2100 ACCOUNT OF: try adding math                                                              
+          • U+2101 ADDRESSED TO THE SUBJECT: try adding math                                                
+          • U+2105 CARE OF: try adding math                                                                 
+          • U+2106 CADA UNA: try adding math                                                                
+          • U+2117 SOUND RECORDING COPYRIGHT: try adding math                                               
+          • U+2120 SERVICE MARK: try adding math                                                            
+          • U+2126 OHM SIGN: try adding math                                                                
+          • U+212E ESTIMATED SYMBOL: try adding math                                                        
+          • U+2150 VULGAR FRACTION ONE SEVENTH: try adding symbols                                          
+          • U+2151 VULGAR FRACTION ONE NINTH: try adding symbols                                            
+          • U+2152 VULGAR FRACTION ONE TENTH: try adding symbols                                            
+          • U+2153 VULGAR FRACTION ONE THIRD: try adding symbols                                            
+          • U+2154 VULGAR FRACTION TWO THIRDS: try adding symbols                                           
+          • U+2155 VULGAR FRACTION ONE FIFTH: try adding symbols                                            
+          • U+2156 VULGAR FRACTION TWO FIFTHS: try adding symbols                                           
+          • U+2157 VULGAR FRACTION THREE FIFTHS: try adding symbols                                         
+          • U+2158 VULGAR FRACTION FOUR FIFTHS: try adding symbols                                          
+          • U+2159 VULGAR FRACTION ONE SIXTH: try adding symbols                                            
+          • U+215A VULGAR FRACTION FIVE SIXTHS: try adding symbols                                          
+          • U+215B VULGAR FRACTION ONE EIGHTH: try adding symbols                                           
+          • U+215C VULGAR FRACTION THREE EIGHTHS: try adding symbols                                        
+          • U+215D VULGAR FRACTION FIVE EIGHTHS: try adding symbols                                         
+          • U+215E VULGAR FRACTION SEVEN EIGHTHS: try adding symbols                                        
+          • U+215F FRACTION NUMERATOR ONE: try adding symbols                                               
+          • U+2189 VULGAR FRACTION ZERO THIRDS: try adding symbols                                          
+          • U+2190 LEFTWARDS ARROW: try adding one of: math, symbols                                        
+          • U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols                                       
+          • U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols                                       
+          • U+2195 UP DOWN ARROW: try adding one of: math, symbols                                          
+          • U+2196 NORTH WEST ARROW: try adding one of: math, symbols                                       
+          • U+2197 NORTH EAST ARROW: try adding one of: math, symbols                                       
+          • U+2198 SOUTH EAST ARROW: try adding one of: math, symbols                                       
+          • U+2199 SOUTH WEST ARROW: try adding one of: math, symbols                                       
+          • U+2202 PARTIAL DIFFERENTIAL: try adding math                                                    
+          • U+2206 INCREMENT: try adding math                                                               
+          • U+220F N-ARY PRODUCT: try adding math                                                           
+          • U+2211 N-ARY SUMMATION: try adding math                                                         
+          • U+2219 BULLET OPERATOR: try adding one of: math, yi, symbols, tai-tham                          
+          • U+221A SQUARE ROOT: try adding math                                                             
+          • U+221E INFINITY: try adding math                                                                
+          • U+2229 INTERSECTION: try adding math                                                            
+          • U+222A UNION: try adding math                                                                   
+          • U+222B INTEGRAL: try adding math                                                                
+          • U+223C TILDE OPERATOR: try adding math                                                          
+          • U+2248 ALMOST EQUAL TO: try adding math                                                         
+          • U+2260 NOT EQUAL TO: try adding math                                                            
+          • U+2261 IDENTICAL TO: try adding math                                                            
+          • U+2264 LESS-THAN OR EQUAL TO: try adding math                                                   
+          • U+2265 GREATER-THAN OR EQUAL TO: try adding math                                                
+          • U+2282 SUBSET OF: try adding math                                                               
+          • U+2283 SUPERSET OF: try adding math                                                             
+          • U+228D MULTISET MULTIPLICATION: try adding math                                                 
+          • U+228E MULTISET UNION: try adding math                                                          
+          • U+22A1 SQUARED DOT OPERATOR: try adding math                                                    
+          • U+22C5 DOT OPERATOR: try adding one of: math, symbols                                           
+          • U+22EE VERTICAL ELLIPSIS: try adding math                                                       
+          • U+22EF MIDLINE HORIZONTAL ELLIPSIS: try adding math                                             
+          • U+22F0 UP RIGHT DIAGONAL ELLIPSIS: try adding math                                              
+          • U+22F1 DOWN RIGHT DIAGONAL ELLIPSIS: try adding math                                            
+          • U+2300 DIAMETER SIGN: try adding symbols                                                        
+          • U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols                                          
+          • U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols                                         
+          • U+2460 CIRCLED DIGIT ONE: try adding one of: mongolian, symbols, yi                             
+          • U+2461 CIRCLED DIGIT TWO: try adding one of: mongolian, symbols, yi                             
+          • U+2462 CIRCLED DIGIT THREE: try adding one of: mongolian, symbols, yi                           
+          • U+2463 CIRCLED DIGIT FOUR: try adding one of: mongolian, symbols, yi                            
+          • U+2464 CIRCLED DIGIT FIVE: try adding one of: mongolian, symbols, yi                            
+          • U+2465 CIRCLED DIGIT SIX: try adding one of: mongolian, symbols, yi                             
+          • U+2466 CIRCLED DIGIT SEVEN: try adding one of: mongolian, symbols, yi                           
+          • U+2467 CIRCLED DIGIT EIGHT: try adding one of: mongolian, symbols, yi                           
+          • U+2468 CIRCLED DIGIT NINE: try adding one of: mongolian, symbols, yi                            
+          • U+24EA CIRCLED DIGIT ZERO: try adding symbols                                                   
+          • U+24FF NEGATIVE CIRCLED DIGIT ZERO: try adding symbols                                          
+          • U+25A0 BLACK SQUARE: try adding symbols                                                         
+          • U+25A1 WHITE SQUARE: try adding symbols                                                         
+          • U+25AA BLACK SMALL SQUARE: try adding symbols                                                   
+          • U+25AB WHITE SMALL SQUARE: try adding symbols                                                   
+          • U+25B2 BLACK UP-POINTING TRIANGLE: try adding symbols                                           
+          • U+25BA BLACK RIGHT-POINTING POINTER: try adding symbols                                         
+          • U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols                                         
+          • U+25C4 BLACK LEFT-POINTING POINTER: try adding symbols                                          
+          • U+25C6 BLACK DIAMOND: try adding symbols                                                        
+          • U+25C7 WHITE DIAMOND: try adding symbols                                                        
+          • U+25CA LOZENGE: try adding one of: math, symbols                                                
+          • U+25CB WHITE CIRCLE: try adding symbols                                                         
+          • U+25CC DOTTED CIRCLE: try adding one of: lao, osage, kharoshthi, dogra, tirhuta, javanese,      
+            gunjala-gondi, old-permic, armenian, tai-viet, elbasan, yi, mende-kikakui, new-tai-lue,         
+            thaana, tibetan, malayalam, gurmukhi, phags-pa, wancho, balinese, music, kayah-li, syriac,      
+            adlam, symbols, takri, khojki, lepcha, duployan, newa, khudawadi, syloti-nagri, buginese,       
+            tai-le, myanmar, bassa-vah, caucasian-albanian, manichaean, saurashtra, soyombo, warang-citi,   
+            cham, thai, rejang, kaithi, mahajani, limbu, grantha, coptic, marchen, masaram-gondi, bengali,  
+            mandaic, hebrew, gujarati, zanabazar-square, chakma, tagalog, modi, math, batak,                
+            psalter-pahlavi, sinhala, sundanese, pahawh-hmong, bhaiksuki, sharada, hanifi-rohingya,         
+            sogdian, oriya, tifinagh, mongolian, kannada, ahom, tamil, buhid, meetei-mayek, tagbanwa,       
+            siddham, telugu, khmer, hanunoo, devanagari, canadian-aboriginal, nko, miao, tai-tham, brahmi   
+          • U+25CF BLACK CIRCLE: try adding symbols                                                         
+          • U+25D0 CIRCLE WITH LEFT HALF BLACK: try adding symbols                                          
+          • U+25D1 CIRCLE WITH RIGHT HALF BLACK: try adding symbols                                         
+          • U+25D2 CIRCLE WITH LOWER HALF BLACK: try adding symbols                                         
+          • U+25D3 CIRCLE WITH UPPER HALF BLACK: try adding symbols                                         
+          • U+25E6 WHITE BULLET: try adding symbols                                                         
+          • U+2605 BLACK STAR: try adding symbols                                                           
+          • U+2630 TRIGRAM FOR HEAVEN: try adding symbols                                                   
+          • U+2713 CHECK MARK: try adding symbols                                                           
+          • U+2726 BLACK FOUR POINTED STAR: try adding symbols                                              
+          • U+2727 WHITE FOUR POINTED STAR: try adding symbols                                              
+          • U+2729 STRESS OUTLINED WHITE STAR: try adding symbols                                           
+          • U+2764 HEAVY BLACK HEART: try adding symbols                                                    
+          • U+2776 DINGBAT NEGATIVE CIRCLED DIGIT ONE: try adding symbols                                   
+          • U+2777 DINGBAT NEGATIVE CIRCLED DIGIT TWO: try adding symbols                                   
+          • U+2778 DINGBAT NEGATIVE CIRCLED DIGIT THREE: try adding symbols                                 
+          • U+2779 DINGBAT NEGATIVE CIRCLED DIGIT FOUR: try adding symbols                                  
+          • U+277A DINGBAT NEGATIVE CIRCLED DIGIT FIVE: try adding symbols                                  
+          • U+277B DINGBAT NEGATIVE CIRCLED DIGIT SIX: try adding symbols                                   
+          • U+277C DINGBAT NEGATIVE CIRCLED DIGIT SEVEN: try adding symbols                                 
+          • U+277D DINGBAT NEGATIVE CIRCLED DIGIT EIGHT: try adding symbols                                 
+          • U+277E DINGBAT NEGATIVE CIRCLED DIGIT NINE: try adding symbols                                  
+          • U+27D0 WHITE DIAMOND WITH CENTRED DOT: try adding math                                          
+          • U+2ABD SUBSET WITH DOT: try adding math                                                         
+          • U+2ABE SUPERSET WITH DOT: try adding math                                                       
+          • U+2AF6 TRIPLE COLON OPERATOR: try adding math                                                   
+          • U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition                         
+          • U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition                         
+                                                                                                            
+         Or you can add the above codepoints to one of the subsets supported by the font: cyrillic,         
+         cyrillic-ext, latin, latin-ext [code: unreachable-subsetting]                                      
+
+    Result: WARN
+
+ >> googlefonts/glyphsets/shape_languages
+    Shapes languages in all GF glyphsets.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    This check uses a heuristic to determine which GF glyphsets a font supports. Then it checks the font    
+    for correct shaping behaviour for all languages in those glyphsets.                                     
+                                                                                                            
+    More info: https://github.com/googlefonts/fontbakery/issues/4147
+
+    FAIL GF_Phonetics_SinoExt glyphset:                                                                     
+                                                                                                            
+                                                                                                            
+           FAIL messages                                                          Languages                 
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━          
+           Mandatory orthography codepoints:                                                                
+           Shaper didn't attach acutecomb to J when shaping the text 'ÍJ́'                                   
+           Shaper didn't attach acutecomb to uni0237 when shaping the text 'íj́'   nl_Latn (Dutch)           
+           [code: failed-language-shaping]                                                                  
+                                                                                                            
+    WARN GF_Phonetics_SinoExt glyphset:                                                                     
+                                                                                                            
+                                                                                                            
+           WARN messages                                   Languages                                        
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   
+           Auxiliary orthography codepoints:                                                                
+           Shaper didn't attach acutecomb to uni0430                                                        
+           when shaping the text 'а́'                                                                        
+           Shaper didn't attach acutecomb to uni0435                                                        
+           when shaping the text 'е́'                                                                        
+           Shaper didn't attach acutecomb to uni0438                                                        
+           when shaping the text 'и́'                                                                        
+           Shaper didn't attach acutecomb to uni043E                                                        
+           when shaping the text 'о́'                                                                        
+           Shaper didn't attach acutecomb to uni0443                                                        
+           when shaping the text 'у́'                                                                        
+           Shaper didn't attach acutecomb to uni044B                                                        
+           when shaping the text 'ы́'                                                                        
+           Shaper didn't attach acutecomb to uni044D                                                        
+           when shaping the text 'э́'                                                                        
+           Shaper didn't attach acutecomb to uni044E                                                        
+           when shaping the text 'ю́'                                                                        
+           Shaper didn't attach acutecomb to uni044F       ru_Cyrl (Russian), ru_Cyrl (Russian) and         
+           when shaping the text 'я́'                       ru_Cyrl (Russian)                                
+           Auxiliary orthography codepoints:                                                                
+           Shaper didn't attach acutecomb to uni0430                                                        
+           when shaping the text 'а́'                                                                        
+           Shaper didn't attach acutecomb to uni0435                                                        
+           when shaping the text 'е́'                                                                        
+           Shaper didn't attach acutecomb to uni0454                                                        
+           when shaping the text 'є́'                                                                        
+           Shaper didn't attach acutecomb to uni0438                                                        
+           when shaping the text 'и́'                                                                        
+           Shaper didn't attach acutecomb to dotlessi                                                       
+           when shaping the text 'і́'                                                                        
+           Shaper didn't attach acutecomb to dotlessi                                                       
+           when shaping the text 'ї́'                                                                        
+           Shaper didn't attach acutecomb to uni043E                                                        
+           when shaping the text 'о́'                                                                        
+           Shaper didn't attach acutecomb to uni0443                                                        
+           when shaping the text 'у́'                                                                        
+           Shaper didn't attach acutecomb to uni044E                                                        
+           when shaping the text 'ю́'                                                                        
+           Shaper didn't attach acutecomb to uni044F       uk_Cyrl (Ukrainian), uk_Cyrl (Ukrainian) and     
+           when shaping the text 'я́'                       uk_Cyrl (Ukrainian)                              
+           Auxiliary orthography codepoints:                                                                
+           Shaper didn't attach acutecomb to uni0430                                                        
+           when shaping the text 'а́'                                                                        
+           Shaper didn't attach acutecomb to uni0435                                                        
+           when shaping the text 'е́'                                                                        
+           Shaper didn't attach acutecomb to uni0451                                                        
+           when shaping the text 'ё́'                                                                        
+           Shaper didn't attach acutecomb to dotlessi                                                       
+           when shaping the text 'і́'                                                                        
+           Shaper didn't attach acutecomb to uni043E                                                        
+           when shaping the text 'о́'                                                                        
+           Shaper didn't attach acutecomb to uni0443                                                        
+           when shaping the text 'у́'                                                                        
+           Shaper didn't attach acutecomb to uni044B                                                        
+           when shaping the text 'ы́'                                                                        
+           Shaper didn't attach acutecomb to uni044D                                                        
+           when shaping the text 'э́'                                                                        
+           Shaper didn't attach acutecomb to uni044E                                                        
+           when shaping the text 'ю́'                                                                        
+           Shaper didn't attach acutecomb to uni044F       be_Cyrl (Belarusian), be_Cyrl (Belarusian)       
+           when shaping the text 'я́'                       and be_Cyrl (Belarusian)                         
+           Auxiliary orthography codepoints:                                                                
+           Shaper didn't attach gravecomb to uni0430                                                        
+           when shaping the text 'а̀'                                                                        
+           Shaper didn't attach gravecomb to uni043E                                                        
+           when shaping the text 'о̀'                                                                        
+           Shaper didn't attach gravecomb to uni0443                                                        
+           when shaping the text 'у̀'                                                                        
+           Shaper didn't attach gravecomb to uni044A                                                        
+           when shaping the text 'ъ̀'                                                                        
+           Shaper didn't attach gravecomb to uni044E                                                        
+           when shaping the text 'ю̀'                                                                        
+           Shaper didn't attach gravecomb to uni044F       bg_Cyrl (Bulgarian), bg_Cyrl (Bulgarian) and     
+           when shaping the text 'я̀'                       bg_Cyrl (Bulgarian)                              
+           Auxiliary orthography codepoints:                                                                
+           Shaper didn't attach uni0302 to uni0430 when                                                     
+           shaping the text 'а̂'                                                                             
+           Shaper didn't attach uni0302 to uni0435 when                                                     
+           shaping the text 'е̂'                                                                             
+           Shaper didn't attach uni0302 to uni0438 when                                                     
+           shaping the text 'и̂'                                                                             
+           Shaper didn't attach uni0302 to uni043E when                                                     
+           shaping the text 'о̂'                                                                             
+           Shaper didn't attach uni0302 to uni0443 when    sr_Cyrl (Serbian), sr_Cyrl (Serbian) and         
+           shaping the text 'у̂'                            sr_Cyrl (Serbian)                                
+           Auxiliary orthography codepoints:                                                                
+           Shaper didn't attach acutecomb to Aogonek                                                        
+           when shaping the text 'Ą́'                                                                        
+           Shaper didn't attach tildecomb to Aogonek                                                        
+           when shaping the text 'Ą̃'                                                                        
+           Shaper didn't attach acutecomb to Eogonek                                                        
+           when shaping the text 'Ę́'                                                                        
+           Shaper didn't attach tildecomb to Eogonek                                                        
+           when shaping the text 'Ę̃'                                                                        
+           Shaper didn't attach acutecomb to Edotaccent                                                     
+           when shaping the text 'Ė́'                                                                        
+           Shaper didn't attach tildecomb to Edotaccent                                                     
+           when shaping the text 'Ė̃'                                                                        
+           Shaper didn't attach acutecomb to Idotaccent                                                     
+           when shaping the text 'İ́'                                                                        
+           Shaper didn't attach acutecomb to Idotaccent                                                     
+           when shaping the text 'İ́'                                                                        
+           Shaper didn't attach gravecomb to Idotaccent                                                     
+           when shaping the text 'İ̀'                                                                        
+           Shaper didn't attach gravecomb to Idotaccent                                                     
+           when shaping the text 'İ̀'                                                                        
+           Shaper didn't attach tildecomb to Idotaccent                                                     
+           when shaping the text 'İ̃'                                                                        
+           Shaper didn't attach tildecomb to Idotaccent                                                     
+           when shaping the text 'İ̃'                                                                        
+           Shaper didn't attach acutecomb to Iogonek                                                        
+           when shaping the text 'Į́'                                                                        
+           Shaper didn't attach uni0307 to Iogonek when                                                     
+           shaping the text 'Į̇́'                                                                             
+           Shaper didn't attach acutecomb to uni0307                                                        
+           when shaping the text 'Į̇́'                                                                        
+           Shaper didn't attach tildecomb to Iogonek                                                        
+           when shaping the text 'Į̃'                                                                        
+           Shaper didn't attach uni0307 to Iogonek when                                                     
+           shaping the text 'Į̇̃'                                                                             
+           Shaper didn't attach tildecomb to uni0307                                                        
+           when shaping the text 'Į̇̃'                                                                        
+           Shaper didn't attach tildecomb to J when                                                         
+           shaping the text 'J̃'                                                                             
+           Shaper didn't attach uni0307 to J when                                                           
+           shaping the text 'J̇̃'                                                                             
+           Shaper didn't attach tildecomb to uni0307                                                        
+           when shaping the text 'J̇̃'                                                                        
+           Shaper didn't attach tildecomb to L when                                                         
+           shaping the text 'L̃'                                                                             
+           Shaper didn't attach tildecomb to M when                                                         
+           shaping the text 'M̃'                                                                             
+           Shaper didn't attach tildecomb to R when                                                         
+           shaping the text 'R̃'                                                                             
+           Shaper didn't attach acutecomb to Uogonek                                                        
+           when shaping the text 'Ų́'                                                                        
+           Shaper didn't attach tildecomb to Uogonek                                                        
+           when shaping the text 'Ų̃'                                                                        
+           Shaper didn't attach acutecomb to Umacron                                                        
+           when shaping the text 'Ū́'                                                                        
+           Shaper didn't attach tildecomb to Umacron                                                        
+           when shaping the text 'Ū̃'                                                                        
+           Shaper didn't attach acutecomb to aogonek                                                        
+           when shaping the text 'ą́'                                                                        
+           Shaper didn't attach tildecomb to aogonek                                                        
+           when shaping the text 'ą̃'                                                                        
+           Shaper didn't attach acutecomb to eogonek                                                        
+           when shaping the text 'ę́'                                                                        
+           Shaper didn't attach tildecomb to eogonek                                                        
+           when shaping the text 'ę̃'                                                                        
+           Shaper didn't attach acutecomb to edotaccent                                                     
+           when shaping the text 'ė́'                                                                        
+           Shaper didn't attach tildecomb to edotaccent                                                     
+           when shaping the text 'ė̃'                                                                        
+           Shaper didn't attach uni0307 to dotlessi when                                                    
+           shaping the text 'i̇́'                                                                             
+           Shaper didn't attach acutecomb to uni0307                                                        
+           when shaping the text 'i̇́'                                                                        
+           Shaper didn't attach uni0307 to dotlessi when                                                    
+           shaping the text 'i̇̀'                                                                             
+           Shaper didn't attach gravecomb to uni0307                                                        
+           when shaping the text 'i̇̀'                                                                        
+           Shaper didn't attach uni0307 to dotlessi when                                                    
+           shaping the text 'i̇̃'                                                                             
+           Shaper didn't attach tildecomb to uni0307                                                        
+           when shaping the text 'i̇̃'                                                                        
+           Shaper didn't attach uni0328 to dotlessi when                                                    
+           shaping the text 'į́'                                                                             
+           Shaper didn't attach acutecomb to uni0328                                                        
+           when shaping the text 'į́'                                                                        
+           Shaper didn't attach uni0328 to dotlessi when                                                    
+           shaping the text 'į̇́'                                                                             
+           Shaper didn't attach uni0307 to uni0328 when                                                     
+           shaping the text 'į̇́'                                                                             
+           Shaper didn't attach acutecomb to uni0307                                                        
+           when shaping the text 'į̇́'                                                                        
+           Shaper didn't attach uni0328 to dotlessi when                                                    
+           shaping the text 'į̃'                                                                             
+           Shaper didn't attach tildecomb to uni0328                                                        
+           when shaping the text 'į̃'                                                                        
+           Shaper didn't attach uni0328 to dotlessi when                                                    
+           shaping the text 'į̇̃'                                                                             
+           Shaper didn't attach uni0307 to uni0328 when                                                     
+           shaping the text 'į̇̃'                                                                             
+           Shaper didn't attach tildecomb to uni0307                                                        
+           when shaping the text 'į̇̃'                                                                        
+           Shaper didn't attach tildecomb to uni0237                                                        
+           when shaping the text 'j̃'                                                                        
+           Shaper didn't attach uni0307 to uni0237 when                                                     
+           shaping the text 'j̇̃'                                                                             
+           Shaper didn't attach tildecomb to uni0307                                                        
+           when shaping the text 'j̇̃'                                                                        
+           Shaper didn't attach tildecomb to l when                                                         
+           shaping the text 'l̃'                                                                             
+           Shaper didn't attach tildecomb to m when                                                         
+           shaping the text 'm̃'                                                                             
+           Shaper didn't attach tildecomb to r when                                                         
+           shaping the text 'r̃'                                                                             
+           Shaper didn't attach acutecomb to uogonek                                                        
+           when shaping the text 'ų́'                                                                        
+           Shaper didn't attach tildecomb to uogonek                                                        
+           when shaping the text 'ų̃'                                                                        
+           Shaper didn't attach acutecomb to umacron                                                        
+           when shaping the text 'ū́'                                                                        
+           Shaper didn't attach tildecomb to umacron       lt_Latn (Lithuanian)                             
+           when shaping the text 'ū̃'                                                                        
+           [code: warning-language-shaping]                                                                 
+                                                                                                            
+
+    Result: FAIL
+
+ >> googlefonts/license/OFL_body_text
+    Check OFL body text is correct.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    Check OFL body text is correct. Often users will accidently delete parts of the body text.              
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/3352
+
+    WARN The OFL.txt body text is incorrect. Please use                                                     
+         https://github.com/googlefonts/Unified-Font-Repository/blob/main/OFL.txt as a template. You        
+         should only modify the first line.                                                                 
+                                                                                                            
+         Lines changed:                                                                                     
+                                                                                                            
+         - \n                                                                                               
+                                                                                                            
+         - \n                                                                                               
+                                                                                                            
+         - OTHER DEALINGS IN THE FONT SOFTWARE.                                                             
+                                                                                                            
+         + OTHER DEALINGS IN THE FONT SOFTWARE.\n                                                           
+                                                                                                            
+         [code: incorrect-ofl-body-text]                                                                    
+
+    Result: WARN
+
+ >> soft_dotted
+    Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    An accent placed on characters with a "soft dot", like i or j, causes the dot to disappear. An          
+    explicit dot above can be added where required. See "Diacritics on i and j" in Section 7.1, "Latin" in  
+    The Unicode Standard.                                                                                   
+                                                                                                            
+    Characters with the Soft_Dotted property are listed in                                                  
+    https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt                                              
+                                                                                                            
+    See also: https://googlefonts.github.io/gf-guide/diacritics.html#soft-dotted-glyphs                     
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/4059
+
+    WARN The dot of soft dotted characters should disappear in other cases, for example: ⁱ̀ ⁱ́ ⁱ̂ ⁱ̃ ⁱ̄ ⁱ̆ ⁱ̇ ⁱ̈ ⁱ̊  
+         ⁱ̋ ⁱ̌ ⁱ̒ ⁱ⃰ ⁱ̣̀ ⁱ̣́ ⁱ̣̂ ⁱ̣̃ ⁱ̣̄ ⁱ̣̆ ⁱ̣̇ [code: soft-dotted]                                                          
+
+    Result: WARN
+
+ >> outline_alignment_miss
+    Are there any misaligned on-curve points?
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    This check heuristically looks for on-curve points which are close to, but do not sit on, significant   
+    boundary coordinates. For example, a point which has a Y-coordinate of 1 or -1 might be a misplaced     
+    baseline point. As well as the baseline, here we also check for points near the x-height (but only for  
+    lowercase Latin letters), cap-height, ascender and descender Y coordinates.                             
+                                                                                                            
+    Not all such misaligned curve points are a mistake, and sometimes the design may call for points in     
+    locations near the boundaries. As this check is liable to generate significant numbers of false         
+    positives, it will pass if there are more than 100 reported misalignments.                              
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/pull/3088
+
+    WARN The following glyphs have on-curve points which have potentially incorrect y coordinates:          
+                                                                                                            
+                                                                                                            
+          * ginferior: X=56.0,Y=1.0 (should be at baseline 0?)                                              
+                                                                                                            
+          * uni0490.ss02: X=476.5,Y=721.0 (should be at cap-height 720?)                                    
+                                                                                                            
+          * uni0416 (U+0416): X=50.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni0416 (U+0416): X=76.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni0416 (U+0416): X=924.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0416 (U+0416): X=950.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0416 (U+0416): X=490.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0416 (U+0416): X=510.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0496 (U+0496): X=50.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni0496 (U+0496): X=76.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni0496 (U+0496): X=924.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0496 (U+0496): X=950.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0496 (U+0496): X=490.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0496 (U+0496): X=510.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04C1 (U+04C1): X=50.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni04C1 (U+04C1): X=76.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni04C1 (U+04C1): X=924.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04C1 (U+04C1): X=950.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04C1 (U+04C1): X=490.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04C1 (U+04C1): X=510.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04DC (U+04DC): X=50.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni04DC (U+04DC): X=76.0,Y=719.0 (should be at cap-height 720?)                                 
+                                                                                                            
+          * uni04DC (U+04DC): X=924.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04DC (U+04DC): X=950.0,Y=719.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04DC (U+04DC): X=490.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni04DC (U+04DC): X=510.0,Y=721.0 (should be at cap-height 720?)                                
+                                                                                                            
+          * uni0437 (U+0437): X=147.0,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni0437 (U+0437): X=332.5,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni0499 (U+0499): X=147.0,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni0499 (U+0499): X=332.5,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni04DF (U+04DF): X=147.0,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni04DF (U+04DF): X=332.5,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni0511 (U+0511): X=157.5,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni0511 (U+0511): X=343.0,Y=2.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni208A (U+208A): X=190.0,Y=1.0 (should be at baseline 0?)                                      
+                                                                                                            
+          * uni208A (U+208A): X=177.0,Y=1.0 (should be at baseline 0?) [code: found-misalignments]          
+                                                                                                            
+
+    Result: WARN
+
+ >> googlefonts/vendor_id
+    Checking OS/2 achVendID.
+    with Akt.ttf
+
+    Rationale:                                                                
+                                                                                                            
+    Microsoft keeps a list of font vendors and their respective contact info. This list is updated          
+    regularly and is indexed by a 4-char "Vendor ID" which is stored in the achVendID field of the OS/2     
+    table.                                                                                                  
+                                                                                                            
+    Registering your ID is not mandatory, but it is a good practice since some applications may display     
+    the type designer / type foundry contact info on some dialog and also because that info will be         
+    visible on Microsoft's website:                                                                         
+                                                                                                            
+    https://docs.microsoft.com/en-us/typography/vendors/                                                    
+                                                                                                            
+    This check verifies whether or not a given font's vendor ID is registered in that list or if it has     
+    some of the default values used by the most common font editors.                                        
+                                                                                                            
+    Each new FontBakery release includes a cached copy of that list of vendor IDs. If you registered        
+    recently, you're safe to ignore warnings emitted by this check, since your ID will soon be included in  
+    one of our upcoming releases.                                                                           
+                                                                                                            
+    More info: https://github.com/fonttools/fontbakery/issues/3943
+               https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN OS/2 VendorID value 'DMGR' is not yet recognized. If you registered it recently, then it's safe    
+         to ignore this warning message. Otherwise, you should set it to your own unique 4 character code,  
+         and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx       
+         [code: unknown]                                                                                    
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 1
+    WARN: 6
+    INFO: 8
+    SKIP: 89
+    PASS: 132
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+DONE!
+  [] 0%

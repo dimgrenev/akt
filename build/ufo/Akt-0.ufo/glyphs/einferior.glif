@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="einferior" format="2">
+  <advance width="324"/>
+  <unicode hex="2091"/>
+  <anchor x="166.464" y="-80.0" name="bottom"/>
+  <anchor x="198.288" y="-80.0" name="ogonek"/>
+  <anchor x="166.464" y="226.0" name="top"/>
+  <outline>
+    <component base="e.small" yOffset="-80"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>e.small</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

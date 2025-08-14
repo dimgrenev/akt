@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Be-cy" format="2">
+  <advance width="612"/>
+  <unicode hex="0411"/>
+  <outline>
+    <contour>
+      <point x="104" y="0" type="line"/>
+      <point x="302" y="0" type="line" smooth="yes"/>
+      <point x="386" y="0"/>
+      <point x="484" y="50"/>
+      <point x="538" y="141"/>
+      <point x="538" y="208" type="qcurve" smooth="yes"/>
+      <point x="538" y="274"/>
+      <point x="484" y="366"/>
+      <point x="386" y="416"/>
+      <point x="302" y="416" type="qcurve" smooth="yes"/>
+      <point x="124" y="416" type="line"/>
+      <point x="124" y="700" type="line"/>
+      <point x="512" y="700" type="line"/>
+      <point x="512" y="720" type="line"/>
+      <point x="104" y="720" type="line"/>
+    </contour>
+    <contour>
+      <point x="124" y="20" type="line"/>
+      <point x="124" y="396" type="line"/>
+      <point x="300" y="396" type="line" smooth="yes"/>
+      <point x="380" y="396"/>
+      <point x="470" y="350"/>
+      <point x="518" y="268"/>
+      <point x="518" y="208" type="qcurve" smooth="yes"/>
+      <point x="518" y="149"/>
+      <point x="470" y="66"/>
+      <point x="380" y="20"/>
+      <point x="300" y="20" type="qcurve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>
