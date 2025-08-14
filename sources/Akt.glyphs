@@ -189,8 +189,8 @@ feature cv02;
 tag = aalt;
 },
 {
-code = "lookup ccmp_DFLT_1 {
-@CombiningTopAccents = [acutecomb gravecomb circumflexcomb tildecomb tildecomb.narrow macroncomb brevecomb brevecomb.narrow caroncomb caroncomb.narrow dotaccentcomb dieresiscomb ringcomb hungarumlautcomb ogonekcomb dotbelowcomb strokeshortcomb commaturnedabovecomb];
+ code = "lookup ccmp_DFLT_1 {
+ @CombiningTopAccents = [acutecomb gravecomb circumflexcomb tildecomb tildecomb.narrow macroncomb brevecomb brevecomb.narrow caroncomb caroncomb.narrow dotaccentcomb dieresiscomb ringcomb hungarumlautcomb ogonekcomb dotbelowcomb strokeshortcomb commaturnedabovecomb asteriskabovecomb];
   	lookupflag UseMarkFilteringSet @CombiningTopAccents;
   	# soft-dotted bases (latin + cyrillic + derived i-forms)
   	sub i' @CombiningTopAccents by idotless;
@@ -619,14 +619,15 @@ sub Zhedescender-cy by Zhedescender-cy.ss01;
 sub Kadescender-cy by Kadescender-cy.ss01;
 sub Kaverticalstroke-cy by Kaverticalstroke-cy.ss01;
 sub Kastroke-cy by Kastroke-cy.ss01;
-sub Kabashkir-cy by Kabashkir-cy.ss01;
+  sub Kabashkir-cy by Kabashkir-cy.ss01;
+  sub kabashkir-cy by kabashkir-cy.ss01;
 sub Zhebreve-cy by Zhebreve-cy.ss01;
 sub Kahook-cy by Kahook-cy.ss01;
 sub Zhedieresis-cy by Zhedieresis-cy.ss01;
 sub a-cy by a-cy.ss01;
 sub be-cy by be-cy.ss01;
 sub zhe-cy.loclBGR by zhe-cy.loclBGR.ss01;
-sub zhe-cy by zhe-cy.ss01;
+  sub zhe-cy by zhe-cy.ss01;
 sub ka-cy.loclBGR by ka-cy.loclBGR.ss01;
 sub ka-cy by ka-cy.ss01;
 sub kje-cy by kje-cy.ss01;
@@ -646,7 +647,7 @@ language = dflt;
 value = Oldfashion;
 }
 );
-tag = ss01;
+ tag = ss01;
 },
 {
 automatic = 1;
@@ -741,6 +742,16 @@ value = Futuristic;
 );
 tag = ss02;
 },
+  {
+  automatic = 1;
+  code = "";
+  tag = mark;
+  },
+  {
+  automatic = 1;
+  code = "";
+  tag = mkmk;
+  },
 {
 automatic = 1;
 code = "sub a by a.cv01;
