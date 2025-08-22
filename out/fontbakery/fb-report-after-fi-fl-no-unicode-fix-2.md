@@ -12,155 +12,8 @@ fontbakery version: 1.0.1
 
 
 
-<details><summary>[9] Akt[wght].ttf</summary>
+<details><summary>[5] Akt[wght].ttf</summary>
 <div>
-<details>
-    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#interpolation-issues">interpolation_issues</a></summary>
-    <div>
-
-
-> 
-> When creating a variable font, the designer must make sure that corresponding
-> paths have the same start points across masters, as well as that corresponding
-> component shapes are placed in the same order within a glyph across masters.
-> If this is not done, the glyph will not interpolate correctly.
-> 
-> Here we check for the presence of potential interpolation errors using the
-> fontTools.varLib.interpolatable module.
-> 
-
-
-
-
-> Original proposal: https://github.com/fonttools/fontbakery/issues/3930
-
-
-
-
-
-* ⚠️ **WARN** <p>Interpolation issues were found in the font:</p>
-<pre><code>- Contour 1 start point differs in glyph 'uni04B9' between location wght=775 and location wght=900
-
-- Contour 1 in glyph 'uni04B9': becomes underweight between wght=775 and wght=900.
-</code></pre>
- [code: interpolation-issues]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check math signs have the same width. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#math-signs-width">math_signs_width</a></summary>
-    <div>
-
-
-> 
-> It is a common practice to have math signs sharing the same width
-> (preferably the same width as tabular figures accross the entire font family).
-> 
-> This probably comes from the will to avoid additional tabular math signs
-> knowing that their design can easily share the same width.
-> 
-
-
-
-
-> Original proposal: https://github.com/fonttools/fontbakery/issues/3832
-
-
-
-
-
-* ⚠️ **WARN** <p>The most common width is 600 among a set of 16 math glyphs.
-The following math glyphs have a different width, though:</p>
-<p>Width = 820:
-propersubset, propersuperset, uni2ABD, uni2ABE</p>
- [code: width-outliers]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check there are no overlapping path segments <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#overlapping-path-segments">overlapping_path_segments</a></summary>
-    <div>
-
-
-> 
-> Some rasterizers encounter difficulties when rendering glyphs with
-> overlapping path segments.
-> 
-> A path segment is a section of a path defined by two on-curve points.
-> When two segments share the same coordinates, they are considered
-> overlapping.
-> 
-
-
-
-
-> Original proposal: https://github.com/google/fonts/issues/7594#issuecomment-2401909084
-
-
-
-
-
-* ⚠️ **WARN** <p>The following glyphs have overlapping path segments:</p>
-<pre><code>* uni03BC (U+03BC): L&lt;&lt;98.0,500.0&gt;--&lt;118.0,500.0&gt;&gt; has the same coordinates as a previous segment.
-
-* uni00B5 (U+00B5): L&lt;&lt;98.0,500.0&gt;--&lt;118.0,500.0&gt;&gt; has the same coordinates as a previous segment.
-
-* perthousand (U+2030): L&lt;&lt;881.0,168.0&gt;--&lt;881.0,232.0&gt;&gt; has the same coordinates as a previous segment.
-
-* perthousand (U+2030): L&lt;&lt;899.0,232.0&gt;--&lt;899.0,168.0&gt;&gt; has the same coordinates as a previous segment.
-</code></pre>
- [code: overlapping-path-segments]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check font contains no unreachable glyphs <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#unreachable-glyphs">unreachable_glyphs</a></summary>
-    <div>
-
-
-> 
-> Glyphs are either accessible directly through Unicode codepoints or through
-> substitution rules.
-> 
-> In Color Fonts, glyphs are also referenced by the COLR table. And mathematical
-> fonts also reference glyphs via the MATH table.
-> 
-> Any glyphs not accessible by these means are redundant and serve only
-> to increase the font's file size.
-> 
-
-
-
-
-> Original proposal: https://github.com/fonttools/fontbakery/issues/3160
-
-
-
-
-
-* ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- IJacute
-
-- ijacute
-
-- uni0259.superior
-</code></pre>
- [code: unreachable-glyphs]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-article-images">googlefonts/article/images</a></summary>
     <div>
@@ -229,10 +82,10 @@ definitions.</p>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, todhri, duployan, math, coptic, old-permic, malayalam, tifinagh, syriac, canadian-aboriginal, hebrew</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, math, cherokee, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, syriac, coptic, hebrew, duployan, todhri, math, malayalam, old-permic, canadian-aboriginal, tifinagh</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
@@ -240,15 +93,15 @@ definitions.</p>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
 <li>U+0335 COMBINING SHORT STROKE OVERLAY: not included in any glyphset definition</li>
-<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: greek, elbasan, math</li>
-<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: greek, elbasan, math</li>
-<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: greek, elbasan, math</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: greek, elbasan, math</li>
-<li>U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: greek, math</li>
-<li>U+03B4 GREEK SMALL LETTER DELTA: try adding one of: greek, math</li>
-<li>U+03BC GREEK SMALL LETTER MU: try adding one of: greek, math</li>
-<li>U+03BE GREEK SMALL LETTER XI: try adding one of: greek, math</li>
-<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: greek, yi, math</li>
+<li>U+0391 GREEK CAPITAL LETTER ALPHA: try adding one of: elbasan, math, greek</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: elbasan, math, greek</li>
+<li>U+039E GREEK CAPITAL LETTER XI: try adding one of: elbasan, math, greek</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, math, greek</li>
+<li>U+03B1 GREEK SMALL LETTER ALPHA: try adding one of: math, greek</li>
+<li>U+03B4 GREEK SMALL LETTER DELTA: try adding one of: math, greek</li>
+<li>U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek</li>
+<li>U+03BE GREEK SMALL LETTER XI: try adding one of: math, greek</li>
+<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: yi, math, greek</li>
 <li>U+1EA0 LATIN CAPITAL LETTER A WITH DOT BELOW: try adding vietnamese</li>
 <li>U+1EA1 LATIN SMALL LETTER A WITH DOT BELOW: try adding vietnamese</li>
 <li>U+1EB8 LATIN CAPITAL LETTER E WITH DOT BELOW: try adding vietnamese</li>
@@ -263,8 +116,8 @@ definitions.</p>
 <li>U+1EE5 LATIN SMALL LETTER U WITH DOT BELOW: try adding vietnamese</li>
 <li>U+2007 FIGURE SPACE: try adding symbols2</li>
 <li>U+2008 PUNCTUATION SPACE: try adding symbols2</li>
-<li>U+2010 HYPHEN: try adding one of: sora-sompeng, lisu, arabic, syloti-nagri, coptic, kayah-li, sundanese, kharoshthi, kaithi, yi, cham, armenian, hebrew</li>
-<li>U+2011 NON-BREAKING HYPHEN: try adding one of: yi, syloti-nagri, arabic</li>
+<li>U+2010 HYPHEN: try adding one of: armenian, sundanese, cham, coptic, hebrew, lisu, syloti-nagri, yi, sora-sompeng, kharoshthi, kaithi, kayah-li, arabic</li>
+<li>U+2011 NON-BREAKING HYPHEN: try adding one of: syloti-nagri, yi, arabic</li>
 <li>U+2012 FIGURE DASH: not included in any glyphset definition</li>
 <li>U+2015 HORIZONTAL BAR: try adding adlam</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
@@ -322,7 +175,7 @@ definitions.</p>
 <li>U+209A LATIN SUBSCRIPT SMALL LETTER P: try adding math</li>
 <li>U+209B LATIN SUBSCRIPT SMALL LETTER S: try adding math</li>
 <li>U+209C LATIN SUBSCRIPT SMALL LETTER T: try adding math</li>
-<li>U+20F0 COMBINING ASTERISK ABOVE: try adding one of: grantha, devanagari</li>
+<li>U+20F0 COMBINING ASTERISK ABOVE: try adding one of: devanagari, grantha</li>
 <li>U+2100 ACCOUNT OF: try adding math</li>
 <li>U+2101 ADDRESSED TO THE SUBJECT: try adding math</li>
 <li>U+2105 CARE OF: try adding math</li>
@@ -360,7 +213,7 @@ definitions.</p>
 <li>U+2206 INCREMENT: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: math, symbols, yi, tai-tham</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: tai-tham, math, yi, symbols</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+2229 INTERSECTION: try adding math</li>
@@ -385,15 +238,15 @@ definitions.</p>
 <li>U+2300 DIAMETER SIGN: try adding symbols</li>
 <li>U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols</li>
 <li>U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols</li>
-<li>U+2460 CIRCLED DIGIT ONE: try adding one of: symbols, yi, mongolian</li>
-<li>U+2461 CIRCLED DIGIT TWO: try adding one of: symbols, yi, mongolian</li>
-<li>U+2462 CIRCLED DIGIT THREE: try adding one of: symbols, yi, mongolian</li>
-<li>U+2463 CIRCLED DIGIT FOUR: try adding one of: symbols, yi, mongolian</li>
-<li>U+2464 CIRCLED DIGIT FIVE: try adding one of: symbols, yi, mongolian</li>
-<li>U+2465 CIRCLED DIGIT SIX: try adding one of: symbols, yi, mongolian</li>
-<li>U+2466 CIRCLED DIGIT SEVEN: try adding one of: symbols, yi, mongolian</li>
-<li>U+2467 CIRCLED DIGIT EIGHT: try adding one of: symbols, yi, mongolian</li>
-<li>U+2468 CIRCLED DIGIT NINE: try adding one of: symbols, yi, mongolian</li>
+<li>U+2460 CIRCLED DIGIT ONE: try adding one of: mongolian, yi, symbols</li>
+<li>U+2461 CIRCLED DIGIT TWO: try adding one of: mongolian, yi, symbols</li>
+<li>U+2462 CIRCLED DIGIT THREE: try adding one of: mongolian, yi, symbols</li>
+<li>U+2463 CIRCLED DIGIT FOUR: try adding one of: mongolian, yi, symbols</li>
+<li>U+2464 CIRCLED DIGIT FIVE: try adding one of: mongolian, yi, symbols</li>
+<li>U+2465 CIRCLED DIGIT SIX: try adding one of: mongolian, yi, symbols</li>
+<li>U+2466 CIRCLED DIGIT SEVEN: try adding one of: mongolian, yi, symbols</li>
+<li>U+2467 CIRCLED DIGIT EIGHT: try adding one of: mongolian, yi, symbols</li>
+<li>U+2468 CIRCLED DIGIT NINE: try adding one of: mongolian, yi, symbols</li>
 <li>U+24EA CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+24FF NEGATIVE CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+25A0 BLACK SQUARE: try adding symbols</li>
@@ -408,7 +261,7 @@ definitions.</p>
 <li>U+25C7 WHITE DIAMOND: try adding symbols</li>
 <li>U+25CA LOZENGE: try adding one of: math, symbols</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: chakma, hanunoo, gujarati, khojki, cham, yi, pahawh-hmong, syloti-nagri, tai-le, gunjala-gondi, sundanese, javanese, tagalog, oriya, mongolian, phags-pa, buhid, kayah-li, bhaiksuki, warang-citi, old-permic, sharada, kaithi, adlam, tamil, duployan, mahajani, modi, lao, kharoshthi, marchen, tai-tham, new-tai-lue, canadian-aboriginal, tirhuta, manichaean, thaana, grantha, bengali, math, masaram-gondi, sogdian, dogra, music, osage, takri, sinhala, balinese, myanmar, malayalam, newa, zanabazar-square, wancho, soyombo, hebrew, elbasan, tagbanwa, ahom, lepcha, telugu, saurashtra, batak, mandaic, tifinagh, hanifi-rohingya, mende-kikakui, armenian, kannada, thai, symbols, khudawadi, psalter-pahlavi, miao, coptic, nko, tai-viet, bassa-vah, siddham, gurmukhi, devanagari, buginese, meetei-mayek, rejang, caucasian-albanian, tibetan, limbu, brahmi, khmer, syriac</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: saurashtra, zanabazar-square, chakma, kannada, brahmi, buginese, bhaiksuki, meetei-mayek, marchen, tagbanwa, gujarati, miao, batak, caucasian-albanian, thaana, balinese, tai-viet, tirhuta, bengali, canadian-aboriginal, soyombo, cham, hebrew, javanese, sharada, oriya, modi, siddham, grantha, tibetan, kaithi, osage, nko, khmer, armenian, devanagari, coptic, kharoshthi, mende-kikakui, khojki, music, mongolian, myanmar, wancho, limbu, duployan, phags-pa, tamil, buhid, gurmukhi, masaram-gondi, math, malayalam, old-permic, tai-le, adlam, hanifi-rohingya, telugu, psalter-pahlavi, mandaic, lao, dogra, tifinagh, bassa-vah, tai-tham, pahawh-hmong, rejang, sinhala, takri, mahajani, new-tai-lue, yi, symbols, hanunoo, kayah-li, newa, sogdian, tagalog, manichaean, elbasan, thai, warang-citi, syloti-nagri, gunjala-gondi, ahom, lepcha, sundanese, syriac, khudawadi</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+25D0 CIRCLE WITH LEFT HALF BLACK: try adding symbols</li>
 <li>U+25D1 CIRCLE WITH RIGHT HALF BLACK: try adding symbols</li>
@@ -435,8 +288,6 @@ definitions.</p>
 <li>U+2ABD SUBSET WITH DOT: try adding math</li>
 <li>U+2ABE SUPERSET WITH DOT: try adding math</li>
 <li>U+2AF6 TRIPLE COLON OPERATOR: try adding math</li>
-<li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
-<li>U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>cyrillic</code>, <code>cyrillic-ext</code>, <code>latin</code>, <code>latin-ext</code></p>
  [code: unreachable-subsetting]
@@ -586,6 +437,14 @@ definitions.</p>
 * uni2101 (U+2101): X=660.5,Y=1.5 (should be at baseline 0?)
 
 * uni2101 (U+2101): X=783.5,Y=1.0 (should be at baseline 0?)
+
+* uni2ABD (U+2ABD): X=550.0,Y=2.0 (should be at baseline 0?)
+
+* uni2ABD (U+2ABD): X=287.0,Y=2.0 (should be at baseline 0?)
+
+* uni2ABE (U+2ABE): X=533.0,Y=2.0 (should be at baseline 0?)
+
+* uni2ABE (U+2ABE): X=270.0,Y=2.0 (should be at baseline 0?)
 </code></pre>
  [code: found-misalignments]
 
@@ -646,8 +505,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 0 | 9 | 89 | 8 | 130 | 0 | 
-| 0% | 0% | 0% | 4% | 38% | 3% | 55% | 0% | 
+| 0 | 0 | 0 | 5 | 89 | 8 | 134 | 0 | 
+| 0% | 0% | 0% | 2% | 38% | 3% | 57% | 0% | 
 
 
 

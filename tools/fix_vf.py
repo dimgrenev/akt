@@ -2,6 +2,9 @@
 from fontTools.ttLib import TTFont, newTable
 import sys
 from pathlib import Path
+from typing import List, Dict, Any
+import unicodedata
+
 
 def set_name_string(font: TTFont, nameID: int, string: str, langID=0x409):
     name = font["name"]
@@ -212,6 +215,217 @@ def enforce_regular_naming(font: TTFont, family: str = "Akt") -> None:
     for (pid, eid, lid) in [(3,1,0x409), (1,0,0), (0,4,0)]:
         name.setName(unique, 3, pid, eid, lid)
 
+def ensure_stat_weight_axis_value_names(font: TTFont) -> None:
+    """Ensure STAT AxisValue for wght=700 uses the Bold nameID, not Regular.
+    This fixes cases where a generator mislabeled 700 with NameID 2 (Regular)."""
+    if "STAT" not in font:
+        return
+    try:
+        stat_table = font["STAT"].table
+    except Exception:
+        return
+
+    # Find Bold subfamily nameID from fvar named instances (coord wght=700)
+    bold_name_id = None
+    try:
+        fvar = font["fvar"]
+        axes = [ax.axisTag for ax in fvar.axes]
+        for inst in fvar.instances:
+            coords = {}
+            try:
+                coords = inst.coordinates  # dict in recent fontTools
+            except AttributeError:
+                values = getattr(inst, "coordinates", None)
+                if isinstance(values, (list, tuple)):
+                    coords = {axes[i]: values[i] for i in range(min(len(values), len(axes)))}
+            w = coords.get("wght")
+            if w is not None and abs(float(w) - 700.0) < 0.01:
+                bold_name_id = getattr(inst, "subfamilyNameID", None)
+                if bold_name_id is not None:
+                    bold_name_id = int(bold_name_id)
+                    break
+    except Exception:
+        pass
+
+    if not bold_name_id:
+        return
+
+    # Fix AxisValue records for weight axis at value 700
+    try:
+        axis_values = getattr(stat_table.AxisValueArray, "AxisValue", [])
+    except Exception:
+        axis_values = []
+    for av in axis_values:
+        try:
+            axis_index = av.AxisIndex
+            value = float(av.Value)
+        except Exception:
+            continue
+        if axis_index == 0 and abs(value - 700.0) < 0.01:
+            # Overwrite ValueNameID with Bold's subfamily nameID
+            try:
+                av.ValueNameID = bold_name_id
+            except Exception:
+                continue
+
+def _glyph_is_letter(font: TTFont, glyph_name: str) -> bool:
+    # Determine if glyph maps to any Unicode codepoint with category starting with 'L'
+    try:
+        cmap = font.getBestCmap() or {}
+        # invert: glyph -> list cps
+        cps = [cp for cp, g in cmap.items() if g == glyph_name]
+        if not cps:
+            return False
+        for cp in cps:
+            if unicodedata.category(chr(cp)).startswith("L"):
+                return True
+        return False
+    except Exception:
+        return False
+
+
+def prune_mark_to_base_non_letters(font: TTFont) -> None:
+    """Remove MarkToBase BaseCoverage entries for glyphs that are not Unicode letters.
+    Оставляем позиционирование диакритики только на буквах; цифры/знаки/символы исключаем.
+    """
+    if "GPOS" not in font:
+        return
+    try:
+        gpos = font["GPOS"].table
+        lookups = getattr(gpos, "LookupList", None)
+        if not lookups or not getattr(lookups, "Lookup", None):
+            return
+    except Exception:
+        return
+
+    for lookup in lookups.Lookup:
+        try:
+            if int(getattr(lookup, "LookupType", 0)) != 4:
+                continue
+            for sub in getattr(lookup, "SubTable", []) or []:
+                cov = getattr(sub, "BaseCoverage", None)
+                base_array = getattr(sub, "BaseArray", None)
+                if not cov or not base_array:
+                    continue
+                glyphs = list(getattr(cov, "glyphs", []) or [])
+                if not glyphs:
+                    continue
+                for i in range(len(glyphs) - 1, -1, -1):
+                    g = glyphs[i]
+                    if not _glyph_is_letter(font, g):
+                        try:
+                            cov.glyphs.pop(i)
+                            try:
+                                base_array.BaseRecord.pop(i)
+                            except Exception:
+                                pass
+                        except Exception:
+                            continue
+        except Exception:
+            continue
+
+def ensure_soft_dotted_decomposition(font: TTFont) -> None:
+    """Ensure precomposed soft-dotted forms decompose to dotless base + combining mark.
+    This helps FB soft_dotted by guaranteeing dot removal for precomposed i/j.
+    """
+    if "GSUB" not in font:
+        return
+    try:
+        gsub = font["GSUB"].table
+        lookups = getattr(gsub, "LookupList", None)
+        if not lookups or not getattr(lookups, "Lookup", None):
+            return
+    except Exception:
+        return
+
+    # Map of precomposed -> [decomposed sequence]
+    decomp_map: Dict[str, List[str]] = {
+        # i + above marks
+        "iacute": ["dotlessi", "acutecomb"],
+        "igrave": ["dotlessi", "gravecomb"],
+        "icircumflex": ["dotlessi", "uni0302"],
+        "idieresis": ["dotlessi", "uni0308"],
+        "itilde": ["dotlessi", "tildecomb"],
+        "imacron": ["dotlessi", "uni0304"],
+        "ibreve": ["dotlessi", "uni0306"],
+        # j forms (dotless j is uni0237 in this font)
+        "jcircumflex": ["uni0237", "uni0302"],
+        "jcaron": ["uni0237", "uni030C"],
+    }
+
+    glyph_order = set(font.getGlyphOrder())
+    # Find a MultipleSubst lookup to append to; prefer existing ccmp MultipleSubst
+    target_lookup = None
+    for lk in lookups.Lookup:
+        try:
+            if int(getattr(lk, "LookupType", 0)) == 2:
+                target_lookup = lk
+                break
+        except Exception:
+            continue
+    if target_lookup is None:
+        return
+
+    try:
+        subtables = getattr(target_lookup, "SubTable", []) or []
+        if not subtables:
+            return
+        msub = subtables[0]
+        # msub.mapping is a dict glyph->list
+        mapping: Dict[str, List[str]] = getattr(msub, "mapping", {})
+    except Exception:
+        return
+
+    changed = False
+    for src, dst_seq in decomp_map.items():
+        if src not in glyph_order:
+            continue
+        # ensure all dst glyphs exist
+        if not all(d in glyph_order for d in dst_seq):
+            continue
+        if mapping.get(src) != dst_seq:
+            mapping[src] = dst_seq
+            changed = True
+    if changed:
+        setattr(msub, "mapping", mapping)
+
+def prune_mark_to_base_for(font: TTFont, glyphs_to_remove: list[str]) -> None:
+    """Удаляет указанные глифы из BaseCoverage/BaseArray во всех MarkToBase lookup-ах GPOS."""
+    if "GPOS" not in font:
+        return
+    try:
+        gpos = font["GPOS"].table
+        lookups = getattr(gpos, "LookupList", None)
+        if not lookups or not getattr(lookups, "Lookup", None):
+            return
+    except Exception:
+        return
+    targets = set(glyphs_to_remove or [])
+    for lookup in lookups.Lookup:
+        try:
+            if int(getattr(lookup, "LookupType", 0)) != 4:
+                continue
+            for sub in getattr(lookup, "SubTable", []) or []:
+                cov = getattr(sub, "BaseCoverage", None)
+                base_array = getattr(sub, "BaseArray", None)
+                if not cov or not base_array:
+                    continue
+                glyphs = list(getattr(cov, "glyphs", []) or [])
+                if not glyphs:
+                    continue
+                for i in range(len(glyphs) - 1, -1, -1):
+                    if glyphs[i] in targets:
+                        try:
+                            cov.glyphs.pop(i)
+                            try:
+                                base_array.BaseRecord.pop(i)
+                            except Exception:
+                                pass
+                        except Exception:
+                            continue
+        except Exception:
+            continue
+
 def main(path: str):
     font = TTFont(path)
     ensure_regular_naming(font, family="Akt", style="Regular")
@@ -227,6 +441,10 @@ def main(path: str):
     ensure_vendor_id(font, "DMGR")
     remove_typographic_family_names(font)
     enforce_regular_naming(font, family="Akt")
+    ensure_stat_weight_axis_value_names(font)
+    prune_mark_to_base_for(font, ["copyright", "registered", "uni00A9", "uni00AE"]) 
+    ensure_soft_dotted_decomposition(font)
+    prune_mark_to_base_non_letters(font)
     font.save(path)
 
 if __name__ == "__main__":
