@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="f.small" format="2">
-  <advance width="233"/>
-  <anchor x="86.292" y="0.0" name="bottom"/>
-  <anchor x="93.636" y="440.64" name="top"/>
-  <outline>
-    <component base="f" xScale="0.612" yScale="0.612"/>
-  </outline>
-</glyph>

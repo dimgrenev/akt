@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="zerosuperior" format="2">
-  <advance width="379"/>
-  <unicode hex="2070"/>
-  <anchor x="190" y="580" name="_center"/>
-  <outline>
-    <component base="zero.small" yOffset="360"/>
-  </outline>
-</glyph>

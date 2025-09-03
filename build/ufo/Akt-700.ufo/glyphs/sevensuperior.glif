@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="sevensuperior" format="2">
-  <advance width="343"/>
-  <unicode hex="2077"/>
-  <anchor x="162" y="580" name="_center"/>
-  <outline>
-    <component base="seven.small" yOffset="360"/>
-  </outline>
-</glyph>

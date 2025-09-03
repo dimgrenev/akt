@@ -1,0 +1,8 @@
+description: "Support ASCII + necessary punctuation and symbols for English language.
+  This set is the minimal set required for non-Latin script families that are not
+  meant to be used in Latin-language based context. English support is still mandatory
+  for technical reasons: application support on one hand, and GF platform display
+  on the other hand (to avoid .notdef glyphs appearing everywhere on the website).
+  GF encourages designers to also support the `GF Latin Core` glyphset, in addition to any
+  script, so native speakers living abroad can also enjoy and use the font wherever
+  they are in the world."

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ufonormalizer
+Version: 0.6.2
+Summary: Script to normalize the XML and other data inside of a UFO.
+Home-page: https://github.com/unified-font-object/ufoNormalizer
+Author: Tal Leming
+Author-email: tal@typesupply.com
+License: OpenSource, BSD-style
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+

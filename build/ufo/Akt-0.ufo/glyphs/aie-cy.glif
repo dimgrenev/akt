@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="aie-cy" format="2">
-  <advance width="820"/>
-  <unicode hex="04D5"/>
-  <anchor x="405" y="500" name="top"/>
-  <outline>
-    <component base="ae"/>
-  </outline>
-</glyph>

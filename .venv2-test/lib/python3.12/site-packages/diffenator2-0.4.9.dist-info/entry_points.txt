@@ -1,0 +1,5 @@
+[console_scripts]
+_diffbrowsers=diffenator2._diffbrowsers:main
+_diffenator=diffenator2._diffenator:main
+diffenator2=diffenator2.__main__:main
+

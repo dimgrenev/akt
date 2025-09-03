@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="k.ss02" format="2">
-  <advance width="540"/>
-  <anchor x="291" y="720" name="top"/>
-  <anchor x="240" y="0" name="bottom"/>
-  <outline>
-    <component base="ka-cy.loclBGR"/>
-  </outline>
-</glyph>

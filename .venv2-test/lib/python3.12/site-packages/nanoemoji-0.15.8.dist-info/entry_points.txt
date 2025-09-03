@@ -1,0 +1,3 @@
+[console_scripts]
+maximum_color = nanoemoji.maximum_color:main
+nanoemoji = nanoemoji.nanoemoji:main

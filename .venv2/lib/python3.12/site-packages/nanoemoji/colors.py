@@ -1,0 +1,364 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import dataclasses
+import re
+from collections import deque
+from typing import ClassVar, Iterable, List, Optional, Sequence, Tuple
+
+# See https://www.w3.org/TR/css-color-4/#named-colors
+# Chrome DevTools:
+#   copy($$('.named-color-table tbody tr').map((tr) => { name = tr.children[2].innerText; hex = tr.children[3].innerText; return "    '" + name + "': (0x" + hex.substring(1, 3) + ", 0x" + hex.substring(3,5) + ", 0x" + hex.substring(5,7) + ")," }).join('\n'))
+_CSS_COLORS = {
+    "aliceblue": (0xF0, 0xF8, 0xFF),
+    "antiquewhite": (0xFA, 0xEB, 0xD7),
+    "aqua": (0x00, 0xFF, 0xFF),
+    "aquamarine": (0x7F, 0xFF, 0xD4),
+    "azure": (0xF0, 0xFF, 0xFF),
+    "beige": (0xF5, 0xF5, 0xDC),
+    "bisque": (0xFF, 0xE4, 0xC4),
+    "black": (0x00, 0x00, 0x00),
+    "blanchedalmond": (0xFF, 0xEB, 0xCD),
+    "blue": (0x00, 0x00, 0xFF),
+    "blueviolet": (0x8A, 0x2B, 0xE2),
+    "brown": (0xA5, 0x2A, 0x2A),
+    "burlywood": (0xDE, 0xB8, 0x87),
+    "cadetblue": (0x5F, 0x9E, 0xA0),
+    "chartreuse": (0x7F, 0xFF, 0x00),
+    "chocolate": (0xD2, 0x69, 0x1E),
+    "coral": (0xFF, 0x7F, 0x50),
+    "cornflowerblue": (0x64, 0x95, 0xED),
+    "cornsilk": (0xFF, 0xF8, 0xDC),
+    "crimson": (0xDC, 0x14, 0x3C),
+    "cyan": (0x00, 0xFF, 0xFF),
+    "darkblue": (0x00, 0x00, 0x8B),
+    "darkcyan": (0x00, 0x8B, 0x8B),
+    "darkgoldenrod": (0xB8, 0x86, 0x0B),
+    "darkgray": (0xA9, 0xA9, 0xA9),
+    "darkgreen": (0x00, 0x64, 0x00),
+    "darkgrey": (0xA9, 0xA9, 0xA9),
+    "darkkhaki": (0xBD, 0xB7, 0x6B),
+    "darkmagenta": (0x8B, 0x00, 0x8B),
+    "darkolivegreen": (0x55, 0x6B, 0x2F),
+    "darkorange": (0xFF, 0x8C, 0x00),
+    "darkorchid": (0x99, 0x32, 0xCC),
+    "darkred": (0x8B, 0x00, 0x00),
+    "darksalmon": (0xE9, 0x96, 0x7A),
+    "darkseagreen": (0x8F, 0xBC, 0x8F),
+    "darkslateblue": (0x48, 0x3D, 0x8B),
+    "darkslategray": (0x2F, 0x4F, 0x4F),
+    "darkslategrey": (0x2F, 0x4F, 0x4F),
+    "darkturquoise": (0x00, 0xCE, 0xD1),
+    "darkviolet": (0x94, 0x00, 0xD3),
+    "deeppink": (0xFF, 0x14, 0x93),
+    "deepskyblue": (0x00, 0xBF, 0xFF),
+    "dimgray": (0x69, 0x69, 0x69),
+    "dimgrey": (0x69, 0x69, 0x69),
+    "dodgerblue": (0x1E, 0x90, 0xFF),
+    "firebrick": (0xB2, 0x22, 0x22),
+    "floralwhite": (0xFF, 0xFA, 0xF0),
+    "forestgreen": (0x22, 0x8B, 0x22),
+    "fuchsia": (0xFF, 0x00, 0xFF),
+    "gainsboro": (0xDC, 0xDC, 0xDC),
+    "ghostwhite": (0xF8, 0xF8, 0xFF),
+    "gold": (0xFF, 0xD7, 0x00),
+    "goldenrod": (0xDA, 0xA5, 0x20),
+    "gray": (0x80, 0x80, 0x80),
+    "green": (0x00, 0x80, 0x00),
+    "greenyellow": (0xAD, 0xFF, 0x2F),
+    "grey": (0x80, 0x80, 0x80),
+    "honeydew": (0xF0, 0xFF, 0xF0),
+    "hotpink": (0xFF, 0x69, 0xB4),
+    "indianred": (0xCD, 0x5C, 0x5C),
+    "indigo": (0x4B, 0x00, 0x82),
+    "ivory": (0xFF, 0xFF, 0xF0),
+    "khaki": (0xF0, 0xE6, 0x8C),
+    "lavender": (0xE6, 0xE6, 0xFA),
+    "lavenderblush": (0xFF, 0xF0, 0xF5),
+    "lawngreen": (0x7C, 0xFC, 0x00),
+    "lemonchiffon": (0xFF, 0xFA, 0xCD),
+    "lightblue": (0xAD, 0xD8, 0xE6),
+    "lightcoral": (0xF0, 0x80, 0x80),
+    "lightcyan": (0xE0, 0xFF, 0xFF),
+    "lightgoldenrodyellow": (0xFA, 0xFA, 0xD2),
+    "lightgray": (0xD3, 0xD3, 0xD3),
+    "lightgreen": (0x90, 0xEE, 0x90),
+    "lightgrey": (0xD3, 0xD3, 0xD3),
+    "lightpink": (0xFF, 0xB6, 0xC1),
+    "lightsalmon": (0xFF, 0xA0, 0x7A),
+    "lightseagreen": (0x20, 0xB2, 0xAA),
+    "lightskyblue": (0x87, 0xCE, 0xFA),
+    "lightslategray": (0x77, 0x88, 0x99),
+    "lightslategrey": (0x77, 0x88, 0x99),
+    "lightsteelblue": (0xB0, 0xC4, 0xDE),
+    "lightyellow": (0xFF, 0xFF, 0xE0),
+    "lime": (0x00, 0xFF, 0x00),
+    "limegreen": (0x32, 0xCD, 0x32),
+    "linen": (0xFA, 0xF0, 0xE6),
+    "magenta": (0xFF, 0x00, 0xFF),
+    "maroon": (0x80, 0x00, 0x00),
+    "mediumaquamarine": (0x66, 0xCD, 0xAA),
+    "mediumblue": (0x00, 0x00, 0xCD),
+    "mediumorchid": (0xBA, 0x55, 0xD3),
+    "mediumpurple": (0x93, 0x70, 0xDB),
+    "mediumseagreen": (0x3C, 0xB3, 0x71),
+    "mediumslateblue": (0x7B, 0x68, 0xEE),
+    "mediumspringgreen": (0x00, 0xFA, 0x9A),
+    "mediumturquoise": (0x48, 0xD1, 0xCC),
+    "mediumvioletred": (0xC7, 0x15, 0x85),
+    "midnightblue": (0x19, 0x19, 0x70),
+    "mintcream": (0xF5, 0xFF, 0xFA),
+    "mistyrose": (0xFF, 0xE4, 0xE1),
+    "moccasin": (0xFF, 0xE4, 0xB5),
+    "navajowhite": (0xFF, 0xDE, 0xAD),
+    "navy": (0x00, 0x00, 0x80),
+    "oldlace": (0xFD, 0xF5, 0xE6),
+    "olive": (0x80, 0x80, 0x00),
+    "olivedrab": (0x6B, 0x8E, 0x23),
+    "orange": (0xFF, 0xA5, 0x00),
+    "orangered": (0xFF, 0x45, 0x00),
+    "orchid": (0xDA, 0x70, 0xD6),
+    "palegoldenrod": (0xEE, 0xE8, 0xAA),
+    "palegreen": (0x98, 0xFB, 0x98),
+    "paleturquoise": (0xAF, 0xEE, 0xEE),
+    "palevioletred": (0xDB, 0x70, 0x93),
+    "papayawhip": (0xFF, 0xEF, 0xD5),
+    "peachpuff": (0xFF, 0xDA, 0xB9),
+    "peru": (0xCD, 0x85, 0x3F),
+    "pink": (0xFF, 0xC0, 0xCB),
+    "plum": (0xDD, 0xA0, 0xDD),
+    "powderblue": (0xB0, 0xE0, 0xE6),
+    "purple": (0x80, 0x00, 0x80),
+    "rebeccapurple": (0x66, 0x33, 0x99),
+    "red": (0xFF, 0x00, 0x00),
+    "rosybrown": (0xBC, 0x8F, 0x8F),
+    "royalblue": (0x41, 0x69, 0xE1),
+    "saddlebrown": (0x8B, 0x45, 0x13),
+    "salmon": (0xFA, 0x80, 0x72),
+    "sandybrown": (0xF4, 0xA4, 0x60),
+    "seagreen": (0x2E, 0x8B, 0x57),
+    "seashell": (0xFF, 0xF5, 0xEE),
+    "sienna": (0xA0, 0x52, 0x2D),
+    "silver": (0xC0, 0xC0, 0xC0),
+    "skyblue": (0x87, 0xCE, 0xEB),
+    "slateblue": (0x6A, 0x5A, 0xCD),
+    "slategray": (0x70, 0x80, 0x90),
+    "slategrey": (0x70, 0x80, 0x90),
+    "snow": (0xFF, 0xFA, 0xFA),
+    "springgreen": (0x00, 0xFF, 0x7F),
+    "steelblue": (0x46, 0x82, 0xB4),
+    "tan": (0xD2, 0xB4, 0x8C),
+    "teal": (0x00, 0x80, 0x80),
+    "thistle": (0xD8, 0xBF, 0xD8),
+    "tomato": (0xFF, 0x63, 0x47),
+    "turquoise": (0x40, 0xE0, 0xD0),
+    "violet": (0xEE, 0x82, 0xEE),
+    "wheat": (0xF5, 0xDE, 0xB3),
+    "white": (0xFF, 0xFF, 0xFF),
+    "whitesmoke": (0xF5, 0xF5, 0xF5),
+    "yellow": (0xFF, 0xFF, 0x00),
+    "yellowgreen": (0x9A, 0xCD, 0x32),
+}
+
+
+def css_colors():
+    return _CSS_COLORS
+
+
+def css_color(name) -> Optional[Tuple[int, int, int]]:
+    return _CSS_COLORS.get(name, None)
+
+
+def color_name(rgb) -> Optional[str]:
+    for name, value in _CSS_COLORS.items():
+        if value == rgb:
+            return name
+    return None
+
+
+@dataclasses.dataclass(frozen=True, order=True)
+class Color(Sequence):
+    red: int
+    green: int
+    blue: int
+    alpha: float = 1.0
+    palette_index: Optional[int] = None
+
+    # the default color is optional but for now we require one for simplicity
+    _COLOR_VARIABLE_RE: ClassVar[re.Pattern] = re.compile(
+        r"var\s*\(\s*--color([0-9]+)\s*,\s*(#?\w+)\s*\)"
+    )
+
+    def __getitem__(self, i):
+        fields = dataclasses.fields(self)
+        if isinstance(i, slice):
+            return tuple(getattr(self, f.name) for f in fields[i])
+        return getattr(self, fields[i].name)
+
+    def __len__(self):
+        return len(dataclasses.fields(self))
+
+    def _replace(self, **kwargs):
+        return dataclasses.replace(self, **kwargs)
+
+    @classmethod
+    def fromstring(cls, s: str, alpha: float = 1.0) -> "Color":
+        s = s.strip()
+
+        # CSS variables referencing palette entries as custom properties:
+        # https://docs.microsoft.com/en-us/typography/opentype/spec/svg#color-palettes
+        m = cls._COLOR_VARIABLE_RE.match(s)
+        if m:
+            palette_index = int(m.group(1))
+            default_color = m.group(2)
+            tmp = cls.fromstring(default_color, alpha=alpha)
+            return tmp._replace(palette_index=palette_index)
+
+        if s == "currentColor":
+            # For the 'currentColor' special keyword, we return a sentinel value (with
+            # negative invalid R G B values) that we'll convert to the 0xFFFF foreground
+            # CPAL color palette index.
+            # https://docs.microsoft.com/en-us/typography/opentype/spec/SVG#colors
+            return cls.current_color(alpha=alpha)
+        if s.startswith("#"):
+            # https://www.w3.org/TR/css-color-4/#hex-notation
+            ss = s[1:]
+            if len(ss) in (3, 4):
+                ss = "".join((s + s for s in ss))
+
+            if len(ss) in (6, 8):
+                red = int(ss[0:2], 16)
+                green = int(ss[2:4], 16)
+                blue = int(ss[4:6], 16)
+                if len(ss) == 8:
+                    alpha = int(ss[6:8], 16) / 255
+            else:
+                raise ValueError(f"expected 3, 4, 6, or 8 hex digits, found {s!r}")
+        elif s in _CSS_COLORS:
+            red, green, blue = _CSS_COLORS[s]
+        elif s.startswith("rgb(") and s.endswith(")"):
+            ss = s[4:-1]
+            # accept either commas or space, not both
+            values = [v for v in ss.split("," if "," in ss else " ") if v]
+            if len(values) != 3:
+                raise ValueError(f"expected 3 rgb() values, found {len(values)}: {s!r}")
+            # round floats and clamp to [0..255] range
+            red, green, blue = (
+                max(0, min(255, i)) for i in (round(float(v)) for v in values)
+            )
+        else:
+            raise ValueError(f"invalid or unsupported color string: {s!r}")
+        return cls(red, green, blue, alpha)
+
+    def to_ufo_color(self) -> Tuple[float, float, float, float]:
+        # UFO stores colors as RGBA tuples of decimal [0..1] floats. Here we round to 3
+        # decimal digits, which are sufficient to round-trip Fixed0.8 numbers
+        return (
+            float(f"{self.red / 255:.03f}"),
+            float(f"{self.green / 255:.03f}"),
+            float(f"{self.blue / 255:.03f}"),
+            self.alpha,
+        )
+
+    def opaque(self) -> "Color":
+        return self._replace(alpha=1.0)
+
+    def to_string(self) -> str:
+        # A CSS or SVG friendly string
+        if self.palette_index is not None:
+            return f"var(--color{self.palette_index}, {self.without_palette_index().to_string()})"
+
+        if self.is_current_color():
+            if self.alpha != 1.0:
+                raise ValueError("'currentColor' can't encode alpha != 1.0")
+            return "currentColor"
+        rgb = self[0:3]
+        string = None
+        if self.alpha == 1.0:
+            string = color_name(rgb)
+        if not string:
+            string = "#" + "".join(f"{v:02X}" for v in rgb)
+            if self.alpha != 1.0:
+                string += f"{int(self.alpha * 255):02X}"
+        return string
+
+    @classmethod
+    def current_color(cls, alpha=alpha) -> "Color":
+        # sentinel value for "currentColor" (text foreground color)
+        return cls(-1, -1, -1, alpha=alpha)
+
+    def is_current_color(self):
+        return self[:3] == self.current_color()[:3]
+
+    def without_palette_index(self) -> "Color":
+        if self.palette_index is None:
+            return self
+        return self._replace(palette_index=None)
+
+    def index_from(self, palette: Sequence["Color"]) -> int:
+        if self.is_current_color():
+            return 0xFFFF
+        return palette.index(self)
+
+
+def uniq_sort_cpal_colors(colors: Iterable[Color]) -> List[Color]:
+    """Return list of unique colors sorted by CPAL palette entry index.
+
+    Keep colors with explicit index in the original position, and place the unindexed
+    colors in the empty slots or after the indexed ones, sorted by > RGBA value.
+    """
+    black = Color.fromstring("black")
+    all_colors = set(colors)
+
+    # Chrome 98 doesn't like when COLRv1 font has empty CPAL palette so make sure we
+    # have at least one
+    # TODO(anthrotype): File a bug and remove hack once the bug is fixed upstream
+    if not all_colors:
+        all_colors = {black}
+
+    # Check that color palette entry indices unambiguously map to only one color
+    indexed_colors = {}
+    for color in all_colors:
+        if color.palette_index is not None:
+            if color.palette_index in indexed_colors:
+                raise ValueError(
+                    f"Palette entry {color.palette_index} already maps to "
+                    f"{indexed_colors[color.palette_index]}; can't also map to {color}"
+                )
+            indexed_colors[color.palette_index] = color
+
+    # We need enough slots for all the colors, or to reach the max index, whichever is greater
+    cpal_slots = max(len(all_colors), max(indexed_colors, default=-1) + 1)
+
+    # cpal_slots is > the highest index so it will push all unindexed items right
+    # this can be written as a ternary but it's pretty illegible that way
+    def _color_sort_key(c: Color):
+        if c.palette_index is not None:
+            return (c.palette_index,)
+        # negate value of colors so when we popright we get them in ascending order
+        return (cpal_slots,) + tuple(-v for v in c[:4])
+
+    # Push colors into CPAL, either at their index or at the next open slot
+    cpal_colors = deque(sorted(all_colors, key=_color_sort_key))
+    result = [black] * cpal_slots
+    for i in range(cpal_slots):
+        if i == cpal_colors[0].palette_index:
+            result[i] = cpal_colors.popleft()
+        elif cpal_colors[-1].palette_index is None:
+            result[i] = cpal_colors.pop()
+        # We have more gaps in indices than unindexed items; leave it black
+
+    assert not cpal_colors, f"Should be empty: {cpal_colors}"
+
+    return result

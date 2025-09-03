@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="four.small" format="2">
-  <advance width="401"/>
-  <outline>
-    <component base="four" xScale="0.612" yScale="0.612"/>
-  </outline>
-</glyph>

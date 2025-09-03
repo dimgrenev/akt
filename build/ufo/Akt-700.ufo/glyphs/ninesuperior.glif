@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="ninesuperior" format="2">
-  <advance width="383"/>
-  <unicode hex="2079"/>
-  <anchor x="182" y="580" name="_center"/>
-  <outline>
-    <component base="nine.small" yOffset="360"/>
-  </outline>
-</glyph>

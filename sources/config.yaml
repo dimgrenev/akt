@@ -16,8 +16,8 @@ familyName: "Akt"
 # binaries to live. But we'd recommend you stick to the defaults
 # especially if you are planning to upload your font to Google Fonts.
 
-# outputDir: ../fonts
-# vfDir: $outputDir/variable
+outputDir: ../fonts
+vfDir: $outputDir
 # ttDir: $outputDir/ttf
 # otDir: $outputDir/otf
 # woffDir: $outputDir/webfonts
@@ -53,7 +53,7 @@ autohintTTF: true
 reverseOutlineDirection: true
 removeOutlineOverlaps: true
 # extraFontmakeArgs: ""
-# extraVariableFontmakeArgs: ""
+extraVariableFontmakeArgs: "--filter 'DottedCircleFilter(pre=True)'"
 # extraStaticFontmakeArgs: ""
 # glyphData: GlyphData.xml
 

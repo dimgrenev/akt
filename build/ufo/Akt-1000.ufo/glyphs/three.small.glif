@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="three.small" format="2">
-  <advance width="377"/>
-  <outline>
-    <component base="three" xScale="0.612" yScale="0.612"/>
-  </outline>
-</glyph>

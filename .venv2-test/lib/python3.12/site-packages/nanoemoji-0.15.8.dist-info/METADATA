@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: nanoemoji
+Version: 0.15.8
+Summary: Compiler for color fonts
+Author: Rod S
+Author-email: rsheeter@google.com
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: absl-py>=0.9.0
+Requires-Dist: fonttools[ufo]>=4.36.0
+Requires-Dist: importlib_resources>=3.3.0; python_version < "3.9"
+Requires-Dist: lxml>=4.0
+Requires-Dist: ninja>=1.10.0.post1
+Requires-Dist: picosvg>=0.22.1
+Requires-Dist: pillow>=7.2.0
+Requires-Dist: regex>=2020.4.4
+Requires-Dist: toml>=0.10.1
+Requires-Dist: ufo2ft[cffsubr]>=2.24.0
+Requires-Dist: ufoLib2>=0.6.2
+Requires-Dist: resvg-cli>=0.22.0.post3
+Requires-Dist: zopfli>=0.2.1
+Requires-Dist: pngquant-cli>=2.17.0.post5
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: lint
+Requires-Dist: black; extra == "lint"
+Requires-Dist: pytype; extra == "lint"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytype; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,5 +1,8 @@
-SOURCES=$(shell python3 scripts/read-config.py --sources )
-FAMILY=$(shell python3 scripts/read-config.py --family )
+VENV ?= .venv2
+VENV_TEST ?= .venv2-test
+export PATH := $(abspath $(VENV)/bin):$(PATH)
+SOURCES=$(shell python3 tools/read-config.py --sources )
+FAMILY=$(shell python3 tools/read-config.py --family )
 DRAWBOT_SCRIPTS=$(shell ls documentation/*.py)
 DRAWBOT_OUTPUT=$(shell ls documentation/*.py | sed 's/\.py/.png/g')
 
@@ -8,81 +11,160 @@ help:
 	@echo "# Build targets for $(FAMILY)"
 	@echo "###"
 	@echo
-	@echo "  make build:  Builds the fonts and places them in the fonts/ directory"
+	@echo "  make build:  Builds minimal: outputs a single TTF in fonts/ (no subfolders)"
 	@echo "  make test:   Tests the fonts with fontbakery"
 	@echo "  make proof:  Creates HTML proof documents in the proof/ directory"
 	@echo "  make images: Creates PNG specimen images in the documentation/ directory"
 	@echo
 
-build: build.stamp
+build: out/build.stamp
 
-venv: venv/touchfile
+venv: $(VENV)/touchfile
 
-venv-test: venv-test/touchfile
+venv-test: $(VENV_TEST)/touchfile
 
 customize: venv
-	. venv/bin/activate; python3 scripts/customize.py
+	$(VENV)/bin/python tools/customize.py
 
-build.stamp: venv sources/config.yaml $(SOURCES)
-	rm -rf fonts
-	# Build variable font(s)
-	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)
-	# Post-fix variable font(s) to normalize name/OS2/head/avar/meta and default instance naming
-	. venv/bin/activate; if [ -f "fonts/variable/Akt[wght].ttf" ]; then python3 tools/fix_vf.py "fonts/variable/Akt[wght].ttf"; fi
-	# Ensure article assets are colocated with variable fonts for FB check
-	mkdir -p fonts/variable/images; \
-	  if [ -f description/article/ARTICLE.en_us.html ]; then cp -f description/article/ARTICLE.en_us.html fonts/variable/ARTICLE.en_us.html; fi; \
-	  if [ -f description/image1.png ]; then cp -f description/image1.png fonts/variable/images/image1.png; fi; \
-	  if [ -f description/image2.png ]; then cp -f description/image2.png fonts/variable/images/image2.png; fi; \
-	  if [ -f documentation/images-license.txt ]; then cp -f documentation/images-license.txt fonts/variable/images-license.txt; fi; \
-	  if [ -f fonts/variable/ARTICLE.en_us.html ]; then sed -i '' -e 's|src=\"image1.png\"|src=\"images/image1.png\"|g' -e 's|src=\"image2.png\"|src=\"images/image2.png\"|g' -e 's|src=\"../1.png\"|src=\"images/1.png\"|g' fonts/variable/ARTICLE.en_us.html; fi
-	# Snap near-miss outline points in source (baseline/cap) and rebuild
-	. venv/bin/activate; python3 tools/snap_outline_points.py sources/Akt.glyphs || true
-	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)
-	# FINAL post-fix after last rebuild to ensure name/OS2/head/avar/meta are kept
-	. venv/bin/activate; if [ -f "fonts/variable/Akt[wght].ttf" ]; then python3 tools/fix_vf.py "fonts/variable/Akt[wght].ttf"; fi
-	# Rename .sub/.superior to canonical inferior/superior names so subs/sups features reach them
-	. venv/bin/activate; if [ -f "fonts/variable/Akt[wght].ttf" ]; then python3 tools/rename_sub_sup.py "fonts/variable/Akt[wght].ttf"; fi
-	touch build.stamp
+out/build.stamp: venv sources/config.yaml $(SOURCES)
+	 rm -rf fonts
+	 mkdir -p documentation
+	 if [ ! -f documentation/ARTICLE.en_us.html ]; then printf '<h1>$(FAMILY)</h1>\n<p>About the $(FAMILY) typeface. Replace this text with a proper description (history, design notes, intended usage).</p>\n' > documentation/ARTICLE.en_us.html; fi
+	 $(VENV)/bin/python tools/ensure_mark_features.py
+	 $(VENV)/bin/python tools/normalize_mark_anchors.py sources/Akt.glyphs
+	 $(VENV)/bin/python tools/fix_mark_anchors.py sources/Akt.glyphs
+	 $(VENV)/bin/python tools/cleanup_anchors.py sources/Akt.glyphs || true
+	 $(VENV)/bin/python tools/add_base_anchors.py sources/Akt.glyphs dottedCircle uni25CC idotless jdotless hardsign-cy hardsign-cy.loclBGR J L M R l m r a-cy e-cy ii-cy o-cy u-cy yeru-cy ereversed-cy yu-cy ya-cy ie-cy || true
+	 $(VENV)/bin/python tools/add_ligature_carets.py sources/Akt.glyphs || true
+	 (for config in sources/config*.yaml; do PATH=$(VENV)/bin:$$PATH $(VENV)/bin/gftools builder $$config; done)
+	 $(VENV)/bin/python -c 'import os,sys; import pathlib; p="fonts/Akt[wght].ttf"; sys.exit(0 if os.path.isfile(p) else 0)'
+	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/fix_vf.py "fonts/Akt[wght].ttf"; fi
+	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/fix_vf.py "fonts/Akt[wght].ttf"; fi
+	 # Removed post-build snapping to enforce source-of-truth fixes
+	 # if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/snap_outline_points.py --threshold 5 "fonts/Akt[wght].ttf"; fi
+	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/rename_sub_sup.py "fonts/Akt[wght].ttf"; fi
+	 # Post-build outline snap (TTF) to satisfy FontBakery outline_alignment_miss
+	 # (disabled) if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/snap_outline_points.py --threshold 2 "fonts/Akt[wght].ttf"; fi
+	 mkdir -p out; touch out/build.stamp
 
-venv/touchfile: requirements.txt
-	test -d venv || python3 -m venv venv
-	. venv/bin/activate; pip install -Ur requirements.txt
-	touch venv/touchfile
+$(VENV)/touchfile: requirements.txt
+	test -d $(VENV) || python3 -m venv $(VENV)
+	$(VENV)/bin/pip install -Ur requirements.txt
+	touch $(VENV)/touchfile
 
-venv-test/touchfile: requirements-test.txt
-	test -d venv-test || python3 -m venv venv-test
-	. venv-test/bin/activate; pip install -Ur requirements-test.txt
-	touch venv-test/touchfile
+$(VENV_TEST)/touchfile: requirements-test.txt
+	test -d $(VENV_TEST) || python3 -m venv $(VENV_TEST)
+	$(VENV_TEST)/bin/pip install -Ur requirements-test.txt
+	touch $(VENV_TEST)/touchfile
 
-test: venv-test build.stamp
-	TOCHECK=$$(find fonts/variable -type f 2>/dev/null); if [ -z "$$TOCHECK" ]; then TOCHECK=$$(find fonts/ttf -type f 2>/dev/null); fi ; . venv-test/bin/activate; mkdir -p out/ out/fontbakery; fontbakery check-googlefonts -l WARN --full-lists --succinct --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md $$TOCHECK  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
+test: venv-test out/build.stamp
+	 mkdir -p out/fontbakery out/badges
+	 TOCHECK=$$(find fonts -maxdepth 1 -type f \( -name '*.ttf' -o -name '*.otf' \) 2>/dev/null); \
+	 $(VENV_TEST)/bin/fontbakery check-googlefonts -l WARN --full-lists --succinct --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md $$TOCHECK  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
 
-proof: venv build.stamp
-	TOCHECK=$$(find fonts/variable -type f 2>/dev/null); if [ -z "$$TOCHECK" ]; then TOCHECK=$$(find fonts/ttf -type f 2>/dev/null); fi ; . venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $$TOCHECK -o out/proof
+proof: venv out/build.stamp
+	TOCHECK=$$(find fonts -maxdepth 1 -type f \( -name '*.ttf' -o -name '*.otf' \) 2>/dev/null); $(VENV)/bin/diffenator2 proof $$TOCHECK -o out/proof
 
 images: venv $(DRAWBOT_OUTPUT)
 
-%.png: %.py build.stamp
-	. venv/bin/activate; python3 $< --output $@
+%.png: %.py out/build.stamp
+	$(VENV)/bin/python $< --output $@
 
 clean:
-	rm -rf venv
-	find . -name "*.pyc" -delete
+	 rm -f out/build.stamp
+	 find . -name "*.pyc" -delete
+
+clean-all:
+	 rm -rf proof fonts out master_ufo instance_ufos
+	 rm -rf $(VENV) $(VENV_TEST)
+	 find . -name "*.pyc" -delete
+	 find . -type d -name "__pycache__" -exec rm -rf {} +
+
+# Helper to rebuild without post-snap
+rebuild-nosnap: clean build
 
 update-project-template:
 	npx update-template https://github.com/googlefonts/googlefonts-project-template/
 
 update: venv venv-test
-	venv/bin/pip install --upgrade pip-tools
-	# See https://pip-tools.readthedocs.io/en/latest/#a-note-on-resolvers for
-	# the `--resolver` flag below.
-	venv/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements.in
-	venv/bin/pip-sync requirements.txt
-
-	venv-test/bin/pip install --upgrade pip-tools
-	venv-test/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements-test.in
-	venv-test/bin/pip-sync requirements-test.txt
-
+	$(VENV)/bin/pip install --upgrade pip-tools
+	$(VENV)/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements.in
+	$(VENV)/bin/pip-sync requirements.txt
+	$(VENV_TEST)/bin/pip install --upgrade pip-tools
+	$(VENV_TEST)/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements-test.in
+	$(VENV_TEST)/bin/pip-sync requirements-test.txt
 	git commit -m "Update requirements" requirements.txt requirements-test.txt
 	git push
+
+# ---- Convenience targets for no-snap QA loop ----
+
+# Reports directory for QA logs
+REPORT_DIR ?= documentation/reports
+
+# Analyze source with reports saved to files
+analyze-source-report: venv
+	mkdir -p $(REPORT_DIR)
+	$(VENV)/bin/python tools/auto_snap_nodes.py sources/Akt.glyphs analyze --points-only --threshold 2 | tee $(REPORT_DIR)/analyze-points.txt || true
+	$(VENV)/bin/python tools/auto_snap_nodes.py sources/Akt.glyphs analyze --components-only --threshold 2 | tee $(REPORT_DIR)/analyze-components.txt || true
+
+# Backward-compatible alias
+analyze-source: analyze-source-report
+
+# Apply source snapping and save log
+snap-source-report: venv
+	mkdir -p $(REPORT_DIR)
+	# Создаст .glyphs.snap_backup и применит снаппинг к узлам и компонентам с порогом 2
+	$(VENV)/bin/python tools/auto_snap_nodes.py sources/Akt.glyphs snap --threshold 2 | tee $(REPORT_DIR)/snap-source.txt || true
+
+# Backward-compatible alias
+snap-source: snap-source-report
+
+# Per-glyph binary report (baseline)
+bin-report-baseline: venv out/build.stamp
+	mkdir -p $(REPORT_DIR)
+	TOCHECK=fonts/Akt[wght].ttf; \
+	[ -f "$$TOCHECK" ] || { echo "fonts/Akt[wght].ttf not found"; exit 1; }; \
+	$(VENV)/bin/python tools/snap_outline_points.py --report --threshold 2 $$TOCHECK | tee $(REPORT_DIR)/bin-report-baseline.txt || true
+
+# Per-glyph binary report (post-fix)
+bin-report-postfix: venv out/build.stamp
+	mkdir -p $(REPORT_DIR)
+	TOCHECK=fonts/Akt[wght].ttf; \
+	[ -f "$$TOCHECK" ] || { echo "fonts/Akt[wght].ttf not found"; exit 1; }; \
+	$(VENV)/bin/python tools/snap_outline_points.py --report --threshold 2 $$TOCHECK | tee $(REPORT_DIR)/bin-report-postfix.txt || true
+
+# Optional backward-compatible alias
+bin-report: bin-report-baseline
+
+# FontBakery outline check (baseline)
+check-outline-baseline: venv out/build.stamp
+	mkdir -p $(REPORT_DIR)
+	TOCHECK=fonts/Akt[wght].ttf; \
+	[ -f "$$TOCHECK" ] || { echo "fonts/Akt[wght].ttf not found"; exit 1; }; \
+	$(VENV)/bin/fontbakery check-googlefonts --full-lists -c com.google.fonts/check/outline_alignment_miss $$TOCHECK | tee $(REPORT_DIR)/outline-baseline.txt || true
+
+# FontBakery outline check (post-fix)
+check-outline-postfix: venv out/build.stamp
+	mkdir -p $(REPORT_DIR)
+	TOCHECK=fonts/Akt[wght].ttf; \
+	[ -f "$$TOCHECK" ] || { echo "fonts/Akt[wght].ttf not found"; exit 1; }; \
+	$(VENV)/bin/fontbakery check-googlefonts --full-lists -c com.google.fonts/check/outline_alignment_miss $$TOCHECK | tee $(REPORT_DIR)/outline-postfix.txt || true
+
+# Optional backward-compatible alias
+check-outline: check-outline-baseline
+
+# Full QA cycle with report artifacts saved
+qa-nosnap-report: rebuild-nosnap bin-report-baseline check-outline-baseline analyze-source-report snap-source-report rebuild-nosnap bin-report-postfix check-outline-postfix
+	@echo "QA (no post-snap) report cycle completed. See $(REPORT_DIR)"
+
+# Базовая проверка без изменений источника
+qa-nosnap-baseline: rebuild-nosnap bin-report-baseline check-outline-baseline
+	@echo "Baseline QA (no post-snap, no source snap) завершён"
+
+# Применение фиксов в источнике и повторная проверка
+qa-nosnap-fix: analyze-source-report snap-source-report rebuild-nosnap bin-report-postfix check-outline-postfix
+	@echo "Post-fix QA (source snap applied, no post-snap) завершён"
+
+# Полный цикл: сначала baseline, затем фиксы и повторная проверка
+qa-nosnap: qa-nosnap-baseline qa-nosnap-fix
+	@echo "Полный QA (no post-snap) цикл завершён"

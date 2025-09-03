@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="multisetunion" format="2">
-  <advance width="820"/>
-  <unicode hex="228E"/>
-  <outline>
-    <component base="intersection"/>
-    <component base="period" xOffset="250" yOffset="336"/>
-  </outline>
-</glyph>

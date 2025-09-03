@@ -1,9 +1,13 @@
 *~
+.venv
+.venv-test
 venv
 venv-test
 build.stamp
 proof
 fonts
+out
+.trash
 node_modules
 package-lock.json
 package.json

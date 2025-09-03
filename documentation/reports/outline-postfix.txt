@@ -1,0 +1,341 @@
+Start ... running 1 
+individual check 
+executions.
+ >> 
+outline_alignment_miss
+    Are there any 
+misaligned on-curve 
+points?
+    with Akt.ttf
+
+    Rationale:           
+                         
+    This check           
+    heuristically looks  
+    for on-curve points  
+    which are close to,  
+    but do not sit on,   
+    significant          
+    boundary             
+    coordinates. For     
+    example, a point     
+    which has a          
+    Y-coordinate of 1    
+    or -1 might be a     
+    misplaced baseline   
+    point. As well as    
+    the baseline, here   
+    we also check for    
+    points near the      
+    x-height (but only   
+    for lowercase Latin  
+    letters),            
+    cap-height,          
+    ascender and         
+    descender Y          
+    coordinates.         
+                         
+    Not all such         
+    misaligned curve     
+    points are a         
+    mistake, and         
+    sometimes the        
+    design may call for  
+    points in locations  
+    near the             
+    boundaries. As this  
+    check is liable to   
+    generate             
+    significant numbers  
+    of false positives,  
+    it will pass if      
+    there are more than  
+    100 reported         
+    misalignments.       
+                         
+    More info: 
+https://github.com/fontto
+ols/fontbakery/pull/3088
+
+    WARN The following   
+         glyphs have     
+         on-curve        
+         points which    
+         have            
+         potentially     
+         incorrect y     
+         coordinates:    
+                         
+                         
+          * oe           
+          (U+0153):      
+          X=333.0,Y=1.   
+          0 (should be   
+          at baseline    
+          0?)            
+                         
+          * gsuperior:   
+          X=186.5,Y=72   
+          0.5 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * gsuperior:   
+          X=240.0,Y=71   
+          9.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * gsuperior:   
+          X=380.0,Y=71   
+          9.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * psuperior:   
+          X=30.0,Y=719   
+          .0 (should     
+          be at          
+          cap-height     
+          720?)          
+                         
+          * psuperior:   
+          X=170.0,Y=71   
+          9.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * qsuperior:   
+          X=240.0,Y=71   
+          9.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * qsuperior:   
+          X=380.0,Y=71   
+          9.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * uni2090      
+          (U+2090):      
+          X=153.0,Y=-1   
+          .0 (should     
+          be at          
+          baseline 0?)   
+                         
+          * uni2091      
+          (U+2091):      
+          X=197.0,Y=-2   
+          .0 (should     
+          be at          
+          baseline 0?)   
+                         
+          * uni2091      
+          (U+2091):      
+          X=215.5,Y=1.   
+          0 (should be   
+          at baseline    
+          0?)            
+                         
+          * uni2094      
+          (U+2094):      
+          X=164.0,Y=-0   
+          .5 (should     
+          be at          
+          baseline 0?)   
+                         
+          * uni2094      
+          (U+2094):      
+          X=208.0,Y=0.   
+          5 (should be   
+          at baseline    
+          0?)            
+                         
+          * uni02B0:     
+          X=219.5,Y=71   
+          8.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * uni207F      
+          (U+207F):      
+          X=219.5,Y=71   
+          8.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * uni0431      
+          (U+0431):      
+          X=295.0,Y=71   
+          8.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          *              
+          uni0431.locl   
+          SRB:           
+          X=302.0,Y=71   
+          9.0 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * uni04A9      
+          (U+04A9):      
+          X=786.0,Y=-1   
+          .0 (should     
+          be at          
+          baseline 0?)   
+                         
+          * uni04A9      
+          (U+04A9):      
+          X=671.0,Y=-1   
+          .0 (should     
+          be at          
+          baseline 0?)   
+                         
+          * uni209B      
+          (U+209B):      
+          X=148.0,Y=2.   
+          0 (should be   
+          at baseline    
+          0?)            
+                         
+          * uni208D      
+          (U+208D):      
+          X=61.0,Y=0.5   
+          (should be     
+          at baseline    
+          0?)            
+                         
+          * uni208E      
+          (U+208E):      
+          X=179.0,Y=0.   
+          5 (should be   
+          at baseline    
+          0?)            
+                         
+          * uni207D      
+          (U+207D):      
+          X=61.0,Y=718   
+          .5 (should     
+          be at          
+          cap-height     
+          720?)          
+                         
+          * uni207E      
+          (U+207E):      
+          X=179.0,Y=71   
+          8.5 (should    
+          be at          
+          cap-height     
+          720?)          
+                         
+          * uni2101      
+          (U+2101):      
+          X=802.0,Y=1.   
+          5 (should be   
+          at baseline    
+          0?) [code:     
+          found-misali   
+          gnments]       
+                         
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 0
+    WARN: 1
+    INFO: 0
+    SKIP: 0
+    PASS: 0
+
+
+
+    Meaning of check 
+results:
+
+    An ERROR is something
+wrong with FontBakery 
+itself, possibly a bug.
+    A  FATAL is an 
+extremely severe issue 
+that must be addressed 
+immediately.
+    A  FAIL is a problem 
+with the font that must 
+be fixed.
+    A  WARN is something 
+that you should consider 
+addressing.
+    An INFO result simply
+prints something useful. 
+Typically stats.
+    A  PASS means the 
+font looks good for the 
+given checking routine.
+And a  SKIP happens when 
+the check does not apply 
+to the given font.
+
+    If you get ERRORs, 
+please help us improve 
+the tool by reporting 
+them at
+    https://github.com/fo
+nttools/fontbakery/issues
+ (but other kinds of bug
+    reports and/or 
+feature requests are also
+always welcome, of 
+course!)
+
+
+
+DEPRECATION WARNING:
+By late-December 2024, 
+FontBakery version 0.13.0
+introduced a new naming 
+scheme for the check-IDs.
+
+Fontbakery detected usage
+of old IDs and performed 
+an automatic 
+backwards-compatibility 
+translation for you.
+This automatic 
+translation will be 
+deprecated in the next 
+major release.
+
+Please start using the 
+new check-IDs as 
+documented at
+https://github.com/fontto
+ols/fontbakery/blob/31970
+cdc5807c3b75c2f9b6e223aca
+57ffda535f/Lib/fontbakery
+/legacy_checkids.py
+
+The following legacy 
+check-IDs were detected:
+ - 
+com.google.fonts/check/ou
+tline_alignment_miss
+
+
+DONE!
+  [] 0%

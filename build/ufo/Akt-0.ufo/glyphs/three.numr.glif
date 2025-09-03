@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="three.numr" format="2">
-  <advance width="342"/>
-  <anchor x="176" y="520" name="_center"/>
-  <outline>
-    <component base="three.small" xScale="0.908" yScale="0.908" yOffset="320"/>
-  </outline>
-</glyph>

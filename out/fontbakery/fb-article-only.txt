@@ -1,4 +1,0 @@
-Start ... running 1 individual check executions.
-Akt[wght].ttf: googlefonts/article/images: WARN [lacks-article]
-
- ERROR: 0 FATAL: 0 FAIL: 0 WARN: 1 INFO: 0 SKIP: 0 PASS: 0

@@ -1,0 +1,2 @@
+[console_scripts]
+cffsubr = cffsubr.__main__:main

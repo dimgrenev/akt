@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="ogonek-mirrored" format="2">
-  <advance width="220"/>
-  <anchor x="69" y="0" name="_ogonek"/>
-  <outline>
-    <component base="ogonekcomb" xScale="-1" xOffset="243"/>
-  </outline>
-</glyph>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="q.small" format="2">
-  <advance width="357"/>
-  <anchor x="170.136" y="306.0" name="top"/>
-  <anchor x="170.136" y="0.0" name="bottom"/>
-  <outline>
-    <component base="q" xScale="0.612" yScale="0.612"/>
-  </outline>
-</glyph>

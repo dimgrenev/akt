@@ -1,6 +1,0 @@
-Images used in ARTICLE.en_us.html:
-- image1.png
-- image2.png
-- 1.png
-
-License: CC BY-SA 4.0

@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="supersetWithDot" format="2">
-  <advance width="600"/>
-  <unicode hex="2ABE"/>
-  <outline>
-    <component base="subsetWithDot" xScale="-1" xOffset="820"/>
-  </outline>
-</glyph>

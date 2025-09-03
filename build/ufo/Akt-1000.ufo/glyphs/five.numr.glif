@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="five.numr" format="2">
-  <advance width="339"/>
-  <anchor x="166" y="520" name="_center"/>
-  <outline>
-    <component base="five.small" xScale="0.908" yScale="0.908" yOffset="320"/>
-  </outline>
-</glyph>

@@ -3,7 +3,7 @@
 **Unified glyphs width** across all weights (Thin → Black), ensuring predictable line and UI-element width behavior during text weight adjustments. This attribute also aids in optimizing text density for dark themes – simply shift one weight step lighter for balanced contrast.  
 **Capitals** are vertically **centered within the line height**, creating harmonious alignment with icons. **Terminals** (endpoints of rounded strokes) are horizontally **calibrated** for visual consistency.  
 **1,200+ glyphs** and supports **400+ languages** using **Extended Latin & Cyrillic** scripts.  
-There are **7 font weights available** (Thin → Bold is ready, ExtraBold and Black still wip). Designed by Dima Grenev.
+There are **9 font weights available** (Thin → Black). Designed by Dima Grenev.
 
 [Download](https://github.com/dimgrenev/Akt/releases/latest) latest release.
 
@@ -23,7 +23,7 @@ To build the `.ttf`, `.otf`, `woff2` & variable `.ttf` you will need to:
 - Install **fonttools[woff]** `pip install fonttools[woff]`
 - Navigate to **Akt** folder in Terminal app.
 - Type `gftools builder sources/config.yaml` in Terminal and run it.
-- Type `python scripts/generate_variable_webfonts.py` in Terminal and run it to generate variable `woff2` files.
+- To generate variable webfonts, use the build artifacts created by `make build` (the variable TTFs in fonts/variable). Conversion to woff2 can be handled by your deployment pipeline or gftools if needed.
 - After the scripts are complete, the files can be found in *fonts* folder.
 
 ## License

@@ -1,0 +1,80 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+"""Simplify svg.
+
+Usage:
+picosvg.py emoji_u1f469_1f3fd_200d_1f91d_200d_1f468_1f3fb.svg
+<simplified svg dumped to stdout>
+"""
+from absl import app
+from absl import flags
+from lxml import etree  # pytype: disable=import-error
+from picosvg.svg import SVG
+from picosvg.svg_meta import svgns
+import sys
+
+
+FLAGS = flags.FLAGS
+
+
+flags.DEFINE_bool(
+    "drop_unsupported",
+    False,
+    "Whether to blindly discard all elements we don't understand. Likely unwise.",
+)
+flags.DEFINE_bool("clip_to_viewbox", False, "Whether to clip content outside viewbox")
+flags.DEFINE_string("output_file", "-", "Output SVG file ('-' means stdout)")
+flags.DEFINE_bool(
+    "allow_text",
+    False,
+    "Whether to allow text elements. Note that they will not be converted to paths, just pass through to the output.",
+)
+
+
+def _run(argv):
+    try:
+        input_file = argv[1]
+    except IndexError:
+        input_file = None
+
+    if input_file:
+        svg = SVG.parse(input_file)
+    else:
+        svg = SVG.fromstring(sys.stdin.read())
+
+    # Do the needful
+    svg = svg.topicosvg(
+        allow_text=FLAGS.allow_text, drop_unsupported=FLAGS.drop_unsupported
+    )
+
+    if FLAGS.clip_to_viewbox:
+        svg.clip_to_viewbox(inplace=True)
+
+    output = svg.tostring(pretty_print=True)
+
+    if FLAGS.output_file == "-":
+        print(output)
+    else:
+        with open(FLAGS.output_file, "w") as f:
+            f.write(output)
+
+
+def main(argv=None):
+    # We don't seem to be __main__ when run as cli tool installed by setuptools
+    app.run(_run, argv=argv)
+
+
+if __name__ == "__main__":
+    main()

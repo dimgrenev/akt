@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: pngquant-cli
+Version: 3.0.3
+License-File: LICENSE
+Summary: Precompiled binaries for pngquant, the lossy PNG compressor based on libimagequant.
+Keywords: quantization,palette,image,pngquant,compression
+Home-Page: https://pngquant.org
+Author: Kornel Lesiński <kornel@pngquant.org>
+Author-email: Kornel Lesiński <kornel@pngquant.org>
+Maintainer-email: Cosimo Lupo <cosimo@anthrotype.com>
+License: GPL-3.0-or-later
+Project-URL: repository, https://github.com/anthrotype/pngquant-wheels
+
+.. figure:: https://github.com/anthrotype/pngquant-wheels/actions/workflows/ci.yml/badge.svg
+   :alt: CI Status
+
+   CI Status
+
+pngquant wheels
+===============
+
+This repository is used to build and publish precompiled Python
+`wheels <https://pythonwheels.com/>`__ for
+`pngquant <https://github.com/kornelski/pngquant>`__, using
+`maturin <https://maturin.rs/>`__.
+

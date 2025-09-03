@@ -1,0 +1,2 @@
+[console_scripts]
+blackrenderer = blackrenderer.__main__:main

@@ -1,0 +1,6 @@
+[console_scripts]
+ff-shape = fontFeatures.bin.ff_shape:main
+otf2fea = fontFeatures.bin.otf2fea:main
+otflayout2glyphs = fontFeatures.bin.otflayout2glyphs:main
+siesta = fontFeatures.bin.siesta:main
+txt2fea = fontFeatures.bin.txt2fea:main

@@ -99,6 +99,16 @@ def remove_typographic_family_names(font: TTFont):
     records = [nr for nr in name.names if nr.nameID not in (16, 17)]
     name.names = records
 
+
+def remove_mac_name_entries(font: TTFont):
+    """Remove all name table records for Mac platform (platformID=1)."""
+    try:
+        name = font["name"]
+        name.names = [nr for nr in name.names if getattr(nr, "platformID", None) != 1]
+    except Exception:
+        pass
+
+
 def ensure_fsselection_regular(font: TTFont):
     os2 = font["OS/2"]
     # Set usWeightClass to 400 for default
@@ -287,6 +297,7 @@ def _glyph_is_letter(font: TTFont, glyph_name: str) -> bool:
 def prune_mark_to_base_non_letters(font: TTFont) -> None:
     """Remove MarkToBase BaseCoverage entries for glyphs that are not Unicode letters.
     Оставляем позиционирование диакритики только на буквах; цифры/знаки/символы исключаем.
+    Исключение: сохраняем для dottedCircle/uni25CC, т.к. FB требует привязку марок к точечному кружку.
     """
     if "GPOS" not in font:
         return
@@ -297,6 +308,9 @@ def prune_mark_to_base_non_letters(font: TTFont) -> None:
             return
     except Exception:
         return
+
+    # Allowlist баз, которые необходимо сохранять даже если они не буквы
+    allow_bases = {"dottedCircle", "uni25CC"}
 
     for lookup in lookups.Lookup:
         try:
@@ -312,6 +326,9 @@ def prune_mark_to_base_non_letters(font: TTFont) -> None:
                     continue
                 for i in range(len(glyphs) - 1, -1, -1):
                     g = glyphs[i]
+                    # Не трогаем явно разрешённые базы
+                    if g in allow_bases:
+                        continue
                     if not _glyph_is_letter(font, g):
                         try:
                             cov.glyphs.pop(i)
@@ -438,13 +455,14 @@ def main(path: str):
     ensure_fvar_defaults(font)
     ensure_avar(font)
     ensure_meta(font)
-    ensure_vendor_id(font, "DMGR")
+    ensure_vendor_id(font, "GOOG")
     remove_typographic_family_names(font)
     enforce_regular_naming(font, family="Akt")
     ensure_stat_weight_axis_value_names(font)
     prune_mark_to_base_for(font, ["copyright", "registered", "uni00A9", "uni00AE"]) 
     ensure_soft_dotted_decomposition(font)
     prune_mark_to_base_non_letters(font)
+    remove_mac_name_entries(font)
     font.save(path)
 
 if __name__ == "__main__":

@@ -1,0 +1,283 @@
+codepoint	unicode_name	suggested_subsets
+U+000D	UNASSIGNED	adlam,ahom,anatolian-hieroglyphs,arabic,armenian,avestan,balinese,bamum,bassa-vah,batak,bengali,bhaiksuki,brahmi,braille,buginese,buhid,canadian-aboriginal,carian,caucasian-albanian,chakma,cham,cherokee,chinese-hongkong,chinese-simplified,chinese-traditional,chorasmian,coptic,cuneiform,cypriot,cypro-minoan,cyrillic,cyrillic-ext,deseret,devanagari,dives-akuru,dogra,duployan,egyptian-hieroglyphs,elbasan,elymaic,ethiopic,garay,georgian,glagolitic,gothic,grantha,greek,greek-ext,gujarati,gunjala-gondi,gurmukhi,gurung-khema,hanifi-rohingya,hanunoo,hatran,hebrew,imperial-aramaic,indic-siyaq-numbers,inscriptional-pahlavi,inscriptional-parthian,japanese,javanese,kaithi,kana-extended,kannada,kawi,kayah-li,kharoshthi,khitan-small-script,khmer,khojki,khudawadi,kirat-rai,korean,lao,latin,latin-ext,lepcha,limbu,linear-a,linear-b,lisu,lycian,lydian,mahajani,makasar,malayalam,mandaic,manichaean,marchen,masaram-gondi,math,mayan-numerals,medefaidrin,meetei-mayek,mende-kikakui,meroitic,meroitic-cursive,meroitic-hieroglyphs,miao,modi,mongolian,mro,multani,music,myanmar,nabataean,nag-mundari,nandinagari,new-tai-lue,newa,nko,nushu,nyiakeng-puachue-hmong,ogham,ol-chiki,ol-onal,old-hungarian,old-italic,old-north-arabian,old-permic,old-persian,old-sogdian,old-south-arabian,old-turkic,old-uyghur,oriya,osage,osmanya,ottoman-siyaq-numbers,pahawh-hmong,palmyrene,pau-cin-hau,phags-pa,phoenician,psalter-pahlavi,rejang,runic,samaritan,saurashtra,sharada,shavian,siddham,signwriting,sinhala,sogdian,sora-sompeng,soyombo,sundanese,sunuwar,syloti-nagri,symbols,symbols2,syriac,tagalog,tagbanwa,tai-le,tai-tham,tai-viet,takri,tamil,tamil-supplement,tangsa,tangut,telugu,thaana,thai,tibetan,tifinagh,tirhuta,todhri,toto,tulu-tigalari,ugaritic,vai,vietnamese,vithkuqi,wancho,warang-citi,yezidi,yi,zanabazar-square,znamenny
+U+0020	SPACE	adlam,ahom,anatolian-hieroglyphs,arabic,armenian,avestan,balinese,bamum,bassa-vah,batak,bengali,bhaiksuki,brahmi,braille,buginese,buhid,canadian-aboriginal,carian,caucasian-albanian,chakma,cham,cherokee,chinese-hongkong,chinese-simplified,chinese-traditional,chorasmian,coptic,cuneiform,cypriot,cypro-minoan,cyrillic,cyrillic-ext,deseret,devanagari,dives-akuru,dogra,duployan,egyptian-hieroglyphs,elbasan,elymaic,ethiopic,garay,georgian,glagolitic,gothic,grantha,greek,greek-ext,gujarati,gunjala-gondi,gurmukhi,gurung-khema,hanifi-rohingya,hanunoo,hatran,hebrew,imperial-aramaic,indic-siyaq-numbers,inscriptional-pahlavi,inscriptional-parthian,japanese,javanese,kaithi,kana-extended,kannada,kawi,kayah-li,kharoshthi,khitan-small-script,khmer,khojki,khudawadi,kirat-rai,korean,lao,latin,latin-ext,lepcha,limbu,linear-a,linear-b,lisu,lycian,lydian,mahajani,makasar,malayalam,mandaic,manichaean,marchen,masaram-gondi,math,mayan-numerals,medefaidrin,meetei-mayek,mende-kikakui,meroitic,meroitic-cursive,meroitic-hieroglyphs,miao,modi,mongolian,mro,multani,music,myanmar,nabataean,nag-mundari,nandinagari,new-tai-lue,newa,nko,nushu,nyiakeng-puachue-hmong,ogham,ol-chiki,ol-onal,old-hungarian,old-italic,old-north-arabian,old-permic,old-persian,old-sogdian,old-south-arabian,old-turkic,old-uyghur,oriya,osage,osmanya,ottoman-siyaq-numbers,pahawh-hmong,palmyrene,pau-cin-hau,phags-pa,phoenician,psalter-pahlavi,rejang,runic,samaritan,saurashtra,sharada,shavian,siddham,signwriting,sinhala,sogdian,sora-sompeng,soyombo,sundanese,sunuwar,syloti-nagri,symbols,symbols2,syriac,tagalog,tagbanwa,tai-le,tai-tham,tai-viet,takri,tamil,tamil-supplement,tangsa,tangut,telugu,thaana,thai,tibetan,tifinagh,tirhuta,todhri,toto,tulu-tigalari,ugaritic,vai,vietnamese,vithkuqi,wancho,warang-citi,yezidi,yi,zanabazar-square,znamenny
+U+0021	EXCLAMATION MARK	adlam,cham,gunjala-gondi,khmer,latin,masaram-gondi,math,mongolian,syriac,thaana
+U+0022	QUOTATION MARK	adlam,cham,khmer,latin,masaram-gondi,math,mongolian,wancho
+U+0023	NUMBER SIGN	adlam,khmer,latin,math,symbols
+U+0024	DOLLAR SIGN	adlam,khmer,latin,math
+U+0025	PERCENT SIGN	adlam,gunjala-gondi,khmer,latin,masaram-gondi,math
+U+0026	AMPERSAND	adlam,khmer,latin,math
+U+0027	APOSTROPHE	adlam,cham,gunjala-gondi,khmer,latin,masaram-gondi,math,wancho,warang-citi
+U+0028	LEFT PARENTHESIS	adlam,cham,gunjala-gondi,khmer,latin,masaram-gondi,math,mongolian,syriac,thaana,wancho
+U+0029	RIGHT PARENTHESIS	adlam,cham,gunjala-gondi,khmer,latin,masaram-gondi,math,mongolian,syriac,thaana,wancho
+U+002A	ASTERISK	adlam,gunjala-gondi,khmer,latin,masaram-gondi,math,symbols,syriac
+U+002B	PLUS SIGN	adlam,gunjala-gondi,khmer,latin,masaram-gondi,math,syriac
+U+002C	COMMA	adlam,cham,coptic,gunjala-gondi,khmer,latin,masaram-gondi,math,nushu,thaana,wancho
+U+002D	HYPHEN-MINUS	adlam,armenian,cham,coptic,gunjala-gondi,hebrew,kaithi,kayah-li,kharoshthi,khmer,latin,lisu,masaram-gondi,math,mongolian,nushu,sora-sompeng,sundanese,syriac,wancho
+U+002E	FULL STOP	adlam,avestan,cham,coptic,gunjala-gondi,khmer,latin,masaram-gondi,math,nushu,syriac,thaana,wancho
+U+002F	SOLIDUS	adlam,cham,gunjala-gondi,khmer,latin,masaram-gondi,math,syriac,wancho
+U+0030	DIGIT ZERO	khmer,latin,math,nushu,symbols
+U+0031	DIGIT ONE	khmer,latin,math,nushu,symbols
+U+0032	DIGIT TWO	khmer,latin,math,nushu,symbols
+U+0033	DIGIT THREE	khmer,latin,math,nushu,symbols
+U+0034	DIGIT FOUR	khmer,latin,math,nushu,symbols
+U+0035	DIGIT FIVE	khmer,latin,math,nushu,symbols
+U+0036	DIGIT SIX	khmer,latin,math,nushu,symbols
+U+0037	DIGIT SEVEN	khmer,latin,math,nushu,symbols
+U+0038	DIGIT EIGHT	khmer,latin,math,nushu,symbols
+U+0039	DIGIT NINE	khmer,latin,math,nushu,symbols
+U+003A	COLON	adlam,cham,coptic,gunjala-gondi,khmer,latin,masaram-gondi,math,meroitic,syriac,thaana
+U+003B	SEMICOLON	adlam,cham,coptic,khmer,latin,masaram-gondi,math,thaana
+U+003C	LESS-THAN SIGN	adlam,gunjala-gondi,khmer,latin,masaram-gondi,math
+U+003D	EQUALS SIGN	adlam,gunjala-gondi,khmer,latin,masaram-gondi,math,syriac
+U+003E	GREATER-THAN SIGN	adlam,gunjala-gondi,khmer,latin,masaram-gondi,math
+U+003F	QUESTION MARK	adlam,balinese,cham,gunjala-gondi,khmer,latin,masaram-gondi,math,mongolian
+U+0040	COMMERCIAL AT	adlam,khmer,latin,math
+U+0041	LATIN CAPITAL LETTER A	khmer,latin,math,nushu,symbols
+U+0042	LATIN CAPITAL LETTER B	khmer,latin,math,nushu,symbols
+U+0043	LATIN CAPITAL LETTER C	khmer,latin,math,nushu,symbols
+U+0044	LATIN CAPITAL LETTER D	khmer,latin,math,nushu,symbols
+U+0045	LATIN CAPITAL LETTER E	khmer,latin,math,nushu,symbols
+U+0046	LATIN CAPITAL LETTER F	khmer,latin,math,nushu,symbols
+U+0047	LATIN CAPITAL LETTER G	khmer,latin,math,nushu,symbols
+U+0048	LATIN CAPITAL LETTER H	khmer,latin,math,nushu,symbols
+U+0049	LATIN CAPITAL LETTER I	khmer,latin,math,nushu,symbols
+U+004A	LATIN CAPITAL LETTER J	khmer,latin,math,nushu,symbols
+U+004B	LATIN CAPITAL LETTER K	khmer,latin,math,nushu,symbols
+U+004C	LATIN CAPITAL LETTER L	khmer,latin,math,nushu,symbols
+U+004D	LATIN CAPITAL LETTER M	khmer,latin,math,nushu,symbols
+U+004E	LATIN CAPITAL LETTER N	khmer,latin,math,nushu,symbols
+U+004F	LATIN CAPITAL LETTER O	khmer,latin,math,nushu,symbols
+U+0050	LATIN CAPITAL LETTER P	khmer,latin,math,nushu,symbols
+U+0051	LATIN CAPITAL LETTER Q	khmer,latin,math,nushu,symbols
+U+0052	LATIN CAPITAL LETTER R	khmer,latin,math,nushu,symbols
+U+0053	LATIN CAPITAL LETTER S	khmer,latin,math,nushu,symbols
+U+0054	LATIN CAPITAL LETTER T	khmer,latin,math,nushu,symbols
+U+0055	LATIN CAPITAL LETTER U	khmer,latin,math,nushu,symbols
+U+0056	LATIN CAPITAL LETTER V	khmer,latin,math,nushu,symbols
+U+0057	LATIN CAPITAL LETTER W	khmer,latin,math,nushu,symbols
+U+0058	LATIN CAPITAL LETTER X	khmer,latin,math,nushu,symbols
+U+0059	LATIN CAPITAL LETTER Y	khmer,latin,math,nushu,symbols
+U+005A	LATIN CAPITAL LETTER Z	khmer,latin,math,nushu,symbols
+U+005B	LEFT SQUARE BRACKET	adlam,khmer,latin,math,syriac,wancho
+U+005C	REVERSE SOLIDUS	adlam,khmer,latin,math,syriac,wancho
+U+005D	RIGHT SQUARE BRACKET	adlam,khmer,latin,math,syriac,wancho
+U+005E	CIRCUMFLEX ACCENT	adlam,khmer,latin,math
+U+005F	LOW LINE	adlam,khmer,latin,math
+U+0060	GRAVE ACCENT	latin,math
+U+0061	LATIN SMALL LETTER A	khmer,latin,math,nushu,symbols
+U+0062	LATIN SMALL LETTER B	khmer,latin,math,nushu,symbols
+U+0063	LATIN SMALL LETTER C	khmer,latin,math,nushu,symbols
+U+0064	LATIN SMALL LETTER D	khmer,latin,math,nushu,symbols
+U+0065	LATIN SMALL LETTER E	khmer,latin,math,nushu,symbols
+U+0066	LATIN SMALL LETTER F	khmer,latin,math,nushu,symbols
+U+0067	LATIN SMALL LETTER G	khmer,latin,math,nushu,symbols
+U+0068	LATIN SMALL LETTER H	khmer,latin,math,nushu,symbols
+U+0069	LATIN SMALL LETTER I	khmer,latin,math,nushu,symbols
+U+006A	LATIN SMALL LETTER J	khmer,latin,math,nushu,symbols
+U+006B	LATIN SMALL LETTER K	khmer,latin,math,nushu,symbols
+U+006C	LATIN SMALL LETTER L	khmer,latin,math,nushu,symbols
+U+006D	LATIN SMALL LETTER M	khmer,latin,math,nushu,symbols
+U+006E	LATIN SMALL LETTER N	khmer,latin,math,nushu,symbols
+U+006F	LATIN SMALL LETTER O	khmer,latin,math,nushu,symbols
+U+0070	LATIN SMALL LETTER P	khmer,latin,math,nushu,symbols
+U+0071	LATIN SMALL LETTER Q	khmer,latin,math,nushu,symbols
+U+0072	LATIN SMALL LETTER R	khmer,latin,math,nushu,symbols
+U+0073	LATIN SMALL LETTER S	khmer,latin,math,nushu,symbols
+U+0074	LATIN SMALL LETTER T	khmer,latin,math,nushu,symbols
+U+0075	LATIN SMALL LETTER U	khmer,latin,math,nushu,symbols
+U+0076	LATIN SMALL LETTER V	khmer,latin,math,nushu,symbols
+U+0077	LATIN SMALL LETTER W	khmer,latin,math,nushu,symbols
+U+0078	LATIN SMALL LETTER X	khmer,latin,math,nushu,symbols
+U+0079	LATIN SMALL LETTER Y	khmer,latin,math,nushu,symbols
+U+007A	LATIN SMALL LETTER Z	khmer,latin,math,nushu,symbols
+U+007B	LEFT CURLY BRACKET	adlam,khmer,latin,math,wancho
+U+007C	VERTICAL LINE	adlam,khmer,latin,math
+U+007D	RIGHT CURLY BRACKET	adlam,khmer,latin,math,wancho
+U+007E	TILDE	khmer,latin,math
+U+00A0	NO-BREAK SPACE	adlam,ahom,anatolian-hieroglyphs,arabic,armenian,avestan,balinese,bamum,bassa-vah,batak,bengali,bhaiksuki,brahmi,braille,buginese,buhid,canadian-aboriginal,carian,caucasian-albanian,chakma,cham,cherokee,chinese-hongkong,chinese-simplified,chinese-traditional,chorasmian,coptic,cuneiform,cypriot,cypro-minoan,cyrillic,cyrillic-ext,deseret,devanagari,dives-akuru,dogra,duployan,egyptian-hieroglyphs,elbasan,elymaic,ethiopic,garay,georgian,glagolitic,gothic,grantha,greek,greek-ext,gujarati,gunjala-gondi,gurmukhi,gurung-khema,hanifi-rohingya,hanunoo,hatran,hebrew,imperial-aramaic,indic-siyaq-numbers,inscriptional-pahlavi,inscriptional-parthian,japanese,javanese,kaithi,kana-extended,kannada,kawi,kayah-li,kharoshthi,khitan-small-script,khmer,khojki,khudawadi,kirat-rai,korean,lao,latin,latin-ext,lepcha,limbu,linear-a,linear-b,lisu,lycian,lydian,mahajani,makasar,malayalam,mandaic,manichaean,marchen,masaram-gondi,math,mayan-numerals,medefaidrin,meetei-mayek,mende-kikakui,meroitic,meroitic-cursive,meroitic-hieroglyphs,miao,modi,mongolian,mro,multani,music,myanmar,nabataean,nag-mundari,nandinagari,new-tai-lue,newa,nko,nushu,nyiakeng-puachue-hmong,ogham,ol-chiki,ol-onal,old-hungarian,old-italic,old-north-arabian,old-permic,old-persian,old-sogdian,old-south-arabian,old-turkic,old-uyghur,oriya,osage,osmanya,ottoman-siyaq-numbers,pahawh-hmong,palmyrene,pau-cin-hau,phags-pa,phoenician,psalter-pahlavi,rejang,runic,samaritan,saurashtra,sharada,shavian,siddham,signwriting,sinhala,sogdian,sora-sompeng,soyombo,sundanese,sunuwar,syloti-nagri,symbols,symbols2,syriac,tagalog,tagbanwa,tai-le,tai-tham,tai-viet,takri,tamil,tamil-supplement,tangsa,tangut,telugu,thaana,thai,tibetan,tifinagh,tirhuta,todhri,toto,tulu-tigalari,ugaritic,vai,vietnamese,vithkuqi,wancho,warang-citi,yezidi,yi,zanabazar-square,znamenny
+U+00A7	SECTION SIGN	latin,math
+U+00AC	NOT SIGN	latin,math
+U+00B1	PLUS-MINUS SIGN	latin,math
+U+00D7	MULTIPLICATION SIGN	gunjala-gondi,latin,masaram-gondi,math
+U+00F7	DIVISION SIGN	gunjala-gondi,latin,masaram-gondi,math
+U+0302	COMBINING CIRCUMFLEX ACCENT	cherokee,coptic,math,tifinagh
+U+0303	COMBINING TILDE	glagolitic,latin,latin-ext,math,sunuwar,syriac,thai,vietnamese
+U+0307	COMBINING DOT ABOVE	canadian-aboriginal,coptic,duployan,hebrew,malayalam,math,old-permic,syriac,tai-le,tifinagh,todhri
+U+0308	COMBINING DIAERESIS	armenian,coptic,duployan,gothic,hebrew,latin,latin-ext,math,old-permic,syriac,tai-le,vietnamese
+U+0312	COMBINING TURNED COMMA ABOVE	math
+U+0326	COMBINING COMMA BELOW	math
+U+0327	COMBINING CEDILLA	math
+U+0391	GREEK CAPITAL LETTER ALPHA	elbasan,greek,math
+U+0394	GREEK CAPITAL LETTER DELTA	elbasan,greek,math
+U+039E	GREEK CAPITAL LETTER XI	elbasan,greek,math
+U+03A9	GREEK CAPITAL LETTER OMEGA	elbasan,greek,math
+U+03B1	GREEK SMALL LETTER ALPHA	greek,math
+U+03B4	GREEK SMALL LETTER DELTA	greek,math
+U+03BC	GREEK SMALL LETTER MU	greek,math
+U+03BE	GREEK SMALL LETTER XI	greek,math
+U+03C0	GREEK SMALL LETTER PI	greek,math,yi
+U+2022	BULLET	adlam,latin,symbols
+U+2032	PRIME	latin,math
+U+2033	DOUBLE PRIME	latin,math
+U+203C	DOUBLE EXCLAMATION MARK	math
+U+2043	HYPHEN BULLET	math
+U+2047	DOUBLE QUESTION MARK	math
+U+2070	SUPERSCRIPT ZERO	math
+U+2071	SUPERSCRIPT LATIN SMALL LETTER I	math
+U+2074	SUPERSCRIPT FOUR	math
+U+2075	SUPERSCRIPT FIVE	math
+U+2076	SUPERSCRIPT SIX	math
+U+2077	SUPERSCRIPT SEVEN	math
+U+2078	SUPERSCRIPT EIGHT	math
+U+2079	SUPERSCRIPT NINE	math
+U+207A	SUPERSCRIPT PLUS SIGN	math
+U+207B	SUPERSCRIPT MINUS	math
+U+207C	SUPERSCRIPT EQUALS SIGN	math
+U+207D	SUPERSCRIPT LEFT PARENTHESIS	math
+U+207E	SUPERSCRIPT RIGHT PARENTHESIS	math
+U+207F	SUPERSCRIPT LATIN SMALL LETTER N	math
+U+2080	SUBSCRIPT ZERO	math
+U+2081	SUBSCRIPT ONE	math
+U+2082	SUBSCRIPT TWO	math
+U+2083	SUBSCRIPT THREE	math
+U+2084	SUBSCRIPT FOUR	math
+U+2085	SUBSCRIPT FIVE	math
+U+2086	SUBSCRIPT SIX	math
+U+2087	SUBSCRIPT SEVEN	math
+U+2088	SUBSCRIPT EIGHT	math
+U+2089	SUBSCRIPT NINE	math
+U+208A	SUBSCRIPT PLUS SIGN	math
+U+208B	SUBSCRIPT MINUS	math
+U+208C	SUBSCRIPT EQUALS SIGN	math
+U+208D	SUBSCRIPT LEFT PARENTHESIS	math
+U+208E	SUBSCRIPT RIGHT PARENTHESIS	math
+U+2090	LATIN SUBSCRIPT SMALL LETTER A	math
+U+2091	LATIN SUBSCRIPT SMALL LETTER E	math
+U+2092	LATIN SUBSCRIPT SMALL LETTER O	math
+U+2093	LATIN SUBSCRIPT SMALL LETTER X	math
+U+2094	LATIN SUBSCRIPT SMALL LETTER SCHWA	math
+U+2095	LATIN SUBSCRIPT SMALL LETTER H	math
+U+2096	LATIN SUBSCRIPT SMALL LETTER K	math
+U+2097	LATIN SUBSCRIPT SMALL LETTER L	math
+U+2098	LATIN SUBSCRIPT SMALL LETTER M	math
+U+2099	LATIN SUBSCRIPT SMALL LETTER N	math
+U+209A	LATIN SUBSCRIPT SMALL LETTER P	math
+U+209B	LATIN SUBSCRIPT SMALL LETTER S	math
+U+209C	LATIN SUBSCRIPT SMALL LETTER T	math
+U+2100	ACCOUNT OF	math
+U+2101	ADDRESSED TO THE SUBJECT	math
+U+2105	CARE OF	math
+U+2106	CADA UNA	math
+U+2117	SOUND RECORDING COPYRIGHT	math
+U+2120	SERVICE MARK	math
+U+2126	OHM SIGN	math
+U+212E	ESTIMATED SYMBOL	math
+U+2150	VULGAR FRACTION ONE SEVENTH	symbols
+U+2151	VULGAR FRACTION ONE NINTH	symbols
+U+2152	VULGAR FRACTION ONE TENTH	symbols
+U+2153	VULGAR FRACTION ONE THIRD	symbols
+U+2154	VULGAR FRACTION TWO THIRDS	symbols
+U+2155	VULGAR FRACTION ONE FIFTH	symbols
+U+2156	VULGAR FRACTION TWO FIFTHS	symbols
+U+2157	VULGAR FRACTION THREE FIFTHS	symbols
+U+2158	VULGAR FRACTION FOUR FIFTHS	symbols
+U+2159	VULGAR FRACTION ONE SIXTH	symbols
+U+215A	VULGAR FRACTION FIVE SIXTHS	symbols
+U+215B	VULGAR FRACTION ONE EIGHTH	symbols
+U+215C	VULGAR FRACTION THREE EIGHTHS	symbols
+U+215D	VULGAR FRACTION FIVE EIGHTHS	symbols
+U+215E	VULGAR FRACTION SEVEN EIGHTHS	symbols
+U+215F	FRACTION NUMERATOR ONE	symbols
+U+2189	VULGAR FRACTION ZERO THIRDS	symbols
+U+2190	LEFTWARDS ARROW	math,symbols
+U+2191	UPWARDS ARROW	latin,math,symbols
+U+2192	RIGHTWARDS ARROW	math,symbols
+U+2193	DOWNWARDS ARROW	latin,math,symbols
+U+2194	LEFT RIGHT ARROW	math,symbols
+U+2195	UP DOWN ARROW	math,symbols
+U+2196	NORTH WEST ARROW	math,symbols
+U+2197	NORTH EAST ARROW	math,symbols
+U+2198	SOUTH EAST ARROW	math,symbols
+U+2199	SOUTH WEST ARROW	math,symbols
+U+2202	PARTIAL DIFFERENTIAL	math
+U+2206	INCREMENT	math
+U+220F	N-ARY PRODUCT	math
+U+2211	N-ARY SUMMATION	math
+U+2212	MINUS SIGN	gunjala-gondi,latin,masaram-gondi,math,syriac
+U+2215	DIVISION SLASH	latin,math
+U+2219	BULLET OPERATOR	math,symbols,tai-tham,yi
+U+221A	SQUARE ROOT	math
+U+221E	INFINITY	math
+U+2229	INTERSECTION	math
+U+222A	UNION	math
+U+222B	INTEGRAL	math
+U+223C	TILDE OPERATOR	math
+U+2248	ALMOST EQUAL TO	math
+U+2260	NOT EQUAL TO	math
+U+2261	IDENTICAL TO	math
+U+2264	LESS-THAN OR EQUAL TO	math
+U+2265	GREATER-THAN OR EQUAL TO	math
+U+2282	SUBSET OF	math
+U+2283	SUPERSET OF	math
+U+228D	MULTISET MULTIPLICATION	math
+U+228E	MULTISET UNION	math
+U+22A1	SQUARED DOT OPERATOR	math
+U+22C5	DOT OPERATOR	math,symbols
+U+22EE	VERTICAL ELLIPSIS	math
+U+22EF	MIDLINE HORIZONTAL ELLIPSIS	math
+U+22F0	UP RIGHT DIAGONAL ELLIPSIS	math
+U+22F1	DOWN RIGHT DIAGONAL ELLIPSIS	math
+U+2300	DIAMETER SIGN	symbols
+U+2329	LEFT-POINTING ANGLE BRACKET	symbols
+U+232A	RIGHT-POINTING ANGLE BRACKET	symbols
+U+2460	CIRCLED DIGIT ONE	mongolian,symbols,yi
+U+2461	CIRCLED DIGIT TWO	mongolian,symbols,yi
+U+2462	CIRCLED DIGIT THREE	mongolian,symbols,yi
+U+2463	CIRCLED DIGIT FOUR	mongolian,symbols,yi
+U+2464	CIRCLED DIGIT FIVE	mongolian,symbols,yi
+U+2465	CIRCLED DIGIT SIX	mongolian,symbols,yi
+U+2466	CIRCLED DIGIT SEVEN	mongolian,symbols,yi
+U+2467	CIRCLED DIGIT EIGHT	mongolian,symbols,yi
+U+2468	CIRCLED DIGIT NINE	mongolian,symbols,yi
+U+24EA	CIRCLED DIGIT ZERO	symbols
+U+24FF	NEGATIVE CIRCLED DIGIT ZERO	symbols
+U+25A0	BLACK SQUARE	symbols
+U+25A1	WHITE SQUARE	symbols
+U+25AA	BLACK SMALL SQUARE	symbols
+U+25AB	WHITE SMALL SQUARE	symbols
+U+25B2	BLACK UP-POINTING TRIANGLE	symbols
+U+25BA	BLACK RIGHT-POINTING POINTER	symbols
+U+25BC	BLACK DOWN-POINTING TRIANGLE	symbols
+U+25C4	BLACK LEFT-POINTING POINTER	symbols
+U+25C6	BLACK DIAMOND	symbols
+U+25C7	WHITE DIAMOND	symbols
+U+25CA	LOZENGE	math,symbols
+U+25CB	WHITE CIRCLE	symbols
+U+25CC	DOTTED CIRCLE	adlam,ahom,armenian,balinese,bassa-vah,batak,bengali,bhaiksuki,brahmi,buginese,buhid,canadian-aboriginal,caucasian-albanian,chakma,cham,coptic,devanagari,dogra,duployan,elbasan,grantha,gujarati,gunjala-gondi,gurmukhi,hanifi-rohingya,hanunoo,hebrew,javanese,kaithi,kannada,kayah-li,kharoshthi,khmer,khojki,khudawadi,lao,lepcha,limbu,mahajani,malayalam,mandaic,manichaean,marchen,masaram-gondi,math,meetei-mayek,mende-kikakui,miao,modi,mongolian,music,myanmar,new-tai-lue,newa,nko,old-permic,oriya,osage,pahawh-hmong,phags-pa,psalter-pahlavi,rejang,saurashtra,sharada,siddham,sinhala,sogdian,soyombo,sundanese,syloti-nagri,symbols,syriac,tagalog,tagbanwa,tai-le,tai-tham,tai-viet,takri,tamil,telugu,thaana,thai,tibetan,tifinagh,tirhuta,wancho,warang-citi,yi,zanabazar-square
+U+25CF	BLACK CIRCLE	symbols
+U+25D0	CIRCLE WITH LEFT HALF BLACK	symbols
+U+25D1	CIRCLE WITH RIGHT HALF BLACK	symbols
+U+25D2	CIRCLE WITH LOWER HALF BLACK	symbols
+U+25D3	CIRCLE WITH UPPER HALF BLACK	symbols
+U+25E6	WHITE BULLET	symbols
+U+2605	BLACK STAR	symbols
+U+2630	TRIGRAM FOR HEAVEN	symbols
+U+2713	CHECK MARK	symbols
+U+2726	BLACK FOUR POINTED STAR	symbols
+U+2727	WHITE FOUR POINTED STAR	symbols
+U+2729	STRESS OUTLINED WHITE STAR	symbols
+U+2764	HEAVY BLACK HEART	symbols
+U+2776	DINGBAT NEGATIVE CIRCLED DIGIT ONE	symbols
+U+2777	DINGBAT NEGATIVE CIRCLED DIGIT TWO	symbols
+U+2778	DINGBAT NEGATIVE CIRCLED DIGIT THREE	symbols
+U+2779	DINGBAT NEGATIVE CIRCLED DIGIT FOUR	symbols
+U+277A	DINGBAT NEGATIVE CIRCLED DIGIT FIVE	symbols
+U+277B	DINGBAT NEGATIVE CIRCLED DIGIT SIX	symbols
+U+277C	DINGBAT NEGATIVE CIRCLED DIGIT SEVEN	symbols
+U+277D	DINGBAT NEGATIVE CIRCLED DIGIT EIGHT	symbols
+U+277E	DINGBAT NEGATIVE CIRCLED DIGIT NINE	symbols
+U+27D0	WHITE DIAMOND WITH CENTRED DOT	math
+U+2ABD	SUBSET WITH DOT	math
+U+2ABE	SUPERSET WITH DOT	math
+U+2AF6	TRIPLE COLON OPERATOR	math

@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: youseedee
+Version: 0.5.3
+Summary: Interface to the Unicode Character Database
+Home-page: https://github.com/simoncozens/youseedee
+Author: Simon Cozens
+Author-email: simon@simon-cozens.org
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: requests
+Requires-Dist: filelock
+
+youseedee: interface to the UCD
+-------------------------------
+
+This module allows you to query the Unicode Character Database. The main function
+to be imported is ``ucd_data``::
+
+    >>> ucd_data(0x078A)
+    {'Age': '3.0',
+     'Block': 'Thaana',
+     'Canonical_Combining_Class': '0',
+     'East_Asian_Width': 'N',
+     'General_Category': 'Lo',
+     'Line_Break': 'AL',
+     'Name': 'THAANA LETTER FAAFU',
+     'Script': 'Thaana'}
+
+On first run, it will download the database files for you from unicode.org.
+These are stored in ``.youseedee`` in your home directory.
+
+You may also use it as a command line utility::
+
+    $ python3 -m youseedee 0x078A
+    {'Age': '3.0',
+     'Block': 'Thaana',
+     'Canonical_Combining_Class': '0',
+     'East_Asian_Width': 'N',
+     'General_Category': 'Lo',
+     'Line_Break': 'AL',
+     'Name': 'THAANA LETTER FAAFU',
+     'Script': 'Thaana'}
+
+    $ python3 -m youseedee Ǩ
+    {'Age': '1.1',
+     'Block': 'Latin Extended-B',
+     'Canonical_Combining_Class': '0',
+     'Case_Folding_Mapping': '01E9',
+     'Case_Folding_Status': 'C',
+     'East_Asian_Width': 'N',
+     'General_Category': 'Lu',
+     'Line_Break': 'AL',
+     'Name': 'LATIN CAPITAL LETTER K WITH CARON',
+     'Script': 'Latin'}

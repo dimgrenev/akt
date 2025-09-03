@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="sixsuperior" format="2">
-  <advance width="383"/>
-  <unicode hex="2076"/>
-  <anchor x="192" y="580" name="_center"/>
-  <outline>
-    <component base="six.small" yOffset="360"/>
-  </outline>
-</glyph>

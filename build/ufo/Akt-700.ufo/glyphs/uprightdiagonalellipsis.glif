@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="uprightdiagonalellipsis" format="2">
-  <advance width="900"/>
-  <unicode hex="22F0"/>
-  <outline>
-    <component base="downrightdiagonalellipsis" xScale="-1" xOffset="900"/>
-  </outline>
-</glyph>

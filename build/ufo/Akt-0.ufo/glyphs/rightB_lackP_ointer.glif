@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="rightBlackPointer" format="2">
-  <advance width="920"/>
-  <unicode hex="25BA"/>
-  <outline>
-    <component base="upBlackTriangle" xScale="0" xyScale="1" yxScale="1" yScale="0" xOffset="120" yOffset="-90"/>
-  </outline>
-</glyph>

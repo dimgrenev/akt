@@ -1,0 +1,7205 @@
+[
+  {
+    "cp": "U+000D",
+    "name": "UNASSIGNED",
+    "suggested_subsets": [
+      "adlam",
+      "ahom",
+      "anatolian-hieroglyphs",
+      "arabic",
+      "armenian",
+      "avestan",
+      "balinese",
+      "bamum",
+      "bassa-vah",
+      "batak",
+      "bengali",
+      "bhaiksuki",
+      "brahmi",
+      "braille",
+      "buginese",
+      "buhid",
+      "canadian-aboriginal",
+      "carian",
+      "caucasian-albanian",
+      "chakma",
+      "cham",
+      "cherokee",
+      "chinese-hongkong",
+      "chinese-simplified",
+      "chinese-traditional",
+      "chorasmian",
+      "coptic",
+      "cuneiform",
+      "cypriot",
+      "cypro-minoan",
+      "cyrillic",
+      "cyrillic-ext",
+      "deseret",
+      "devanagari",
+      "dives-akuru",
+      "dogra",
+      "duployan",
+      "egyptian-hieroglyphs",
+      "elbasan",
+      "elymaic",
+      "ethiopic",
+      "garay",
+      "georgian",
+      "glagolitic",
+      "gothic",
+      "grantha",
+      "greek",
+      "greek-ext",
+      "gujarati",
+      "gunjala-gondi",
+      "gurmukhi",
+      "gurung-khema",
+      "hanifi-rohingya",
+      "hanunoo",
+      "hatran",
+      "hebrew",
+      "imperial-aramaic",
+      "indic-siyaq-numbers",
+      "inscriptional-pahlavi",
+      "inscriptional-parthian",
+      "japanese",
+      "javanese",
+      "kaithi",
+      "kana-extended",
+      "kannada",
+      "kawi",
+      "kayah-li",
+      "kharoshthi",
+      "khitan-small-script",
+      "khmer",
+      "khojki",
+      "khudawadi",
+      "kirat-rai",
+      "korean",
+      "lao",
+      "latin",
+      "latin-ext",
+      "lepcha",
+      "limbu",
+      "linear-a",
+      "linear-b",
+      "lisu",
+      "lycian",
+      "lydian",
+      "mahajani",
+      "makasar",
+      "malayalam",
+      "mandaic",
+      "manichaean",
+      "marchen",
+      "masaram-gondi",
+      "math",
+      "mayan-numerals",
+      "medefaidrin",
+      "meetei-mayek",
+      "mende-kikakui",
+      "meroitic",
+      "meroitic-cursive",
+      "meroitic-hieroglyphs",
+      "miao",
+      "modi",
+      "mongolian",
+      "mro",
+      "multani",
+      "music",
+      "myanmar",
+      "nabataean",
+      "nag-mundari",
+      "nandinagari",
+      "new-tai-lue",
+      "newa",
+      "nko",
+      "nushu",
+      "nyiakeng-puachue-hmong",
+      "ogham",
+      "ol-chiki",
+      "ol-onal",
+      "old-hungarian",
+      "old-italic",
+      "old-north-arabian",
+      "old-permic",
+      "old-persian",
+      "old-sogdian",
+      "old-south-arabian",
+      "old-turkic",
+      "old-uyghur",
+      "oriya",
+      "osage",
+      "osmanya",
+      "ottoman-siyaq-numbers",
+      "pahawh-hmong",
+      "palmyrene",
+      "pau-cin-hau",
+      "phags-pa",
+      "phoenician",
+      "psalter-pahlavi",
+      "rejang",
+      "runic",
+      "samaritan",
+      "saurashtra",
+      "sharada",
+      "shavian",
+      "siddham",
+      "signwriting",
+      "sinhala",
+      "sogdian",
+      "sora-sompeng",
+      "soyombo",
+      "sundanese",
+      "sunuwar",
+      "syloti-nagri",
+      "symbols",
+      "symbols2",
+      "syriac",
+      "tagalog",
+      "tagbanwa",
+      "tai-le",
+      "tai-tham",
+      "tai-viet",
+      "takri",
+      "tamil",
+      "tamil-supplement",
+      "tangsa",
+      "tangut",
+      "telugu",
+      "thaana",
+      "thai",
+      "tibetan",
+      "tifinagh",
+      "tirhuta",
+      "todhri",
+      "toto",
+      "tulu-tigalari",
+      "ugaritic",
+      "vai",
+      "vietnamese",
+      "vithkuqi",
+      "wancho",
+      "warang-citi",
+      "yezidi",
+      "yi",
+      "zanabazar-square",
+      "znamenny"
+    ]
+  },
+  {
+    "cp": "U+0020",
+    "name": "SPACE",
+    "suggested_subsets": [
+      "adlam",
+      "ahom",
+      "anatolian-hieroglyphs",
+      "arabic",
+      "armenian",
+      "avestan",
+      "balinese",
+      "bamum",
+      "bassa-vah",
+      "batak",
+      "bengali",
+      "bhaiksuki",
+      "brahmi",
+      "braille",
+      "buginese",
+      "buhid",
+      "canadian-aboriginal",
+      "carian",
+      "caucasian-albanian",
+      "chakma",
+      "cham",
+      "cherokee",
+      "chinese-hongkong",
+      "chinese-simplified",
+      "chinese-traditional",
+      "chorasmian",
+      "coptic",
+      "cuneiform",
+      "cypriot",
+      "cypro-minoan",
+      "cyrillic",
+      "cyrillic-ext",
+      "deseret",
+      "devanagari",
+      "dives-akuru",
+      "dogra",
+      "duployan",
+      "egyptian-hieroglyphs",
+      "elbasan",
+      "elymaic",
+      "ethiopic",
+      "garay",
+      "georgian",
+      "glagolitic",
+      "gothic",
+      "grantha",
+      "greek",
+      "greek-ext",
+      "gujarati",
+      "gunjala-gondi",
+      "gurmukhi",
+      "gurung-khema",
+      "hanifi-rohingya",
+      "hanunoo",
+      "hatran",
+      "hebrew",
+      "imperial-aramaic",
+      "indic-siyaq-numbers",
+      "inscriptional-pahlavi",
+      "inscriptional-parthian",
+      "japanese",
+      "javanese",
+      "kaithi",
+      "kana-extended",
+      "kannada",
+      "kawi",
+      "kayah-li",
+      "kharoshthi",
+      "khitan-small-script",
+      "khmer",
+      "khojki",
+      "khudawadi",
+      "kirat-rai",
+      "korean",
+      "lao",
+      "latin",
+      "latin-ext",
+      "lepcha",
+      "limbu",
+      "linear-a",
+      "linear-b",
+      "lisu",
+      "lycian",
+      "lydian",
+      "mahajani",
+      "makasar",
+      "malayalam",
+      "mandaic",
+      "manichaean",
+      "marchen",
+      "masaram-gondi",
+      "math",
+      "mayan-numerals",
+      "medefaidrin",
+      "meetei-mayek",
+      "mende-kikakui",
+      "meroitic",
+      "meroitic-cursive",
+      "meroitic-hieroglyphs",
+      "miao",
+      "modi",
+      "mongolian",
+      "mro",
+      "multani",
+      "music",
+      "myanmar",
+      "nabataean",
+      "nag-mundari",
+      "nandinagari",
+      "new-tai-lue",
+      "newa",
+      "nko",
+      "nushu",
+      "nyiakeng-puachue-hmong",
+      "ogham",
+      "ol-chiki",
+      "ol-onal",
+      "old-hungarian",
+      "old-italic",
+      "old-north-arabian",
+      "old-permic",
+      "old-persian",
+      "old-sogdian",
+      "old-south-arabian",
+      "old-turkic",
+      "old-uyghur",
+      "oriya",
+      "osage",
+      "osmanya",
+      "ottoman-siyaq-numbers",
+      "pahawh-hmong",
+      "palmyrene",
+      "pau-cin-hau",
+      "phags-pa",
+      "phoenician",
+      "psalter-pahlavi",
+      "rejang",
+      "runic",
+      "samaritan",
+      "saurashtra",
+      "sharada",
+      "shavian",
+      "siddham",
+      "signwriting",
+      "sinhala",
+      "sogdian",
+      "sora-sompeng",
+      "soyombo",
+      "sundanese",
+      "sunuwar",
+      "syloti-nagri",
+      "symbols",
+      "symbols2",
+      "syriac",
+      "tagalog",
+      "tagbanwa",
+      "tai-le",
+      "tai-tham",
+      "tai-viet",
+      "takri",
+      "tamil",
+      "tamil-supplement",
+      "tangsa",
+      "tangut",
+      "telugu",
+      "thaana",
+      "thai",
+      "tibetan",
+      "tifinagh",
+      "tirhuta",
+      "todhri",
+      "toto",
+      "tulu-tigalari",
+      "ugaritic",
+      "vai",
+      "vietnamese",
+      "vithkuqi",
+      "wancho",
+      "warang-citi",
+      "yezidi",
+      "yi",
+      "zanabazar-square",
+      "znamenny"
+    ]
+  },
+  {
+    "cp": "U+0021",
+    "name": "EXCLAMATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "mongolian",
+      "syriac",
+      "thaana"
+    ]
+  },
+  {
+    "cp": "U+0022",
+    "name": "QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "mongolian",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+0023",
+    "name": "NUMBER SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0024",
+    "name": "DOLLAR SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0025",
+    "name": "PERCENT SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0026",
+    "name": "AMPERSAND",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0027",
+    "name": "APOSTROPHE",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "wancho",
+      "warang-citi"
+    ]
+  },
+  {
+    "cp": "U+0028",
+    "name": "LEFT PARENTHESIS",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "mongolian",
+      "syriac",
+      "thaana",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+0029",
+    "name": "RIGHT PARENTHESIS",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "mongolian",
+      "syriac",
+      "thaana",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+002A",
+    "name": "ASTERISK",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "symbols",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+002B",
+    "name": "PLUS SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+002C",
+    "name": "COMMA",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "coptic",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "nushu",
+      "thaana",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+002D",
+    "name": "HYPHEN-MINUS",
+    "suggested_subsets": [
+      "adlam",
+      "armenian",
+      "cham",
+      "coptic",
+      "gunjala-gondi",
+      "hebrew",
+      "kaithi",
+      "kayah-li",
+      "kharoshthi",
+      "khmer",
+      "latin",
+      "lisu",
+      "masaram-gondi",
+      "math",
+      "mongolian",
+      "nushu",
+      "sora-sompeng",
+      "sundanese",
+      "syriac",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+002E",
+    "name": "FULL STOP",
+    "suggested_subsets": [
+      "adlam",
+      "avestan",
+      "cham",
+      "coptic",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "nushu",
+      "syriac",
+      "thaana",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+002F",
+    "name": "SOLIDUS",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "syriac",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+0030",
+    "name": "DIGIT ZERO",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0031",
+    "name": "DIGIT ONE",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0032",
+    "name": "DIGIT TWO",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0033",
+    "name": "DIGIT THREE",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0034",
+    "name": "DIGIT FOUR",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0035",
+    "name": "DIGIT FIVE",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0036",
+    "name": "DIGIT SIX",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0037",
+    "name": "DIGIT SEVEN",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0038",
+    "name": "DIGIT EIGHT",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0039",
+    "name": "DIGIT NINE",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+003A",
+    "name": "COLON",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "coptic",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "meroitic",
+      "syriac",
+      "thaana"
+    ]
+  },
+  {
+    "cp": "U+003B",
+    "name": "SEMICOLON",
+    "suggested_subsets": [
+      "adlam",
+      "cham",
+      "coptic",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "thaana"
+    ]
+  },
+  {
+    "cp": "U+003C",
+    "name": "LESS-THAN SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+003D",
+    "name": "EQUALS SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+003E",
+    "name": "GREATER-THAN SIGN",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+003F",
+    "name": "QUESTION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "balinese",
+      "cham",
+      "gunjala-gondi",
+      "khmer",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "mongolian"
+    ]
+  },
+  {
+    "cp": "U+0040",
+    "name": "COMMERCIAL AT",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0041",
+    "name": "LATIN CAPITAL LETTER A",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0042",
+    "name": "LATIN CAPITAL LETTER B",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0043",
+    "name": "LATIN CAPITAL LETTER C",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0044",
+    "name": "LATIN CAPITAL LETTER D",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0045",
+    "name": "LATIN CAPITAL LETTER E",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0046",
+    "name": "LATIN CAPITAL LETTER F",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0047",
+    "name": "LATIN CAPITAL LETTER G",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0048",
+    "name": "LATIN CAPITAL LETTER H",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0049",
+    "name": "LATIN CAPITAL LETTER I",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+004A",
+    "name": "LATIN CAPITAL LETTER J",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+004B",
+    "name": "LATIN CAPITAL LETTER K",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+004C",
+    "name": "LATIN CAPITAL LETTER L",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+004D",
+    "name": "LATIN CAPITAL LETTER M",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+004E",
+    "name": "LATIN CAPITAL LETTER N",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+004F",
+    "name": "LATIN CAPITAL LETTER O",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0050",
+    "name": "LATIN CAPITAL LETTER P",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0051",
+    "name": "LATIN CAPITAL LETTER Q",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0052",
+    "name": "LATIN CAPITAL LETTER R",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0053",
+    "name": "LATIN CAPITAL LETTER S",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0054",
+    "name": "LATIN CAPITAL LETTER T",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0055",
+    "name": "LATIN CAPITAL LETTER U",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0056",
+    "name": "LATIN CAPITAL LETTER V",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0057",
+    "name": "LATIN CAPITAL LETTER W",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0058",
+    "name": "LATIN CAPITAL LETTER X",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0059",
+    "name": "LATIN CAPITAL LETTER Y",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+005A",
+    "name": "LATIN CAPITAL LETTER Z",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+005B",
+    "name": "LEFT SQUARE BRACKET",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math",
+      "syriac",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+005C",
+    "name": "REVERSE SOLIDUS",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math",
+      "syriac",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+005D",
+    "name": "RIGHT SQUARE BRACKET",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math",
+      "syriac",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+005E",
+    "name": "CIRCUMFLEX ACCENT",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+005F",
+    "name": "LOW LINE",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0060",
+    "name": "GRAVE ACCENT",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0061",
+    "name": "LATIN SMALL LETTER A",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0062",
+    "name": "LATIN SMALL LETTER B",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0063",
+    "name": "LATIN SMALL LETTER C",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0064",
+    "name": "LATIN SMALL LETTER D",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0065",
+    "name": "LATIN SMALL LETTER E",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0066",
+    "name": "LATIN SMALL LETTER F",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0067",
+    "name": "LATIN SMALL LETTER G",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0068",
+    "name": "LATIN SMALL LETTER H",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0069",
+    "name": "LATIN SMALL LETTER I",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+006A",
+    "name": "LATIN SMALL LETTER J",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+006B",
+    "name": "LATIN SMALL LETTER K",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+006C",
+    "name": "LATIN SMALL LETTER L",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+006D",
+    "name": "LATIN SMALL LETTER M",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+006E",
+    "name": "LATIN SMALL LETTER N",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+006F",
+    "name": "LATIN SMALL LETTER O",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0070",
+    "name": "LATIN SMALL LETTER P",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0071",
+    "name": "LATIN SMALL LETTER Q",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0072",
+    "name": "LATIN SMALL LETTER R",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0073",
+    "name": "LATIN SMALL LETTER S",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0074",
+    "name": "LATIN SMALL LETTER T",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0075",
+    "name": "LATIN SMALL LETTER U",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0076",
+    "name": "LATIN SMALL LETTER V",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0077",
+    "name": "LATIN SMALL LETTER W",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0078",
+    "name": "LATIN SMALL LETTER X",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+0079",
+    "name": "LATIN SMALL LETTER Y",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+007A",
+    "name": "LATIN SMALL LETTER Z",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math",
+      "nushu",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+007B",
+    "name": "LEFT CURLY BRACKET",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+007C",
+    "name": "VERTICAL LINE",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+007D",
+    "name": "RIGHT CURLY BRACKET",
+    "suggested_subsets": [
+      "adlam",
+      "khmer",
+      "latin",
+      "math",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+007E",
+    "name": "TILDE",
+    "suggested_subsets": [
+      "khmer",
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+00A0",
+    "name": "NO-BREAK SPACE",
+    "suggested_subsets": [
+      "adlam",
+      "ahom",
+      "anatolian-hieroglyphs",
+      "arabic",
+      "armenian",
+      "avestan",
+      "balinese",
+      "bamum",
+      "bassa-vah",
+      "batak",
+      "bengali",
+      "bhaiksuki",
+      "brahmi",
+      "braille",
+      "buginese",
+      "buhid",
+      "canadian-aboriginal",
+      "carian",
+      "caucasian-albanian",
+      "chakma",
+      "cham",
+      "cherokee",
+      "chinese-hongkong",
+      "chinese-simplified",
+      "chinese-traditional",
+      "chorasmian",
+      "coptic",
+      "cuneiform",
+      "cypriot",
+      "cypro-minoan",
+      "cyrillic",
+      "cyrillic-ext",
+      "deseret",
+      "devanagari",
+      "dives-akuru",
+      "dogra",
+      "duployan",
+      "egyptian-hieroglyphs",
+      "elbasan",
+      "elymaic",
+      "ethiopic",
+      "garay",
+      "georgian",
+      "glagolitic",
+      "gothic",
+      "grantha",
+      "greek",
+      "greek-ext",
+      "gujarati",
+      "gunjala-gondi",
+      "gurmukhi",
+      "gurung-khema",
+      "hanifi-rohingya",
+      "hanunoo",
+      "hatran",
+      "hebrew",
+      "imperial-aramaic",
+      "indic-siyaq-numbers",
+      "inscriptional-pahlavi",
+      "inscriptional-parthian",
+      "japanese",
+      "javanese",
+      "kaithi",
+      "kana-extended",
+      "kannada",
+      "kawi",
+      "kayah-li",
+      "kharoshthi",
+      "khitan-small-script",
+      "khmer",
+      "khojki",
+      "khudawadi",
+      "kirat-rai",
+      "korean",
+      "lao",
+      "latin",
+      "latin-ext",
+      "lepcha",
+      "limbu",
+      "linear-a",
+      "linear-b",
+      "lisu",
+      "lycian",
+      "lydian",
+      "mahajani",
+      "makasar",
+      "malayalam",
+      "mandaic",
+      "manichaean",
+      "marchen",
+      "masaram-gondi",
+      "math",
+      "mayan-numerals",
+      "medefaidrin",
+      "meetei-mayek",
+      "mende-kikakui",
+      "meroitic",
+      "meroitic-cursive",
+      "meroitic-hieroglyphs",
+      "miao",
+      "modi",
+      "mongolian",
+      "mro",
+      "multani",
+      "music",
+      "myanmar",
+      "nabataean",
+      "nag-mundari",
+      "nandinagari",
+      "new-tai-lue",
+      "newa",
+      "nko",
+      "nushu",
+      "nyiakeng-puachue-hmong",
+      "ogham",
+      "ol-chiki",
+      "ol-onal",
+      "old-hungarian",
+      "old-italic",
+      "old-north-arabian",
+      "old-permic",
+      "old-persian",
+      "old-sogdian",
+      "old-south-arabian",
+      "old-turkic",
+      "old-uyghur",
+      "oriya",
+      "osage",
+      "osmanya",
+      "ottoman-siyaq-numbers",
+      "pahawh-hmong",
+      "palmyrene",
+      "pau-cin-hau",
+      "phags-pa",
+      "phoenician",
+      "psalter-pahlavi",
+      "rejang",
+      "runic",
+      "samaritan",
+      "saurashtra",
+      "sharada",
+      "shavian",
+      "siddham",
+      "signwriting",
+      "sinhala",
+      "sogdian",
+      "sora-sompeng",
+      "soyombo",
+      "sundanese",
+      "sunuwar",
+      "syloti-nagri",
+      "symbols",
+      "symbols2",
+      "syriac",
+      "tagalog",
+      "tagbanwa",
+      "tai-le",
+      "tai-tham",
+      "tai-viet",
+      "takri",
+      "tamil",
+      "tamil-supplement",
+      "tangsa",
+      "tangut",
+      "telugu",
+      "thaana",
+      "thai",
+      "tibetan",
+      "tifinagh",
+      "tirhuta",
+      "todhri",
+      "toto",
+      "tulu-tigalari",
+      "ugaritic",
+      "vai",
+      "vietnamese",
+      "vithkuqi",
+      "wancho",
+      "warang-citi",
+      "yezidi",
+      "yi",
+      "zanabazar-square",
+      "znamenny"
+    ]
+  },
+  {
+    "cp": "U+00A1",
+    "name": "INVERTED EXCLAMATION MARK",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A2",
+    "name": "CENT SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A3",
+    "name": "POUND SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A4",
+    "name": "CURRENCY SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A5",
+    "name": "YEN SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A6",
+    "name": "BROKEN BAR",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A7",
+    "name": "SECTION SIGN",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+00A8",
+    "name": "DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00A9",
+    "name": "COPYRIGHT SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00AA",
+    "name": "FEMININE ORDINAL INDICATOR",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00AB",
+    "name": "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "hanifi-rohingya",
+      "khmer",
+      "latin",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+00AC",
+    "name": "NOT SIGN",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+00AE",
+    "name": "REGISTERED SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00AF",
+    "name": "MACRON",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B0",
+    "name": "DEGREE SIGN",
+    "suggested_subsets": [
+      "latin",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+00B1",
+    "name": "PLUS-MINUS SIGN",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+00B2",
+    "name": "SUPERSCRIPT TWO",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B3",
+    "name": "SUPERSCRIPT THREE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B4",
+    "name": "ACUTE ACCENT",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B5",
+    "name": "MICRO SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B6",
+    "name": "PILCROW SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B7",
+    "name": "MIDDLE DOT",
+    "suggested_subsets": [
+      "avestan",
+      "carian",
+      "coptic",
+      "duployan",
+      "elbasan",
+      "georgian",
+      "glagolitic",
+      "gothic",
+      "gunjala-gondi",
+      "latin",
+      "lydian",
+      "mahajani",
+      "newa",
+      "old-permic",
+      "shavian"
+    ]
+  },
+  {
+    "cp": "U+00B8",
+    "name": "CEDILLA",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00B9",
+    "name": "SUPERSCRIPT ONE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00BA",
+    "name": "MASCULINE ORDINAL INDICATOR",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00BB",
+    "name": "RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "hanifi-rohingya",
+      "khmer",
+      "latin",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+00BC",
+    "name": "VULGAR FRACTION ONE QUARTER",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00BD",
+    "name": "VULGAR FRACTION ONE HALF",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00BE",
+    "name": "VULGAR FRACTION THREE QUARTERS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00BF",
+    "name": "INVERTED QUESTION MARK",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C0",
+    "name": "LATIN CAPITAL LETTER A WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C1",
+    "name": "LATIN CAPITAL LETTER A WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C2",
+    "name": "LATIN CAPITAL LETTER A WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C3",
+    "name": "LATIN CAPITAL LETTER A WITH TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C4",
+    "name": "LATIN CAPITAL LETTER A WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C5",
+    "name": "LATIN CAPITAL LETTER A WITH RING ABOVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C6",
+    "name": "LATIN CAPITAL LETTER AE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C7",
+    "name": "LATIN CAPITAL LETTER C WITH CEDILLA",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C8",
+    "name": "LATIN CAPITAL LETTER E WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00C9",
+    "name": "LATIN CAPITAL LETTER E WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00CA",
+    "name": "LATIN CAPITAL LETTER E WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00CB",
+    "name": "LATIN CAPITAL LETTER E WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00CC",
+    "name": "LATIN CAPITAL LETTER I WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00CD",
+    "name": "LATIN CAPITAL LETTER I WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00CE",
+    "name": "LATIN CAPITAL LETTER I WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00CF",
+    "name": "LATIN CAPITAL LETTER I WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D0",
+    "name": "LATIN CAPITAL LETTER ETH",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D1",
+    "name": "LATIN CAPITAL LETTER N WITH TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D2",
+    "name": "LATIN CAPITAL LETTER O WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D3",
+    "name": "LATIN CAPITAL LETTER O WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D4",
+    "name": "LATIN CAPITAL LETTER O WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D5",
+    "name": "LATIN CAPITAL LETTER O WITH TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D6",
+    "name": "LATIN CAPITAL LETTER O WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D7",
+    "name": "MULTIPLICATION SIGN",
+    "suggested_subsets": [
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+00D8",
+    "name": "LATIN CAPITAL LETTER O WITH STROKE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00D9",
+    "name": "LATIN CAPITAL LETTER U WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00DA",
+    "name": "LATIN CAPITAL LETTER U WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00DB",
+    "name": "LATIN CAPITAL LETTER U WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00DC",
+    "name": "LATIN CAPITAL LETTER U WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00DD",
+    "name": "LATIN CAPITAL LETTER Y WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00DE",
+    "name": "LATIN CAPITAL LETTER THORN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00DF",
+    "name": "LATIN SMALL LETTER SHARP S",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E0",
+    "name": "LATIN SMALL LETTER A WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E1",
+    "name": "LATIN SMALL LETTER A WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E2",
+    "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E3",
+    "name": "LATIN SMALL LETTER A WITH TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E4",
+    "name": "LATIN SMALL LETTER A WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E5",
+    "name": "LATIN SMALL LETTER A WITH RING ABOVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E6",
+    "name": "LATIN SMALL LETTER AE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E7",
+    "name": "LATIN SMALL LETTER C WITH CEDILLA",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E8",
+    "name": "LATIN SMALL LETTER E WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00E9",
+    "name": "LATIN SMALL LETTER E WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00EA",
+    "name": "LATIN SMALL LETTER E WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00EB",
+    "name": "LATIN SMALL LETTER E WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00EC",
+    "name": "LATIN SMALL LETTER I WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00ED",
+    "name": "LATIN SMALL LETTER I WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00EE",
+    "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00EF",
+    "name": "LATIN SMALL LETTER I WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F0",
+    "name": "LATIN SMALL LETTER ETH",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F1",
+    "name": "LATIN SMALL LETTER N WITH TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F2",
+    "name": "LATIN SMALL LETTER O WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F3",
+    "name": "LATIN SMALL LETTER O WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F4",
+    "name": "LATIN SMALL LETTER O WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F5",
+    "name": "LATIN SMALL LETTER O WITH TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F6",
+    "name": "LATIN SMALL LETTER O WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F7",
+    "name": "DIVISION SIGN",
+    "suggested_subsets": [
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+00F8",
+    "name": "LATIN SMALL LETTER O WITH STROKE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00F9",
+    "name": "LATIN SMALL LETTER U WITH GRAVE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00FA",
+    "name": "LATIN SMALL LETTER U WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00FB",
+    "name": "LATIN SMALL LETTER U WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00FC",
+    "name": "LATIN SMALL LETTER U WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00FD",
+    "name": "LATIN SMALL LETTER Y WITH ACUTE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00FE",
+    "name": "LATIN SMALL LETTER THORN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+00FF",
+    "name": "LATIN SMALL LETTER Y WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+0100",
+    "name": "LATIN CAPITAL LETTER A WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0101",
+    "name": "LATIN SMALL LETTER A WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0102",
+    "name": "LATIN CAPITAL LETTER A WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0103",
+    "name": "LATIN SMALL LETTER A WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0104",
+    "name": "LATIN CAPITAL LETTER A WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0105",
+    "name": "LATIN SMALL LETTER A WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0106",
+    "name": "LATIN CAPITAL LETTER C WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0107",
+    "name": "LATIN SMALL LETTER C WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0108",
+    "name": "LATIN CAPITAL LETTER C WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0109",
+    "name": "LATIN SMALL LETTER C WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+010A",
+    "name": "LATIN CAPITAL LETTER C WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+010B",
+    "name": "LATIN SMALL LETTER C WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+010C",
+    "name": "LATIN CAPITAL LETTER C WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+010D",
+    "name": "LATIN SMALL LETTER C WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+010E",
+    "name": "LATIN CAPITAL LETTER D WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+010F",
+    "name": "LATIN SMALL LETTER D WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0110",
+    "name": "LATIN CAPITAL LETTER D WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0111",
+    "name": "LATIN SMALL LETTER D WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0112",
+    "name": "LATIN CAPITAL LETTER E WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0113",
+    "name": "LATIN SMALL LETTER E WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0114",
+    "name": "LATIN CAPITAL LETTER E WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0115",
+    "name": "LATIN SMALL LETTER E WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0116",
+    "name": "LATIN CAPITAL LETTER E WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0117",
+    "name": "LATIN SMALL LETTER E WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0118",
+    "name": "LATIN CAPITAL LETTER E WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0119",
+    "name": "LATIN SMALL LETTER E WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+011A",
+    "name": "LATIN CAPITAL LETTER E WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+011B",
+    "name": "LATIN SMALL LETTER E WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+011C",
+    "name": "LATIN CAPITAL LETTER G WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+011D",
+    "name": "LATIN SMALL LETTER G WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+011E",
+    "name": "LATIN CAPITAL LETTER G WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+011F",
+    "name": "LATIN SMALL LETTER G WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0120",
+    "name": "LATIN CAPITAL LETTER G WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0121",
+    "name": "LATIN SMALL LETTER G WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0122",
+    "name": "LATIN CAPITAL LETTER G WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0123",
+    "name": "LATIN SMALL LETTER G WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0124",
+    "name": "LATIN CAPITAL LETTER H WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0125",
+    "name": "LATIN SMALL LETTER H WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0126",
+    "name": "LATIN CAPITAL LETTER H WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0127",
+    "name": "LATIN SMALL LETTER H WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0128",
+    "name": "LATIN CAPITAL LETTER I WITH TILDE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0129",
+    "name": "LATIN SMALL LETTER I WITH TILDE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+012A",
+    "name": "LATIN CAPITAL LETTER I WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+012B",
+    "name": "LATIN SMALL LETTER I WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+012C",
+    "name": "LATIN CAPITAL LETTER I WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+012D",
+    "name": "LATIN SMALL LETTER I WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+012E",
+    "name": "LATIN CAPITAL LETTER I WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+012F",
+    "name": "LATIN SMALL LETTER I WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0130",
+    "name": "LATIN CAPITAL LETTER I WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0131",
+    "name": "LATIN SMALL LETTER DOTLESS I",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+0132",
+    "name": "LATIN CAPITAL LIGATURE IJ",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0133",
+    "name": "LATIN SMALL LIGATURE IJ",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0134",
+    "name": "LATIN CAPITAL LETTER J WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0135",
+    "name": "LATIN SMALL LETTER J WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0136",
+    "name": "LATIN CAPITAL LETTER K WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0137",
+    "name": "LATIN SMALL LETTER K WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0138",
+    "name": "LATIN SMALL LETTER KRA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0139",
+    "name": "LATIN CAPITAL LETTER L WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+013A",
+    "name": "LATIN SMALL LETTER L WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+013B",
+    "name": "LATIN CAPITAL LETTER L WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+013C",
+    "name": "LATIN SMALL LETTER L WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+013D",
+    "name": "LATIN CAPITAL LETTER L WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+013E",
+    "name": "LATIN SMALL LETTER L WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+013F",
+    "name": "LATIN CAPITAL LETTER L WITH MIDDLE DOT",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0140",
+    "name": "LATIN SMALL LETTER L WITH MIDDLE DOT",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0141",
+    "name": "LATIN CAPITAL LETTER L WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0142",
+    "name": "LATIN SMALL LETTER L WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0143",
+    "name": "LATIN CAPITAL LETTER N WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0144",
+    "name": "LATIN SMALL LETTER N WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0145",
+    "name": "LATIN CAPITAL LETTER N WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0146",
+    "name": "LATIN SMALL LETTER N WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0147",
+    "name": "LATIN CAPITAL LETTER N WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0148",
+    "name": "LATIN SMALL LETTER N WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0149",
+    "name": "LATIN SMALL LETTER N PRECEDED BY APOSTROPHE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+014A",
+    "name": "LATIN CAPITAL LETTER ENG",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+014B",
+    "name": "LATIN SMALL LETTER ENG",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+014C",
+    "name": "LATIN CAPITAL LETTER O WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+014D",
+    "name": "LATIN SMALL LETTER O WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+014E",
+    "name": "LATIN CAPITAL LETTER O WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+014F",
+    "name": "LATIN SMALL LETTER O WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0150",
+    "name": "LATIN CAPITAL LETTER O WITH DOUBLE ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0151",
+    "name": "LATIN SMALL LETTER O WITH DOUBLE ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0152",
+    "name": "LATIN CAPITAL LIGATURE OE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+0153",
+    "name": "LATIN SMALL LIGATURE OE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+0154",
+    "name": "LATIN CAPITAL LETTER R WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0155",
+    "name": "LATIN SMALL LETTER R WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0156",
+    "name": "LATIN CAPITAL LETTER R WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0157",
+    "name": "LATIN SMALL LETTER R WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0158",
+    "name": "LATIN CAPITAL LETTER R WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0159",
+    "name": "LATIN SMALL LETTER R WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+015A",
+    "name": "LATIN CAPITAL LETTER S WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+015B",
+    "name": "LATIN SMALL LETTER S WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+015C",
+    "name": "LATIN CAPITAL LETTER S WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+015D",
+    "name": "LATIN SMALL LETTER S WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+015E",
+    "name": "LATIN CAPITAL LETTER S WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+015F",
+    "name": "LATIN SMALL LETTER S WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0160",
+    "name": "LATIN CAPITAL LETTER S WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0161",
+    "name": "LATIN SMALL LETTER S WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0162",
+    "name": "LATIN CAPITAL LETTER T WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0163",
+    "name": "LATIN SMALL LETTER T WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0164",
+    "name": "LATIN CAPITAL LETTER T WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0165",
+    "name": "LATIN SMALL LETTER T WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0166",
+    "name": "LATIN CAPITAL LETTER T WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0167",
+    "name": "LATIN SMALL LETTER T WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0168",
+    "name": "LATIN CAPITAL LETTER U WITH TILDE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0169",
+    "name": "LATIN SMALL LETTER U WITH TILDE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+016A",
+    "name": "LATIN CAPITAL LETTER U WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+016B",
+    "name": "LATIN SMALL LETTER U WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+016C",
+    "name": "LATIN CAPITAL LETTER U WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+016D",
+    "name": "LATIN SMALL LETTER U WITH BREVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+016E",
+    "name": "LATIN CAPITAL LETTER U WITH RING ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+016F",
+    "name": "LATIN SMALL LETTER U WITH RING ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0170",
+    "name": "LATIN CAPITAL LETTER U WITH DOUBLE ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0171",
+    "name": "LATIN SMALL LETTER U WITH DOUBLE ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0172",
+    "name": "LATIN CAPITAL LETTER U WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0173",
+    "name": "LATIN SMALL LETTER U WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0174",
+    "name": "LATIN CAPITAL LETTER W WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0175",
+    "name": "LATIN SMALL LETTER W WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0176",
+    "name": "LATIN CAPITAL LETTER Y WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0177",
+    "name": "LATIN SMALL LETTER Y WITH CIRCUMFLEX",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0178",
+    "name": "LATIN CAPITAL LETTER Y WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0179",
+    "name": "LATIN CAPITAL LETTER Z WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+017A",
+    "name": "LATIN SMALL LETTER Z WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+017B",
+    "name": "LATIN CAPITAL LETTER Z WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+017C",
+    "name": "LATIN SMALL LETTER Z WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+017D",
+    "name": "LATIN CAPITAL LETTER Z WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+017E",
+    "name": "LATIN SMALL LETTER Z WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+017F",
+    "name": "LATIN SMALL LETTER LONG S",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+018E",
+    "name": "LATIN CAPITAL LETTER REVERSED E",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+018F",
+    "name": "LATIN CAPITAL LETTER SCHWA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0192",
+    "name": "LATIN SMALL LETTER F WITH HOOK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01B7",
+    "name": "LATIN CAPITAL LETTER EZH",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01CD",
+    "name": "LATIN CAPITAL LETTER A WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01CE",
+    "name": "LATIN SMALL LETTER A WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01CF",
+    "name": "LATIN CAPITAL LETTER I WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01D0",
+    "name": "LATIN SMALL LETTER I WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01DD",
+    "name": "LATIN SMALL LETTER TURNED E",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E2",
+    "name": "LATIN CAPITAL LETTER AE WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E3",
+    "name": "LATIN SMALL LETTER AE WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E4",
+    "name": "LATIN CAPITAL LETTER G WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E5",
+    "name": "LATIN SMALL LETTER G WITH STROKE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E6",
+    "name": "LATIN CAPITAL LETTER G WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E7",
+    "name": "LATIN SMALL LETTER G WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E8",
+    "name": "LATIN CAPITAL LETTER K WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01E9",
+    "name": "LATIN SMALL LETTER K WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01EA",
+    "name": "LATIN CAPITAL LETTER O WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01EB",
+    "name": "LATIN SMALL LETTER O WITH OGONEK",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01EE",
+    "name": "LATIN CAPITAL LETTER EZH WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01EF",
+    "name": "LATIN SMALL LETTER EZH WITH CARON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01FA",
+    "name": "LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01FB",
+    "name": "LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01FC",
+    "name": "LATIN CAPITAL LETTER AE WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01FD",
+    "name": "LATIN SMALL LETTER AE WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01FE",
+    "name": "LATIN CAPITAL LETTER O WITH STROKE AND ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+01FF",
+    "name": "LATIN SMALL LETTER O WITH STROKE AND ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0218",
+    "name": "LATIN CAPITAL LETTER S WITH COMMA BELOW",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0219",
+    "name": "LATIN SMALL LETTER S WITH COMMA BELOW",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+021A",
+    "name": "LATIN CAPITAL LETTER T WITH COMMA BELOW",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+021B",
+    "name": "LATIN SMALL LETTER T WITH COMMA BELOW",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0226",
+    "name": "LATIN CAPITAL LETTER A WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0227",
+    "name": "LATIN SMALL LETTER A WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0232",
+    "name": "LATIN CAPITAL LETTER Y WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0233",
+    "name": "LATIN SMALL LETTER Y WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0237",
+    "name": "LATIN SMALL LETTER DOTLESS J",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0259",
+    "name": "LATIN SMALL LETTER SCHWA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+027C",
+    "name": "LATIN SMALL LETTER R WITH LONG LEG",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0281",
+    "name": "LATIN LETTER SMALL CAPITAL INVERTED R",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0292",
+    "name": "LATIN SMALL LETTER EZH",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+02B9",
+    "name": "MODIFIER LETTER PRIME",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+02BB",
+    "name": "MODIFIER LETTER TURNED COMMA",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+02BC",
+    "name": "MODIFIER LETTER APOSTROPHE",
+    "suggested_subsets": [
+      "bengali",
+      "devanagari",
+      "latin",
+      "latin-ext",
+      "lisu",
+      "thai",
+      "toto"
+    ]
+  },
+  {
+    "cp": "U+02C6",
+    "name": "MODIFIER LETTER CIRCUMFLEX ACCENT",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+02C7",
+    "name": "CARON",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "latin-ext",
+      "tifinagh",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+02C8",
+    "name": "MODIFIER LETTER VERTICAL LINE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+02D8",
+    "name": "BREVE",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+02D9",
+    "name": "DOT ABOVE",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+02DA",
+    "name": "RING ABOVE",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+02DB",
+    "name": "OGONEK",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+02DC",
+    "name": "SMALL TILDE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+02DD",
+    "name": "DOUBLE ACUTE ACCENT",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+0300",
+    "name": "COMBINING GRAVE ACCENT",
+    "suggested_subsets": [
+      "cherokee",
+      "coptic",
+      "latin",
+      "latin-ext",
+      "old-permic",
+      "sunuwar",
+      "tai-le",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0301",
+    "name": "COMBINING ACUTE ACCENT",
+    "suggested_subsets": [
+      "cherokee",
+      "coptic",
+      "cyrillic",
+      "latin",
+      "latin-ext",
+      "osage",
+      "sunuwar",
+      "tai-le",
+      "tifinagh",
+      "todhri",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0302",
+    "name": "COMBINING CIRCUMFLEX ACCENT",
+    "suggested_subsets": [
+      "cherokee",
+      "coptic",
+      "math",
+      "tifinagh"
+    ]
+  },
+  {
+    "cp": "U+0303",
+    "name": "COMBINING TILDE",
+    "suggested_subsets": [
+      "glagolitic",
+      "latin",
+      "latin-ext",
+      "math",
+      "sunuwar",
+      "syriac",
+      "thai",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0304",
+    "name": "COMBINING MACRON",
+    "suggested_subsets": [
+      "caucasian-albanian",
+      "cherokee",
+      "coptic",
+      "gothic",
+      "latin",
+      "latin-ext",
+      "osage",
+      "syriac",
+      "tifinagh",
+      "todhri",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0306",
+    "name": "COMBINING BREVE",
+    "suggested_subsets": [
+      "old-permic",
+      "tifinagh"
+    ]
+  },
+  {
+    "cp": "U+0307",
+    "name": "COMBINING DOT ABOVE",
+    "suggested_subsets": [
+      "canadian-aboriginal",
+      "coptic",
+      "duployan",
+      "hebrew",
+      "malayalam",
+      "math",
+      "old-permic",
+      "syriac",
+      "tai-le",
+      "tifinagh",
+      "todhri"
+    ]
+  },
+  {
+    "cp": "U+0308",
+    "name": "COMBINING DIAERESIS",
+    "suggested_subsets": [
+      "armenian",
+      "coptic",
+      "duployan",
+      "gothic",
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "old-permic",
+      "syriac",
+      "tai-le",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+030A",
+    "name": "COMBINING RING ABOVE",
+    "suggested_subsets": [
+      "duployan",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+030B",
+    "name": "COMBINING DOUBLE ACUTE ACCENT",
+    "suggested_subsets": [
+      "cherokee",
+      "osage"
+    ]
+  },
+  {
+    "cp": "U+030C",
+    "name": "COMBINING CARON",
+    "suggested_subsets": [
+      "cherokee",
+      "tai-le"
+    ]
+  },
+  {
+    "cp": "U+0312",
+    "name": "COMBINING TURNED COMMA ABOVE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0323",
+    "name": "COMBINING DOT BELOW",
+    "suggested_subsets": [
+      "cherokee",
+      "coptic",
+      "duployan",
+      "latin",
+      "latin-ext",
+      "malayalam",
+      "syriac",
+      "tifinagh",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+0326",
+    "name": "COMBINING COMMA BELOW",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0327",
+    "name": "COMBINING CEDILLA",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0328",
+    "name": "COMBINING OGONEK",
+    "suggested_subsets": []
+  },
+  {
+    "cp": "U+0335",
+    "name": "COMBINING SHORT STROKE OVERLAY",
+    "suggested_subsets": []
+  },
+  {
+    "cp": "U+0391",
+    "name": "GREEK CAPITAL LETTER ALPHA",
+    "suggested_subsets": [
+      "elbasan",
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+0394",
+    "name": "GREEK CAPITAL LETTER DELTA",
+    "suggested_subsets": [
+      "elbasan",
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+039E",
+    "name": "GREEK CAPITAL LETTER XI",
+    "suggested_subsets": [
+      "elbasan",
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+03A9",
+    "name": "GREEK CAPITAL LETTER OMEGA",
+    "suggested_subsets": [
+      "elbasan",
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+03B1",
+    "name": "GREEK SMALL LETTER ALPHA",
+    "suggested_subsets": [
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+03B4",
+    "name": "GREEK SMALL LETTER DELTA",
+    "suggested_subsets": [
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+03BC",
+    "name": "GREEK SMALL LETTER MU",
+    "suggested_subsets": [
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+03BE",
+    "name": "GREEK SMALL LETTER XI",
+    "suggested_subsets": [
+      "greek",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+03C0",
+    "name": "GREEK SMALL LETTER PI",
+    "suggested_subsets": [
+      "greek",
+      "math",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+0400",
+    "name": "CYRILLIC CAPITAL LETTER IE WITH GRAVE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0401",
+    "name": "CYRILLIC CAPITAL LETTER IO",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0402",
+    "name": "CYRILLIC CAPITAL LETTER DJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0403",
+    "name": "CYRILLIC CAPITAL LETTER GJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0404",
+    "name": "CYRILLIC CAPITAL LETTER UKRAINIAN IE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0405",
+    "name": "CYRILLIC CAPITAL LETTER DZE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0406",
+    "name": "CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0407",
+    "name": "CYRILLIC CAPITAL LETTER YI",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0408",
+    "name": "CYRILLIC CAPITAL LETTER JE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0409",
+    "name": "CYRILLIC CAPITAL LETTER LJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+040A",
+    "name": "CYRILLIC CAPITAL LETTER NJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+040B",
+    "name": "CYRILLIC CAPITAL LETTER TSHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+040C",
+    "name": "CYRILLIC CAPITAL LETTER KJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+040D",
+    "name": "CYRILLIC CAPITAL LETTER I WITH GRAVE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+040E",
+    "name": "CYRILLIC CAPITAL LETTER SHORT U",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+040F",
+    "name": "CYRILLIC CAPITAL LETTER DZHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0410",
+    "name": "CYRILLIC CAPITAL LETTER A",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0411",
+    "name": "CYRILLIC CAPITAL LETTER BE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0412",
+    "name": "CYRILLIC CAPITAL LETTER VE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0413",
+    "name": "CYRILLIC CAPITAL LETTER GHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0414",
+    "name": "CYRILLIC CAPITAL LETTER DE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0415",
+    "name": "CYRILLIC CAPITAL LETTER IE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0416",
+    "name": "CYRILLIC CAPITAL LETTER ZHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0417",
+    "name": "CYRILLIC CAPITAL LETTER ZE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0418",
+    "name": "CYRILLIC CAPITAL LETTER I",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0419",
+    "name": "CYRILLIC CAPITAL LETTER SHORT I",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+041A",
+    "name": "CYRILLIC CAPITAL LETTER KA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+041B",
+    "name": "CYRILLIC CAPITAL LETTER EL",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+041C",
+    "name": "CYRILLIC CAPITAL LETTER EM",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+041D",
+    "name": "CYRILLIC CAPITAL LETTER EN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+041E",
+    "name": "CYRILLIC CAPITAL LETTER O",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+041F",
+    "name": "CYRILLIC CAPITAL LETTER PE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0420",
+    "name": "CYRILLIC CAPITAL LETTER ER",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0421",
+    "name": "CYRILLIC CAPITAL LETTER ES",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0422",
+    "name": "CYRILLIC CAPITAL LETTER TE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0423",
+    "name": "CYRILLIC CAPITAL LETTER U",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0424",
+    "name": "CYRILLIC CAPITAL LETTER EF",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0425",
+    "name": "CYRILLIC CAPITAL LETTER HA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0426",
+    "name": "CYRILLIC CAPITAL LETTER TSE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0427",
+    "name": "CYRILLIC CAPITAL LETTER CHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0428",
+    "name": "CYRILLIC CAPITAL LETTER SHA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0429",
+    "name": "CYRILLIC CAPITAL LETTER SHCHA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+042A",
+    "name": "CYRILLIC CAPITAL LETTER HARD SIGN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+042B",
+    "name": "CYRILLIC CAPITAL LETTER YERU",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+042C",
+    "name": "CYRILLIC CAPITAL LETTER SOFT SIGN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+042D",
+    "name": "CYRILLIC CAPITAL LETTER E",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+042E",
+    "name": "CYRILLIC CAPITAL LETTER YU",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+042F",
+    "name": "CYRILLIC CAPITAL LETTER YA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0430",
+    "name": "CYRILLIC SMALL LETTER A",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0431",
+    "name": "CYRILLIC SMALL LETTER BE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0432",
+    "name": "CYRILLIC SMALL LETTER VE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0433",
+    "name": "CYRILLIC SMALL LETTER GHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0434",
+    "name": "CYRILLIC SMALL LETTER DE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0435",
+    "name": "CYRILLIC SMALL LETTER IE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0436",
+    "name": "CYRILLIC SMALL LETTER ZHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0437",
+    "name": "CYRILLIC SMALL LETTER ZE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0438",
+    "name": "CYRILLIC SMALL LETTER I",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0439",
+    "name": "CYRILLIC SMALL LETTER SHORT I",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+043A",
+    "name": "CYRILLIC SMALL LETTER KA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+043B",
+    "name": "CYRILLIC SMALL LETTER EL",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+043C",
+    "name": "CYRILLIC SMALL LETTER EM",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+043D",
+    "name": "CYRILLIC SMALL LETTER EN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+043E",
+    "name": "CYRILLIC SMALL LETTER O",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+043F",
+    "name": "CYRILLIC SMALL LETTER PE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0440",
+    "name": "CYRILLIC SMALL LETTER ER",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0441",
+    "name": "CYRILLIC SMALL LETTER ES",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0442",
+    "name": "CYRILLIC SMALL LETTER TE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0443",
+    "name": "CYRILLIC SMALL LETTER U",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0444",
+    "name": "CYRILLIC SMALL LETTER EF",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0445",
+    "name": "CYRILLIC SMALL LETTER HA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0446",
+    "name": "CYRILLIC SMALL LETTER TSE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0447",
+    "name": "CYRILLIC SMALL LETTER CHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0448",
+    "name": "CYRILLIC SMALL LETTER SHA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0449",
+    "name": "CYRILLIC SMALL LETTER SHCHA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+044A",
+    "name": "CYRILLIC SMALL LETTER HARD SIGN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+044B",
+    "name": "CYRILLIC SMALL LETTER YERU",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+044C",
+    "name": "CYRILLIC SMALL LETTER SOFT SIGN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+044D",
+    "name": "CYRILLIC SMALL LETTER E",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+044E",
+    "name": "CYRILLIC SMALL LETTER YU",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+044F",
+    "name": "CYRILLIC SMALL LETTER YA",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0450",
+    "name": "CYRILLIC SMALL LETTER IE WITH GRAVE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0451",
+    "name": "CYRILLIC SMALL LETTER IO",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0452",
+    "name": "CYRILLIC SMALL LETTER DJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0453",
+    "name": "CYRILLIC SMALL LETTER GJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0454",
+    "name": "CYRILLIC SMALL LETTER UKRAINIAN IE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0455",
+    "name": "CYRILLIC SMALL LETTER DZE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0456",
+    "name": "CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0457",
+    "name": "CYRILLIC SMALL LETTER YI",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0458",
+    "name": "CYRILLIC SMALL LETTER JE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0459",
+    "name": "CYRILLIC SMALL LETTER LJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+045A",
+    "name": "CYRILLIC SMALL LETTER NJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+045B",
+    "name": "CYRILLIC SMALL LETTER TSHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+045C",
+    "name": "CYRILLIC SMALL LETTER KJE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+045D",
+    "name": "CYRILLIC SMALL LETTER I WITH GRAVE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+045E",
+    "name": "CYRILLIC SMALL LETTER SHORT U",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+045F",
+    "name": "CYRILLIC SMALL LETTER DZHE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0462",
+    "name": "CYRILLIC CAPITAL LETTER YAT",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0463",
+    "name": "CYRILLIC SMALL LETTER YAT",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+046A",
+    "name": "CYRILLIC CAPITAL LETTER BIG YUS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+046B",
+    "name": "CYRILLIC SMALL LETTER BIG YUS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0472",
+    "name": "CYRILLIC CAPITAL LETTER FITA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0473",
+    "name": "CYRILLIC SMALL LETTER FITA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0474",
+    "name": "CYRILLIC CAPITAL LETTER IZHITSA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0475",
+    "name": "CYRILLIC SMALL LETTER IZHITSA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0490",
+    "name": "CYRILLIC CAPITAL LETTER GHE WITH UPTURN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0491",
+    "name": "CYRILLIC SMALL LETTER GHE WITH UPTURN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+0492",
+    "name": "CYRILLIC CAPITAL LETTER GHE WITH STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0493",
+    "name": "CYRILLIC SMALL LETTER GHE WITH STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0494",
+    "name": "CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0495",
+    "name": "CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0496",
+    "name": "CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0497",
+    "name": "CYRILLIC SMALL LETTER ZHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0498",
+    "name": "CYRILLIC CAPITAL LETTER ZE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0499",
+    "name": "CYRILLIC SMALL LETTER ZE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+049A",
+    "name": "CYRILLIC CAPITAL LETTER KA WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+049B",
+    "name": "CYRILLIC SMALL LETTER KA WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+049C",
+    "name": "CYRILLIC CAPITAL LETTER KA WITH VERTICAL STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+049D",
+    "name": "CYRILLIC SMALL LETTER KA WITH VERTICAL STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+049E",
+    "name": "CYRILLIC CAPITAL LETTER KA WITH STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+049F",
+    "name": "CYRILLIC SMALL LETTER KA WITH STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A0",
+    "name": "CYRILLIC CAPITAL LETTER BASHKIR KA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A1",
+    "name": "CYRILLIC SMALL LETTER BASHKIR KA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A2",
+    "name": "CYRILLIC CAPITAL LETTER EN WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A3",
+    "name": "CYRILLIC SMALL LETTER EN WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A4",
+    "name": "CYRILLIC CAPITAL LIGATURE EN GHE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A5",
+    "name": "CYRILLIC SMALL LIGATURE EN GHE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A6",
+    "name": "CYRILLIC CAPITAL LETTER PE WITH MIDDLE HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A7",
+    "name": "CYRILLIC SMALL LETTER PE WITH MIDDLE HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A8",
+    "name": "CYRILLIC CAPITAL LETTER ABKHASIAN HA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04A9",
+    "name": "CYRILLIC SMALL LETTER ABKHASIAN HA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04AA",
+    "name": "CYRILLIC CAPITAL LETTER ES WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04AB",
+    "name": "CYRILLIC SMALL LETTER ES WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04AE",
+    "name": "CYRILLIC CAPITAL LETTER STRAIGHT U",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04AF",
+    "name": "CYRILLIC SMALL LETTER STRAIGHT U",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B0",
+    "name": "CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+04B1",
+    "name": "CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+04B2",
+    "name": "CYRILLIC CAPITAL LETTER HA WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B3",
+    "name": "CYRILLIC SMALL LETTER HA WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B4",
+    "name": "CYRILLIC CAPITAL LIGATURE TE TSE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B5",
+    "name": "CYRILLIC SMALL LIGATURE TE TSE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B6",
+    "name": "CYRILLIC CAPITAL LETTER CHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B7",
+    "name": "CYRILLIC SMALL LETTER CHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B8",
+    "name": "CYRILLIC CAPITAL LETTER CHE WITH VERTICAL STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04B9",
+    "name": "CYRILLIC SMALL LETTER CHE WITH VERTICAL STROKE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04BA",
+    "name": "CYRILLIC CAPITAL LETTER SHHA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04BB",
+    "name": "CYRILLIC SMALL LETTER SHHA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04BC",
+    "name": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04BD",
+    "name": "CYRILLIC SMALL LETTER ABKHASIAN CHE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04BE",
+    "name": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04BF",
+    "name": "CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C0",
+    "name": "CYRILLIC LETTER PALOCHKA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C1",
+    "name": "CYRILLIC CAPITAL LETTER ZHE WITH BREVE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C2",
+    "name": "CYRILLIC SMALL LETTER ZHE WITH BREVE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C3",
+    "name": "CYRILLIC CAPITAL LETTER KA WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C4",
+    "name": "CYRILLIC SMALL LETTER KA WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C7",
+    "name": "CYRILLIC CAPITAL LETTER EN WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C8",
+    "name": "CYRILLIC SMALL LETTER EN WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04C9",
+    "name": "CYRILLIC CAPITAL LETTER EN WITH TAIL",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04CA",
+    "name": "CYRILLIC SMALL LETTER EN WITH TAIL",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04CB",
+    "name": "CYRILLIC CAPITAL LETTER KHAKASSIAN CHE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04CC",
+    "name": "CYRILLIC SMALL LETTER KHAKASSIAN CHE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04CF",
+    "name": "CYRILLIC SMALL LETTER PALOCHKA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D0",
+    "name": "CYRILLIC CAPITAL LETTER A WITH BREVE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D1",
+    "name": "CYRILLIC SMALL LETTER A WITH BREVE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D2",
+    "name": "CYRILLIC CAPITAL LETTER A WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D3",
+    "name": "CYRILLIC SMALL LETTER A WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D4",
+    "name": "CYRILLIC CAPITAL LIGATURE A IE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D5",
+    "name": "CYRILLIC SMALL LIGATURE A IE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D6",
+    "name": "CYRILLIC CAPITAL LETTER IE WITH BREVE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D7",
+    "name": "CYRILLIC SMALL LETTER IE WITH BREVE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D8",
+    "name": "CYRILLIC CAPITAL LETTER SCHWA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04D9",
+    "name": "CYRILLIC SMALL LETTER SCHWA",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04DA",
+    "name": "CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04DB",
+    "name": "CYRILLIC SMALL LETTER SCHWA WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04DC",
+    "name": "CYRILLIC CAPITAL LETTER ZHE WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04DD",
+    "name": "CYRILLIC SMALL LETTER ZHE WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04DE",
+    "name": "CYRILLIC CAPITAL LETTER ZE WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04DF",
+    "name": "CYRILLIC SMALL LETTER ZE WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E0",
+    "name": "CYRILLIC CAPITAL LETTER ABKHASIAN DZE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E1",
+    "name": "CYRILLIC SMALL LETTER ABKHASIAN DZE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E2",
+    "name": "CYRILLIC CAPITAL LETTER I WITH MACRON",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E3",
+    "name": "CYRILLIC SMALL LETTER I WITH MACRON",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E4",
+    "name": "CYRILLIC CAPITAL LETTER I WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E5",
+    "name": "CYRILLIC SMALL LETTER I WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E6",
+    "name": "CYRILLIC CAPITAL LETTER O WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E7",
+    "name": "CYRILLIC SMALL LETTER O WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E8",
+    "name": "CYRILLIC CAPITAL LETTER BARRED O",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04E9",
+    "name": "CYRILLIC SMALL LETTER BARRED O",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04EA",
+    "name": "CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04EB",
+    "name": "CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04EC",
+    "name": "CYRILLIC CAPITAL LETTER E WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04ED",
+    "name": "CYRILLIC SMALL LETTER E WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04EE",
+    "name": "CYRILLIC CAPITAL LETTER U WITH MACRON",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04EF",
+    "name": "CYRILLIC SMALL LETTER U WITH MACRON",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F0",
+    "name": "CYRILLIC CAPITAL LETTER U WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F1",
+    "name": "CYRILLIC SMALL LETTER U WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F2",
+    "name": "CYRILLIC CAPITAL LETTER U WITH DOUBLE ACUTE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F3",
+    "name": "CYRILLIC SMALL LETTER U WITH DOUBLE ACUTE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F4",
+    "name": "CYRILLIC CAPITAL LETTER CHE WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F5",
+    "name": "CYRILLIC SMALL LETTER CHE WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F6",
+    "name": "CYRILLIC CAPITAL LETTER GHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F7",
+    "name": "CYRILLIC SMALL LETTER GHE WITH DESCENDER",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F8",
+    "name": "CYRILLIC CAPITAL LETTER YERU WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04F9",
+    "name": "CYRILLIC SMALL LETTER YERU WITH DIAERESIS",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04FC",
+    "name": "CYRILLIC CAPITAL LETTER HA WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+04FD",
+    "name": "CYRILLIC SMALL LETTER HA WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0510",
+    "name": "CYRILLIC CAPITAL LETTER REVERSED ZE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0511",
+    "name": "CYRILLIC SMALL LETTER REVERSED ZE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0512",
+    "name": "CYRILLIC CAPITAL LETTER EL WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+0513",
+    "name": "CYRILLIC SMALL LETTER EL WITH HOOK",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+051C",
+    "name": "CYRILLIC CAPITAL LETTER WE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+051D",
+    "name": "CYRILLIC SMALL LETTER WE",
+    "suggested_subsets": [
+      "cyrillic-ext"
+    ]
+  },
+  {
+    "cp": "U+1E02",
+    "name": "LATIN CAPITAL LETTER B WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E03",
+    "name": "LATIN SMALL LETTER B WITH DOT ABOVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E20",
+    "name": "LATIN CAPITAL LETTER G WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E21",
+    "name": "LATIN SMALL LETTER G WITH MACRON",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E28",
+    "name": "LATIN CAPITAL LETTER H WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E29",
+    "name": "LATIN SMALL LETTER H WITH CEDILLA",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E80",
+    "name": "LATIN CAPITAL LETTER W WITH GRAVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E81",
+    "name": "LATIN SMALL LETTER W WITH GRAVE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E82",
+    "name": "LATIN CAPITAL LETTER W WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E83",
+    "name": "LATIN SMALL LETTER W WITH ACUTE",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E84",
+    "name": "LATIN CAPITAL LETTER W WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E85",
+    "name": "LATIN SMALL LETTER W WITH DIAERESIS",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1E9E",
+    "name": "LATIN CAPITAL LETTER SHARP S",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+1EA0",
+    "name": "LATIN CAPITAL LETTER A WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EA1",
+    "name": "LATIN SMALL LETTER A WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EB8",
+    "name": "LATIN CAPITAL LETTER E WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EB9",
+    "name": "LATIN SMALL LETTER E WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EBC",
+    "name": "LATIN CAPITAL LETTER E WITH TILDE",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EBD",
+    "name": "LATIN SMALL LETTER E WITH TILDE",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1ECA",
+    "name": "LATIN CAPITAL LETTER I WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1ECB",
+    "name": "LATIN SMALL LETTER I WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1ECC",
+    "name": "LATIN CAPITAL LETTER O WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1ECD",
+    "name": "LATIN SMALL LETTER O WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EE4",
+    "name": "LATIN CAPITAL LETTER U WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EE5",
+    "name": "LATIN SMALL LETTER U WITH DOT BELOW",
+    "suggested_subsets": [
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EF2",
+    "name": "LATIN CAPITAL LETTER Y WITH GRAVE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EF3",
+    "name": "LATIN SMALL LETTER Y WITH GRAVE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EF8",
+    "name": "LATIN CAPITAL LETTER Y WITH TILDE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+1EF9",
+    "name": "LATIN SMALL LETTER Y WITH TILDE",
+    "suggested_subsets": [
+      "latin-ext",
+      "vietnamese"
+    ]
+  },
+  {
+    "cp": "U+2002",
+    "name": "EN SPACE",
+    "suggested_subsets": [
+      "latin",
+      "nushu"
+    ]
+  },
+  {
+    "cp": "U+2007",
+    "name": "FIGURE SPACE",
+    "suggested_subsets": [
+      "symbols2"
+    ]
+  },
+  {
+    "cp": "U+2008",
+    "name": "PUNCTUATION SPACE",
+    "suggested_subsets": [
+      "symbols2"
+    ]
+  },
+  {
+    "cp": "U+2010",
+    "name": "HYPHEN",
+    "suggested_subsets": [
+      "arabic",
+      "armenian",
+      "cham",
+      "coptic",
+      "hebrew",
+      "kaithi",
+      "kayah-li",
+      "kharoshthi",
+      "lisu",
+      "sora-sompeng",
+      "sundanese",
+      "syloti-nagri",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2011",
+    "name": "NON-BREAKING HYPHEN",
+    "suggested_subsets": [
+      "arabic",
+      "syloti-nagri",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2013",
+    "name": "EN DASH",
+    "suggested_subsets": [
+      "adlam",
+      "khudawadi",
+      "latin",
+      "mongolian"
+    ]
+  },
+  {
+    "cp": "U+2014",
+    "name": "EM DASH",
+    "suggested_subsets": [
+      "adlam",
+      "khudawadi",
+      "latin",
+      "mongolian"
+    ]
+  },
+  {
+    "cp": "U+2015",
+    "name": "HORIZONTAL BAR",
+    "suggested_subsets": [
+      "adlam"
+    ]
+  },
+  {
+    "cp": "U+2018",
+    "name": "LEFT SINGLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "thaana"
+    ]
+  },
+  {
+    "cp": "U+2019",
+    "name": "RIGHT SINGLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "thaana"
+    ]
+  },
+  {
+    "cp": "U+201A",
+    "name": "SINGLE LOW-9 QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+201C",
+    "name": "LEFT DOUBLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "mongolian",
+      "thaana",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+201D",
+    "name": "RIGHT DOUBLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "mongolian",
+      "thaana",
+      "wancho"
+    ]
+  },
+  {
+    "cp": "U+201E",
+    "name": "DOUBLE LOW-9 QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+2020",
+    "name": "DAGGER",
+    "suggested_subsets": [
+      "adlam",
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+2021",
+    "name": "DOUBLE DAGGER",
+    "suggested_subsets": [
+      "adlam"
+    ]
+  },
+  {
+    "cp": "U+2022",
+    "name": "BULLET",
+    "suggested_subsets": [
+      "adlam",
+      "latin",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2024",
+    "name": "ONE DOT LEADER",
+    "suggested_subsets": [
+      "armenian"
+    ]
+  },
+  {
+    "cp": "U+2025",
+    "name": "TWO DOT LEADER",
+    "suggested_subsets": [
+      "phags-pa"
+    ]
+  },
+  {
+    "cp": "U+2026",
+    "name": "HORIZONTAL ELLIPSIS",
+    "suggested_subsets": [
+      "adlam",
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "meroitic",
+      "phags-pa",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+2030",
+    "name": "PER MILLE SIGN",
+    "suggested_subsets": [
+      "adlam"
+    ]
+  },
+  {
+    "cp": "U+2032",
+    "name": "PRIME",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2033",
+    "name": "DOUBLE PRIME",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2039",
+    "name": "SINGLE LEFT-POINTING ANGLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+203A",
+    "name": "SINGLE RIGHT-POINTING ANGLE QUOTATION MARK",
+    "suggested_subsets": [
+      "adlam",
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+203C",
+    "name": "DOUBLE EXCLAMATION MARK",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2043",
+    "name": "HYPHEN BULLET",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2044",
+    "name": "FRACTION SLASH",
+    "suggested_subsets": [
+      "adlam",
+      "devanagari",
+      "latin",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+2047",
+    "name": "DOUBLE QUESTION MARK",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2048",
+    "name": "QUESTION EXCLAMATION MARK",
+    "suggested_subsets": [
+      "mongolian"
+    ]
+  },
+  {
+    "cp": "U+2049",
+    "name": "EXCLAMATION QUESTION MARK",
+    "suggested_subsets": [
+      "mongolian"
+    ]
+  },
+  {
+    "cp": "U+2070",
+    "name": "SUPERSCRIPT ZERO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2071",
+    "name": "SUPERSCRIPT LATIN SMALL LETTER I",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2074",
+    "name": "SUPERSCRIPT FOUR",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2075",
+    "name": "SUPERSCRIPT FIVE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2076",
+    "name": "SUPERSCRIPT SIX",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2077",
+    "name": "SUPERSCRIPT SEVEN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2078",
+    "name": "SUPERSCRIPT EIGHT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2079",
+    "name": "SUPERSCRIPT NINE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+207A",
+    "name": "SUPERSCRIPT PLUS SIGN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+207B",
+    "name": "SUPERSCRIPT MINUS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+207C",
+    "name": "SUPERSCRIPT EQUALS SIGN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+207D",
+    "name": "SUPERSCRIPT LEFT PARENTHESIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+207E",
+    "name": "SUPERSCRIPT RIGHT PARENTHESIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+207F",
+    "name": "SUPERSCRIPT LATIN SMALL LETTER N",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2080",
+    "name": "SUBSCRIPT ZERO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2081",
+    "name": "SUBSCRIPT ONE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2082",
+    "name": "SUBSCRIPT TWO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2083",
+    "name": "SUBSCRIPT THREE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2084",
+    "name": "SUBSCRIPT FOUR",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2085",
+    "name": "SUBSCRIPT FIVE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2086",
+    "name": "SUBSCRIPT SIX",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2087",
+    "name": "SUBSCRIPT SEVEN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2088",
+    "name": "SUBSCRIPT EIGHT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2089",
+    "name": "SUBSCRIPT NINE",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+208A",
+    "name": "SUBSCRIPT PLUS SIGN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+208B",
+    "name": "SUBSCRIPT MINUS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+208C",
+    "name": "SUBSCRIPT EQUALS SIGN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+208D",
+    "name": "SUBSCRIPT LEFT PARENTHESIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+208E",
+    "name": "SUBSCRIPT RIGHT PARENTHESIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2090",
+    "name": "LATIN SUBSCRIPT SMALL LETTER A",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2091",
+    "name": "LATIN SUBSCRIPT SMALL LETTER E",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2092",
+    "name": "LATIN SUBSCRIPT SMALL LETTER O",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2093",
+    "name": "LATIN SUBSCRIPT SMALL LETTER X",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2094",
+    "name": "LATIN SUBSCRIPT SMALL LETTER SCHWA",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2095",
+    "name": "LATIN SUBSCRIPT SMALL LETTER H",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2096",
+    "name": "LATIN SUBSCRIPT SMALL LETTER K",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2097",
+    "name": "LATIN SUBSCRIPT SMALL LETTER L",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2098",
+    "name": "LATIN SUBSCRIPT SMALL LETTER M",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2099",
+    "name": "LATIN SUBSCRIPT SMALL LETTER N",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+209A",
+    "name": "LATIN SUBSCRIPT SMALL LETTER P",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+209B",
+    "name": "LATIN SUBSCRIPT SMALL LETTER S",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+209C",
+    "name": "LATIN SUBSCRIPT SMALL LETTER T",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+20A3",
+    "name": "FRENCH FRANC SIGN",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+20AC",
+    "name": "EURO SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+20B4",
+    "name": "HRYVNIA SIGN",
+    "suggested_subsets": [
+      "cyrillic-ext",
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+20B8",
+    "name": "TENGE SIGN",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+20BD",
+    "name": "RUBLE SIGN",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+20BF",
+    "name": "BITCOIN SIGN",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+20F0",
+    "name": "COMBINING ASTERISK ABOVE",
+    "suggested_subsets": [
+      "devanagari",
+      "grantha"
+    ]
+  },
+  {
+    "cp": "U+2100",
+    "name": "ACCOUNT OF",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2101",
+    "name": "ADDRESSED TO THE SUBJECT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2105",
+    "name": "CARE OF",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2106",
+    "name": "CADA UNA",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2113",
+    "name": "SCRIPT SMALL L",
+    "suggested_subsets": [
+      "latin-ext"
+    ]
+  },
+  {
+    "cp": "U+2116",
+    "name": "NUMERO SIGN",
+    "suggested_subsets": [
+      "cyrillic"
+    ]
+  },
+  {
+    "cp": "U+2117",
+    "name": "SOUND RECORDING COPYRIGHT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2120",
+    "name": "SERVICE MARK",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2122",
+    "name": "TRADE MARK SIGN",
+    "suggested_subsets": [
+      "latin"
+    ]
+  },
+  {
+    "cp": "U+2126",
+    "name": "OHM SIGN",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+212E",
+    "name": "ESTIMATED SYMBOL",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2150",
+    "name": "VULGAR FRACTION ONE SEVENTH",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2151",
+    "name": "VULGAR FRACTION ONE NINTH",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2152",
+    "name": "VULGAR FRACTION ONE TENTH",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2153",
+    "name": "VULGAR FRACTION ONE THIRD",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2154",
+    "name": "VULGAR FRACTION TWO THIRDS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2155",
+    "name": "VULGAR FRACTION ONE FIFTH",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2156",
+    "name": "VULGAR FRACTION TWO FIFTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2157",
+    "name": "VULGAR FRACTION THREE FIFTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2158",
+    "name": "VULGAR FRACTION FOUR FIFTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2159",
+    "name": "VULGAR FRACTION ONE SIXTH",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+215A",
+    "name": "VULGAR FRACTION FIVE SIXTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+215B",
+    "name": "VULGAR FRACTION ONE EIGHTH",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+215C",
+    "name": "VULGAR FRACTION THREE EIGHTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+215D",
+    "name": "VULGAR FRACTION FIVE EIGHTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+215E",
+    "name": "VULGAR FRACTION SEVEN EIGHTHS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+215F",
+    "name": "FRACTION NUMERATOR ONE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2189",
+    "name": "VULGAR FRACTION ZERO THIRDS",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2190",
+    "name": "LEFTWARDS ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2191",
+    "name": "UPWARDS ARROW",
+    "suggested_subsets": [
+      "latin",
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2192",
+    "name": "RIGHTWARDS ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2193",
+    "name": "DOWNWARDS ARROW",
+    "suggested_subsets": [
+      "latin",
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2194",
+    "name": "LEFT RIGHT ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2195",
+    "name": "UP DOWN ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2196",
+    "name": "NORTH WEST ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2197",
+    "name": "NORTH EAST ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2198",
+    "name": "SOUTH EAST ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2199",
+    "name": "SOUTH WEST ARROW",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2202",
+    "name": "PARTIAL DIFFERENTIAL",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2206",
+    "name": "INCREMENT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+220F",
+    "name": "N-ARY PRODUCT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2211",
+    "name": "N-ARY SUMMATION",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2212",
+    "name": "MINUS SIGN",
+    "suggested_subsets": [
+      "gunjala-gondi",
+      "latin",
+      "masaram-gondi",
+      "math",
+      "syriac"
+    ]
+  },
+  {
+    "cp": "U+2215",
+    "name": "DIVISION SLASH",
+    "suggested_subsets": [
+      "latin",
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2219",
+    "name": "BULLET OPERATOR",
+    "suggested_subsets": [
+      "math",
+      "symbols",
+      "tai-tham",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+221A",
+    "name": "SQUARE ROOT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+221E",
+    "name": "INFINITY",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2229",
+    "name": "INTERSECTION",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+222A",
+    "name": "UNION",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+222B",
+    "name": "INTEGRAL",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+223C",
+    "name": "TILDE OPERATOR",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2248",
+    "name": "ALMOST EQUAL TO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2260",
+    "name": "NOT EQUAL TO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2261",
+    "name": "IDENTICAL TO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2264",
+    "name": "LESS-THAN OR EQUAL TO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2265",
+    "name": "GREATER-THAN OR EQUAL TO",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2282",
+    "name": "SUBSET OF",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2283",
+    "name": "SUPERSET OF",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+228D",
+    "name": "MULTISET MULTIPLICATION",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+228E",
+    "name": "MULTISET UNION",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+22A1",
+    "name": "SQUARED DOT OPERATOR",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+22C5",
+    "name": "DOT OPERATOR",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+22EE",
+    "name": "VERTICAL ELLIPSIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+22EF",
+    "name": "MIDLINE HORIZONTAL ELLIPSIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+22F0",
+    "name": "UP RIGHT DIAGONAL ELLIPSIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+22F1",
+    "name": "DOWN RIGHT DIAGONAL ELLIPSIS",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2300",
+    "name": "DIAMETER SIGN",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2329",
+    "name": "LEFT-POINTING ANGLE BRACKET",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+232A",
+    "name": "RIGHT-POINTING ANGLE BRACKET",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2460",
+    "name": "CIRCLED DIGIT ONE",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2461",
+    "name": "CIRCLED DIGIT TWO",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2462",
+    "name": "CIRCLED DIGIT THREE",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2463",
+    "name": "CIRCLED DIGIT FOUR",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2464",
+    "name": "CIRCLED DIGIT FIVE",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2465",
+    "name": "CIRCLED DIGIT SIX",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2466",
+    "name": "CIRCLED DIGIT SEVEN",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2467",
+    "name": "CIRCLED DIGIT EIGHT",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+2468",
+    "name": "CIRCLED DIGIT NINE",
+    "suggested_subsets": [
+      "mongolian",
+      "symbols",
+      "yi"
+    ]
+  },
+  {
+    "cp": "U+24EA",
+    "name": "CIRCLED DIGIT ZERO",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+24FF",
+    "name": "NEGATIVE CIRCLED DIGIT ZERO",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25A0",
+    "name": "BLACK SQUARE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25A1",
+    "name": "WHITE SQUARE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25AA",
+    "name": "BLACK SMALL SQUARE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25AB",
+    "name": "WHITE SMALL SQUARE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25B2",
+    "name": "BLACK UP-POINTING TRIANGLE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25BA",
+    "name": "BLACK RIGHT-POINTING POINTER",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25BC",
+    "name": "BLACK DOWN-POINTING TRIANGLE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25C4",
+    "name": "BLACK LEFT-POINTING POINTER",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25C6",
+    "name": "BLACK DIAMOND",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25C7",
+    "name": "WHITE DIAMOND",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25CA",
+    "name": "LOZENGE",
+    "suggested_subsets": [
+      "math",
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25CB",
+    "name": "WHITE CIRCLE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25CC",
+    "name": "DOTTED CIRCLE",
+    "suggested_subsets": [
+      "adlam",
+      "ahom",
+      "armenian",
+      "balinese",
+      "bassa-vah",
+      "batak",
+      "bengali",
+      "bhaiksuki",
+      "brahmi",
+      "buginese",
+      "buhid",
+      "canadian-aboriginal",
+      "caucasian-albanian",
+      "chakma",
+      "cham",
+      "coptic",
+      "devanagari",
+      "dogra",
+      "duployan",
+      "elbasan",
+      "grantha",
+      "gujarati",
+      "gunjala-gondi",
+      "gurmukhi",
+      "hanifi-rohingya",
+      "hanunoo",
+      "hebrew",
+      "javanese",
+      "kaithi",
+      "kannada",
+      "kayah-li",
+      "kharoshthi",
+      "khmer",
+      "khojki",
+      "khudawadi",
+      "lao",
+      "lepcha",
+      "limbu",
+      "mahajani",
+      "malayalam",
+      "mandaic",
+      "manichaean",
+      "marchen",
+      "masaram-gondi",
+      "math",
+      "meetei-mayek",
+      "mende-kikakui",
+      "miao",
+      "modi",
+      "mongolian",
+      "music",
+      "myanmar",
+      "new-tai-lue",
+      "newa",
+      "nko",
+      "old-permic",
+      "oriya",
+      "osage",
+      "pahawh-hmong",
+      "phags-pa",
+      "psalter-pahlavi",
+      "rejang",
+      "saurashtra",
+      "sharada",
+      "siddham",
+      "sinhala",
+      "sogdian",
+      "soyombo",
+      "sundanese",
+      "syloti-nagri",
+      "symbols",
+      "syriac",
+      "tagalog",
+      "tagbanwa",
+      "tai-le",
+      "tai-tham",
+      "tai-viet",
+      "takri",
+      "tamil",
+      "telugu",
+      "thaana",
+      "thai",
+      "tibetan",
+      "tifinagh",
+      "tirhuta",
+      "wancho",
+      "warang-citi",
+      "yi",
+      "zanabazar-square"
+    ]
+  },
+  {
+    "cp": "U+25CF",
+    "name": "BLACK CIRCLE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25D0",
+    "name": "CIRCLE WITH LEFT HALF BLACK",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25D1",
+    "name": "CIRCLE WITH RIGHT HALF BLACK",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25D2",
+    "name": "CIRCLE WITH LOWER HALF BLACK",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25D3",
+    "name": "CIRCLE WITH UPPER HALF BLACK",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+25E6",
+    "name": "WHITE BULLET",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2605",
+    "name": "BLACK STAR",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2630",
+    "name": "TRIGRAM FOR HEAVEN",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2713",
+    "name": "CHECK MARK",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2726",
+    "name": "BLACK FOUR POINTED STAR",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2727",
+    "name": "WHITE FOUR POINTED STAR",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2729",
+    "name": "STRESS OUTLINED WHITE STAR",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2764",
+    "name": "HEAVY BLACK HEART",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2776",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT ONE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2777",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT TWO",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2778",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT THREE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+2779",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT FOUR",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+277A",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT FIVE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+277B",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT SIX",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+277C",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT SEVEN",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+277D",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT EIGHT",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+277E",
+    "name": "DINGBAT NEGATIVE CIRCLED DIGIT NINE",
+    "suggested_subsets": [
+      "symbols"
+    ]
+  },
+  {
+    "cp": "U+27D0",
+    "name": "WHITE DIAMOND WITH CENTRED DOT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2ABD",
+    "name": "SUBSET WITH DOT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2ABE",
+    "name": "SUPERSET WITH DOT",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+2AF6",
+    "name": "TRIPLE COLON OPERATOR",
+    "suggested_subsets": [
+      "math"
+    ]
+  },
+  {
+    "cp": "U+A78B",
+    "name": "LATIN CAPITAL LETTER SALTILLO",
+    "suggested_subsets": [
+      "latin-ext",
+      "tai-viet"
+    ]
+  },
+  {
+    "cp": "U+A78C",
+    "name": "LATIN SMALL LETTER SALTILLO",
+    "suggested_subsets": [
+      "latin-ext",
+      "tai-viet"
+    ]
+  },
+  {
+    "cp": "U+FEFF",
+    "name": "ZERO WIDTH NO-BREAK SPACE",
+    "suggested_subsets": [
+      "latin"
+    ]
+  }
+]

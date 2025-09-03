@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="fivesuperior" format="2">
-  <advance width="373"/>
-  <unicode hex="2075"/>
-  <anchor x="180" y="580" name="_center"/>
-  <outline>
-    <component base="five.small" yOffset="360"/>
-  </outline>
-</glyph>

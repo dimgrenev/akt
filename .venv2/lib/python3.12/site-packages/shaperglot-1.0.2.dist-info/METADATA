@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: shaperglot
+Version: 1.0.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Provides-Extra: docs
+Requires-Python: >=3.8

@@ -21,6 +21,8 @@ except Exception:
 
 
 DENY_PREFIXES = ("center",)
+# Keep center/_center anchors for overlay combining marks
+OVERLAY_MARKS = {"strokeshortcomb", "strokelongcomb"}
 
 
 def should_remove_by_name(anchor_name: str) -> bool:
@@ -36,8 +38,20 @@ def should_remove_by_name(anchor_name: str) -> bool:
 def is_letter_or_mark(glyph) -> bool:
     try:
         cat = getattr(glyph, "category", None) or ""
-        # Letters must keep anchors; Marks (combining) must keep their own anchors
+        # Keep anchors on base letters and combining marks
         if cat in ("Letter", "Mark"):
+            return True
+        # If category is missing, keep anchors when glyph has a Unicode assignment
+        # (precomposed letters like Aogonek often have unicode but no category)
+        uni = getattr(glyph, "unicode", None) or ""
+        if uni:
+            return True
+        unicodes = getattr(glyph, "unicodes", None) or []
+        if unicodes:
+            return True
+        # Heuristic: keep anchors on alphabetic, non-combining glyph names
+        name = getattr(glyph, "name", "") or ""
+        if name and not name.endswith("comb") and name[0].isalpha():
             return True
     except Exception:
         pass
@@ -49,19 +63,25 @@ def cleanup_file(glyphs_path: Path) -> tuple[int, int]:
     removed_by_name = 0
     removed_nonletters = 0
     for glyph in font.glyphs:
-        keep_anchors_for_glyph = is_letter_or_mark(glyph)
+        # Identify overlay marks by NAME alone, because some sources may miss 'category=Mark'
+        gname = getattr(glyph, "name", "") or ""
+        is_overlay_mark = gname in OVERLAY_MARKS
+        # Keep anchors for Letters, Marks, and overlay marks (even if category is missing)
+        keep_anchors_for_glyph = is_letter_or_mark(glyph) or is_overlay_mark
         for layer in glyph.layers:
             anchors = getattr(layer, "anchors", None)
             if not anchors:
                 continue
             keep = []
             for a in anchors:
-                name = getattr(a, "name", "")
-                # 1) remove garbage names
-                if should_remove_by_name(name):
+                aname = getattr(a, "name", "")
+                # 1) remove garbage names, but NOT for overlay marks where 'center' is meaningful
+                if should_remove_by_name(aname) and not (
+                    is_overlay_mark and aname in ("center", "_center")
+                ):
                     removed_by_name += 1
                     continue
-                # 2) drop anchors on non-letters/non-marks entirely
+                # 2) drop anchors on non-letters/non-marks entirely (except overlay marks)
                 if not keep_anchors_for_glyph:
                     removed_nonletters += 1
                     continue
