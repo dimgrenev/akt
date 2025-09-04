@@ -32116,7 +32116,7 @@ layerId = m01;
 shapes = (
 {
 angle = 180;
-pos = (560,498);
+pos = (560,500);
 ref = n;
 }
 );
@@ -32137,7 +32137,7 @@ layerId = "CCD41F9B-A064-4484-B59C-AEE566599C6A";
 shapes = (
 {
 angle = 180;
-pos = (560,498);
+pos = (560,500);
 ref = n;
 }
 );
@@ -32158,7 +32158,7 @@ layerId = m003;
 shapes = (
 {
 angle = 180;
-pos = (560,498);
+pos = (560,500);
 ref = n;
 }
 );
@@ -82339,7 +82339,7 @@ pos = (380,0);
 ref = fraction;
 },
 {
-pos = (540,0);
+pos = (540,-1.5);
 ref = s.small;
 }
 );
@@ -82356,7 +82356,7 @@ pos = (380,0);
 ref = fraction;
 },
 {
-pos = (540,0);
+pos = (540,-1.5);
 ref = s.small;
 }
 );
@@ -82373,7 +82373,7 @@ pos = (380,0);
 ref = fraction;
 },
 {
-pos = (540,0);
+pos = (540,-1.5);
 ref = s.small;
 }
 );
