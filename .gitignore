@@ -19,3 +19,9 @@ sources/build.ninja
 out/
 proof/
 fonts/variable/
+
+# Build outputs in fonts/ should not be tracked; packaged files live under ofl/
+fonts/*.ttf
+fonts/ARTICLE.en_us.html
+fonts/DESCRIPTION.en_us.html
+fonts/article/
