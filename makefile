@@ -31,6 +31,7 @@ out/build.stamp: venv sources/config.yaml $(SOURCES)
 	 (for config in sources/config*.yaml; do PATH=$(VENV)/bin:$$PATH $(VENV)/bin/gftools builder $$config; done)
 	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/write_avar.py "fonts/Akt[wght].ttf"; fi
 	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/fix_naming_fsselection.py "fonts/Akt[wght].ttf"; fi
+	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/write_meta.py "fonts/Akt[wght].ttf"; fi
 	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/generate_articles.py "fonts/Akt[wght].ttf" --outdir fonts/article; fi
 	 mkdir -p out; touch out/build.stamp
 

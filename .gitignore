@@ -4,6 +4,7 @@ venv*/
 
 # macOS cruft
 .DS_Store
+**/.DS_Store
 
 # Python cache
 __pycache__/
@@ -14,3 +15,7 @@ node_modules/
 
 # Build logs
 sources/.ninja_log
+sources/build.ninja
+out/
+proof/
+fonts/variable/
