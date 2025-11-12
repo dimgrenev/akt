@@ -22,4 +22,8 @@ Akt is a contemporary sans-serif typeface crafted for clarity and precision in m
 Each weight is designed with intent: mid-range weights support comfortable reading, while heavier ones add focus and structure to titles and key visual elements.
 Balancing rational geometry with refined optical details, Akt offers the precision developers need and the flexibility designers expect — a unified typographic system for modern interfaces and branding. Designed by Dima Grenev.
 
-Generated: 2025-11-12 18:56:31 UTC
+Generated: 2025-11-12 19:52:54 UTC
+
+![Specimen: multilingual pangrams](images/specimen.svg)
+
+![Weights overview (STAT)](images/weights.svg)
