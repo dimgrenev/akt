@@ -1,0 +1,22 @@
+[console_scripts]
+buildcff2vf = afdko.buildcff2vf:main
+buildmasterotfs = afdko.buildmasterotfs:main
+charplot = afdko.proofpdf:charplot
+checkoutlinesufo = afdko.checkoutlinesufo:main
+comparefamily = afdko.comparefamily:main
+digiplot = afdko.proofpdf:digiplot
+fontplot = afdko.proofpdf:fontplot
+fontplot2 = afdko.proofpdf:fontplot2
+fontsetplot = afdko.proofpdf:fontsetplot
+hintplot = afdko.proofpdf:hintplot
+makeinstancesufo = afdko.makeinstancesufo:main
+makeotf = afdko.makeotf:main
+otc2otf = afdko.otc2otf:main
+otf2otc = afdko.otf2otc:main
+otf2ttf = afdko.otf2ttf:main
+otfautohint = afdko.otfautohint.__main__:main
+otfstemhist = afdko.otfautohint.__main__:stemhist
+ttfcomponentizer = afdko.ttfcomponentizer:main
+ttfdecomponentizer = afdko.ttfdecomponentizer:main
+ttxn = afdko.ttxn:main
+waterfallplot = afdko.proofpdf:waterfallplot

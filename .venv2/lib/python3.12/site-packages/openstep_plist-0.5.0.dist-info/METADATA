@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: openstep_plist
+Version: 0.5.0
+Summary: ASCII plist parser written in Cython
+Home-page: https://github.com/fonttools/openstep-plist
+Author: Cosimo Lupo
+Author-email: cosimo@anthrotype.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+[![Github CI Status](https://github.com/fonttools/openstep-plist/workflows/Wheels/badge.svg)](https://github.com/fonttools/openstep-plist/actions?query=workflow%3A%22Wheels%22)
+[![codecov](https://codecov.io/gh/fonttools/openstep-plist/branch/master/graph/badge.svg)](https://codecov.io/gh/fonttools/openstep-plist)
+[![PyPI](https://img.shields.io/pypi/v/openstep-plist.svg)](https://pypi.org/project/openstep-plist/)
+
+# openstep-plist
+
+A parser for the "old style" OpenStep property list format (also known as ASCII
+plist), written in Cython.
+Largely based on the CoreFoundation implementation found here:
+https://github.com/opensource-apple/CF/blob/master/CFOldStylePList.c

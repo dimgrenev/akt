@@ -1,0 +1,242 @@
+{% extends "_base.html" %}
+{% block title %}Glyphs{% endblock %}
+{% block style %}
+{{ super() }}
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: {{ pt_size | int * 1.5}}px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: {{ pt_size | int * 1.5}}px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+{% endblock %}
+{% block content_name %}
+<b>Diffenator</b>
+{% endblock %}
+{% block content %}
+  {% for font_class in font_styles or font_styles_old or font_styles_new %}
+    <div class="box">
+    <div class="box-title">Tables</div>
+      <div data-path="root" data-open="0" id="difftable"></div>
+    </div>
+    
+    {% if diff.glyph_diff["glyphs"].new %}
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text {{ font_class.class_name }}" style="font-size: {{ pt_size }}pt">
+          {% for glyph in diff.glyph_diff["glyphs"].new %}
+            <div class="cell">
+              {{ glyph.render() }}
+            </div>
+          {% endfor %}
+          </div>
+      </div>
+    {% endif %}
+    
+    
+    {% if diff.glyph_diff["glyphs"].missing %}
+      <div class="box">
+        <div class="box-title">Missing encoded Glyphs</div>
+        <div class="box-text {{ font_class.class_name }}" style="font-size: {{ pt_size }}pt">
+          {% for glyph in diff.glyph_diff["glyphs"].missing %}
+            <div class="cell">
+              {{ glyph.render() }}
+            </div>
+          {% endfor %}
+          </div>
+      </div>
+    {% endif %}
+    
+    {% if diff.glyph_diff["glyphs"].modified %}
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text {{ font_class.class_name }}" style="font-size: {{ pt_size }}pt">
+          {% for glyph in diff.glyph_diff["glyphs"].modified %}
+            <div class="cell">
+              {{ glyph.render() }}
+            </div>
+          {% endfor %}
+          </div>
+      </div>
+    {% endif %}
+
+    {% for script in diff.glyph_diff["words"] %}
+      <div class="box">
+        <div class="box-title">Misshapen {{ script }} words</div>
+        <div class="box-text {{ font_class.class_name }}" style="font-size: {{ pt_size }}pt">
+          {% for word in diff.glyph_diff["words"][script] %}
+              {{ word.render() }}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text {{ font_class.class_name }}" style="font-size: {{ pt_size }}pt">
+        {% for word in diff.strings %}
+            {{ word.render() }}
+        {% endfor %}
+      </div>
+    </div>
+    
+
+    {% if diff.features %}
+      <div class="box">
+        <div class="box-title">Fea</div>
+        {{ diff.features }}
+      </div>
+    {% endif %}
+
+    </div>
+  {% endfor %}
+{{ diff.tables.render() }}
+{% endblock %}
+{% block js %}
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+{% endblock %}

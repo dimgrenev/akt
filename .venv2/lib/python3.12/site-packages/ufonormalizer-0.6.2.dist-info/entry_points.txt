@@ -1,0 +1,2 @@
+[console_scripts]
+ufonormalizer = ufonormalizer:main

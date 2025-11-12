@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: picosvg
+Version: 0.22.3
+Summary: Exploratory utility for svg simplification, meant for use playing with COLR fonts
+Author: Rod S
+Author-email: rsheeter@google.com
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: absl-py>=0.9.0
+Requires-Dist: lxml>=4.0
+Requires-Dist: skia-pathops>=0.6.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-clarity; extra == "dev"
+Requires-Dist: black==23.3.0; extra == "dev"
+Requires-Dist: pytype==2020.11.23; python_version < "3.9" and extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

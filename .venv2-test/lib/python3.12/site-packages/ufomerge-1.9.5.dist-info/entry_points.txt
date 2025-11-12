@@ -1,0 +1,2 @@
+[console_scripts]
+ufomerge = ufomerge.cli:main
