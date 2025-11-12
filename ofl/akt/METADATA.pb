@@ -19,8 +19,9 @@ subsets: "cyrillic-ext"
 subsets: "menu"
 axes {
   tag: "wght"
-  min_value: 100.0
-  max_value: 900.0
+  min_value: 0.0
+  max_value: 1000.0
+  default_value: 400.0
 }
 source {
   repository_url: "https://github.com/dimgrenev/akt"
