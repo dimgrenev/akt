@@ -1,0 +1,16 @@
+# Ignore local virtual envs
+.venv*/
+venv*/
+
+# macOS cruft
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node/npm (if any)
+node_modules/
+
+# Build logs
+sources/.ninja_log
