@@ -12,16 +12,19 @@ fonts {
   full_name: "Akt Regular"
   copyright: "Copyright 2024 The Akt Project Authors (https://github.com/dimgrenev/akt)"
 }
-subsets: "latin"
-subsets: "latin-ext"
 subsets: "cyrillic"
 subsets: "cyrillic-ext"
+subsets: "latin"
+subsets: "latin-ext"
 subsets: "menu"
 axes {
   tag: "wght"
-  min_value: 0.0
-  max_value: 1000.0
-  default_value: 400.0
+  min_value: 100.0
+  max_value: 900.0
+}
+registry_default_overrides {
+  key: "wght"
+  value: 400
 }
 source {
   repository_url: "https://github.com/dimgrenev/akt"
