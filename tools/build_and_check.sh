@@ -9,9 +9,13 @@ python3 -m venv "$ROOT_DIR/.venv"
 source "$ROOT_DIR/.venv/bin/activate"
 pip install -U pip fontmake gftools fonttools fontbakery shaperglot
 
-fontmake -g "$GLYPHS" -o variable \
-  --filter DecomposeTransformedComponentsFilter \
-  --filter FlattenComponentsFilter \
+python "$ROOT_DIR/tools/prepare_union_masters.py" "$GLYPHS" "$OUT_TTF" || fontmake -g "$GLYPHS" -o variable \
+  --filter DecomposeTransformedComponentsIFilter \
+  --filter DecomposeComponentsIFilter \
+  --filter DecomposeComponentsIFilter \
+  --filter DecomposeComponentsIFilter \
+  --overlaps-backend pathops \
+  --filter FlattenComponentsIFilter \
   --filter 'DottedCircleFilter(pre=True)' \
   --output-path "$OUT_TTF"
 
@@ -25,5 +29,12 @@ python "$ROOT_DIR/tools/write_avar.py" "$OUT_TTF" || true
 
 python "$ROOT_DIR/tools/fix_fvar.py" "$OUT_TTF" || true
 python "$ROOT_DIR/tools/fix_prep.py" "$OUT_TTF" || true
+
+python "$ROOT_DIR/tools/check_instances.py" "$OUT_TTF" || true
+python "$ROOT_DIR/tools/diagnose_masters.py" "$GLYPHS" || true
+python "$ROOT_DIR/tools/check_glyph_variation.py" "$OUT_TTF" || true
+python "$ROOT_DIR/tools/fix_gasp.py" "$OUT_TTF" || true
+.venv/bin/gftools fix-gasp --autofix "$OUT_TTF" || true
+
 
 fontbakery check-googlefonts "$OUT_TTF" --succinct
