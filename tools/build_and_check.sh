@@ -19,6 +19,9 @@ python "$ROOT_DIR/tools/prepare_union_masters.py" "$GLYPHS" "$OUT_TTF" || fontma
   --filter 'DottedCircleFilter(pre=True)' \
   --output-path "$OUT_TTF"
 
+# Merge overlaps at TT stage to ensure visible union when masters remain incompatible
+python "$ROOT_DIR/tools/merge_outlines.py" "$OUT_TTF" || true
+
 gftools gen-stat "$OUT_TTF" --src "$ROOT_DIR/tools/stat.yaml" --inplace || true
 
 python "$ROOT_DIR/tools/fix_names.py" "$OUT_TTF"

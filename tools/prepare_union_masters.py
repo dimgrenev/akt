@@ -74,6 +74,62 @@ def normalize_directions(glyph):
             changed = True
     return changed
 
+def contour_depths_and_areas(glyph):
+    contours = []
+    pts_list = []
+    for c in glyph.contours:
+        pts = oncurve_points(c)
+        pts_list.append(pts)
+    depths = []
+    areas = []
+    for i, pts in enumerate(pts_list):
+        if not pts:
+            depths.append(0)
+            areas.append(0.0)
+            continue
+        ref = pts[0]
+        d = 0
+        for j, pts2 in enumerate(pts_list):
+            if i == j or not pts2:
+                continue
+            if point_in_polygon(ref, pts2):
+                d += 1
+        depths.append(d)
+        areas.append(signed_area(pts))
+    return depths, areas
+
+def align_contour_order(glyph):
+    if not getattr(glyph, 'contours', None):
+        return False
+    depths, areas = contour_depths_and_areas(glyph)
+    indexed = list(enumerate(glyph.contours))
+    # outer first (depth 0), then increasing depth; within same depth, sort by descending abs area
+    indexed.sort(key=lambda ia: (depths[ia[0]], -abs(areas[ia[0]])))
+    new_contours = [c for _, c in indexed]
+    if new_contours != list(glyph.contours):
+        glyph.clearContours()
+        for c in new_contours:
+            glyph.appendContour(c)
+        return True
+    return False
+
+def align_start_points(glyph):
+    changed = False
+    for c in getattr(glyph, 'contours', []):
+        pts = [(p.x, p.y, getattr(p, 'type', None), p.onCurve) for p in c.points]
+        if not pts:
+            continue
+        # choose canonical start: leftmost, then lowest y among on-curve points
+        on_indices = [i for i, (_, _, t, on) in enumerate(pts) if on]
+        if not on_indices:
+            continue
+        on_pts = [(i, pts[i][0], pts[i][1]) for i in on_indices]
+        start_idx = min(on_pts, key=lambda it: (it[1], it[2]))[0]
+        if start_idx != 0:
+            c.points[:] = c.points[start_idx:] + c.points[:start_idx]
+            changed = True
+    return changed
+
 class ExpandingPointToSegmentPen(PointToSegmentPen):
     def __init__(self, segmentPen, font):
         super().__init__(segmentPen)
@@ -102,6 +158,12 @@ def process_fonts(fonts):
     names = set(fonts[0].keys())
     for f in fonts[1:]:
         names &= set(f.keys())
+    # disable any preconfigured ufo2ft filters that may reintroduce overlaps or fail on qcurve
+    for f in fonts:
+        lib = getattr(f, 'lib', None)
+        if lib is not None:
+            if 'com.github.googlei18n.ufo2ft.filters' in lib:
+                del lib['com.github.googlei18n.ufo2ft.filters']
     # Components are decomposed during build; expand residuals manually in union step
     for name in names:
         glyphs = [f[name] for f in fonts]
@@ -122,6 +184,8 @@ def process_fonts(fonts):
                 target.components = []
                 merged_paths[i].draw(target.getPen())
                 normalize_directions(target)
+                align_contour_order(target)
+                align_start_points(target)
         # else: skip to preserve interpolation
 
 def build_vf_from_fonts(gs, fonts, out_ttf):
