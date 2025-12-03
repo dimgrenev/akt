@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="schwa.small" format="2">
+  <advance width="380"/>
+  <guideline y="0"/>
+  <guideline y="400"/>
+  <guideline y="300"/>
+  <guideline y="-100"/>
+  <outline>
+    <component base="e.small" xScale="-1.0" yScale="-1.0" xOffset="382" yOffset="300"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>e.small</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>o.small</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>o.small</string>
+    </dict>
+  </lib>
+</glyph>

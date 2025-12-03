@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="sigmafinal" format="2">
+  <advance width="500"/>
+  <unicode hex="03C2"/>
+  <guideline x="-8" y="360" angle="0"/>
+  <guideline x="-8" y="360" angle="0"/>
+  <outline>
+    <contour>
+      <point x="56" y="210" type="move"/>
+      <point x="96" y="212" type="line"/>
+      <point x="96" y="364"/>
+      <point x="140" y="472"/>
+      <point x="280" y="472" type="curve" smooth="yes"/>
+      <point x="354" y="472"/>
+      <point x="414" y="426"/>
+      <point x="420" y="360" type="curve"/>
+      <point x="460" y="360" type="line"/>
+      <point x="454" y="452"/>
+      <point x="378" y="512"/>
+      <point x="278" y="512" type="curve" smooth="yes"/>
+    </contour>
+    <component base="greek-hook" xOffset="16"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>o</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>c</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

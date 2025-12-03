@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zsuperior" format="2">
+  <advance width="360"/>
+  <guideline y="400"/>
+  <guideline y="800"/>
+  <guideline y="700"/>
+  <guideline y="300"/>
+  <outline>
+    <component base="z.small" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>z.small</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>z.small</string>
+    </dict>
+  </lib>
+</glyph>

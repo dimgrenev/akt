@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ii-cy.cv89" format="2">
+  <advance width="560"/>
+  <anchor x="280" y="500" name="top"/>
+  <anchor x="280" y="0" name="bottom"/>
+  <anchor x="398" y="0" name="ogonek"/>
+  <outline>
+    <component base="u"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+    </dict>
+  </lib>
+</glyph>

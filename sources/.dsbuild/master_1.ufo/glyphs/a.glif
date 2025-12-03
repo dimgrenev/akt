@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="a" format="2">
+  <advance width="520"/>
+  <unicode hex="0061"/>
+  <anchor x="260" y="0" name="bottom"/>
+  <anchor x="366" y="0" name="ogonek"/>
+  <anchor x="260" y="500" name="top"/>
+  <outline>
+    <component base="a-part"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>upsilon</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

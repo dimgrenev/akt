@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="q_dotaccentcomb.ss05" format="2">
+  <advance width="560"/>
+  <anchor x="448.0" y="-200.0" name="bottom"/>
+  <anchor x="272" y="700" name="top"/>
+  <outline>
+    <component base="q.ss05"/>
+    <component base="dotaccentcomb" xOffset="122"/>
+  </outline>
+</glyph>

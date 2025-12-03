@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="k.cv07" format="2">
+  <advance width="580"/>
+  <anchor x="280" y="0" name="bottom"/>
+  <anchor x="135" y="700" name="top"/>
+  <outline>
+    <component base="kappa.cv07"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>n</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

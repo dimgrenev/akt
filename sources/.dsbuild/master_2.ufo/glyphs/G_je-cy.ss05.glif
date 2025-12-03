@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gje-cy.ss05" format="2">
+  <advance width="560"/>
+  <anchor x="300" y="900" name="top"/>
+  <anchor x="150" y="0" name="bottom"/>
+  <outline>
+    <component base="Ge-cy.ss05"/>
+    <component base="acutecomb" xOffset="190" yOffset="200"/>
+  </outline>
+</glyph>

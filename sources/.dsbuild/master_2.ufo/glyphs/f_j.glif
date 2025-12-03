@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_j" format="2">
+  <advance width="640"/>
+  <anchor x="458" y="-200" name="bottom_1"/>
+  <anchor x="508" y="500" name="top_1"/>
+  <anchor x="240" y="700" name="top_2"/>
+  <anchor x="328" y="0" name="caret_1"/>
+  <outline>
+    <component base="jdotless" xOffset="378"/>
+    <component base="f"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>tau</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>u</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCPC</string>
+    </dict>
+  </lib>
+</glyph>

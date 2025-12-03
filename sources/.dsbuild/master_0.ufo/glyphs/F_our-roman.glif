@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Four-roman" format="2">
+  <advance width="1080"/>
+  <unicode hex="2163"/>
+  <anchor x="680" y="0" name="bottom"/>
+  <anchor x="404" y="0" name="ogonek"/>
+  <anchor x="680" y="700" name="top"/>
+  <outline>
+    <component base="One-roman"/>
+    <component base="Five-roman" xOffset="280"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>One-roman</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>Five-roman</string>
+    </dict>
+  </lib>
+</glyph>

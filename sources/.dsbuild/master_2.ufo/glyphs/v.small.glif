@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="v.small" format="2">
+  <advance width="380"/>
+  <guideline y="0"/>
+  <guideline y="400"/>
+  <guideline y="300"/>
+  <guideline y="-100"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+    </dict>
+  </lib>
+</glyph>

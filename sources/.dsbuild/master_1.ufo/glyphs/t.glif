@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="t" format="2">
+  <advance width="440"/>
+  <unicode hex="0074"/>
+  <anchor x="207" y="500" name="top"/>
+  <anchor x="260" y="700" name="_topright"/>
+  <anchor x="271" y="0" name="bottom"/>
+  <outline>
+    <component base="tau.ss02"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>tau.ss02</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

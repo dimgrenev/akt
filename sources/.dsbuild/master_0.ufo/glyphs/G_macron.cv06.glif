@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gmacron.cv06" format="2">
+  <advance width="720"/>
+  <anchor x="360" y="0" name="bottom"/>
+  <anchor x="360" y="900" name="top"/>
+  <outline>
+    <component base="G.cv06"/>
+    <component base="macroncomb" xOffset="160" yOffset="200"/>
+  </outline>
+</glyph>

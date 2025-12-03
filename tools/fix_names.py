@@ -2,26 +2,45 @@
 import sys
 from fontTools.ttLib import TTFont
 
-def set_name(tt, nameID, string):
-    # Windows
-    tt['name'].removeNames(nameID=nameID, platformID=3, platEncID=1, langID=0x409)
-    tt['name'].setName(string, nameID, 3, 1, 0x409)
-    # Mac
-    tt['name'].removeNames(nameID=nameID, platformID=1, platEncID=0, langID=0)
-    tt['name'].setName(string, nameID, 1, 0, 0)
+def set_name(tt, nameID, string, platformID=3, platEncID=1, langID=0x409):
+    name = tt['name']
+    # remove existing records with same nameID/platform
+    name.names = [nr for nr in name.names if not (nr.nameID == nameID and nr.platformID == platformID and nr.platEncID == platEncID and nr.langID == langID)]
+    name.setName(string, nameID, platformID, platEncID, langID)
 
-def main(path):
-    tt = TTFont(path)
-    set_name(tt, 1, 'Akt')
-    set_name(tt, 2, 'Regular')
-    set_name(tt, 4, 'Akt Regular')
-    set_name(tt, 6, 'Akt-Regular')
-    set_name(tt, 13, 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org')
-    set_name(tt, 14, 'https://openfontlicense.org')
-    tt.save(path)
+def set_name_both(tt, nameID, string):
+    # Windows Unicode
+    set_name(tt, nameID, string, platformID=3, platEncID=1, langID=0x409)
+    # Macintosh Roman
+    set_name(tt, nameID, string, platformID=1, platEncID=0, langID=0)
+
+def main(ttf_path):
+    tt = TTFont(ttf_path)
+    family = 'Akt'
+    style = 'Regular'
+    full = f'{family} {style}'
+    ps = f'{family}-{style}'
+    # Core names
+    set_name_both(tt, 1, family)
+    set_name_both(tt, 2, style)
+    set_name_both(tt, 4, full)
+    set_name_both(tt, 6, ps)
+    # Variable fonts in GF should not set Typographic Family/Subfamily (16/17): remove if present
+    tt['name'].names = [nr for nr in tt['name'].names if nr.nameID not in (16,17)]
+    # Variation PS Name Prefix for variable fonts
+    try:
+        # Ensure only ASCII and no spaces
+        prefix = family.replace(' ', '')
+        set_name_both(tt, 25, prefix)
+    except Exception:
+        pass
+    # License
+    set_name_both(tt, 13, 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org')
+    set_name_both(tt, 14, 'https://openfontlicense.org')
+    tt.save(ttf_path)
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print('Usage: fix_names.py path/to/font.ttf')
+        print('Usage: fix_names.py <font.ttf>')
         sys.exit(1)
     main(sys.argv[1])

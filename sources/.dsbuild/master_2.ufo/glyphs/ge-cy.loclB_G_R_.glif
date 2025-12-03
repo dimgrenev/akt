@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ge-cy.loclBGR" format="2">
+  <advance width="500"/>
+  <note>
+uni0433.loclBGR
+</note>
+  <anchor x="250" y="0" name="bottom"/>
+  <anchor x="250" y="500" name="top"/>
+  <outline>
+    <component base="s" xScale="-1" xOffset="500"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

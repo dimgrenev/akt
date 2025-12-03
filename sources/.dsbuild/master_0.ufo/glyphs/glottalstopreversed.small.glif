@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="glottalstopreversed.small" format="2">
+  <advance width="360"/>
+  <guideline x="-18" y="0" angle="0"/>
+  <guideline x="-18" y="400" angle="0"/>
+  <guideline x="-18" y="300" angle="0"/>
+  <guideline x="-18" y="-100" angle="0"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>c.small</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>c.small</string>
+    </dict>
+  </lib>
+</glyph>

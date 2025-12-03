@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="400"/>
+  </axes>
+  <sources>
+    <source filename="/Users/grenev/Documents/akt/sources/.dsbuild/master_0.ufo" name="Akt Thin" familyname="Akt" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="/Users/grenev/Documents/akt/sources/.dsbuild/master_1.ufo" name="Akt Regular" familyname="Akt" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source filename="/Users/grenev/Documents/akt/sources/.dsbuild/master_2.ufo" name="Akt Black" familyname="Akt" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Akt Thin" familyname="Akt" stylename="Thin" filename="instance_ufos/Akt-Thin.ufo" stylemapfamilyname="Akt Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt ExtraLight" familyname="Akt" stylename="ExtraLight" filename="instance_ufos/Akt-ExtraLight.ufo" stylemapfamilyname="Akt ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt Light" familyname="Akt" stylename="Light" filename="instance_ufos/Akt-Light.ufo" stylemapfamilyname="Akt Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt Regular" familyname="Akt" stylename="Regular" filename="instance_ufos/Akt-Regular.ufo" stylemapfamilyname="Akt" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt Medium" familyname="Akt" stylename="Medium" filename="instance_ufos/Akt-Medium.ufo" stylemapfamilyname="Akt Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt SemiBold" familyname="Akt" stylename="SemiBold" filename="instance_ufos/Akt-SemiBold.ufo" stylemapfamilyname="Akt SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt Bold" familyname="Akt" stylename="Bold" filename="instance_ufos/Akt-Bold.ufo" stylemapfamilyname="Akt" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt ExtraBold" familyname="Akt" stylename="ExtraBold" filename="instance_ufos/Akt-ExtraBold.ufo" stylemapfamilyname="Akt ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Akt Black" familyname="Akt" stylename="Black" filename="instance_ufos/Akt-Black.ufo" stylemapfamilyname="Akt Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>TTFAutohint options</string>
+              <string>--hinting-range-max=32 --windows-compatibility</string>
+            </array>
+            <array>
+              <string>Autohint</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Grid Spacing</string>
+              <integer>1</integer>
+            </array>
+            <array>
+              <string>Keep Overlapping Components</string>
+              <integer>1</integer>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>m01</key>
+        <dict/>
+      </dict>
+    </dict>
+  </lib>
+</designspace>

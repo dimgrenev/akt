@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ka-cy.ss04" format="2">
+  <advance width="560"/>
+  <anchor x="270" y="0" name="bottom"/>
+  <anchor x="270" y="500" name="top"/>
+  <outline>
+    <component base="k-part-2" xOffset="82"/>
+    <component base="k-part-2" yScale="-1" xOffset="82" yOffset="500"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>n</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>zhe-cy.ss04</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCC</string>
+    </dict>
+  </lib>
+</glyph>

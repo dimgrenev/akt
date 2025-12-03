@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minferior" format="2">
+  <advance width="600"/>
+  <unicode hex="2098"/>
+  <guideline y="-100"/>
+  <guideline y="300"/>
+  <guideline y="200"/>
+  <guideline y="-200"/>
+  <outline>
+    <component base="m.small" yOffset="-100"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>m.small</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>m.small</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>m.small</string>
+    </dict>
+  </lib>
+</glyph>

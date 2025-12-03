@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dcroat" format="2">
+  <advance width="560"/>
+  <unicode hex="0111"/>
+  <anchor x="280" y="0" name="bottom"/>
+  <anchor x="456" y="700" name="top"/>
+  <anchor x="510" y="700" name="topright"/>
+  <outline>
+    <component base="d"/>
+    <component base="strokeshortcomb" xScale="-1" xOffset="560" yOffset="330"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>d</string>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

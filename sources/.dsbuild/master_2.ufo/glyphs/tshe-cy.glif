@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tshe-cy" format="2">
+  <advance width="660"/>
+  <unicode hex="045B"/>
+  <anchor x="382" y="0" name="_bottomright"/>
+  <anchor x="262" y="700" name="top"/>
+  <anchor x="262" y="0" name="bottom"/>
+  <outline>
+    <component base="l" yScale="-1" xOffset="132" yOffset="700"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>tau</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>n</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCP</string>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

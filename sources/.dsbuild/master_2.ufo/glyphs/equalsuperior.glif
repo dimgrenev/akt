@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="equalsuperior" format="2">
+  <advance width="420"/>
+  <unicode hex="207C"/>
+  <guideline y="400"/>
+  <guideline y="800"/>
+  <guideline y="700"/>
+  <guideline y="300"/>
+  <outline>
+    <component base="equal.small" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>equal.small</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>equal.small</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ertick-cy.ss05" format="2">
+  <advance width="560"/>
+  <anchor x="126" y="-200" name="bottom"/>
+  <anchor x="280" y="500" name="top"/>
+  <outline>
+    <component base="er-cy.ss05"/>
+    <component base="strokeshortcomb" xScale="0.7071067811865476" xyScale="-0.7071067811865475" yxScale="0.7071067811865475" yScale="0.7071067811865476" xOffset="96" yOffset="37"/>
+  </outline>
+</glyph>

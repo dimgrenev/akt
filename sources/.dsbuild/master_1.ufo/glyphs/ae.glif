@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ae" format="2">
+  <advance width="820"/>
+  <unicode hex="00E6"/>
+  <guideline x="-8" y="150" angle="0"/>
+  <guideline x="-8" y="350" angle="0"/>
+  <anchor x="410" y="0" name="bottom"/>
+  <anchor x="561" y="0" name="ogonek"/>
+  <anchor x="410" y="500" name="top"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>a</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>o</string>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

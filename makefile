@@ -17,7 +17,19 @@ help:
 	@echo "  make images: Creates PNG specimen images in the fonts/ directory"
 	@echo
 
-build: out/build.stamp
+build: venv sources/config.yaml $(SOURCES)
+	rm -rf fonts
+	(for config in sources/config*.yaml; do PATH=$(VENV)/bin:$$PATH $(VENV)/bin/gftools builder $$config; done)
+	VARFONT="fonts/variable/Akt[wght].ttf"; \
+	 if [ ! -f "$$VARFONT" ]; then VARFONT="ofl/akt/Akt[wght].ttf"; fi; \
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/add_avar_identity.py "$$VARFONT"; fi
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/fix_naming_fsselection.py "$$VARFONT"; fi
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/add_meta.py "$$VARFONT" ofl/akt/METADATA.pb; fi
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/fix_names.py "$$VARFONT"; fi
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/cleanup_kern_pairpos1.py "$$VARFONT"; fi
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/cleanup_gpos_pairpos1.py "$$VARFONT"; fi
+	if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/generate_articles.py "$$VARFONT" --outdir fonts/article --readme readme.md; fi
+	if [ -f "fonts/variable/Akt[wght].ttf" ]; then mkdir -p ofl/akt; cp -f "fonts/variable/Akt[wght].ttf" ofl/akt/Akt[wght].ttf; fi
 
 venv: $(VENV)/touchfile
 
@@ -25,15 +37,6 @@ venv-test: $(VENV_TEST)/touchfile
 
 customize: venv
 	$(VENV)/bin/python tools/customize.py
-
-out/build.stamp: venv sources/config.yaml $(SOURCES)
-	 rm -rf fonts
-	 (for config in sources/config*.yaml; do PATH=$(VENV)/bin:$$PATH $(VENV)/bin/gftools builder $$config; done)
-	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/write_avar.py "fonts/Akt[wght].ttf"; fi
-	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/fix_naming_fsselection.py "fonts/Akt[wght].ttf"; fi
-	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/write_meta.py "fonts/Akt[wght].ttf"; fi
-	 if [ -f "fonts/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/generate_articles.py "fonts/Akt[wght].ttf" --outdir fonts/article; fi
-	 mkdir -p out; touch out/build.stamp
 
 $(VENV)/touchfile: requirements.txt
 	test -d $(VENV) || python3 -m venv $(VENV)
@@ -45,10 +48,11 @@ $(VENV_TEST)/touchfile: requirements-test.txt
 	$(VENV_TEST)/bin/pip install -Ur requirements-test.txt
 	touch $(VENV_TEST)/touchfile
 
-test: venv-test out/build.stamp
-	 mkdir -p out/fontbakery out/badges
-	 TOCHECK=$$(find fonts -maxdepth 1 -type f \( -name '*.ttf' -o -name '*.otf' \) 2>/dev/null); \
-	 $(VENV_TEST)/bin/fontbakery check-googlefonts -l WARN --full-lists --succinct --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md $$TOCHECK  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
+test: venv-test build
+	 mkdir -p sources/fontbakery sources/badges
+	 TOCHECK=$$( (find fonts -maxdepth 1 -type f \( -name '*.ttf' -o -name '*.otf' \) 2>/dev/null; \
+	             find ofl/akt -maxdepth 1 -type f -name '*.ttf' 2>/dev/null) ); \
+	 $(VENV_TEST)/bin/fontbakery check-googlefonts -l WARN --full-lists --succinct --badges sources/badges --html sources/fontbakery/fontbakery-report.html --ghmarkdown sources/fontbakery/fontbakery-report.md $$TOCHECK  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
 
 proof: venv out/build.stamp
 	TOCHECK=$$(find fonts -maxdepth 1 -type f \( -name '*.ttf' -o -name '*.otf' \) 2>/dev/null); $(VENV)/bin/diffenator2 proof $$TOCHECK -o out/proof
@@ -59,11 +63,12 @@ images: venv $(DRAWBOT_OUTPUT)
 	$(VENV)/bin/python $< --output $@
 
 clean:
-	 rm -f out/build.stamp
-	 find . -name "*.pyc" -delete
+	find . -name "*.pyc" -delete
+
 
 clean-all:
-	 rm -rf proof fonts out master_ufo instance_ufos
+	 rm -rf proof fonts master_ufo instance_ufos
+	 rm -rf sources/fontbakery sources/badges sources/.dsbuild
 	 rm -rf $(VENV) $(VENV_TEST)
 	 find . -name "*.pyc" -delete
 	 find . -type d -name "__pycache__" -exec rm -rf {} +

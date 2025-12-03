@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kgreenlandic.cv07" format="2">
+  <advance width="560"/>
+  <anchor x="270" y="0" name="bottom"/>
+  <anchor x="270" y="500" name="top"/>
+  <outline>
+    <component base="kappa.cv07"/>
+  </outline>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="d.ss05" format="2">
+  <advance width="560"/>
+  <anchor x="450" y="700" name="top"/>
+  <anchor x="270" y="0" name="bottom"/>
+  <anchor x="520" y="700" name="topright"/>
+  <outline>
+    <component base="b.ss05" xScale="-1" xOffset="560"/>
+  </outline>
+</glyph>

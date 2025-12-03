@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="isuperior" format="2">
+  <advance width="200"/>
+  <guideline y="400"/>
+  <guideline y="800"/>
+  <guideline y="700"/>
+  <guideline y="300"/>
+  <outline>
+    <component base="i.small" yOffset="400"/>
+  </outline>
+</glyph>

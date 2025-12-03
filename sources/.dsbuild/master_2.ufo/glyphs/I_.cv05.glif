@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="I.cv05" format="2">
+  <advance width="480"/>
+  <anchor x="240" y="0" name="bottom"/>
+  <anchor x="336" y="0" name="ogonek"/>
+  <anchor x="240" y="700" name="top"/>
+  <outline>
+    <component base="I" xOffset="100"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>T</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>T</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPP</string>
+    </dict>
+  </lib>
+</glyph>

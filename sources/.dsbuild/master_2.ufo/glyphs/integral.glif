@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="integral" format="2">
+  <advance width="340"/>
+  <unicode hex="222B"/>
+  <anchor x="170.0" y="0.0" name="bottom"/>
+  <anchor x="220.0" y="700.0" name="top"/>
+  <outline>
+    <component base="jdotless" xOffset="39"/>
+    <component base="jdotless" xScale="-1.0" yScale="-1.0" xOffset="300" yOffset="500"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>jdotless</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>jdotless</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

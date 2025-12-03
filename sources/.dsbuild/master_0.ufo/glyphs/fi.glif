@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fi" format="2">
+  <advance width="640"/>
+  <anchor x="534" y="0" name="bottom_1"/>
+  <anchor x="514" y="0" name="ogonek_1"/>
+  <anchor x="534" y="500" name="top_1"/>
+  <anchor x="240" y="700" name="top_2"/>
+  <anchor x="400" y="0" name="caret_1"/>
+  <outline>
+    <component base="idotless" xOffset="404"/>
+    <component base="f"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>tau</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>u</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPCC</string>
+    </dict>
+  </lib>
+</glyph>

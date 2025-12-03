@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eight.small" format="2">
+  <advance width="440"/>
+  <guideline x="-18" y="0" angle="0"/>
+  <guideline x="-18" y="400" angle="0"/>
+  <guideline x="-18" y="300" angle="0"/>
+  <guideline x="-18" y="-100" angle="0"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

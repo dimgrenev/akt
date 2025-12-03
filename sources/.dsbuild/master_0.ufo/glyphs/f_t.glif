@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_t" format="2">
+  <advance width="740"/>
+  <anchor x="240" y="700" name="top_1"/>
+  <anchor x="506" y="500" name="top_2"/>
+  <anchor x="633" y="0" name="bottom"/>
+  <anchor x="380" y="0" name="caret_1"/>
+  <outline>
+    <component base="f"/>
+    <component base="tau.ss02" xOffset="300"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>tau</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>t</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCCP</string>
+    </dict>
+  </lib>
+</glyph>

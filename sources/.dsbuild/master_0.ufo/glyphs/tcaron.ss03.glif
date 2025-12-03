@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tcaron.ss03" format="2">
+  <advance width="400"/>
+  <anchor x="221" y="700" name="_topright"/>
+  <outline>
+    <component base="caroncomb.alt" xOffset="221"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPC</string>
+    </dict>
+  </lib>
+</glyph>

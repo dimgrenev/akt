@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hastroke-cy" format="2">
+  <advance width="540"/>
+  <unicode hex="04FF"/>
+  <anchor x="270" y="0" name="bottom"/>
+  <anchor x="270" y="500" name="top"/>
+  <anchor x="270" y="250" name="center"/>
+  <outline>
+    <component base="x"/>
+    <component base="strokelongcomb" xOffset="-30"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

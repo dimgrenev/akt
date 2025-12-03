@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zhe-cy.ss04" format="2">
+  <advance width="1080"/>
+  <anchor x="540" y="700" name="top"/>
+  <outline>
+    <component base="K-part-2" xOffset="504"/>
+    <component base="K-part-2" yScale="-1" xOffset="504" yOffset="700"/>
+    <component base="K-part-2" xScale="-1" xOffset="576"/>
+    <component base="K-part-2" xScale="-1.0" yScale="-1.0" xOffset="576" yOffset="700"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>T</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>T</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCCCC</string>
+    </dict>
+  </lib>
+</glyph>

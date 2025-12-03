@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ainferior" format="2">
+  <advance width="380"/>
+  <unicode hex="2090"/>
+  <guideline y="-100"/>
+  <guideline y="300"/>
+  <guideline y="200"/>
+  <guideline y="-200"/>
+  <outline>
+    <component base="a.small" yOffset="-100"/>
+  </outline>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ertick-cy" format="2">
+  <advance width="560"/>
+  <unicode hex="048F"/>
+  <anchor x="280" y="500" name="top"/>
+  <anchor x="102" y="-200" name="bottom"/>
+  <outline>
+    <component base="er-cy"/>
+    <component base="strokeshortcomb" xScale="0.7071067811865476" xyScale="-0.7071067811865475" yxScale="0.7071067811865475" yScale="0.7071067811865476" xOffset="92" yOffset="33"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

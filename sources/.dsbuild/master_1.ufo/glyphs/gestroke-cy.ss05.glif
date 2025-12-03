@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gestroke-cy.ss05" format="2">
+  <advance width="420"/>
+  <anchor x="240" y="500" name="top"/>
+  <outline>
+    <component base="ge-cy.ss05"/>
+    <component base="strokeshortcomb"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>tau</string>
+    </dict>
+  </lib>
+</glyph>

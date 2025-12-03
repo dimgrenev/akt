@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="equal.small" format="2">
+  <advance width="420"/>
+  <guideline y="0"/>
+  <guideline y="400"/>
+  <guideline y="300"/>
+  <guideline y="-100"/>
+  <outline>
+    <component base="minus.small" yOffset="-75"/>
+    <component base="minus.small" yOffset="75"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+    </dict>
+  </lib>
+</glyph>

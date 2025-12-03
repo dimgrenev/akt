@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dcroat.ss05" format="2">
+  <advance width="560"/>
+  <anchor x="430" y="700" name="top"/>
+  <anchor x="270" y="0" name="bottom"/>
+  <anchor x="530" y="700" name="topright"/>
+  <outline>
+    <component base="d.ss05"/>
+    <component base="strokeshortcomb" xScale="-1" xOffset="560" yOffset="330"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>d</string>
+    </dict>
+  </lib>
+</glyph>

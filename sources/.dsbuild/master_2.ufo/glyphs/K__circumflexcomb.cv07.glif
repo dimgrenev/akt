@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="K_circumflexcomb.cv07" format="2">
+  <advance width="700"/>
+  <anchor x="340" y="0" name="bottom"/>
+  <anchor x="340" y="900" name="top"/>
+  <outline>
+    <component base="Kappa.cv07"/>
+    <component base="circumflexcomb" xOffset="140" yOffset="200"/>
+  </outline>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="f_f_j.ss03" format="2">
+  <advance width="960"/>
+  <anchor x="854" y="-200" name="bottom_1"/>
+  <anchor x="854" y="500" name="top_1"/>
+  <anchor x="578" y="700" name="top_2"/>
+  <anchor x="360" y="0" name="caret_1"/>
+  <anchor x="660" y="2" name="caret_2"/>
+  <anchor x="240" y="700" name="top"/>
+  <outline>
+    <component base="jdotless.ss03" xOffset="724"/>
+    <component base="f" xOffset="338"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>tau</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>u</string>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PPCPPC</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Upsilontonos.ss06" format="2">
+  <advance width="680"/>
+  <anchor x="340" y="0" name="bottom"/>
+  <anchor x="42" y="900" name="top"/>
+  <outline>
+    <component base="Upsilon.ss06"/>
+    <component base="tonos" xOffset="-68" yOffset="200"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>tonos</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>Upsilon.ss06</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="a.ss02.cv01" format="2">
+  <advance width="580"/>
+  <anchor x="280" y="0" name="bottom"/>
+  <anchor x="458" y="0" name="ogonek"/>
+  <anchor x="280" y="500" name="top"/>
+  <outline>
+    <component base="puzo-b" xScale="-1" xOffset="478"/>
+    <component base="a1-part-i-full" xOffset="276"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>puzo-b</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>o</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>tau</string>
+    </dict>
+  </lib>
+</glyph>

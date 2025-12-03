@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zhe-cy.ss04" format="2">
+  <advance width="840"/>
+  <anchor x="420" y="500" name="top"/>
+  <outline>
+    <component base="k-part-2" xOffset="362"/>
+    <component base="k-part-2" yScale="-1" xOffset="362" yOffset="500"/>
+    <component base="k-part-2" xScale="-1" xOffset="478"/>
+    <component base="k-part-2" xScale="-1.0" yScale="-1.0" xOffset="478" yOffset="500"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PCCCC</string>
+    </dict>
+  </lib>
+</glyph>

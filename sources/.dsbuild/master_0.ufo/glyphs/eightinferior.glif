@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eightinferior" format="2">
+  <advance width="440"/>
+  <unicode hex="2088"/>
+  <guideline y="-100"/>
+  <guideline y="300"/>
+  <guideline y="-200"/>
+  <guideline y="200"/>
+  <outline>
+    <component base="eight.small" yOffset="-100"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

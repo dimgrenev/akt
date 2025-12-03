@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tcommaaccent.ss03" format="2">
+  <advance width="400"/>
+  <anchor x="260" y="700" name="_topright"/>
+  <anchor x="188" y="-200" name="bottom"/>
+  <outline>
+    <component base="t.ss03"/>
+    <component base="commaaccentcomb" xOffset="88"/>
+  </outline>
+</glyph>

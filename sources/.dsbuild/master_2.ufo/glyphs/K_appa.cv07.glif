@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Kappa.cv07" format="2">
+  <advance width="700"/>
+  <anchor x="340" y="0" name="bottom"/>
+  <anchor x="340" y="700" name="top"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>N</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>X</string>
+    </dict>
+  </lib>
+</glyph>

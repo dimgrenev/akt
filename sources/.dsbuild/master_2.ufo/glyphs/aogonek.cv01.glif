@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aogonek.cv01" format="2">
+  <advance width="560"/>
+  <anchor x="280" y="0" name="bottom"/>
+  <anchor x="418" y="-200" name="ogonek"/>
+  <anchor x="280" y="500" name="top"/>
+  <outline>
+    <component base="a.cv01"/>
+    <component base="ogonekcomb" xOffset="268"/>
+  </outline>
+</glyph>

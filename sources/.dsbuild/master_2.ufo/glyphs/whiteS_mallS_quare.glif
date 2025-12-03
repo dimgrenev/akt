@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="whiteSmallSquare" format="2">
+  <advance width="400"/>
+  <unicode hex="25AB"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>blackSmallSquare</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>blackSmallSquare</string>
+    </dict>
+  </lib>
+</glyph>

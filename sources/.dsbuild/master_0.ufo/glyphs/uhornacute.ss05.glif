@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uhornacute.ss05" format="2">
+  <advance width="640"/>
+  <anchor x="280" y="700" name="top"/>
+  <anchor x="270" y="0" name="bottom"/>
+  <anchor x="296" y="0" name="ogonek"/>
+  <outline>
+    <component base="uhorn.ss05"/>
+    <component base="acutecomb" xOffset="170"/>
+  </outline>
+</glyph>

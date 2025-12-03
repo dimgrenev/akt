@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="parenrightinferior" format="2">
+  <advance width="260"/>
+  <unicode hex="208E"/>
+  <guideline y="-100"/>
+  <guideline y="300"/>
+  <guideline y="-200"/>
+  <guideline y="200"/>
+  <outline>
+    <component base="parenleftinferior" xScale="-1" xOffset="260"/>
+  </outline>
+</glyph>

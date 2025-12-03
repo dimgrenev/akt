@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zhe-cy.ss04.cv89" format="2">
+  <advance width="840"/>
+  <note>
+uni0436.loclBGR
+</note>
+  <anchor x="420" y="500" name="top"/>
+  <outline>
+    <component base="zhe-cy.loclBGR.ss04"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>zhe-cy.ss04</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>zhe-cy.ss04</string>
+    </dict>
+  </lib>
+</glyph>

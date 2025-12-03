@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="y.small" format="2">
+  <advance width="380"/>
+  <guideline x="-16" y="0" angle="0"/>
+  <guideline x="-16" y="400" angle="0"/>
+  <guideline x="-16" y="300" angle="0"/>
+  <guideline x="-16" y="-100" angle="0"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>v.small</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>v.small</string>
+    </dict>
+  </lib>
+</glyph>

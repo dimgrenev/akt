@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ordfeminine" format="2">
+  <advance width="380"/>
+  <unicode hex="00AA"/>
+  <guideline y="400"/>
+  <guideline y="800"/>
+  <guideline y="700"/>
+  <guideline y="300"/>
+  <outline>
+    <component base="a.small" yOffset="400"/>
+  </outline>
+</glyph>
