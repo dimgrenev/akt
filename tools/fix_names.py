@@ -37,6 +37,17 @@ def main(ttf_path):
     # License
     set_name_both(tt, 13, 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org')
     set_name_both(tt, 14, 'https://openfontlicense.org')
+
+    # Ensure version strings are updated and consistent with head.fontRevision
+    try:
+        rev = float(getattr(tt['head'], 'fontRevision', 1.0))
+    except Exception:
+        rev = 1.0
+    # bump patch minimally to avoid stale "Version 1.000" perception
+    rev = round(rev + 0.001, 3)
+    tt['head'].fontRevision = rev
+    set_name_both(tt, 5, f'Version {rev:.3f}')
+
     tt.save(ttf_path)
 
 if __name__ == '__main__':

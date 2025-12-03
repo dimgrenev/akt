@@ -28,8 +28,9 @@ build: venv sources/config.yaml $(SOURCES)
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/fix_names.py "$$VARFONT"; fi
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/cleanup_kern_pairpos1.py "$$VARFONT"; fi
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/cleanup_gpos_pairpos1.py "$$VARFONT"; fi
-	if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/generate_articles.py "$$VARFONT" --outdir fonts/article --readme readme.md; fi
-	if [ -f "fonts/variable/Akt[wght].ttf" ]; then mkdir -p ofl/akt; cp -f "fonts/variable/Akt[wght].ttf" ofl/akt/Akt[wght].ttf; fi
+	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/generate_articles.py "$$VARFONT" --outdir fonts/article --readme readme.md; fi
+	 if [ -f "fonts/variable/Akt[wght].ttf" ]; then mkdir -p ofl/akt; cp -f "fonts/variable/Akt[wght].ttf" ofl/akt/Akt[wght].ttf; fi
+	 if [ -f "ofl/akt/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/fix_names.py "ofl/akt/Akt[wght].ttf"; fi
 
 venv: $(VENV)/touchfile
 

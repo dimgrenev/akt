@@ -343,7 +343,7 @@ OCG/G.cv06 ƏDΩŒUBБR/R.ss01/Ya-cy.ss04 ẞSЗƷ
 (ʔ?⁇2/two.osf/parenleft.small/two.small 3/three.small 5/five.small 6/six.small 8/eight.small/zero.osf/zero.small .,…/period.small/comma.small •⋅/a.small/b.small/c.small/e.small/g.small/glottalstopreversed.small/h.small/hhook.small/m.small/n.small/o.small/theta.small/s.small 
 ♡❤●○◐/numBlackCircle/numWhiteCircle ©®℗℮◌@
 ∞̧̨°̇̈΅/dieresiscomb.narrow ̊~̃/tildecomb.narrow/brevecomb_tildecomb/circumflexcomb_tildecomb/brevecomb.narrow/brevecomb_acutecomb/brevecomb_hookabovecomb 
-/Upsilon.ss06 Ύnɳɹɼɼɾ"
+nɲɳɹɼɼɾ"
 );
 axes = (
 {
@@ -38527,7 +38527,7 @@ width = 540;
 glyphname = nhookleft;
 kernLeft = "j-n";
 kernRight = n;
-lastChange = "2025-11-30 11:26:41 +0000";
+lastChange = "2025-12-03 15:17:26 +0000";
 layers = (
 {
 layerId = m007;
@@ -38541,7 +38541,7 @@ pos = (-52,0);
 ref = "hook-1";
 }
 );
-width = 600;
+width = 560;
 },
 {
 layerId = m004;
@@ -38555,7 +38555,7 @@ pos = (-64,0);
 ref = "hook-1";
 }
 );
-width = 600;
+width = 560;
 },
 {
 layerId = m003;
