@@ -48,8 +48,8 @@ def main(ttf_path):
     rev = None
     glyphs_path = None
     # Try to read from config.yaml for source path
-    cfg_path = os.path.join(os.path.dirname(ttf_path), '..', 'sources', 'config.yaml')
-    cfg_path = os.path.abspath(cfg_path)
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(ttf_path), '..', '..'))
+    cfg_path = os.path.join(repo_root, 'sources', 'config.yaml')
     if os.path.exists(cfg_path):
         try:
             with open(cfg_path, 'r', encoding='utf-8') as f:
@@ -61,7 +61,7 @@ def main(ttf_path):
             pass
     # Fallback to default location
     if not glyphs_path:
-        glyphs_path = os.path.abspath(os.path.join(os.path.dirname(ttf_path), '..', 'sources', 'Akt.glyphs'))
+        glyphs_path = os.path.join(repo_root, 'sources', 'Akt.glyphs')
     try:
         if glyphsLib and os.path.exists(glyphs_path):
             gsfont = glyphsLib.load(glyphs_path)

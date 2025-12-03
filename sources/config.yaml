@@ -6,5 +6,5 @@ axisOrder:
 buildVariable: true
 buildOTF: false
 buildTTF: false
-buildWebfont: true
-outputDir: ../fonts
+buildWebfont: false
+outputDir: ../ofl/akt

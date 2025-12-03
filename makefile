@@ -21,7 +21,7 @@ build: venv sources/config.yaml $(SOURCES)
 	# Полная очистка артефактов, чтобы сборка всегда была «с нуля»
 	rm -rf fonts master_ufo instance_ufos sources/.dsbuild
 	(for config in sources/config*.yaml; do PATH=$(VENV)/bin:$$PATH $(VENV)/bin/gftools builder $$config; done)
-	VARFONT="fonts/variable/Akt[wght].ttf"; \
+	VARFONT="ofl/akt/variable/Akt[wght].ttf"; \
 	 if [ ! -f "$$VARFONT" ]; then VARFONT="ofl/akt/Akt[wght].ttf"; fi; \
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/add_avar_identity.py "$$VARFONT"; fi
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/fix_naming_fsselection.py "$$VARFONT"; fi
@@ -29,8 +29,9 @@ build: venv sources/config.yaml $(SOURCES)
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/fix_names.py "$$VARFONT"; fi
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/cleanup_kern_pairpos1.py "$$VARFONT"; fi
 	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/cleanup_gpos_pairpos1.py "$$VARFONT"; fi
-	 if [ -f "$$VARFONT" ]; then $(VENV)/bin/python tools/generate_articles.py "$$VARFONT" --outdir fonts/article --readme readme.md; fi
-	 if [ -f "fonts/variable/Akt[wght].ttf" ]; then mkdir -p ofl/akt; rm -f "ofl/akt/Akt[wght].ttf"; cp -f "fonts/variable/Akt[wght].ttf" "ofl/akt/Akt[wght].ttf"; fi
+	 # Перемещение итогового файла из подкаталога variable и удаление лишних артефактов
+	 if [ -f "ofl/akt/variable/Akt[wght].ttf" ]; then mv -f "ofl/akt/variable/Akt[wght].ttf" "ofl/akt/Akt[wght].ttf"; fi
+	 if [ -d "ofl/akt/variable" ]; then rmdir "ofl/akt/variable" 2>/dev/null || true; fi
 	 if [ -f "ofl/akt/Akt[wght].ttf" ]; then $(VENV)/bin/python tools/fix_names.py "ofl/akt/Akt[wght].ttf"; fi
 
 venv: $(VENV)/touchfile
