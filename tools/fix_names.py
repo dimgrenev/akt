@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 import sys
 from fontTools.ttLib import TTFont
+import os
+import yaml
+try:
+    import glyphsLib
+except Exception:
+    glyphsLib = None
 
 def set_name(tt, nameID, string, platformID=3, platEncID=1, langID=0x409):
     name = tt['name']
@@ -38,13 +44,39 @@ def main(ttf_path):
     set_name_both(tt, 13, 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org')
     set_name_both(tt, 14, 'https://openfontlicense.org')
 
-    # Ensure version strings are updated and consistent with head.fontRevision
+    # Ensure version strings are sourced from Glyphs
+    rev = None
+    glyphs_path = None
+    # Try to read from config.yaml for source path
+    cfg_path = os.path.join(os.path.dirname(ttf_path), '..', 'sources', 'config.yaml')
+    cfg_path = os.path.abspath(cfg_path)
+    if os.path.exists(cfg_path):
+        try:
+            with open(cfg_path, 'r', encoding='utf-8') as f:
+                cfg = yaml.safe_load(f)
+            sources = cfg.get('sources') or []
+            if sources:
+                glyphs_path = sources[0]
+        except Exception:
+            pass
+    # Fallback to default location
+    if not glyphs_path:
+        glyphs_path = os.path.abspath(os.path.join(os.path.dirname(ttf_path), '..', 'sources', 'Akt.glyphs'))
     try:
-        rev = float(getattr(tt['head'], 'fontRevision', 1.0))
+        if glyphsLib and os.path.exists(glyphs_path):
+            gsfont = glyphsLib.load(glyphs_path)
+            major = getattr(gsfont, 'versionMajor', None)
+            minor = getattr(gsfont, 'versionMinor', None)
+            if major is not None and minor is not None:
+                rev = float(major) + float(minor) / 1000.0
     except Exception:
-        rev = 1.0
-    # bump patch minimally to avoid stale "Version 1.000" perception
-    rev = round(rev + 0.001, 3)
+        pass
+    if rev is None:
+        # Fall back to existing head.fontRevision
+        try:
+            rev = float(getattr(tt['head'], 'fontRevision', 1.0))
+        except Exception:
+            rev = 1.0
     tt['head'].fontRevision = rev
     set_name_both(tt, 5, f'Version {rev:.3f}')
 

@@ -7,4 +7,4 @@ buildVariable: true
 buildOTF: false
 buildTTF: false
 buildWebfont: true
-outputDir: fonts
+outputDir: ../fonts

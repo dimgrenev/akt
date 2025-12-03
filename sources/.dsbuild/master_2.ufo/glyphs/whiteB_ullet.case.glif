@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="whiteBullet.case" format="2">
-  <advance width="400"/>
-  <outline>
-    <component base="whiteBullet" yOffset="80"/>
-  </outline>
-</glyph>

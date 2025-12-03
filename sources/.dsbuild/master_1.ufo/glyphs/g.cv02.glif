@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="g.cv02" format="2">
-  <advance width="560"/>
-  <anchor x="242" y="-200" name="bottom"/>
-  <anchor x="270" y="500" name="top"/>
-  <outline>
-  </outline>
-</glyph>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="p.ss05" format="2">
-  <advance width="560"/>
-  <anchor x="126" y="-200" name="bottom"/>
-  <anchor x="280" y="500" name="top"/>
-  <outline>
-    <component base="b.ss05" yScale="-1" yOffset="500"/>
-  </outline>
-</glyph>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="lambda.ss02" format="2">
-  <advance width="520"/>
-  <anchor x="220" y="700" name="top"/>
-  <anchor x="260" y="0" name="bottom"/>
-  <outline>
-    <component base="y.ss02" yScale="-1" yOffset="500"/>
-  </outline>
-</glyph>
