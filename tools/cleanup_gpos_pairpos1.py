@@ -31,6 +31,10 @@ def remove_pairpos1_global(font_path: str):
         g.LookupList.Lookup = new_lookup
         for fr in fl:
             fr.Feature.LookupListIndex = [remap[i] for i in fr.Feature.LookupListIndex if i in remap]
+    else:
+        lookup_count = len(ll)
+        for fr in fl:
+            fr.Feature.LookupListIndex = [i for i in fr.Feature.LookupListIndex if i < lookup_count]
 
     t.save(font_path)
 
@@ -41,4 +45,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

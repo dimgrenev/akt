@@ -39,10 +39,9 @@ def remove_pairpos1_from_kern(font_path: str):
             remap[old_idx] = len(new_lookup)
             new_lookup.append(lk)
         g.LookupList.Lookup = new_lookup
-        # remap indices in features
+        # remap indices in all features (not only kern), because LookupList is global
         for fr in fl:
-            if fr.FeatureTag == 'kern':
-                fr.Feature.LookupListIndex = [remap[i] for i in fr.Feature.LookupListIndex if i in remap]
+            fr.Feature.LookupListIndex = [remap[i] for i in fr.Feature.LookupListIndex if i in remap]
     t.save(font_path)
 
 def main():
@@ -52,4 +51,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

@@ -18,14 +18,12 @@ sources/.ninja_log
 sources/build.ninja
 out/
 proof/
-fonts/variable/
+master_ufo/
+instance_ufos/
 
 # Tooling artifacts
 .ninja_log
 .trae/
 
-# Build outputs in fonts/ should not be tracked; packaged files live under ofl/
-fonts/*.ttf
-fonts/ARTICLE.en_us.html
-fonts/DESCRIPTION.en_us.html
-fonts/article/
+# Transient build outputs; packaged files live under ofl/
+fonts/

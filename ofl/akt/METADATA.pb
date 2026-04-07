@@ -28,15 +28,6 @@ registry_default_overrides {
 }
 source {
   repository_url: "https://github.com/dimgrenev/akt"
-  commit: "d166132d90f3f01351e3def962e5d0fd5399deab"
-  files {
-    source_file: "OFL.txt"
-    dest_file: "OFL.txt"
-  }
-  files {
-    source_file: "fonts/Akt[wght].ttf"
-    dest_file: "Akt[wght].ttf"
-  }
   branch: "main"
   config_yaml: "sources/config.yaml"
 }
