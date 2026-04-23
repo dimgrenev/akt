@@ -25,5 +25,3 @@ instance_ufos/
 .ninja_log
 .trae/
 
-# Transient build outputs; packaged files live under ofl/
-fonts/
