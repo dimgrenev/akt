@@ -1,5 +1,5 @@
 {
-.appVersion = "3436";
+.appVersion = "3516";
 .formatVersion = 3;
 DisplayStrings = (
 "/Cacute.loclPLK/Esdescender-cy.loclBSH/Esdescender-cy.loclCHU/Zedescender-cy.loclBSH/Nacute.loclPLK/Oacute.loclPLK/Sacute.loclPLK/Zacute.loclPLK/Gestroke-cy.loclBSH/Gje-cy.loclMKD/Ii-cy.loclBGR/Iishort-cy.loclBGR/Ef-cy.loclBGR/en-cy.loclBGR/ge-cy.loclMKD/de-cy.loclMKD/pe-cy.loclMKD/te-cy.loclMKD/gestroke-cy.loclBSH/gje-cy.loclMKD/nacute.loclPLK/oacute.loclPLK/sacute.loclPLK/zacute.loclPLK/cacute.loclPLK/esdescender-cy.loclBSH/esdescender-cy.loclCHU/zedescender-cy.loclBSH/Ii-cy.ss04/Ii-cy.loclBGR.ss04/Iigrave-cy.ss04/Iishort-cy.ss04/Iishort-cy.loclBGR.ss04/Iishorttail-cy.ss04/ii-cy.ss04/iigrave-cy.ss04/iishort-cy.ss04/iishorttail-cy.ss04/ge-cy.loclSRB/de-cy.loclSRB/pe-cy.loclSRB/te-cy.loclSRB 
@@ -384,28 +384,9 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
-name = license;
-value = OFL;
-},
-{
-name = licenseURL;
-value = "https://openfontlicense.org";
-},
-{
-name = openTypeNameLicense;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
-},
-{
-name = openTypeNameLicenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = openTypeNameLicense;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1.";
-},
-{
-name = openTypeNameLicenseURL;
-value = "https://openfontlicense.org";
+name = fsType;
+value = (
+);
 },
 {
 name = com.github.googlei18n.ufo2ft.featureWriters;
@@ -429,11 +410,6 @@ module = ufo2ft.featureWriters.mkmkFeatureWriter;
 options = {
 };
 }
-);
-},
-{
-name = fsType;
-value = (
 );
 },
 {
@@ -211436,6 +211412,15 @@ type = "italic angle";
 );
 properties = (
 {
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright 2024 The Akt Project Authors (https://github.com/dimgrenev/akt)";
+}
+);
+},
+{
 key = designers;
 values = (
 {
@@ -211445,17 +211430,34 @@ value = "Dmitry Grenev";
 );
 },
 {
+key = designerURL;
+value = "https://grenev.com/";
+},
+{
 key = licenses;
 values = (
 {
 language = dflt;
-value = "SIL Open Font License, 1.1";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
-key = postscriptFontName;
-value = Akt;
+key = licenseURL;
+value = "https://openfontlicense.org";
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = "Dmitry Grenev";
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://grenev.com/";
 }
 );
 settings = {
