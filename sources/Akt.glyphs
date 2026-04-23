@@ -166734,6 +166734,44 @@ width = 0;
 unicode = 13;
 },
 {
+glyphname = lineseparator;
+lastChange = "2026-04-23 12:59:52 +0000";
+layers = (
+{
+layerId = m007;
+width = 600;
+},
+{
+layerId = m004;
+width = 600;
+},
+{
+layerId = m003;
+width = 600;
+}
+);
+unicode = 8232;
+},
+{
+glyphname = paragraphseparator;
+lastChange = "2026-04-23 12:59:52 +0000";
+layers = (
+{
+layerId = m007;
+width = 600;
+},
+{
+layerId = m004;
+width = 600;
+},
+{
+layerId = m003;
+width = 600;
+}
+);
+unicode = 8233;
+},
+{
 category = Punctuation;
 color = 9;
 glyphname = "numeral-greek";
