@@ -370,7 +370,8 @@ m/shcha-cy.loclBGR hɦn/tse-cy.loclBGR §ҔЂҦӃ/Kahook-cy.cv07/Kahook-cy.ss04 
 ӷкж/zhe-cy.loclBGR/zhe-cy.loclBGR.ss04/zhe-cy.ss04 ҋҗ/zhedescender-cy.cv07/zhedescender-cy.ss04 
 қ/kadescender-cy.ss04 ҝңԥҭҳҷԧԯӊӌӎ
 ⅡⅢⅣⅥⅦⅧⅨⅪⅫ↔",
-"/ge-cy.loclSRB/de-cy.loclSRB/pe-cy.loclSRB/te-cy.loclSRB"
+"/ge-cy.loclSRB/de-cy.loclSRB/pe-cy.loclSRB/te-cy.loclSRB",
+"Ɤ"
 );
 axes = (
 {
@@ -34104,6 +34105,29 @@ width = 280;
 }
 );
 unicode = 42891;
+},
+{
+color = 3;
+glyphname = Ramshorn;
+kernLeft = v;
+kernRight = v;
+lastChange = "2026-04-23 12:52:50 +0000";
+layers = (
+{
+layerId = m007;
+width = 600;
+},
+{
+layerId = m004;
+width = 600;
+},
+{
+layerId = m003;
+width = 600;
+}
+);
+subCategory = Phonetic;
+unicode = 42955;
 },
 {
 color = 9;
