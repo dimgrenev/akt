@@ -1,7 +1,7 @@
 VENV ?= .venv2
 VENV_TEST ?= .venv2-test
 REQ_BUILD := $(firstword $(wildcard requirements.txt requirements-test.txt))
-VARFONT := ofl/akt/Akt[wght].ttf
+VARFONT := fonts/variable/Akt[wght].ttf
 SOURCES = sources/Akt.glyphs
 FAMILY = Akt
 DRAWBOT_SCRIPTS =
@@ -24,11 +24,9 @@ help:
 build: venv sources/config.yaml $(SOURCES)
 	rm -rf fonts master_ufo instance_ufos sources/.dsbuild
 	(for config in sources/config*.yaml; do PATH=$(VENV)/bin:$$PATH $(VENV)/bin/gftools builder $$config; done)
-	if [ -f "ofl/akt/variable/Akt[wght].ttf" ]; then mv -f "ofl/akt/variable/Akt[wght].ttf" "$(VARFONT)"; fi
-	if [ -d "ofl/akt/variable" ]; then rmdir "ofl/akt/variable" 2>/dev/null || true; fi
 	test -f "$(VARFONT)"
 	$(VENV)/bin/python tools/add_avar_identity.py "$(VARFONT)"
-	$(VENV)/bin/python tools/add_meta.py "$(VARFONT)" ofl/akt/METADATA.pb
+	$(VENV)/bin/python tools/add_meta.py "$(VARFONT)" METADATA.pb
 	$(VENV)/bin/python tools/fix_names.py "$(VARFONT)"
 	$(VENV)/bin/python tools/cleanup_gpos_pairpos1.py "$(VARFONT)"
 
