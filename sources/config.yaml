@@ -3,8 +3,3 @@ sources:
   - Akt.glyphs
 axisOrder:
   - wght
-buildVariable: true
-buildOTF: false
-buildTTF: false
-buildWebfont: false
-outputDir: ../ofl/akt
